@@ -1,0 +1,6 @@
+This is my whole disk0s1 EFI directory since the EFI is elseware and hidden.
+You can see that apple hosts are redirected to other ip addresses, false actors.
+#[SSR|>] Resolved IP Address for 'oscdn.apple.com': 189.195.97.33 
+This is an example, no apple doesnt have a cdn on that IP.
+
+
