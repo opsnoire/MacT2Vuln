@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BridgeBuildGroup</key>
+	<string>0</string>
+	<key>BridgeProductBuildVersion</key>
+	<string>17P6610</string>
+	<key>BridgeVersion</key>
+	<string>17.16.16610.0.0</string>
+	<key>IsSeed</key>
+	<string>NO</string>
+	<key>SEPEpoch</key>
+	<dict>
+		<key>Major</key>
+		<integer>1</integer>
+		<key>Minor</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

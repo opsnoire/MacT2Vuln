@@ -1,0 +1,17 @@
+#!/bin/bash
+
+systemPolicyLocation="/private/var/db/";
+systemPolicyPath="${systemPolicyLocation}SystemPolicy";
+# See 11170501 for an explanation
+if [[ -e "${SRCROOT}${systemPolicyPath}" ]]; then
+	if [[ ${SRCPRODUCTVERSION} != "10.7.3" ]]; then
+		/System/Library/PrivateFrameworks/SystemMigration.framework/Resources/safecp -f "${SRCROOT}${systemPolicyPath}" "${DSTROOT}${systemPolicyLocation}"
+		if [[ "$SRCROOT" =~ "Recovered Items" ]]; then
+			# ONLY Do this during OS Upgrade!
+			sqlite3 "${DSTROOT}${systemPolicyPath}" <<EOF
+			update authority set disabled = 0 where label = 'Developer ID';
+EOF
+			# Preceeding EOF *must* lead the line (don't indent!)
+		fi
+	fi
+fi

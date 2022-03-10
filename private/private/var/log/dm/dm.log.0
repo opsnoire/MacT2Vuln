@@ -1,0 +1,92 @@
+20220309-18:28:07.72603 [00649:002103] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:07.72873 [00649:002103] diskmanagementd DMToolBootPreference getDiskForBootPreference DMErr=-69794 retDMErr=-69794 outDiskUDS=(uninit)
+20220309-18:28:07.77198 [00648:000307] Startup Disk DMManager(Boot) copyDiskForBootPreference DMErr=-69794 retErr=-69794 outDisk=0x0=(null)
+20220309-18:28:07.83574 [00649:002103] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:07.83620 [00648:000307] Startup Disk DMManager(Boot) getNetBootPreference DMErr=-69794 retErr=-69794 outProto=0x00000000 outServ=(null) outIntf=(null)
+20220309-18:28:08.07633 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.11247 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.13363 [00648:000307] Startup Disk _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x7ffeecd94080=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:08.13886 [00648:000307] Startup Disk _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x7ffeecd94080=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:08.35597 [00649:002103] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:08.35628 [00649:002103] diskmanagementd DMToolBootPreference getDiskForBootPreference DMErr=-69794 retDMErr=-69794 outDiskUDS=(uninit)
+20220309-18:28:08.35656 [00648:000307] Startup Disk DMManager(Boot) copyDiskForBootPreference DMErr=-69794 retErr=-69794 outDisk=0x0=(null)
+20220309-18:28:08.37794 [00648:000307] Startup Disk _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x7ffeecd94080=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:08.38101 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69853 retErr=-69853 outIsBootable=0
+20220309-18:28:08.42547 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.44092 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.45629 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.47131 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.48630 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.50172 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.51679 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.53174 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.54711 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.56234 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.57794 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.59391 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.60977 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.62562 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.64288 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.66026 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.67766 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.69540 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.71230 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.73088 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.76281 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.80000 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:08.82820 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:09.07169 [00649:002103] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:09.07211 [00649:002103] diskmanagementd DMToolBootPreference getDiskForBootPreference DMErr=-69794 retDMErr=-69794 outDiskUDS=(uninit)
+20220309-18:28:09.07260 [00648:000307] Startup Disk DMManager(Boot) copyDiskForBootPreference DMErr=-69794 retErr=-69794 outDisk=0x0=(null)
+20220309-18:28:09.17857 [00648:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:19.66178 [00649:002103] diskmanagementd _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x700007e8f7a0=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:19.66212 [00649:002103] diskmanagementd DMToolBootPreference setDiskForBootPreference IntErr=1=0x1 targetDiskSystemSiblingOrSelfMountPoint=(null)
+20220309-18:28:19.66479 [00649:002103] diskmanagementd DMToolBootPreference setDiskForBootPreference DMErr=-69737 retDMErr=-69737
+20220309-18:28:19.66501 [00648:000307] Startup Disk DMManager(Boot) setDiskForBootPreference DMErr=-69737 retErr=-69737
+20220309-18:28:19.68202 [00648:000307] Startup Disk DMLocalizedUserErrorString DMErr=-69737 request for localized end-user error string; CODE: -69737 TECH/UNLOC: Unable to find boot helper partition USER/LOC: Unable to find boot helper partition.
+20220309-18:28:19.68228 [00648:000307] Startup Disk DMLocalizedUserErrorString DMErr=-69737 request for localized end-user error string; CODE: -69737 TECH/UNLOC: Unable to find boot helper partition USER/LOC: Unable to find boot helper partition.
+20220309-18:28:23.92252 [00649:003703] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:23.92267 [00649:003703] diskmanagementd DMToolBootPreference getDiskForBootPreference DMErr=-69794 retDMErr=-69794 outDiskUDS=(uninit)
+20220309-18:28:23.92288 [00661:000307] Startup Disk DMManager(Boot) copyDiskForBootPreference DMErr=-69794 retErr=-69794 outDisk=0x0=(null)
+20220309-18:28:23.98156 [00660:002503] storagekitd DMPartitionDisk getPartitionStartLocationForDisk IntErr=1=0x1 err getting part start disk2s1
+20220309-18:28:24.04891 [00649:003703] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:24.04924 [00661:000307] Startup Disk DMManager(Boot) getNetBootPreference DMErr=-69794 retErr=-69794 outProto=0x00000000 outServ=(null) outIntf=(null)
+20220309-18:28:24.39002 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.42169 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.45691 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.49532 [00661:000307] Startup Disk _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x7ffeebc51120=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:24.50472 [00661:000307] Startup Disk _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x7ffeebc51120=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:24.68076 [00660:002503] storagekitd DMPartitionDisk getPartitionStartLocationForDisk IntErr=1=0x1 err getting part start disk3s1
+20220309-18:28:24.74950 [00649:003703] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:24.74964 [00649:003703] diskmanagementd DMToolBootPreference getDiskForBootPreference DMErr=-69794 retDMErr=-69794 outDiskUDS=(uninit)
+20220309-18:28:24.74990 [00661:000307] Startup Disk DMManager(Boot) copyDiskForBootPreference DMErr=-69794 retErr=-69794 outDisk=0x0=(null)
+20220309-18:28:24.77103 [00661:000307] Startup Disk _DMAPFSVolumeGroupInfoForVolume DMErr=-69478 err=-69478 outCont=0x7ffeebc51120=NOTHING out1VolIdx=-1 outVolGroupUUID=(null)
+20220309-18:28:24.77504 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69853 retErr=-69853 outIsBootable=0
+20220309-18:28:24.83559 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.86317 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.89404 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.92402 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.94777 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:24.97421 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.00074 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.02974 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.05881 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.06138 [00660:002503] storagekitd DMPartitionDisk getPartitionStartLocationForDisk IntErr=1=0x1 err getting part start disk2s1
+20220309-18:28:25.08292 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.10567 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.12901 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.15581 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.18419 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.21302 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.23686 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.26160 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.28759 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.31649 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.33487 [00660:002503] storagekitd DMPartitionDisk getPartitionStartLocationForDisk IntErr=1=0x1 err getting part start disk3s1
+20220309-18:28:25.34345 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.36516 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.38960 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.41616 [00661:000307] Startup Disk DMManager(Boot) checkMacOSXBootability DMErr=-69492 retErr=-69492 outIsBootable=0
+20220309-18:28:25.59598 [00649:003703] diskmanagementd DMToolBootPreference getBootPreference DMErr=-69794 outDevPathOrURL=(null) retDMErr=-69794
+20220309-18:28:25.59616 [00649:003703] diskmanagementd DMToolBootPreference getDiskForBootPreference DMErr=-69794 retDMErr=-69794 outDiskUDS=(uninit)
+20220309-18:28:25.59628 [00661:000307] Startup Disk DMManager(Boot) copyDiskForBootPreference DMErr=-69794 retErr=-69794 outDisk=0x0=(null)

@@ -1,0 +1,6 @@
+(allow mach-lookup
+    (global-name "com.apple.metadata.mds")
+    (global-name "com.apple.metadata.mds.legacy")
+    (global-name "com.apple.metadata.mdwrite")
+    )
+

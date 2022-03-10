@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>en</key>
+	<string>Welcome</string>
+	<key>ja</key>
+	<string>ようこそ</string>
+	<key>fr</key>
+	<string>Bienvenue</string>
+	<key>de</key>
+	<string>Willkommen</string>
+	<key>pt-BR</key>
+	<string>Bem-vindo</string>
+	<key>nb</key>
+	<string>Velkommen</string>
+	<key>pt-PT</key>
+	<string>Bem‑vindos</string>
+	<key>fi</key>
+	<string>Tervetuloa</string>
+	<key>nl</key>
+	<string>Welkom</string>
+	<key>pl</key>
+	<string>Witamy</string>
+	<key>ru</key>
+	<string>Добро пожаловать!</string>
+	<key>sv</key>
+	<string>Välkommen</string>
+	<key>it</key>
+	<string>Benvenuto</string>
+	<key>tr</key>
+	<string>Hoş Geldiniz</string>
+	<key>zh-Hans</key>
+	<string>欢迎</string>
+	<key>zh-Hant</key>
+	<string>歡迎</string>
+	<key>ko</key>
+	<string>환영합니다</string>
+	<key>ar</key>
+	<string>مرحبًا</string>
+	<key>cs</key>
+	<string>Vítejte</string>
+	<key>hu</key>
+	<string>Üdvözöljük</string>
+	<key>ca</key>
+	<string>Benvingut</string>
+	<key>bs</key>
+	<string>Dobrodošli</string>
+	<key>ro</key>
+	<string>Bun venit</string>
+	<key>he</key>
+	<string>ברוכים הבאים</string>
+	<key>uk</key>
+	<string>Вітаємо</string>
+	<key>th</key>
+	<string>ยินดีต้อนรับ</string>
+	<key>sk</key>
+	<string>Vítame vás</string>
+	<key>el</key>
+	<string>Καλώς ορίσατε</string>
+	<key>id</key>
+	<string>Selamat Datang</string>
+	<key>vi</key>
+	<string>Chào mừng</string>
+	<key>es-419</key>
+	<string>Bienvenido</string>
+</dict>
+</plist>

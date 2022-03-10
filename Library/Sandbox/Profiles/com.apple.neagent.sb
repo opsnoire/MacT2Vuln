@@ -1,0 +1,46 @@
+(version 1)
+(deny default)
+(import "system.sb")
+
+; System is read only
+(allow file-read*)
+
+; Legacy, statically allocated PTYs
+(allow file-read* (regex "^/dev/(ttyp[0-9a-f]|ptyp[0-9a-f])$"))
+
+;; Dynamically allocated PTYs using openpty()
+(allow pseudo-tty)
+(allow file-read* file-ioctl (literal "/dev/ptmx"))
+(allow file-read* file-write*
+  (require-all
+    (regex #"^/dev/ttys[0-9]*")
+    (extension "com.apple.sandbox.pty")))
+
+; NOTE: Later rules override earlier rules.
+
+(system-network)
+
+(allow file-read*
+    (literal "/Library/Preferences/.GlobalPreferences.plist"))
+
+(allow mach-lookup)
+
+(allow network*)
+
+; To allow crash reporter / exceptions to kill the process
+(allow signal (target self))
+
+(allow ipc-posix-shm)
+(allow ipc-posix-sem)
+
+(allow file-read* file-write* (extension "com.apple.app-sandbox.read-write"))
+
+(allow mach-register (global-name-prefix "com.apple.ist.ds.appleconnect2.service.neagent"))
+
+(allow file-write*
+	(regex #"^/private/var/folders/[^/]+/[^/]+/C/mds/mdsDirectory\.db$")
+	(regex #"^/private/var/folders/[^/]+/[^/]+/C/mds/mdsDirectory\.db_$")
+	(regex #"^/private/var/folders/[^/]+/[^/]+/C/mds/mdsObject\.db$")
+	(regex #"^/private/var/folders/[^/]+/[^/]+/C/mds/mdsObject\.db_$")
+	(regex #"^/private/var/folders/[^/]+/[^/]+/C/mds/mds\.lock$"))
+

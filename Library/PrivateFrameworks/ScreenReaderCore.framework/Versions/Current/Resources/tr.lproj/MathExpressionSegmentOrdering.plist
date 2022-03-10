@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>taban</string>
+		<string>indis</string>
+		<string>üs</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>aralık</string>
+		<string>aralıktan sonraki ifade</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>taban</string>
+		<string>indis</string>
+		<string>üs</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>taban</string>
+		<string>indis</string>
+		<string>üs</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>kök dizini</string>
+		<string>kök içinde</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>pay</string>
+		<string>payda</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>üstünde</string>
+		<string>taban</string>
+		<string>altında</string>
+	</array>
+</dict>
+</plist>

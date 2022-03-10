@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+
+<dictionary title="Cocoa Scripting Intrinsics">
+
+	<suite name="Intrinsics" code="intr" description="" hidden="yes">
+
+		<value-type name="any" code="****">
+			<cocoa class="NSAppleEventDescriptor"/>
+		</value-type>
+		<value-type name="boolean" code="bool">
+			<cocoa class="NSNumber"/>
+		</value-type>
+		<value-type name="date" code="ldt ">
+			<cocoa class="NSDate"/>
+		</value-type>
+		<value-type name="file" code="file">
+			<cocoa class="NSURL"/>
+		</value-type>
+		<value-type name="integer" code="long">
+			<cocoa class="NSNumber"/>
+		</value-type>
+		<value-type name="location specifier" code="insl">
+			<cocoa class="NSPositionalSpecifier"/>
+		</value-type>
+		<value-type name="missing value" code="msng">
+			<cocoa class="NSNull"/>
+		</value-type>
+		<value-type name="number" code="nmbr">
+			<cocoa class="NSNumber"/>
+		</value-type>
+		<value-type name="point" code="QDpt">
+			<cocoa class="NSData"/>
+		</value-type>
+		<value-type name="real" code="doub">
+			<cocoa class="NSNumber"/>
+		</value-type>
+		<!-- The general "record" type is used as the type of the item class' properties property, and the type of the duplicate and make commands "with properties" parameters. Cocoa's default implementation of the duplicate, make, get, and set command have special code to handle the fact that merely declaring something to be of record type doesn't provide enough information to convert Apple event record descriptors to NSDictionaries. That code only kicks in for specific instances, and you can't get at it. Instead of using this, you should declare specific record types (see "print settings" for example) and use those for class properties and command parameters. That's better scriptability anyway. -->
+		<value-type name="record" code="reco">
+			<cocoa class="NSDictionary"/>
+		</value-type>
+		<value-type name="rectangle" code="qdrt">
+			<cocoa class="NSData"/>
+		</value-type>
+		<value-type name="specifier" code="obj ">
+			<cocoa class="NSScriptObjectSpecifier"/>
+		</value-type>
+		<value-type name="text" plural="text" code="ctxt">
+			<cocoa class="NSString"/>
+		</value-type>
+		<value-type name="type" code="type">
+			<cocoa class="NSNumber"/>
+		</value-type>
+
+		<command name="get" code="coregetd" description="Returns the value of the specified object(s).">
+			<cocoa class="NSGetCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="specifier" requires-access="r"/>
+			<result type="any"/>
+		</command>
+
+		<command name="set" code="coresetd" description="Sets the value of the specified object(s).">
+			<cocoa class="NSSetCommand"/>
+			<access-group identifier="*"/>
+			<direct-parameter type="specifier"/>
+			<parameter name="to" code="data" type="any" requires-access="r" description="The new value.">
+				<cocoa key="Value"/>
+			</parameter>
+		</command>
+
+		<class name="item" code="cobj" description="A scriptable object.">
+			<cocoa class="NSObject"/>
+			<property name="class" code="pcls" type="type" access="r" description="The class of the object.">
+				<cocoa key="classCode"/>
+				<access-group identifier="*"/>
+			</property>
+			<property name="properties" code="pALL" type="record" description="All of the object's properties.">
+				<cocoa key="scriptingProperties"/>
+			</property>
+			<!-- These blank method declarations are necessary because of a Cocoa Scripting implementation detail. Ordinarily you wouldn't do this. -->
+			<responds-to name="count">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="delete">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="duplicate">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="exists">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="get">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="move">
+				<cocoa method=""/>
+			</responds-to>
+			<responds-to name="set">
+				<cocoa method=""/>
+			</responds-to>
+		</class>
+
+	</suite>
+
+</dictionary>

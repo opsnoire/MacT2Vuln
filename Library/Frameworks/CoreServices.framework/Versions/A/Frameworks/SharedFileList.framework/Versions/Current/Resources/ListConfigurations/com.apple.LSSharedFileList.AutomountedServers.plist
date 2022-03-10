@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IsOrdered</key>
+	<true/>
+	<key>PropertyOverrides</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.ForceTemplateIcons</key>
+		<true/>
+	</dict>
+	<key>DefaultsDomain</key>
+	<string>com.apple.sidebarlists</string>
+	<key>DefaultsKey</key>
+	<string>automounted</string>
+</dict>
+</plist>

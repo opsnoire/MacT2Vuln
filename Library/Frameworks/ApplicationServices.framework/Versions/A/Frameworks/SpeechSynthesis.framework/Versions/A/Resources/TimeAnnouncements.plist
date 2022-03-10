@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Intervals</key>
+	<array>
+		<dict>
+			<key>TimeAnnouncementsDisplayString</key>
+			<string>On the hour</string>
+			<key>TimeAnnouncementsIdentifierString</key>
+			<string>EveryHourInterval</string>
+		</dict>
+		<dict>
+			<key>TimeAnnouncementsDisplayString</key>
+			<string>On the half hour</string>
+			<key>TimeAnnouncementsIdentifierString</key>
+			<string>EveryHalfHourInterval</string>
+		</dict>
+		<dict>
+			<key>TimeAnnouncementsDisplayString</key>
+			<string>On the quarter hour</string>
+			<key>TimeAnnouncementsIdentifierString</key>
+			<string>EveryQuarterHourInterval</string>
+		</dict>
+	</array>
+	<key>Phrases</key>
+	<array>
+		<dict>
+			<key>BaseSubstitutionString</key>
+			<string>It&apos;s %@</string>
+			<key>12HourNoMinutesSubstitutionString</key>
+			<string>It&apos;s %@ o&apos;clock</string>
+			<key>24HourPluralSubstitutionString</key>
+			<string>It&apos;s %@ hours</string>
+			<key>24HourSingularSubstitutionString</key>
+			<string>It&apos;s %@ hour</string>
+			<key>TimeAnnouncementsDisplayString</key>
+			<string>It&apos;s 10 o&apos;clock</string>
+			<key>TimeAnnouncementsIdentifierString</key>
+			<string>ShortTime</string>
+		</dict>
+	</array>
+</dict>
+</plist>

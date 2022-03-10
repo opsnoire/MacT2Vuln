@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>hfs</key>
+	<dict>
+		<key>Default Bless Path</key>
+		<string>/System/Library/CoreServices/</string>
+		<key>Manifest Extensions</key>
+		<array>
+			<string>im4m</string>
+		</array>
+		<key>Target Files</key>
+		<dict>
+			<key>Boot Plist Path</key>
+			<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</string>
+			<key>Optional Additional Files</key>
+			<array>
+				<string>/.VolumeIcon.icns</string>
+			</array>
+			<key>Optional Boot Files</key>
+			<array>
+				<string>/System/Library/CoreServices/.disk_label_2x</string>
+				<string>/System/Library/CoreServices/.disk_label.contentDetails</string>
+				<string>/System/Library/CoreServices/.disk_label</string>
+			</array>
+			<key>Boot Files</key>
+			<array>
+				<string>/System/Library/CoreServices/PlatformSupport.plist</string>
+				<string>/System/Library/CoreServices/SystemVersion.plist</string>
+				<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</string>
+				<string>/System/Library/CoreServices/boot.efi</string>
+				<string>/System/Library/PrelinkedKernels/immutablekernel</string>
+				<string>/System/Library/PrelinkedKernels/prelinkedkernel</string>
+			</array>
+			<key>SecureBoot</key>
+			<dict>
+				<key>Boot Files</key>
+				<array>
+					<string>/System/Library/CoreServices/BridgeVersion.bin</string>
+					<string>/System/Library/CoreServices/BridgeVersion.plist</string>
+				</array>
+				<key>Optional Manifests</key>
+				<array>
+					<string>/System/Library/CoreServices/bootbase.efi</string>
+				</array>
+				<key>Manifests</key>
+				<array>
+					<string>/System/Library/PrelinkedKernels/prelinkedkernel</string>
+					<string>/System/Library/CoreServices/boot.efi</string>
+					<string>/System/Library/PrelinkedKernels/immutablekernel</string>
+				</array>
+			</dict>
+		</dict>
+		<key>Apple_Boot Files</key>
+		<dict>
+			<key>RPS Paths</key>
+			<array>
+				<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist </string>
+				<string>/System/Library/Caches/com.apple.corestorage/EncryptedRoot.plist.wipekey</string>
+				<string>/System/Library/PrelinkedKernels/prelinkedkernel</string>
+				<string>/System/Library/PrelinkedKernels/prelinkedkernel.development</string>
+				<string>/usr/standalone/i386/EfiLoginUI/*</string>
+			</array>
+			<key>Additional Files</key>
+			<array>
+				<string>/System/Library/CoreServices/PlatformSupport.plist</string>
+				<string>/System/Library/CoreServices/boot.efi</string>
+				<string>/System/Library/CoreServices/SystemVersion.plist</string>
+				<string>/System/Library/CoreServices/.disk_label</string>
+				<string>/System/Library/CoreServices/.disk_label.contentDetails</string>
+				<string>/System/Library/CoreServices/.disk_label_2x</string>
+			</array>
+		</dict>
+	</dict>
+	<key>apfs</key>
+	<dict>
+		<key>Default Bless Path</key>
+		<string>/System/Library/CoreServices/</string>
+		<key>Manifest Extensions</key>
+		<array>
+			<string>im4m</string>
+		</array>
+		<key>APFS Preboot Files</key>
+		<dict>
+			<key>Boot Plist Path</key>
+			<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</string>
+			<key>Additional Files</key>
+			<array>
+				<string>/usr/standalone/i386/EfiLoginUI/*</string>
+			</array>
+			<key>SecureBoot</key>
+			<dict>
+				<key>Optional Manifests</key>
+				<array>
+					<string>/System/Library/CoreServices/bootbase.efi</string>
+				</array>
+				<key>Manifests</key>
+				<array>
+					<string>/System/Library/CoreServices/boot.efi</string>
+				</array>
+				<key>Boot Files</key>
+				<array>
+					<string>/System/Library/CoreServices/BridgeVersion.bin</string>
+					<string>/System/Library/CoreServices/BridgeVersion.plist</string>
+				</array>
+			</dict>
+			<key>Optional Boot Files</key>
+			<array>
+				<string>/System/Library/CoreServices/.disk_label</string>
+				<string>/System/Library/CoreServices/.disk_label.contentDetails</string>
+				<string>/System/Library/CoreServices/.disk_label_2x</string>
+				<string>/System/Library/CoreServices/bootbase.efi</string>
+			</array>
+			<key>Boot Files</key>
+			<array>
+				<string>/System/Library/CoreServices/SystemVersion.plist</string>
+				<string>/System/Library/CoreServices/PlatformSupport.plist</string>
+				<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</string>
+				<string>/System/Library/CoreServices/boot.efi</string>
+			</array>
+		</dict>
+		<key>Target Files</key>
+		<dict>
+			<key>Boot Plist Path</key>
+			<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</string>
+			<key>SecureBoot</key>
+			<dict>
+				<key>Manifests</key>
+				<array>
+					<string>/System/Library/PrelinkedKernels/prelinkedkernel</string>
+					<string>/System/Library/CoreServices/boot.efi</string>
+					<string>/System/Library/PrelinkedKernels/immutablekernel</string>
+				</array>
+			</dict>
+			<key>Optional Additional Files</key>
+			<array>
+				<string>/.VolumeIcon.icns</string>
+			</array>
+			<key>Optional Boot Files</key>
+			<array>
+				<string>/System/Library/CoreServices/.disk_label_2x</string>
+				<string>/System/Library/CoreServices/.disk_label.contentDetails</string>
+				<string>/System/Library/CoreServices/.disk_label</string>
+			</array>
+			<key>Boot Files</key>
+			<array>
+				<string>/System/Library/CoreServices/PlatformSupport.plist</string>
+				<string>/System/Library/CoreServices/SystemVersion.plist</string>
+				<string>/Library/Preferences/SystemConfiguration/com.apple.Boot.plist</string>
+				<string>/System/Library/CoreServices/boot.efi</string>
+				<string>/System/Library/PrelinkedKernels/immutablekernel</string>
+				<string>/System/Library/PrelinkedKernels/prelinkedkernel</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DisablePackages</key>
+		<array>
+			<string>com.apple.pkg.RAWCamera</string>
+		</array>
+		<key>Description</key>
+		<string>6648253 6945471</string>
+		<key>Predicate</key>
+		<string>( SUBQUERY( packages, $p, $p.identifier == &quot;com.apple.pkg.iLife&apos;08&quot; &amp;&amp; ( $p.version == &quot;8.0.1.2660000.1915&quot; || $p.version == &quot;8.0.1.2660200.1927&quot; ) ).@count != 0 )</string>
+	</dict>
+</array>
+</plist>

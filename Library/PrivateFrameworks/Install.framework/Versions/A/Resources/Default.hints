@@ -1,0 +1,80 @@
+/*********************************************************************************
+ * $Id: Default.hints,v 1.10 2007/10/04 18:43:36 ryanc Exp $
+ *
+ * Upgrading hints for Mac OS X.  
+ *
+ * This file may be modified to alter the way in which Upgrader treats
+ * certain files.  Files for which no hints are provided, or for which
+ * the hints provided are not relevant given the actual conditions of the
+ * upgrade, are handled using built-in heuristics. 
+ *  
+ * A hints file is an ASCII property list consisting of an array of
+ * arrays. Each subarray contains a regular expression, followed by a list
+ * of attributes to be applied to paths which match the expression.
+ * The attempt to match a given path to suitable expressions stops when the
+ * first match is found.
+ *  
+ * The following attributes are available:
+ * 
+ *  +ignore      Don't even checksum this file.  Don't mess with it no 
+ *               matter what.  Children of an ignored folder are also ignored.
+ *
+ *
+ * Attributes may be freely intermixed, except that +ignore is incompatible
+ * with everything else, and the + and - version of the same attribute may
+ * not be used together.
+ *
+ * A couple of translations are performed on the input expressions 
+ * to make the expression matching look more like shell globbing:
+ *
+ *  ?  becomes .         Match any character
+ *  *  becomes [^/]*     Match anything, but not across components
+ *  \* becomes *         0 or more of preceeding expression
+ *  .  becomes \.        Dots are literal
+ *
+ * EXCEPTION: '*' at the end of an expression with no other special characters
+ * matches any filename which matches the expression up to the '*'.  This is 
+ * different from the usual behavior of '*' in that multiple components may be
+ * matched.
+ *
+ * Additionally, ^ and $ are added to the beginning and end of each entry.
+ *
+ * Copyright (C) 1991-2006 by Apple Computer, Inc. All Rights Reserved.
+ *
+ *********************************************************************************/
+(
+    ("/private/tmp/*", "+ignore"),
+    ("/private/var/tmp/*", "+ignore"),
+    ("/Mac OS 9", "+ignore"),
+    ("/private/etc/mtab", "+ignore"),
+    ("/usr/share/zoneinfo/localtime", "+ignore"),
+	("/private/etc/localtime", "+ignore"),
+    ("/private/var/vm/*", "+ignore"),
+    ("/private/var/db/netinfo/*", "+ignore"),
+    ("/private/var/run/*", "+ignore"),
+    ("/private/var/spool/fax/*", "+ignore"),
+    ("/private/var/spool/mqueue/*", "+ignore"),
+    ("/private/var/spool/postfix/*", "+ignore"),
+    ("/private/var/spool/uucp/*", "+ignore"),
+    ("/private/etc/dumpdates", "+ignore"),
+    ("/private/etc/fstab", "+ignore"),
+    ("/private/etc/iftab", "+ignore"),
+    ("/private/etc/slpsa.conf", "+ignore"),
+    ("/private/var/slp.regfile", "+ignore"),
+    ("/private/etc/exports", "+ignore"),
+    ("/private/etc/hosts.equiv", "+ignore"),
+    ("/private/etc/hosts.lpd", "+ignore"),
+    ("/private/etc/netgroup", "+ignore"),
+    ("/private/etc/networks", "+ignore"),
+    ("/private/etc/xtab", "+ignore"),
+    ("/Network/Servers", "+ignore"),
+    ("/Network/Servers/*", "+ignore"),
+    ("/private/Network/Servers", "+ignore"),
+    ("/lost+found", "+ignore"),
+    ("/usr/Devices*", "+ignore"),
+	("/Library/Preferences/DirectoryService/ContactsNodeConfig.plist", "+ignore"),
+    ("/Library/Preferences/DirectoryService/DSLDAPPlugInConfig.clpi", "+ignore"),
+    ("/Library/Preferences/DirectoryService/SearchNodeConfig.plist", "+ignore"),
+	("/private/etc/mail/access", "+ignore"),
+	("/private/etc/mail/access.db", "+ignore"),
+)

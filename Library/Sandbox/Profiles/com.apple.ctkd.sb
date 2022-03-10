@@ -1,0 +1,48 @@
+;;;
+;;; Sandbox profile for /System/Library/Frameworks/CryptoTokenKit.framework/ctkd
+;;;
+;;; Copyright (c) 2016 Apple Inc.  All Rights reserved.
+;;;
+;;; WARNING: The sandbox rules in this file currently constitute
+;;; Apple System Private Interface and are subject to change at any time and
+;;; without notice. The contents of this file are also auto-generated and
+;;; not user editable; it may be overwritten at any time.
+
+(version 1)
+(deny default)
+
+(import "system.sb")
+
+(allow file-read*
+        (path "/Library/Application Support/CrashReporter/SubmitDiagInfo.domains"))
+(allow file-read* (regex #"\.app$"))
+(allow file-read* (regex #"\.app/Contents$"))
+(allow file-read* (regex #"/Info.plist$"))
+(allow file-read* (regex #"\.appex$"))
+(allow file-read* (regex #"\.appex/Contents$"))
+
+(allow file-read-metadata)
+
+(allow mach-lookup
+        (global-name "com.apple.ctkd.slot-client")
+        (global-name "com.apple.ctkd.token-client")
+        (global-name "com.apple.ctkd.watcher-client")
+        (global-name "com.apple.ctkbind-notification")
+        (global-name "com.apple.distributed_notifications@1v3")
+        (global-name "com.apple.distributed_notifications@Uv3")
+        (global-name "com.apple.pluginkit.pkd")
+        (global-name "com.apple.securityd.xpc")
+        (global-name "com.apple.ocspd")
+        (global-name "com.apple.lsd.mapdb")
+)
+
+(allow user-preference-read
+    (preference-domain "kCFPreferencesAnyApplication"))
+
+(allow user-preference-read user-preference-write
+    (preference-domain "com.apple.security.smartcard")
+    (preference-domain "com.apple.security.ctkd-db")
+)
+
+(allow system-audit)
+

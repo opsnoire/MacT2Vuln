@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APM</key>
+	<dict>
+		<key>Default</key>
+		<array>
+			<dict>
+				<key>Exceptions</key>
+				<array>
+					<string>Apple_Boot_Raid</string>
+					<string>Apple_Boot</string>
+					<string>Apple_DMG</string>
+					<string>Apple_Encrypted</string>
+					<string>Apple_Journal</string>
+					<string>Apple_Free</string>
+					<string>Apple_HFS</string>
+					<string>Apple_HFSX</string>
+					<string>Apple_ISO</string>
+					<string>Apple_KFS</string>
+					<string>Apple_ProDOS</string>
+					<string>Apple_RAID_Offline</string>
+					<string>Apple_RAID_OfflineV1</string>
+					<string>Apple_RAID_OfflineV2</string>
+					<string>Apple_RAID</string>
+					<string>Apple_Recovery</string>
+					<string>Apple_Rhapsody_UFS</string>
+					<string>Apple_Scratch</string>
+					<string>Apple_UFS</string>
+					<string>Apple_UNIX_SVR2</string>
+					<string>Apple_XXX</string>
+					<string>DOS_FAT_12</string>
+					<string>DOS_FAT_16_S</string>
+					<string>DOS_FAT_16</string>
+					<string>DOS_FAT_32</string>
+					<string>FreeBSD Data</string>
+					<string>FreeBSD UFS</string>
+					<string>FreeBSD UFS2</string>
+					<string>FreeBSD</string>
+					<string>HPFS/NTFS</string>
+					<string>ISO</string>
+					<string>Linux Data</string>
+					<string>Linux Native</string>
+					<string>Linux LVM</string>
+					<string>Linux RAID</string>
+					<string>Linux Swap</string>
+					<string>Linux</string>
+					<string>Microsoft Basic Data</string>
+					<string>MS-DOS</string>
+					<string>NetBSD</string>
+					<string>OpenBSD</string>
+					<string>Windows_FAT_16</string>
+					<string>Windows_FAT_32</string>
+					<string>Windows_LDM</string>
+					<string>Windows_NTFS</string>
+					<string>ZFS</string>
+				</array>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_DMG</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_HFS</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>bootspace</string>
+				<key>Options</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>Apple_HFSX</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_RAID</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_RAID_OfflineV1</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>miniboot</string>
+			</dict>
+		</array>
+		<key>Apple_RAID_OfflineV2</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>1</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+	</dict>
+	<key>GPT</key>
+	<dict>
+		<key>Default</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+				<key>Exceptions</key>
+				<array>
+					<string>Apple_Boot_Raid</string>
+					<string>Apple_Boot</string>
+					<string>Apple_CoreStorage</string>
+					<string>Apple_DMG</string>
+					<string>Apple_Encrypted</string>
+					<string>Apple_Journal</string>
+					<string>Apple_Free</string>
+					<string>Apple_HFS</string>
+					<string>Apple_HFSX</string>
+					<string>Apple_ISO</string>
+					<string>Apple_KFS</string>
+					<string>Apple_KernelCoreDump</string>
+					<string>Apple_ProDOS</string>
+					<string>Apple_RAID_Offline</string>
+					<string>Apple_RAID_OfflineV1</string>
+					<string>Apple_RAID_OfflineV2</string>
+					<string>Apple_RAID</string>
+					<string>Apple_Recovery</string>
+					<string>Apple_Rhapsody_UFS</string>
+					<string>Apple_Scratch</string>
+					<string>Apple_UFS</string>
+					<string>Apple_UNIX_SVR2</string>
+					<string>Apple_XXX</string>
+					<string>DOS_FAT_12</string>
+					<string>DOS_FAT_16_S</string>
+					<string>DOS_FAT_16</string>
+					<string>DOS_FAT_32</string>
+					<string>FreeBSD Data</string>
+					<string>FreeBSD UFS</string>
+					<string>FreeBSD UFS2</string>
+					<string>FreeBSD</string>
+					<string>HPFS/NTFS</string>
+					<string>ISO</string>
+					<string>Linux Data</string>
+					<string>Linux Native</string>
+					<string>Linux LVM</string>
+					<string>Linux RAID</string>
+					<string>Linux Swap</string>
+					<string>Linux</string>
+					<string>Microsoft Basic Data</string>
+					<string>MS-DOS</string>
+					<string>NetBSD</string>
+					<string>OpenBSD</string>
+					<string>Windows_FAT_16</string>
+					<string>Windows_FAT_32</string>
+					<string>Windows_LDM</string>
+					<string>Windows_NTFS</string>
+					<string>ZFS</string>
+				</array>
+			</dict>
+		</array>
+		<key>Apple_CoreStorage</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_APFS</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+		</array>
+		<key>Apple_DMG</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_HFS</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>recovery</string>
+			</dict>
+		</array>
+		<key>Apple_HFSX</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>recovery</string>
+			</dict>
+		</array>
+		<key>Apple_RAID</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_RAID_Offline</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>Apple_RAID_OfflineV2</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootroot</string>
+			</dict>
+		</array>
+		<key>ZFS</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+			<dict>
+				<key>Loader Type</key>
+				<integer>6</integer>
+				<key>LoaderID</key>
+				<string>bootspace</string>
+			</dict>
+		</array>
+		<key>Media</key>
+		<array>
+			<dict>
+				<key>Loader Type</key>
+				<integer>5</integer>
+				<key>LoaderID</key>
+				<string>efi</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

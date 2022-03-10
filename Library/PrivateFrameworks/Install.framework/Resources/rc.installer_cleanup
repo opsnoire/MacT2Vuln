@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# rc.installer_cleanup
+# 2002-05-29 pmb@apple.com
+# Copyright 2002 Apple Computer, Inc.
+
+srcdir="/System/InstallAtStartup"      # no trailing slash on this line!
+scripts="${srcdir}/scripts/"           # but it's essential on this line!
+restartpath="${srcdir}/.InstallAtStartupRestartAgain" # restart cookie path
+
+for script in `/bin/ls "${scripts}"`
+do
+  "${scripts}${script}"
+done
+
+# set a variable if restart cookie is present
+restart=false
+if [ -f "${restartpath}" ]; then 
+  restart=true
+fi
+
+rm -rf "${srcdir}"                     # hope those scripts ran ok
+rm -rf /etc/rc.installer_cleanup       # there's no going back
+
+# restart if necessary
+if [ "${restart}_" = "true_" ]; then
+  /sbin/reboot
+fi

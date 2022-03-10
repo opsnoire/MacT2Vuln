@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>TimeSync</string>
+	<key>BuildVersion</key>
+	<string>1805</string>
+	<key>CFBundleShortVersionString</key>
+	<string>840.3</string>
+	<key>CFBundleVersion</key>
+	<string>840.3</string>
+	<key>ProjectName</key>
+	<string>TimeSync_kext</string>
+	<key>SourceVersion</key>
+	<string>840003000000000</string>
+</dict>
+</plist>

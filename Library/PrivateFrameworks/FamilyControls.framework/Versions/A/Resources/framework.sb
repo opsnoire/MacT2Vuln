@@ -1,0 +1,3 @@
+(if (entitlement "com.apple.private.familycontrols")
+	(begin
+      (allow mach-lookup (global-name "com.apple.familycontrols"))))

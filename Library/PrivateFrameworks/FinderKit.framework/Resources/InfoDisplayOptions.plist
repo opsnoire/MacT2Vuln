@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+
+<!-- This plist contains settings used to configure what additional information			-->
+<!-- will be displayed in icon view items.  Specifying that an item should display		-->
+<!-- a specific property does not guarantee that it will.  If the property specified	-->
+<!-- is not appropriate to the type, the default propery will be used.					-->
+<!-- 																					-->
+<!-- Here are the types that can display info:											-->
+<!--		ApplicationDisplayKind														-->
+<!-- 		AudioDisplayKind															-->
+<!-- 		DocumentDisplayKind															-->
+<!-- 		FolderDisplayKind															-->
+<!-- 		ImageDisplayKind															-->
+<!-- 		TextDisplayKind																-->		
+<!-- 		VideoDisplayKind															-->
+<!-- 		VolumeDisplayKind															-->
+<!-- 																					-->
+<!-- 																					-->
+<!-- These are the property types that a type may be able to display.  Use the			-->
+<!-- number before the name, not the name iteself.										-->
+<!-- 		0. kDisplayNone																-->
+<!-- 		1. kDisplayDefault															-->
+<!-- 		2. kDisplayFileSize															-->
+<!-- 		3. kDisplayCreationDate														-->
+<!-- 		4. kDisplayModificationDate													-->
+<!-- 		5. kDisplayDuration															-->
+<!-- 		6. kDisplayBitrate															-->
+<!-- 		7. kDisplayDimensions														-->
+<!-- 		8. kDisplayBitDepth															-->
+<!-- 		9. kDisplayVersion															-->
+<!-- 		10. kDisplayVolumeInfo														-->
+<!-- 		11. kDisplayItemCount														-->
+<!-- 																					-->
+<!-- 																					-->
+		
+<plist version="0.9">
+<dict>
+	<key>ApplicationDisplayKind</key>
+	<integer>0</integer>
+
+	<key>AudioDisplayKind</key>
+	<integer>5</integer>
+
+	<key>DocumentDisplayKind</key>
+	<integer>0</integer>
+
+	<key>FolderDisplayKind</key>
+	<integer>11</integer>
+
+	<key>ImageDisplayKind</key>
+	<integer>7</integer>
+
+	<key>TextDisplayKind</key>
+	<integer>0</integer>
+
+	<key>VideoDisplayKind</key>
+	<integer>5</integer>
+
+	<key>VolumeDisplayKind</key>
+	<integer>10</integer>
+
+	<key>ArchiveDisplayKind</key>
+	<integer>2</integer>
+</dict>
+</plist>

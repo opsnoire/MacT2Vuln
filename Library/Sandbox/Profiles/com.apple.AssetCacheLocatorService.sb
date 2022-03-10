@@ -1,0 +1,43 @@
+(version 1)
+(deny default)
+(import "bsd.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+(system-network)
+(define (home-literal home-relative-literal)
+       (literal (string-append (param "USER_HOME") home-relative-literal)))
+(allow file-read*
+       (literal "/Library/Keychains/System.keychain")
+       (literal "/Library/Preferences/.GlobalPreferences.plist")
+       (literal "/Library/Preferences/SystemConfiguration/preferences.plist")
+       (literal "/Library/Preferences/com.apple.AssetCacheClientProfiles.plist")
+       (literal "/Library/Preferences/com.apple.AssetCacheLocatorService.plist")
+       (literal "/Library/Preferences/com.apple.security.plist")
+       (literal "/Library/Preferences/com.apple.security.revocation.plist")
+       (home-literal "/Library/Preferences/com.apple.security.plist")
+       (home-literal "/Library/Preferences/com.apple.security.revocation.plist")
+       (subpath "/private/var/db/mds"))
+(allow file-read* file-write*
+       (subpath (param "USER_CACHE_PATH"))
+       (subpath (param "USER_TEMP_PATH")))
+(allow ipc-posix-shm-read-data ipc-posix-shm-write-data
+       (ipc-posix-name "com.apple.AppleDatabaseChanged"))
+(allow mach-lookup
+       (global-name "com.apple.AssetCacheC.builtin")
+       (global-name "com.apple.cfnetwork.AuthBrokerAgent")
+       (global-name "com.apple.cfnetwork.cfnetworkagent")
+       (global-name "com.apple.DiskArbitration.diskarbitrationd")
+       (global-name "com.apple.SecurityServer")
+       (global-name "com.apple.SystemConfiguration.DNSConfiguration")
+       (global-name "com.apple.SystemConfiguration.configd")
+       (global-name "com.apple.lsd.mapdb")
+       (global-name "com.apple.metadata.mds")
+       (global-name "com.apple.ocspd"))
+(allow network-inbound
+       (local udp))
+(allow network-outbound
+       (literal "/private/var/run/mDNSResponder")
+       (remote tcp)
+       (remote udp "*:53"))
+(allow network-bind
+       (local udp))

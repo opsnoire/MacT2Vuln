@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GENERIC_ACCEPT</key>
+	<string>SUBQUERY(extensionItems, $extensionItem, SUBQUERY($extensionItem.attachments, $attachment, ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $TYPE).@count &lt;= $SPECIFIED_COUNT).@count == 1</string>
+	<key>GENERIC_REJECT_EXCEPT_ONE_OTHER_TYPE</key>
+	<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment,
+                  (ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $TYPE)
+                  AND NOT (ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $OTHER_TYPE)).@count == 0).@count == 1</string>
+	<key>GENERIC_REJECT_EXCEPT_MULTIPLE_OTHER_TYPES</key>
+	<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment,
+                  (ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $TYPE) AND
+                  (SUBQUERY($OTHER_TYPES, $otherType,
+                   ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $otherType).@count == 0)).@count == 0).@count == 1</string>
+	<key>GENERIC_ENFORCE_ALL_TYPES</key>
+	<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment,
+                  (SUBQUERY($TYPES, $type,
+                   ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $type).@count &gt; 0)).@count == $extensionItem.attachments.@count).@count == 1</string>
+	<key>GENERIC_ENFORCE_ANY_TYPE</key>
+	<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment,
+                  (SUBQUERY($TYPES, $type,
+                   ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO $type).@count &gt; 0)).@count &gt;0).@count == 1</string>
+	<key>GENERIC_ENFORCE_ALL_TYPES_WITH_EXCEPTIONS</key>
+	<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment,
+         SUBQUERY($attachment.registeredTypeIdentifiers, $registeredType,
+                  SUBQUERY($TYPES, $type, $registeredType UTI-CONFORMS-TO $type).@count &gt; 0
+                  AND SUBQUERY($REJECTED_TYPES, $rejectedType, $registeredType UTI-CONFORMS-TO $rejectedType).@count == 0).@count &gt; 0).@count &gt;= $extensionItem.attachments.@count).@count == 1                   </string>
+	<key>GENERIC_ENFORCE_ANY_TYPE_WITH_EXCEPTIONS</key>
+	<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment,
+         SUBQUERY($attachment.registeredTypeIdentifiers, $registeredType,
+                  SUBQUERY($TYPES, $type, $registeredType UTI-CONFORMS-TO $type).@count &gt; 0
+                  AND SUBQUERY($REJECTED_TYPES, $rejectedType, $registeredType UTI-CONFORMS-TO $rejectedType).@count == 0).@count &gt; 0).@count &gt; 0).@count == 1</string>
+	<key>RULES</key>
+	<dict>
+		<key>NSExtensionActivationSupportsWebPageWithMaxCount</key>
+		<dict>
+			<key>TYPE</key>
+			<string>com.apple.active-webpage</string>
+		</dict>
+		<key>NSExtensionActivationSupportsWebURLWithMaxCount</key>
+		<dict>
+			<key>ACCEPT</key>
+			<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment, (ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.url&quot;)
+                                                            AND (NONE $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.apple.active-webpage&quot;)
+                                                            AND (NONE $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.file-url&quot;)).@count
+         &lt;= $SPECIFIED_COUNT).@count == 1</string>
+			<key>REJECT</key>
+			<string>SUBQUERY(extensionItems, $extensionItem,
+         SUBQUERY($extensionItem.attachments, $attachment, (ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.url&quot;)
+                                                            AND (NONE $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;com.apple.active-webpage&quot;)
+                                                            AND (NONE $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.file-url&quot;)).@count
+         == 0).@count == 1</string>
+			<key>TYPE</key>
+			<string>public.url</string>
+			<key>EXCEPT_TYPES</key>
+			<array>
+				<string>public.file-url</string>
+			</array>
+		</dict>
+		<key>NSExtensionActivationSupportsFileWithMaxCount</key>
+		<dict>
+			<key>TYPE</key>
+			<string>public.file-url</string>
+			<key>NSExtensionActivationSupportsMovieWithMaxCount</key>
+			<dict>
+				<key>TYPE</key>
+				<string>public.movie</string>
+			</dict>
+			<key>NSExtensionActivationSupportsText</key>
+			<dict>
+				<key>ACCEPT</key>
+				<string>TRUEPREDICATE</string>
+				<key>TYPES</key>
+				<array>
+					<string>public.plain-text</string>
+					<string>public.rtf</string>
+				</array>
+				<key>REJECT</key>
+				<string>(SUBQUERY(extensionItems, $extensionItem, $extensionItem.contentText == NULL).@count == 1) AND (SUBQUERY(extensionItems, $extensionItem, SUBQUERY($extensionItem.attachments, $attachment, ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.text&quot;).@count == 0).@count == 1)</string>
+			</dict>
+			<key>NSExtensionActivationSupportsImageWithMaxCount</key>
+			<dict>
+				<key>TYPE</key>
+				<string>public.image</string>
+			</dict>
+		</dict>
+		<key>NSExtensionActivationSupportsAttachmentsWithMinCount</key>
+		<string>SUBQUERY(extensionItems, $extensionItem, $extensionItem.attachments.@count &gt;= $SPECIFIED_COUNT).@count == 1</string>
+		<key>NSExtensionActivationSupportsAttachmentsWithMaxCount</key>
+		<string>SUBQUERY(extensionItems, $extensionItem, $extensionItem.attachments.@count &lt;= $SPECIFIED_COUNT).@count == 1</string>
+	</dict>
+</dict>
+</plist>

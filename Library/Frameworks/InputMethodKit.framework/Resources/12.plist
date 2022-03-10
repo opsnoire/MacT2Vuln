@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>horizontal.leftMargin</key>
+	<integer>6</integer>
+	<key>middleMargin</key>
+	<integer>2</integer>
+	<key>vertical.titleMargin</key>
+	<integer>18</integer>
+	<key>minimumCandidateWidthForHorizontal</key>
+	<integer>52</integer>
+	<key>groupStringProperties</key>
+	<dict>
+		<key>fontSize</key>
+		<integer>9</integer>
+		<key>color</key>
+		<string>0.5 0.5 0.5 1.0</string>
+	</dict>
+	<key>guideStringProperties</key>
+	<dict>
+		<key>fontSize</key>
+		<integer>9</integer>
+		<key>color</key>
+		<string>0.4 0.4 0.4 1.0</string>
+	</dict>
+	<key>noCandidatesStringProperties</key>
+	<dict>
+		<key>fontSize</key>
+		<integer>12</integer>
+		<key>color</key>
+		<string>0.6 0.6 0.6 1.0</string>
+	</dict>
+	<key>vertical.leftMargin</key>
+	<integer>9</integer>
+	<key>selectionViewHeight</key>
+	<string>24</string>
+	<key>padding</key>
+	<integer>4</integer>
+	<key>candidateThickness</key>
+	<integer>24</integer>
+	<key>horizontal.titleMargin</key>
+	<integer>16</integer>
+	<key>groupBarThickness</key>
+	<integer>24</integer>
+	<key>annotationStringProperties</key>
+	<dict>
+		<key>fontSize</key>
+		<integer>9</integer>
+		<key>color</key>
+		<string>0.5 0.5 0.5 1.0</string>
+	</dict>
+	<key>titleStringProperties</key>
+	<dict>
+		<key>fontSize</key>
+		<integer>12</integer>
+	</dict>
+</dict>
+</plist>

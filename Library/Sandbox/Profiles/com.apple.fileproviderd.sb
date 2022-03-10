@@ -1,0 +1,289 @@
+;;; Copyright (c) 2017 Apple Inc.  All Rights reserved.
+;;;
+;;; WARNING: The sandbox rules in this file currently constitute
+;;; Apple System Private Interface and are subject to change at any time and
+;;; without notice.
+;;;
+
+;;; build with:
+;;; sbutil compile -D HOME=${HOME} -D TMPDIR=${TMPDIR} DARWIN_CACHE_DIR=${HOME}/Library/Caches com.apple.fileproviderd.sb
+
+(version 1)
+
+(deny default)
+(deny file-map-executable iokit-get-properties process-info* nvram*)
+(deny dynamic-code-generation)
+
+(import "system.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+;;; Homedir-relative path filters
+(define (home-regex home-relative-regex)
+  (regex (string-append "^" (regex-quote (param "HOME")) home-relative-regex)))
+
+(define (home-subpath home-relative-subpath)
+  (subpath (string-append (param "HOME") home-relative-subpath)))
+
+(define (home-prefix home-relative-prefix)
+  (prefix (string-append (param "HOME") home-relative-prefix)))
+
+(define (home-literal home-relative-literal)
+  (literal (string-append (param "HOME") home-relative-literal)))
+
+(allow process-info* (target self))
+
+;; UUID pattern matching stolen from AppSandbox/application.sb
+
+;;; <rdar://problem/15673466>
+;;; UUID of the form: XXXXXXXX-XXXX-XXXX--XXXX-XXXXXXXXXXXX
+;;; That's 8X-4X-4X-4X-12X; where X = "[0-9A-F]", length(X) = 8
+;;; Return a regex string which matches capital hex digit patterns
+;;; pattern descriptor is an list of integers where the element specifies the repeat
+;;; count of the hex digit; 0 means insert a dash
+;;; You can paste these functions into: https://repl.it/languages/Scheme
+(define (HEX-pattern-match-generator pattern-descriptor)
+    (letrec ((pattern-string ""))
+        (for-each  (lambda (repeat-count)
+            (if (zero? repeat-count)
+                (set! pattern-string (string-append  pattern-string "-"))
+                (let appender ((count repeat-count))
+                    (if (> count 0)
+                        (begin
+                            (set! pattern-string (string-append  pattern-string "[0-9A-F]"))
+                            (appender (- count 1)))))))
+        pattern-descriptor)
+    pattern-string)
+)
+
+;; return a regex pattern matching string for 8-4-4-4-12 UUIDs:
+(define (uuid-HEX-pattern-match-string)
+(HEX-pattern-match-generator '(8 0 4 0 4 0 4 0 12)))
+
+;; global to hold the computed UUID matching pattern.
+(define *uuid-pattern* "")
+
+(define (uuid-regex-string)
+       (if (zero? (string-length *uuid-pattern*))
+              (set! *uuid-pattern* (uuid-HEX-pattern-match-string)))
+       *uuid-pattern*
+)
+
+;; root when running in enterprise persona context
+(define (enterprise-context-root)
+       (regex (string-append "^/Volumes/" (uuid-regex-string) "(/|$)"))
+)
+
+(define (enterprise-context-tmp)
+       (regex (string-append "^/Volumes/" (uuid-regex-string) #"/tmp/com.apple.fileproviderd(/|$)"))
+)
+
+(define (enterprise-context-library)
+       (regex (string-append "^/Volumes/" (uuid-regex-string) #"/Library/Application Support/FileProvider(/|$)"))
+)
+
+;; For resolving symlinks, realpath(3), and equivalents.
+(allow file-read-metadata)
+
+;; For validating the entitlements of clients.
+(allow process-info-codesignature)
+
+;; Read/write access to a temporary directory.
+(allow file-read* file-write*
+       (enterprise-context-tmp)
+       (subpath (param "TMPDIR"))
+       (subpath (param "DARWIN_CACHE_DIR"))
+       (subpath (param "DARWIN_TEMP_DIR"))
+       (extension "com.apple.app-sandbox.read-write")
+       (extension "com.apple.app-sandbox.read")
+)
+
+(allow file-read*
+       (extension "com.apple.app-sandbox.read")
+)
+
+;; issue extensions for alternate file contents in iWork container
+(let ((extension-path-filter
+    (require-any
+       (home-regex (string-append "/Containers/Data/[^/]+/[^/]+/Library/Application Support/Collaboration/com.apple.iWork/"))
+       (subpath (param "TMPDIR")))))
+  (allow file-issue-extension
+    (require-all
+      (extension-class "com.apple.app-sandbox.read-write")
+       extension-path-filter)))
+
+(allow mach-lookup
+    (global-name "com.apple.DesktopServicesHelper")
+    (global-name "com.apple.CoreServices.coreservicesd")
+    (global-name "com.apple.ProgressReporting")
+    (global-name "com.apple.FileCoordination")
+    (global-name "com.apple.cache_delete")
+    (global-name "com.apple.distributed_notifications@Uv3")
+    (global-name "com.apple.lsd.mapdb")
+    (global-name "com.apple.lsd.modifydb")
+    (global-name "com.apple.lsd.xpc")
+    (global-name "com.apple.pluginkit.pkd")
+    (global-name "com.apple.runningboard")
+    (global-name "com.apple.revisiond")
+    (global-name "com.apple.spotlight.IndexAgent")
+    (global-name "com.apple.spotlight.SearchAgent")
+    (global-name "com.apple.FSEvents")
+    (global-name "com.apple.coreservices.quarantine-resolver")
+    (global-name "com.apple.coresymbolicationd")
+    (global-name "com.apple.metadata.mds")
+    (global-name "com.apple.apsd")                          ;; PKPushRegistry
+    (global-name "com.apple.SystemConfiguration.configd")   ;; PKPushRegistry
+    (global-name "com.apple.windowserver.active")           ;; PKPushRegistry
+    (global-name "com.apple.tccd")                          ;; Presence TCC
+    (global-name "com.apple.tccd.system")                   ;; Presence TCC
+    (global-name "com.apple.scopedbookmarksagent.xpc")
+    (global-name "com.apple.UNCUserNotification")
+    (global-name "com.apple.coreservices.launchservicesd")
+    (global-name "com.apple.iconservices")
+    (global-name "com.apple.analyticsd")
+    (global-name "com.apple.sandboxd")
+    (global-name "com.apple.cloudd")
+    (global-name "com.apple.mobile.keybagd.xpc")
+    (global-name "com.apple.dock.fullscreen")
+    (global-name "com.apple.CoreDisplay.master")
+    (global-name "com.apple.fonts")
+)
+
+(allow process-info-dirtycontrol
+    (target self))
+
+;; for logging client names
+(allow process-info-pidinfo)
+
+(allow user-preference* (preference-domain "com.apple.fileproviderd"))
+;; Alias for .GlobalPreferences
+(allow user-preference-read (preference-domain "kCFPreferencesAnyApplication"))
+
+(allow sysctl-write
+;; used by fpfs_enable_vnode_rapid_aging
+    (sysctl-name "kern.rage_vnode"))
+
+(allow file-read* file-write*
+    ;; We need to be able to create items in the home folder
+    (home-subpath "/")
+    (enterprise-context-root)
+)
+
+(define home-path-blacklist
+    ;; Blacklist dot files
+    (home-regex #"/\..*")
+
+    ;; Blacklist usual system folders
+    (home-subpath "/Applications/")
+    (home-subpath "/Downloads/")
+    (home-subpath "/Library/")
+    (home-subpath "/Movies/")
+    (home-subpath "/Pictures/")
+    (home-subpath "/Public/")
+    (home-subpath "/local/")
+)
+
+(deny file-read* file-write*
+    home-path-blacklist
+)
+
+(allow file-read* file-write*
+	(home-subpath "/Library/FileProvider")
+    (home-subpath "/Library/CloudStorage")
+    (home-subpath "/Library/Application Support/FileProvider")
+    (home-subpath "/Library/Mobile Documents")
+    (home-subpath "/Desktop")
+    (home-subpath "/Documents")
+
+    (enterprise-context-library)
+)
+
+(allow file-issue-extension
+    (require-all
+        (extension-class "com.apple.app-sandbox.read-write")
+        (require-any
+            (home-subpath "/Library/CloudStorage")
+            (home-subpath "/Library/Application Support/FileProvider")
+            (home-subpath "/Library/Mobile Documents")
+            (home-subpath "/")
+        )
+    )
+;; Re-issue file extension from our security app-scoped bookmark to the root of
+;; the provider.
+    (require-all
+        (extension-class "com.apple.app-sandbox.read-write")
+        (extension-class "com.apple.app-sandbox.read-write")
+    )
+)
+
+(allow file-issue-extension
+    (require-all
+        (extension-class "com.apple.app-sandbox.read")
+        (require-any
+            (home-subpath "/Library/CloudStorage")
+            (home-subpath "/Library/Application Support/FileProvider")
+            (home-subpath "/Library/Mobile Documents")
+            (home-subpath "/")
+)))
+
+(deny file-issue-extension
+    (require-all
+        (extension-class "com.apple.app-sandbox.read-write")
+        (require-any
+            home-path-blacklist
+        ))
+)
+
+(deny file-issue-extension
+    (require-all
+        (extension-class "com.apple.app-sandbox.read")
+        (require-any
+            home-path-blacklist
+        ))
+)
+
+;; observing ~/Library/FileProvider/CloudStorage also tries to read all parents
+(allow file-read-data
+    (home-literal "/Library")
+    (literal (param "HOME"))
+    (literal "/Users")
+    (literal "/Volumes")
+)
+
+(allow system-fsctl
+    (fsctl-command
+        APFSIOC_GET_DIR_STATS_EXT
+        APFSIOC_GET_PURGEABLE_FILE_FLAGS
+        APFSIOC_MAINTAIN_DIR_STATS
+        APFSIOC_MAKE_OBJECT_DATALESS
+        APFSIOC_MARK_PURGEABLE
+        APFSIOC_SYNC_ROOT_GET_FLAG
+        APFSIOC_SYNC_ROOT_SET_FLAG
+        FSIOC_CAS_BSDFLAGS
+        HFSIOC_TRANSFER_DOCUMENT_ID  ;; used in fpfs_transfer_document_id
+    )
+    (fsctl-command
+        ;; Not yet available by name in SB
+        (_IO "J" 79) ;; APFSIOC_MARK_PURGEABLE_EXT
+    )
+)
+
+;; Package detection
+(if (defined? 'system-package-check)
+    (allow system-package-check)
+)
+
+;; _CSCreateSeed, used for some obscure LSPrefs purposes
+(allow ipc-posix-shm-write-create
+    (ipc-posix-name-regex #"^/tmp/com.apple.csseed.[0-9]+$"))
+(allow ipc-posix-shm-write-data
+    (ipc-posix-name-regex #"^/tmp/com.apple.csseed.[0-9]+$"))
+(allow ipc-posix-shm-read-data
+    (ipc-posix-name-regex #"^/tmp/com.apple.csseed.[0-9]+$"))
+
+;; secure LS preferences
+(allow file-read-data
+    (home-literal "/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"))
+
+;; reading the CoreStorage encrypted status
+(allow iokit-get-properties (iokit-registry-entry-class "CoreStorageLogical"))

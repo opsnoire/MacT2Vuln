@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MinGoodLength</key>
+	<dict>
+		<key>Description</key>
+		<string>Minimum length for a good password</string>
+		<key>Message</key>
+		<string>This is a good length for a password</string>
+		<key>Value</key>
+		<integer>10</integer>
+	</dict>
+	<key>InternalChecks</key>
+	<dict>
+		<key>Cracklib</key>
+		<true/>
+		<key>SpellCheck</key>
+		<true/>
+		<key>TrailingDigits</key>
+		<true/>
+	</dict>
+	<key>Languages-Evaluate</key>
+	<string>en,de,es,fr,it,nl,pt,jp</string>
+	<key>Languages-Suggest</key>
+	<string>en</string>
+	<key>MaxLength</key>
+	<dict>
+		<key>Description</key>
+		<string>Maximum length for the password</string>
+		<key>Message</key>
+		<string>This is too long</string>
+		<key>Value</key>
+		<integer>1024</integer>
+	</dict>
+	<key>MinLength</key>
+	<dict>
+		<key>Description</key>
+		<string>Minimum length for the password</string>
+		<key>Message</key>
+		<string>This is too short</string>
+		<key>Value</key>
+		<integer>4</integer>
+	</dict>
+	<key>MinVariety</key>
+	<dict>
+		<key>Description</key>
+		<string>Minimum number of different character sets required</string>
+		<key>Message</key>
+		<string>Use a combination of upper and lower case letters, numbers and punctuation</string>
+		<key>Value</key>
+		<integer>2</integer>
+	</dict>
+	<key>PatternsProhibited</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>e-mail address</string>
+			<key>Message</key>
+			<string>This looks like an e-mail address</string>
+			<key>Value</key>
+			<string>^[a-z0-9_]{1}[a-z0-9\-_]*(\.[a-z0-9\-_]+)*@[a-z0-9]{1}[a-z0-9\-_]*(\.[a-z0-9\-_]+)*\.[a-z]{2,4}$</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>e-mail address</string>
+			<key>Message</key>
+			<string>This looks like an e-mail address</string>
+			<key>Value</key>
+			<string>^([\w\d\-\.]+)@{1}(([\w\d\-]{1,67})|([\w\d\-]+\.[\w\d\-]{1,67}))\.(([a-zA-Z\d]{2,4})(\.[a-zA-Z\d]{2})?)$</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Social Security number</string>
+			<key>Message</key>
+			<string>This looks like a Social Security number</string>
+			<key>Value</key>
+			<string>^(?!000)([0-6]\d{2}|7([0-6]\d|7[012]))([ -]?)(?!00)\d\d\3(?!0000)\d{4}$</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>e-mail address</string>
+			<key>Message</key>
+			<string>This looks like an e-mail address - I4</string>
+			<key>Value</key>
+			<string>^[\w\d_]{1}([\w\d\.-]*)@{1}(([\w\d-]{1,67})|([\w\d-]+\.[\w\d-]{1,67}))\.(([a-zA-Z\d]{2,4})(\.[a-zA-Z\d]{2})?)$</string>
+		</dict>
+	</array>
+</dict>
+</plist>

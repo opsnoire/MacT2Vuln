@@ -1,0 +1,2 @@
+Since the view is actually identical to the one used for image create from folder we just use that one instead. Which is actually a convert! So, the convert
+save panel works just fine. 

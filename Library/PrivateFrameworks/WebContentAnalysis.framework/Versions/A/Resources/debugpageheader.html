@@ -1,0 +1,190 @@
+
+
+
+
+
+<!-- WebFilter Body Injection	-->
+<!-- DEBUG_MESSAGE	-->
+<!-- FILTER_MESSAGE	-->
+
+<style>
+.AppleWebFilterInjection_Text {
+			color:yellow							;
+			font:11px 'lucida grande',sans-serif	;
+			vertical-align:middle					;
+			font-style:normal						;
+			font-weight:none						;
+			text-decoration: none					;
+			text-transform:none						;
+			font-variant:none						;
+			letter-spacing: 0px						;
+			background:FILTER_FLAG_COLOR			; 
+			border:0px								;
+			border-width:0px						;
+			border-style:none						;
+			padding:0px 0px 0px						;
+			text-align:left							;
+			vertical-align:middle					;
+			
+			position:relative						;
+			z-index:1000							;
+}
+
+.AppleWebFilterInjection_MonopacedText {
+			color:black								;
+			font:12px 'Courier', sans-serif			;
+			vertical-align:top						;
+			font-style:normal						;
+			font-weight:none						;
+			text-decoration: none					;
+			text-transform:none						;
+			font-variant:none						;
+			letter-spacing: 0px						;
+			border:0px								;
+			border-width:0px						;
+			border-style:none						;
+			padding:0px 0px 0px						;
+			text-align:left							;
+			
+			position:relative						;
+			z-index:1000							;
+}
+
+.AppleWebFilterInjection_Menu {
+			
+			color:yellow		 					;
+			background:FILTER_FLAG_COLOR			;
+			font:11px 'lucida grande',sans-serif	;
+			vertical-align:middle					;
+			border:0px								;
+		
+			font-style:normal						;
+			font-weight:none						;
+			text-decoration: none					;
+			text-transform:none						;
+			font-variant:none						;
+			letter-spacing: 0px						;
+		
+			border-style:solid						;
+			text-align:right						;
+			border-color:black 						;
+			padding:5px 5px 5px						;
+			
+			position:relative						;
+			z-index:1000							;
+}
+
+
+</style>
+
+<script>
+
+
+function showStrippedPage()
+{
+	var selectionValueDiv = document.getElementById('SelectionValue');
+	
+	var strippedPageResult = document.getElementById('StrippedPage');
+	
+	selectionValueDiv.innerHTML = strippedPageResult.innerHTML;
+}
+
+function showWordDump()
+{
+	var selectionValueDiv = document.getElementById('SelectionValue');
+	
+	var wordDumpResult = document.getElementById('WordDump');
+	
+	selectionValueDiv.innerHTML = wordDumpResult.innerHTML;
+}
+
+var isTableVisible = 0;
+function showWhy()
+{
+	var div = document.getElementById('WhyInfo');
+	var selectionValueDiv = document.getElementById('SelectionValue');	
+		
+	if (isTableVisible == 0) {
+		var menu = document.getElementById('WhyMenu');
+		div.innerHTML = menu.innerHTML;
+		
+		isTableVisible = 1;
+		showWordDump()
+	}
+	else {
+		div.innerHTML = "";
+		selectionValueDiv.innerHTML = "";
+		isTableVisible = 0;
+	}
+}
+
+function reportBug()
+{
+// toolbar=yes,  resizable=yes, scrollbars=yes, 
+	window.open("http://morgue.apple.com/webfilter/reportbug.php?URL="+document.location+"&judge=FILTER_MESSAGE"+"&description="+document.title,
+				"",
+				"width=650, height=500, resizable=yes, location=yes, status=yes");
+}
+
+</script>
+
+<div style="background:FILTER_FLAG_COLOR;z-index:1000;">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" class="AppleWebFilterInjection_Text">
+		<tr class="AppleWebFilterInjection_Text">
+		
+			<td width="40" style="padding-left:10pt;" class="AppleWebFilterInjection_Text">
+				<img width="32" height="24" src="data:image/png;base64,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">	
+			</td>
+			
+			<td width="150" class="AppleWebFilterInjection_Text">
+				Web Filter debug is on
+			</td> 
+			
+			<td style="text-align:center;" class="AppleWebFilterInjection_Text" >
+				DEBUG_MESSAGE
+			</td>
+			
+			<td width="150" style="text-align:center;" class="AppleWebFilterInjection_Text">
+				<a href="javascript:showWhy()"> <div class="AppleWebFilterInjection_Text"> FILTER_MESSAGE, why?</div></a>
+			</td>
+			
+		</tr>
+	</table>
+	
+	<div style="background:white;z-index:1000;" id="WhyInfo">
+	</div>
+	
+</div>
+
+<div style="display:none;" id="WhyMenu">
+	<div style="text-align:right;background:#FFFFEE;">
+		<br>
+		<a href="javascript:showStrippedPage()"		class="AppleWebFilterInjection_Menu">HTML-Stripped Source</a>&nbsp;&nbsp;&nbsp;
+		<a href="javascript:showWordDump()"			class="AppleWebFilterInjection_Menu">LSM Word Dump</a>&nbsp;&nbsp;&nbsp;
+		<a href="javascript:reportBug()"			class="AppleWebFilterInjection_Menu">Report Bug</a>&nbsp;&nbsp;&nbsp;
+		<br><br>
+	</div>
+</div>
+
+<div style="background:#FFFFEE;" class="AppleWebFilterInjection_MonopacedText" id="SelectionValue">
+</div>
+
+<div style="display:none;" id="StrippedPage">
+	<div style="background:#FFFFAA;text-align:center" class="AppleWebFilterInjection_MonopacedText">HTML-Stripped Source</div>
+	
+	<p style="background:#FFFFEE;" class="AppleWebFilterInjection_MonopacedText">
+			STRIPPED_PAGE
+	</p>
+</div>
+
+<div style="display:none;" id="WordDump">
+	<div style="background:#FFFFAA;text-align:center" class="AppleWebFilterInjection_MonopacedText">LSM Word Dump</div>
+	
+	<p style="background:#FFFFEE;" class="AppleWebFilterInjection_MonopacedText">
+			WORD_DUMP
+	</p>
+
+</div>
+
+<!-- WebFilter Body Injection End -->
+

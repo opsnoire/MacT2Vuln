@@ -1,0 +1,22 @@
+@media (prefers-dark-interface) {
+    #contentView .header, .simpleHeader {
+        background-image: none;
+        background-color: transparent;
+    }
+
+    #contentView {
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    #sidebar {
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+
+    #title-bar {
+        color: captiontext;
+    }
+
+    .accessCategory .accessSubtitle {
+        color: rgb(167, 167, 167);
+    }
+}

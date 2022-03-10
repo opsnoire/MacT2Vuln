@@ -1,0 +1,1868 @@
+Thu Mar 10 02:24:49.683 ***Starting Up***
+Thu Mar 10 02:24:49.685 SC: <airportd[616]> scInitInterface for device en0
+Thu Mar 10 02:24:49.686 <airportd[616]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Thu Mar 10 02:24:49.686 
+Thu Mar 10 02:24:49.686 Info: <airportd[616]> psCallback: powerSource = Battery Power
+Thu Mar 10 02:24:49.686 Info: <airportd[616]> psCallback: set powersave max throughput on en0
+Thu Mar 10 02:24:49.686 <kernel>  IOCTL (from pid 616) not recognized: 5 out of 353
+Thu Mar 10 02:24:49.686 Roam: <airportd[616]> _initInterface: AirPort Interface <en0> <9>
+Thu Mar 10 02:24:49.686 P2P: <airportd[616]> _initInterface: AirDrop disabled preference is set. Not creating p2p device interface.
+Thu Mar 10 02:24:49.687 P2P: <airportd[616]> CreateVirtualInterface: Attempting to create AWDL interface for en0 with MAC address 6:80:ae:bb:ee:cc (attemptNumber = 0)
+Thu Mar 10 02:24:49.689 <kernel>  Creating all peerManager reporters
+Thu Mar 10 02:24:49.743 <kernel> IO80211Controller::addSubscriptionForThisReporterFetchedOnTimer() Failed to addSubscription for group Interface llw0 subgroup Data Packets driver 0x79e480822cbfb427 - data underrun
+Thu Mar 10 02:24:49.743 <kernel> IO80211InterfaceMonitor::configureSubscriptions() failed to add subscription
+Thu Mar 10 02:24:49.783 P2P: <airportd[616]> CreateVirtualInterface: Created AWDL interface awdl0 with address 6:80:ae:bb:ee:cc for en0
+Thu Mar 10 02:24:49.783 Offload: <airportd[616]> _openIpAddressMonitoringSockets: Monitoring IP address changes on en0
+Thu Mar 10 02:24:49.783 <airportd[616]> _initLocaleManager: Not started locale manager
+Thu Mar 10 02:24:49.783 <airportd[616]> _initInterface: Failed to query current SSID (Operation not supported)
+Thu Mar 10 02:24:49.786 Driver Discovery: <airportd[616]> _initAttachedAirPortInterfaces: Considering en1
+Thu Mar 10 02:24:49.786 Driver Discovery: <airportd[616]> _initAttachedAirPortInterfaces: Considering en2
+Thu Mar 10 02:24:49.786 Driver Discovery: <airportd[616]> _initAttachedAirPortInterfaces: Considering bridge0
+Thu Mar 10 02:24:49.786 <airportd[616]> airportdProcessDLILEvent: en0 attached (up)
+Thu Mar 10 02:24:49.786 Driver Discovery: <airportd[616]> airportdProcessDLILEvent: en0 attached (up)
+Thu Mar 10 02:24:49.788 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=618, euid=205, egid=205)]
+Thu Mar 10 02:24:49.808 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:24:49.809 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:24:50.291 Roam: <airportd[616]> DISABLED, 2.4GHz on en0 => {
+Thu Mar 10 02:24:50.291     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.291                 {
+Thu Mar 10 02:24:50.291             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_DELTA" = 50;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.291         }
+Thu Mar 10 02:24:50.291     );
+Thu Mar 10 02:24:50.291     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:50.291     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.291 }
+Thu Mar 10 02:24:50.291 Roam: <airportd[616]> SINGLE-BAND, SINGLE-AP, 2.4GHz on en0 => {
+Thu Mar 10 02:24:50.291     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.291                 {
+Thu Mar 10 02:24:50.291             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.291         }
+Thu Mar 10 02:24:50.291     );
+Thu Mar 10 02:24:50.291     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:50.291     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.291 }
+Thu Mar 10 02:24:50.291 Roam: <airportd[616]> DUAL-BAND, SINGLE-AP, 2.4GHz on en0 => {
+Thu Mar 10 02:24:50.291     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.291                 {
+Thu Mar 10 02:24:50.291             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_FULLSCAN_PERIOD" = 300;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_DELTA" = 16;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_LOWER" = "-75";
+Thu Mar 10 02:24:50.291         },
+Thu Mar 10 02:24:50.291                 {
+Thu Mar 10 02:24:50.291             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.291             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.291         }
+Thu Mar 10 02:24:50.291     );
+Thu Mar 10 02:24:50.291     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:50.291     "ROAM_PROF_NUM" = 2;
+Thu Mar 10 02:24:50.291 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> MULTI-AP, 2.4GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 1200;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 600;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-50";
+Thu Mar 10 02:24:50.292         },
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 600;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 16;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-50";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-75";
+Thu Mar 10 02:24:50.292         },
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 1;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+            "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.292         }
+Thu Mar 10 02:24:50.292     );
+Thu Mar 10 02:24:50.292     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:50.292     "ROAM_PROF_NUM" = 3;
+Thu Mar 10 02:24:50.292 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> AC POWER, 2.4GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 16;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-75";
+Thu Mar 10 02:24:50.292         },
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+            "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.292         }
+Thu Mar 10 02:24:50.292     );
+Thu Mar 10 02:24:50.292     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:50.292     "ROAM_PROF_NUM" = 2;
+Thu Mar 10 02:24:50.292 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> DISABLED, 5GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 50;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.292         }
+Thu Mar 10 02:24:50.292     );
+Thu Mar 10 02:24:50.292     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:50.292     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.292 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> SINGLE-BAND, SINGLE-AP, 5GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.292         }
+Thu Mar 10 02:24:50.292     );
+Thu Mar 10 02:24:50.292     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:50.292     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.292 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> DUAL-BAND, SINGLE-AP, 5GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.292         }
+Thu Mar 10 02:24:50.292     );
+Thu Mar 10 02:24:50.292     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:50.292     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.292 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> MULTI-AP, 5GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.292         }
+Thu Mar 10 02:24:50.292     );
+Thu Mar 10 02:24:50.292     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:50.292     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.292 }
+Thu Mar 10 02:24:50.292 Roam: <airportd[616]> AC POWER, 5GHz on en0 => {
+Thu Mar 10 02:24:50.292     "ROAM_PROF" =     (
+Thu Mar 10 02:24:50.292                 {
+Thu Mar 10 02:24:50.292             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:50.292             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:50.293         }
+Thu Mar 10 02:24:50.293     );
+Thu Mar 10 02:24:50.293     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:50.293     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:50.293 }
+Thu Mar 10 02:24:50.293 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext __updateAutoJoinRetryIntervals]: On battery power, changing to inactive retry interval.
+Thu Mar 10 02:24:50.294 Roam: <airportd[616]> FAILED to query roaming profile for 2.4GHz band on en0, returned error 102
+Thu Mar 10 02:24:50.294 Roam: <airportd[616]> FAILED to update roaming profile for 2.4GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Thu Mar 10 02:24:50.294 Roam: <airportd[616]> FAILED to query roaming profile for 5GHz band on en0, returned error 102
+Thu Mar 10 02:24:50.294 Roam: <airportd[616]> FAILED to update roaming profile for 5GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Thu Mar 10 02:24:50.294 Info: <airportd[616]> RESET AWDL behavior for interface en0
+Thu Mar 10 02:24:50.294 Info: <airportd[616]> STOP AWDL behavior for interface en0
+Thu Mar 10 02:24:50.302 Info: <airportd[616]> -[CWXPCInterfaceContext __createAssistedDiscoveryPolicyFromRequest:interface:active:]: no AWDL request.
+Thu Mar 10 02:24:50.302 Info: <airportd[616]> AWDL operating mode currently set to 0 (not AWDL_OPER_MODE_SUSPENDED), will not resume AWDL
+Thu Mar 10 02:24:50.473 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <0>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:24:50.473 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+
+Thu Mar 10 02:24:50.474 Driver Discovery: <airportd[616]> _interfaceAdded: awdl0 added.
+Thu Mar 10 02:24:50.475 Driver Discovery: <airportd[616]> _initInterface: awdl0 is down
+Thu Mar 10 02:24:50.475 SC: <airportd[616]> scInitInterface for device awdl0
+Thu Mar 10 02:24:50.475 <airportd[616]> _bsdDriver_init: registration for monitoring bssSteeringRequest event 
+Thu Mar 10 02:24:50.475 
+Thu Mar 10 02:24:50.475 Info: <airportd[616]> psCallback: powerSource = Battery Power
+Thu Mar 10 02:24:50.476 Info: <airportd[616]> psCallback: set powersave max throughput on awdl0
+Thu Mar 10 02:24:50.476 <kernel>  IOCTL (from pid 616) not recognized: 5 out of 353
+Thu Mar 10 02:24:50.476 Info: <airportd[616]> psCallback: set powersave disabled on en0
+Thu Mar 10 02:24:50.476 <kernel>  IOCTL (from pid 616) not recognized: 5 out of 353
+Thu Mar 10 02:24:50.476 Roam: <airportd[616]> _initInterface: AirPort Interface <awdl0> <13>
+Thu Mar 10 02:24:50.476 Driver Discovery: <airportd[616]> _virtualInterfaceShouldBeMarkedUp: awdl0 should not be marked up
+Thu Mar 10 02:24:50.476 P2P: <airportd[616]> _ipv6Request: Attaching IPv6 on awdl0
+Thu Mar 10 02:24:50.476 <kernel> IO80211VirtualInterface::handleSIOCSIFFLAGS : Source handleIoctlGated calling peerManager->enable
+Thu Mar 10 02:24:50.849 Driver Discovery: <airportd[616]> _interfaceAdded: awdl0 is an AirPort interface.
+Thu Mar 10 02:24:50.849 P2P: <airportd[616]> _interfaceLinkChanged: Starting IPv6 link local on awdl0
+Thu Mar 10 02:24:50.849 Driver Event: <airportd[616]> _bsd_80211_event_callback: POWER_CHANGED (en0)
+Thu Mar 10 02:24:50.849 BTC: <airportd[616]> BluetoothCoexistenceTickle: Triggering BTC status notification
+Thu Mar 10 02:24:50.849 P2P: <airportd[616]> AwdlNodeShouldBeMarkedUp: awdl0 should be marked up
+Thu Mar 10 02:24:50.849 P2P: <airportd[616]> _bsd_80211_event_callback: Marking awdl0 up because en0 was powered on
+Thu Mar 10 02:24:50.849 P2P: <airportd[616]> _interfaceLinkChanged: Starting IPv6 link local on awdl0
+Thu Mar 10 02:24:50.849 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:24:50.850 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:24:50.887 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext clearAllProblematicNetworks]_block_invoke: Unblacklisting all networks.
+Thu Mar 10 02:24:50.887 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext clearAllNetworksBlacklistedForScanOffload]_block_invoke: Clearing all networks blacklisted for scan offload.
+Thu Mar 10 02:24:50.887 AutoJoin: <airportd[616]> AUTO-JOIN trigger requested (Power On)
+Thu Mar 10 02:24:50.900 AutoJoin: <airportd[616]> no user logged in
+Thu Mar 10 02:24:50.900 Info: <airportd[616]> PRIORITY LOCK ADDED [client=airportd, type=4, interface=en0, priority=7]
+Thu Mar 10 02:24:50.911 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <0>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:24:50.911 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:24:50.911 
+Thu Mar 10 02:24:50.911 Driver Discovery: <airportd[616]> _interfaceAdded: llw0 added.
+Thu Mar 10 02:24:50.911 Driver Discovery: <airportd[616]> _interfaceAdded: llw0 is not an AirPort interface.
+Thu Mar 10 02:24:50.912 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:24:50.912 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:24:50.912 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:24:50.912 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:24:50.912 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:24:50.912 <airportd[616]> _interfaceFlagsChanged: KEV_DL_SIFFLAGS received for awdl0 [flags=0xffff8943 (up)].
+Thu Mar 10 02:24:50.912 <airportd[616]> _interfaceFlagsChanged: Flags changed for awdl0 (0xffff8802 -> 0xffff8943) (up).
+Thu Mar 10 02:24:50.912 Driver Discovery: <airportd[616]> _interfaceFlagsChanged: awdl0 transitioning from down to up.
+Thu Mar 10 02:24:50.986 Info: <airportd[616]> -[CWXPCSubsystem clearScanCacheWithInterfaceName:daemon:familyAndDriver:connection:error:]: Clearing family+driver scan cache for interface en0
+Thu Mar 10 02:24:50.986 Info: <airportd[616]> REQUEST DEFERRED minimum=7 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:24:50.986 AutoJoin: <airportd[616]> AUTO-JOIN STARTED for interface en0 (Power On)
+Thu Mar 10 02:24:50.986 AutoJoin: <airportd[616]> RECOVERY MODE => auto-join using NVRAM
+Thu Mar 10 02:24:50.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:24:50.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:24:50.988 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:24:50.988 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:24:50.988 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:24:50.988 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:24:50.989 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:24:51.101 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:51.102 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 1 took 0.1017 seconds, returned 2 results
+Thu Mar 10 02:24:51.202 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 2 took 0.0999 seconds, returned 0 results
+Thu Mar 10 02:24:51.274 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:51.274 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 3 took 0.0727 seconds, returned 1 results
+Thu Mar 10 02:24:51.347 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 4 took 0.0729 seconds, returned 0 results
+Thu Mar 10 02:24:51.420 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:51.420 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 5 took 0.0726 seconds, returned 3 results
+Thu Mar 10 02:24:51.492 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 6 took 0.0718 seconds, returned 0 results
+Thu Mar 10 02:24:51.565 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 7 took 0.0730 seconds, returned 0 results
+Thu Mar 10 02:24:51.635 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:51.636 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 8 took 0.0707 seconds, returned 2 results
+Thu Mar 10 02:24:51.708 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 9 took 0.0727 seconds, returned 0 results
+Thu Mar 10 02:24:51.781 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:51.781 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 10 took 0.0727 seconds, returned 1 results
+Thu Mar 10 02:24:51.853 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:51.853 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 11 took 0.0719 seconds, returned 1 results
+Thu Mar 10 02:24:51.942 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 36 took 0.0886 seconds, returned 0 results
+Thu Mar 10 02:24:52.035 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 40 took 0.0929 seconds, returned 0 results
+Thu Mar 10 02:24:52.097 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 44 took 0.0626 seconds, returned 0 results
+Thu Mar 10 02:24:52.160 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 48 took 0.0629 seconds, returned 0 results
+Thu Mar 10 02:24:52.233 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:52.233 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 149 took 0.0730 seconds, returned 1 results
+Thu Mar 10 02:24:52.306 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 153 took 0.0726 seconds, returned 0 results
+Thu Mar 10 02:24:52.379 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 157 took 0.0731 seconds, returned 0 results
+Thu Mar 10 02:24:52.452 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 161 took 0.0731 seconds, returned 0 results
+Thu Mar 10 02:24:52.525 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 165 took 0.0725 seconds, returned 0 results
+Thu Mar 10 02:24:52.686 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 12 took 0.1613 seconds, returned 0 results
+Thu Mar 10 02:24:52.846 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 13 took 0.1600 seconds, returned 0 results
+Thu Mar 10 02:24:52.978 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 52 took 0.1320 seconds, returned 0 results
+Thu Mar 10 02:24:53.114 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:53.114 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 56 took 0.1355 seconds, returned 1 results
+Thu Mar 10 02:24:53.226 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=618, euid=205, egid=205)]
+Thu Mar 10 02:24:53.234 Roam: <airportd[616]> DISABLED, 2.4GHz on awdl0 => {
+Thu Mar 10 02:24:53.234     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 50;
+            "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.234         }
+Thu Mar 10 02:24:53.234     );
+Thu Mar 10 02:24:53.234     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:53.234     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.234 }
+Thu Mar 10 02:24:53.234 Roam: <airportd[616]> SINGLE-BAND, SINGLE-AP, 2.4GHz on awdl0 => {
+Thu Mar 10 02:24:53.234     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.234         }
+Thu Mar 10 02:24:53.234     );
+Thu Mar 10 02:24:53.234     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:53.234     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.234 }
+Thu Mar 10 02:24:53.234 Roam: <airportd[616]> DUAL-BAND, SINGLE-AP, 2.4GHz on awdl0 => {
+Thu Mar 10 02:24:53.234     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 300;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 16;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-75";
+Thu Mar 10 02:24:53.234         },
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.234         }
+Thu Mar 10 02:24:53.234     );
+Thu Mar 10 02:24:53.234     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:53.234     "ROAM_PROF_NUM" = 2;
+Thu Mar 10 02:24:53.234 }
+Thu Mar 10 02:24:53.234 Roam: <airportd[616]> MULTI-AP, 2.4GHz on awdl0 => {
+Thu Mar 10 02:24:53.234     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 1200;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 600;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 20;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-50";
+Thu Mar 10 02:24:53.234         },
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 600;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 180;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 16;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-50";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-75";
+Thu Mar 10 02:24:53.234         },
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.234         }
+Thu Mar 10 02:24:53.234     );
+Thu Mar 10 02:24:53.234     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:53.234     "ROAM_PROF_NUM" = 3;
+Thu Mar 10 02:24:53.234 }
+Thu Mar 10 02:24:53.234 Roam: <airportd[616]> AC POWER, 2.4GHz on awdl0 => {
+Thu Mar 10 02:24:53.234     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 16;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 1;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-10";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_LOWER" = "-75";
+Thu Mar 10 02:24:53.234         },
+Thu Mar 10 02:24:53.234                 {
+Thu Mar 10 02:24:53.234             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_DELTA" = 55;
+Thu Mar 10 02:24:53.234             "ROAM_PROF_RSSI_BOOST_THRESH" = "-68";
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.235         }
+Thu Mar 10 02:24:53.235     );
+Thu Mar 10 02:24:53.235     "ROAM_PROF_BAND" = 4;
+Thu Mar 10 02:24:53.235     "ROAM_PROF_NUM" = 2;
+Thu Mar 10 02:24:53.235 }
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> DISABLED, 5GHz on awdl0 => {
+Thu Mar 10 02:24:53.235     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.235                 {
+Thu Mar 10 02:24:53.235             "ROAM_PROF_BACKOFF_MULTIPLIER" = 10;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_FULLSCAN_PERIOD" = 3000;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_INIT_SCAN_PERIOD" = 600;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_MAX_SCAN_PERIOD" = 60000;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_DELTA" = 50;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_TRIGGER" = "-120";
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.235         }
+Thu Mar 10 02:24:53.235     );
+Thu Mar 10 02:24:53.235     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:53.235     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.235 }
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> SINGLE-BAND, SINGLE-AP, 5GHz on awdl0 => {
+Thu Mar 10 02:24:53.235     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.235                 {
+Thu Mar 10 02:24:53.235             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_FULLSCAN_PERIOD" = 3600;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_INIT_SCAN_PERIOD" = 60;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_MAX_SCAN_PERIOD" = 1200;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_NFSCAN" = 1;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_TRIGGER" = "-80";
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.235         }
+Thu Mar 10 02:24:53.235     );
+Thu Mar 10 02:24:53.235     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:53.235     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.235 }
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> DUAL-BAND, SINGLE-AP, 5GHz on awdl0 => {
+Thu Mar 10 02:24:53.235     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.235                 {
+Thu Mar 10 02:24:53.235             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.235         }
+Thu Mar 10 02:24:53.235     );
+Thu Mar 10 02:24:53.235     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:53.235     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.235 }
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> MULTI-AP, 5GHz on awdl0 => {
+Thu Mar 10 02:24:53.235     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.235                 {
+Thu Mar 10 02:24:53.235             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.235         }
+Thu Mar 10 02:24:53.235     );
+Thu Mar 10 02:24:53.235     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:53.235     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.235 }
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> AC POWER, 5GHz on awdl0 => {
+Thu Mar 10 02:24:53.235     "ROAM_PROF" =     (
+Thu Mar 10 02:24:53.235                 {
+Thu Mar 10 02:24:53.235             "ROAM_PROF_BACKOFF_MULTIPLIER" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_FULLSCAN_PERIOD" = 120;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_INIT_SCAN_PERIOD" = 20;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_MAX_SCAN_PERIOD" = 90;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_NFSCAN" = 2;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_DELTA" = 12;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_FLAGS" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_ROAM_TRIGGER" = "-75";
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_DELTA" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_BOOST_THRESH" = 0;
+Thu Mar 10 02:24:53.235             "ROAM_PROF_RSSI_LOWER" = "-128";
+Thu Mar 10 02:24:53.235         }
+Thu Mar 10 02:24:53.235     );
+Thu Mar 10 02:24:53.235     "ROAM_PROF_BAND" = 2;
+Thu Mar 10 02:24:53.235     "ROAM_PROF_NUM" = 1;
+Thu Mar 10 02:24:53.235 }
+Thu Mar 10 02:24:53.235 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext __updateAutoJoinRetryIntervals]: On battery power, changing to inactive retry interval.
+Thu Mar 10 02:24:53.235 <kernel>  IOCTL (from pid 616) not recognized: 10 out of 353
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> FAILED to query roaming profile for 2.4GHz band on awdl0, returned error 102
+Thu Mar 10 02:24:53.235 <kernel>  IOCTL (from pid 616) not recognized: 216 out of 353
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> FAILED to update roaming profile for 2.4GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> FAILED to query roaming profile for 5GHz band on awdl0, returned error 102
+Thu Mar 10 02:24:53.235 <kernel>  IOCTL (from pid 616) not recognized: 216 out of 353
+Thu Mar 10 02:24:53.235 Roam: <airportd[616]> FAILED to update roaming profile for 5GHz band to SINGLE-BAND, SINGLE-AP, returned error 102
+Thu Mar 10 02:24:53.235 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for 673955EC-0FE8-458B-A37E-A8F35C627329 (services={
+Thu Mar 10 02:24:53.235 })
+Thu Mar 10 02:24:53.236 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:24:53.247 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 60 took 0.1330 seconds, returned 0 results
+Thu Mar 10 02:24:53.380 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 64 took 0.1331 seconds, returned 0 results
+Thu Mar 10 02:24:53.449 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:53.449 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 100 took 0.0690 seconds, returned 1 results
+Thu Mar 10 02:24:53.521 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:53.521 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 104 took 0.0719 seconds, returned 1 results
+Thu Mar 10 02:24:53.653 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 108 took 0.1316 seconds, returned 0 results
+Thu Mar 10 02:24:53.786 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 112 took 0.1331 seconds, returned 0 results
+Thu Mar 10 02:24:53.928 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 116 took 0.1417 seconds, returned 0 results
+Thu Mar 10 02:24:54.070 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 120 took 0.1428 seconds, returned 0 results
+Thu Mar 10 02:24:54.213 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 124 took 0.1427 seconds, returned 0 results
+Thu Mar 10 02:24:54.356 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 128 took 0.1430 seconds, returned 0 results
+Thu Mar 10 02:24:54.499 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 132 took 0.1428 seconds, returned 0 results
+Thu Mar 10 02:24:54.642 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 136 took 0.1429 seconds, returned 0 results
+Thu Mar 10 02:24:54.785 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 140 took 0.1428 seconds, returned 0 results
+Thu Mar 10 02:24:54.928 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 144 took 0.1427 seconds, returned 0 results
+Thu Mar 10 02:24:54.947 Assoc: <airportd[616]> Will associate to [ssid=Megacable_2.4G_7166, bssid=c2:b1:01:e6:e7:1e, channel=(channel=5, width=20), ibss=no, cc=MX, rssi=-58, rsn=(mcast=tkip, ucast={ tkip aes_ccm }, auths={ psk }, caps=0x0), wpa=(mcast=tkip, ucast={ tkip ccmp }, auths={ psk }), wep=no]
+Thu Mar 10 02:24:54.948 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:24:54.949 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:24:54.949 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:24:54.949 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:24:54.949 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:24:54.949 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:24:54.949 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:24:54.950 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:24:54.950 Assoc: <airportd[616]> -[CWXPCSubsystem __associateToWiFiNetwork:tetherDevice:password:is8021X:passpointDomain:remember:possiblyHidden:updateUserKeychain:interface:processName:suspendAWDLToken:error:]_block_invoke: CWAWDMetricsOneStatsRecordAssocStats [WIFI_METRICS_ONESTATS_ASSOC_START_EVENT]
+Thu Mar 10 02:24:54.950 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats. Processing Event:1 
+Thu Mar 10 02:24:54.950 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats: OneStats is NOT Configured! No-op here- Returning!
+Thu Mar 10 02:24:54.971 Info: <airportd[616]> -[CWXPCInterfaceContext __setAWDLOperatingMode:interface:error:]: attempting to set AWDL mode to 2
+Thu Mar 10 02:24:54.971 Info: <airportd[616]> SUSPEND AWDL for interface en0, timeout=10.0s, reason=Assoc, token=1
+Thu Mar 10 02:24:55.086 <kernel> postMessage::1349 APPLE80211_M_BSSID_CHANGED received
+Thu Mar 10 02:24:55.086  <kernel> postMessage::1349 APPLE80211_M_BSSID_CHANGED received
+Thu Mar 10 02:24:55.086  Driver Event: <airportd[616]> _bsd_80211_event_callback: LINK_CHANGED (en0)
+Thu Mar 10 02:24:55.125 AutoJoin: <airportd[616]> BEST CONNECTED SCAN SCHEDULED on interface en0 in 20.0s
+Thu Mar 10 02:24:55.129 Driver Event: <airportd[616]> _bsd_80211_event_callback: SSID_CHANGED (en0)
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:24:55.129 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+Thu Mar 10 02:24:55.129 Driver Event: <airportd[616]> _bsd_80211_event_callback: BSSID_CHANGED (en0)
+Thu Mar 10 02:24:55.129 Info: <airportd[616]> _bsd_80211_event_callback: Frequency Band updated <0>
+Thu Mar 10 02:24:55.131 Driver Event: <airportd[616]> _bsd_80211_event_callback: LINK_CHANGED (en0)
+Thu Mar 10 02:24:55.131 Driver Event: <airportd[616]> _bsd_80211_event_callback: BSSID_CHANGED (en0)
+Thu Mar 10 02:24:55.131 Info: <airportd[616]> _bsd_80211_event_callback: Frequency Band updated <1>
+Thu Mar 10 02:24:55.137 Driver Event: <airportd[616]> _bsd_80211_event_callback: SSID_CHANGED (en0)
+Thu Mar 10 02:24:55.241 Assoc: <airportd[616]> Successfully associated to Wi-Fi network Megacable_2.4G_7166 on interface en0
+Thu Mar 10 02:24:55.241 Assoc: <airportd[616]> -[CWXPCSubsystem __associateToWiFiNetwork:tetherDevice:password:is8021X:passpointDomain:remember:possiblyHidden:updateUserKeychain:interface:processName:suspendAWDLToken:error:]_block_invoke_2: CWAWDMetricsOneStatsRecordAssocStats [WIFI_METRICS_ONESTATS_ASSOC_COMPLETE_EVENT]
+Thu Mar 10 02:24:55.241 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats. Processing Event:2 
+Thu Mar 10 02:24:55.241 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats: OneStats is NOT Configured! No-op here- Returning!
+Thu Mar 10 02:24:55.241 Info: <airportd[616]> -[CWXPCInterfaceContext __manageProblematicNetworks:addProblematic:reason:]: null profile
+Thu Mar 10 02:24:55.241 Info: <airportd[616]> -[CWXPCInterfaceContext manageNetworksBlacklistedForScanOffload:blacklistNetwork:reason:]_block_invoke: null profile
+Thu Mar 10 02:24:55.241 Info: <airportd[616]> -[CWXPCInterfaceContext manageNetworksBlacklistedForScanOffload:blacklistNetwork:reason:]_block_invoke: 0 network(s) blacklisted for scan offload
+Thu Mar 10 02:24:55.241 AutoJoin: <airportd[616]> Successfully updated Wi-Fi configuration following association, took 0.0002 seconds
+Thu Mar 10 02:24:55.241 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext __updateAutoJoinRetryIntervals]: On battery power, changing to inactive retry interval.
+Thu Mar 10 02:24:55.243 Roam: <airportd[616]> ROAMING PROFILES updated to SINGLE-BAND, SINGLE-AP for 2.4GHz on en0
+Thu Mar 10 02:24:55.245 Roam: <airportd[616]> ROAMING PROFILES updated to SINGLE-BAND, SINGLE-AP for 5GHz on en0
+Thu Mar 10 02:24:55.248 Info: <airportd[616]> SUSPEND AWDL for interface en0, timeout=10.0s, reason=WaitForIP, token=2
+Thu Mar 10 02:24:55.249 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+Thu Mar 10 02:24:55.249 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:24:55.249 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:24:55.250 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:24:55.250 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:24:55.250 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+Thu Mar 10 02:24:55.250 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:24:55.251 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:24:55.251 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:24:55.251 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:24:55.251 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:24:55.251 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:24:55.252 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:24:55.252 Info: <airportd[616]> RESUME AWDL for interface en0, reason=Assoc token=1
+Thu Mar 10 02:24:55.252 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:24:55.258 IPC: <airportd[616]> New XPC connection for 'airportd' pid=616, should review to prevent IPC loop
+Thu Mar 10 02:24:55.259 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [airportd (pid=616, euid=0, egid=0)]
+Thu Mar 10 02:24:55.259 Info: <airportd[616]> QUERY SCAN CACHE request received from pid 616 (airportd)
+Thu Mar 10 02:24:55.281 Info: <airportd[616]> QUERY SCAN CACHE request received from pid 616 (airportd)
+Thu Mar 10 02:24:55.293 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [Language Chooser (pid=609, euid=0, egid=0)]
+Thu Mar 10 02:24:55.294 Info: <airportd[616]> SCAN request received from pid 609 (Language Chooser) with priority 2
+Thu Mar 10 02:24:55.295 Info: <airportd[616]> REQUEST DEFERRED minimum=7 [client=Language Chooser, type=4, interface=en0, priority=-9223372036854775808]
+Thu Mar 10 02:24:55.301 AutoJoin: <airportd[616]> Successful association to network 'Megacable_2.4G_7166' took 0.3736 seconds
+Thu Mar 10 02:24:55.302 AutoJoin: <airportd[616]> AUTO-JOIN COMPLETED for interface en0, took 4.3161 seconds, returned result 'success', error [NO ERROR]
+Thu Mar 10 02:24:55.302 Info: <airportd[616]> PRIORITY LOCK REMOVED [client=airportd, type=4, interface=en0, priority=7]
+Thu Mar 10 02:24:55.302 Info: <airportd[616]> REQUEST UN-DEFERRED minimum=-9223372036854775808 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:24:55.302 Info: <airportd[616]> REQUEST UN-DEFERRED minimum=-9223372036854775808 [client=Language Chooser, type=4, interface=en0, priority=-9223372036854775808]
+Thu Mar 10 02:24:55.310 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:24:55.310 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:24:55.310 
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:24:55.310 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:24:55.311 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:24:55.541 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:55.541 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:55.541     <CWChannel: 0x7fa6efd46c50> [channelNumber=1(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.541     <CWChannel: 0x7fa6efc0ebd0> [channelNumber=2(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.541     <CWChannel: 0x7fa6efc0ed50> [channelNumber=3(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.541     <CWChannel: 0x7fa6efc0ea80> [channelNumber=4(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.541     <CWChannel: 0x7fa6efc0e240> [channelNumber=5(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.541     <CWChannel: 0x7fa6efc102a0> [channelNumber=6(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:24:55.541 )} took 0.2461 seconds, returned 6 results
+Thu Mar 10 02:24:55.766 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:55.767 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:55.767     <CWChannel: 0x7fa6efc10450> [channelNumber=7(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.768     <CWChannel: 0x7fa6efc10580> [channelNumber=8(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.768     <CWChannel: 0x7fa6efc106e0> [channelNumber=9(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.768     <CWChannel: 0x7fa6efc10840> [channelNumber=10(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.768     <CWChannel: 0x7fa6efc10a20> [channelNumber=11(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:55.768     <CWChannel: 0x7fa6efc12dd0> [channelNumber=36(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:24:55.768 )} took 0.2259 seconds, returned 5 results
+Thu Mar 10 02:24:56.075 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:56.075 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:56.075     <CWChannel: 0x7fa6efc134b0> [channelNumber=40(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:24:56.075     <CWChannel: 0x7fa6efc121e0> [channelNumber=44(5GHz), channelWidth={40MHz(+1)}, active],
+Thu Mar 10 02:24:56.075     <CWChannel: 0x7fa6efc13f20> [channelNumber=48(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:24:56.075     <CWChannel: 0x7fa6efc12430> [channelNumber=149(5GHz), channelWidth={80MHz}, active],
+Thu Mar 10 02:24:56.075     <CWChannel: 0x7fa6efc129b0> [channelNumber=153(5GHz), channelWidth={80MHz}, active],
+Thu Mar 10 02:24:56.075     <CWChannel: 0x7fa6efc13c60> [channelNumber=157(5GHz), channelWidth={80MHz}, active]
+Thu Mar 10 02:24:56.075 )} took 0.3071 seconds, returned 2 results
+Thu Mar 10 02:24:56.420 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:56.421 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:56.421     <CWChannel: 0x7fa6efc14ce0> [channelNumber=161(5GHz), channelWidth={80MHz}, active],
+Thu Mar 10 02:24:56.421     <CWChannel: 0x7fa6efc131f0> [channelNumber=165(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:24:56.421     <CWChannel: 0x7fa6efc10b30> [channelNumber=12(2GHz), channelWidth={20MHz}],
+Thu Mar 10 02:24:56.421     <CWChannel: 0x7fa6efc10c90> [channelNumber=13(2GHz), channelWidth={20MHz}],
+Thu Mar 10 02:24:56.421     <CWChannel: 0x7fa6efc144a0> [channelNumber=52(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:56.421     <CWChannel: 0x7fa6efc14a20> [channelNumber=56(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:24:56.421 )} took 0.3450 seconds, returned 1 results
+Thu Mar 10 02:24:57.122 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:24:57.123 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:57.123     <CWChannel: 0x7fa6efc14fa0> [channelNumber=60(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:57.123     <CWChannel: 0x7fa6efc153c0> [channelNumber=64(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:24:57.123     <CWChannel: 0x7fa6efc157e0> [channelNumber=100(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:57.123     <CWChannel: 0x7fa6efc13770> [channelNumber=104(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:24:57.123     <CWChannel: 0x7fa6efc16170> [channelNumber=108(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:57.123     <CWChannel: 0x7fa6efc16590> [channelNumber=112(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:24:57.123 )} took 0.7015 seconds, returned 1 results
+Thu Mar 10 02:24:57.824 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:57.824     <CWChannel: 0x7fa6efc169b0> [channelNumber=116(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:57.824     <CWChannel: 0x7fa6efc16dd0> [channelNumber=120(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:24:57.824     <CWChannel: 0x7fa6efc171f0> [channelNumber=124(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:57.824     <CWChannel: 0x7fa6efc10df0> [channelNumber=128(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:24:57.824     <CWChannel: 0x7fa6efc119c0> [channelNumber=132(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:57.824     <CWChannel: 0x7fa6efc115a0> [channelNumber=136(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:24:57.824 )} took 0.7008 seconds, returned 0 results
+Thu Mar 10 02:24:58.065 AutoJoin: <airportd[616]> Successful cache-assisted scan request for Language Chooser with channels {(
+Thu Mar 10 02:24:58.065     <CWChannel: 0x7fa6efc11c80> [channelNumber=140(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:24:58.065     <CWChannel: 0x7fa6efc112e0> [channelNumber=144(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:24:58.065 )} took 0.2413 seconds, returned 0 results
+Thu Mar 10 02:25:00.030 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_RTADV_ADDR
+Thu Mar 10 02:25:00.030 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:25:00.030 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:25:00.030 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:4a5:42bd:9a50:4c96
+Thu Mar 10 02:25:00.030 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:5891:7d5b:10c2:84d5
+Thu Mar 10 02:25:00.430 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/IPv6'
+Thu Mar 10 02:25:00.431 Assoc: <airportd[616]> <en0> IPv6/ROUTER ASSIGNED [ip=2806:264:5485:913b:4a5:42bd:9a50:4c96, router=fe80::1]
+Thu Mar 10 02:25:00.431 Info: <airportd[616]> -[CWXPCInterfaceContext __setAWDLOperatingMode:interface:error:]: attempting to set AWDL mode to 0
+Thu Mar 10 02:25:00.434 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv6'
+Thu Mar 10 02:25:00.439 Assoc: <airportd[616]> <en0> IPv6/ROUTER ASSIGNED [ip=2806:264:5485:913b:4a5:42bd:9a50:4c96, router=fe80::1]
+Thu Mar 10 02:25:00.456 Info: <Wi-Fi Menu Extra[634]> load images
+Thu Mar 10 02:25:00.780 Info: <WiFiAgent[636]> -[AppDelegate applicationDidFinishLaunching:]: WiFiAgent launched [uid=0, gid=0 isBaseSystem=yes]
+Thu Mar 10 02:25:00.796 Info: <WiFiAgent[636]> Wi-Fi Network Sync disabled for BaseSystem
+Thu Mar 10 02:25:00.797 IPC: <airportd[616]> ADDED WIFI AGENT [WiFiAgent (pid=636, euid=0, egid=0)]
+Thu Mar 10 02:25:00.797 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.797 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.797 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.798 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.799 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.847 Info: <airportd[616]> START MONITORING EVENT request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:00.847 AutoJoin: <airportd[616]> AUTO-JOIN trigger requested (User Login)
+Thu Mar 10 02:25:00.851 AutoJoin: <airportd[616]> no user logged in
+Thu Mar 10 02:25:00.851 AutoJoin: <airportd[616]> <en0> User login trigger with no console user, will not continue auto-join
+Thu Mar 10 02:25:00.885 Info: <WiFiAgent[636]> current=(4bars) changed=(4bars)
+Thu Mar 10 02:25:00.885 Info: <WiFiAgent[636]> -[CWWiFiAgent listener:shouldAcceptNewConnection:]: ADDED XPC CONNECTION macOS Utilities [pid=634, euid=0, egid=0]
+Thu Mar 10 02:25:00.885 Info: <WiFiAgent[636]> START MONITORING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:00.885 Info: <WiFiAgent[636]> QUERY UI STATE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:00.885 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:25:00.886 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:00.907 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [macOS Utilities (pid=634, euid=0, egid=0)]
+Thu Mar 10 02:25:00.908 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:01.017 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=638, euid=205, egid=205)]
+Thu Mar 10 02:25:01.030 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_USER_ADDR
+Thu Mar 10 02:25:01.030 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:25:01.030 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:25:01.030 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:4a5:42bd:9a50:4c96
+Thu Mar 10 02:25:01.030 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:5891:7d5b:10c2:84d5
+Thu Mar 10 02:25:01.035 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_USER_ADDR
+Thu Mar 10 02:25:01.036 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:25:01.036 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:25:01.036 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:4a5:42bd:9a50:4c96
+Thu Mar 10 02:25:01.036 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:5891:7d5b:10c2:84d5
+Thu Mar 10 02:25:01.063 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:01.074 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:01.081 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:01.082 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:01.083 Info: <Wi-Fi Menu Extra[634]> took > 100ms (197ms) to query state for all WiFi menu items
+Thu Mar 10 02:25:01.083 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:25:01.083 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:25:01.086 Info: <WiFiAgent[636]> QUERY WIFI DEBUG LOGGING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:01.087 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:01.089 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:01.105 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:01.110 Info: <Wi-Fi Menu Extra[634]> took > 10ms (27ms) to update UI for all WiFi menu items
+Thu Mar 10 02:25:01.111 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:01.116 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:01.117 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:01.118 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:25:01.330 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=yes, ipv4Primary=no, ipv6Primary=yes]
+Thu Mar 10 02:25:01.330 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:25:01.333 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=yes, ipv4Primary=no, ipv6Primary=yes]
+Thu Mar 10 02:25:01.333 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:25:01.713 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/IPv4'
+Thu Mar 10 02:25:01.714 SC: <airportd[616]> IPV4 State change for en0
+Thu Mar 10 02:25:01.714 Assoc: <airportd[616]> <en0> IPv4/ROUTER ASSIGNED [ip=192.168.1.3, router=192.168.1.1]
+Thu Mar 10 02:25:01.714 SC: <airportd[616]> IP Address: 192.168.1.3
+Thu Mar 10 02:25:01.715 SC: <airportd[616]> Router IP Address: 192.168.1.1
+Thu Mar 10 02:25:01.715 SC: <airportd[616]> Default Gateway IP Address: 192.168.1.1
+Thu Mar 10 02:25:01.715 SC: <airportd[616]> Router MAC Address: c0:b1:01:c6:e7:1e
+Thu Mar 10 02:25:01.722 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP'
+Thu Mar 10 02:25:01.722 SC: <airportd[616]> _processDHCPChanges: State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP
+Thu Mar 10 02:25:01.723 SC: <airportd[616]> _processDHCPChanges: DHCP airport_changed = 1
+Thu Mar 10 02:25:01.723 Info: <airportd[616]> -[CWXPCSubsystem internal_submitIPConfigLatencyMetric:leaseDuration:]: IPConfig Latency metric data: (null)
+Thu Mar 10 02:25:01.723 SC: <airportd[616]> _setDHCPMessage: dhcpInfoKey "State:/Network/Interface/en0/AirPort/DHCP Message" = (null)
+Thu Mar 10 02:25:01.723 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv4'
+Thu Mar 10 02:25:01.723 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv6'
+Thu Mar 10 02:25:01.733 Assoc: <airportd[616]> <en0> IPv4/ROUTER ASSIGNED [ip=192.168.1.3, router=192.168.1.1]
+Thu Mar 10 02:25:02.125 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=yes, ipv4Primary=yes, ipv6Primary=yes]
+Thu Mar 10 02:25:02.125 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:25:04.039 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=638, euid=205, egid=205)]
+Thu Mar 10 02:25:04.040 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for 7F34C0B6-7ACE-4C57-B9BA-EF5758C238E0 (services={
+Thu Mar 10 02:25:04.040 })
+Thu Mar 10 02:25:04.041 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:25:15.127 AutoJoin: <airportd[616]> BEST CONNECTED SCAN request on interface en0 for network 'Megacable_2.4G_7166' 
+Thu Mar 10 02:25:15.241 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:15.241 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:15.242     <CWChannel: 0x7fa6efd48480> [channelNumber=1(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.242     <CWChannel: 0x7fa6efd30410> [channelNumber=2(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.242     <CWChannel: 0x7fa6efd37e60> [channelNumber=3(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:25:15.242 )} took 0.1092 seconds, returned 5 results
+Thu Mar 10 02:25:15.351 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:15.352 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:15.352     <CWChannel: 0x7fa6efd2c080> [channelNumber=4(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.352     <CWChannel: 0x7fa6efd431e0> [channelNumber=5(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.352     <CWChannel: 0x7fa6efd48270> [channelNumber=6(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:25:15.352 )} took 0.1101 seconds, returned 3 results
+Thu Mar 10 02:25:15.463 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:15.464 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:15.464     <CWChannel: 0x7fa6efd429b0> [channelNumber=7(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.464     <CWChannel: 0x7fa6efd4d590> [channelNumber=8(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.464     <CWChannel: 0x7fa6efd3a230> [channelNumber=9(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:25:15.464 )} took 0.1117 seconds, returned 2 results
+Thu Mar 10 02:25:15.557 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:15.558 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:15.558     <CWChannel: 0x7fa6efd40b00> [channelNumber=10(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.558     <CWChannel: 0x7fa6efd113f0> [channelNumber=11(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.558     <CWChannel: 0x7fa6efd42510> [channelNumber=36(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:25:15.558 )} took 0.0937 seconds, returned 4 results
+Thu Mar 10 02:25:15.733 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:15.733     <CWChannel: 0x7fa6efd11e10> [channelNumber=40(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:25:15.733     <CWChannel: 0x7fa6efd41160> [channelNumber=44(5GHz), channelWidth={40MHz(+1)}, active],
+Thu Mar 10 02:25:15.733     <CWChannel: 0x7fa6efd332e0> [channelNumber=48(5GHz), channelWidth={40MHz(-1)}, active]
+Thu Mar 10 02:25:15.733 )} took 0.1749 seconds, returned 0 results
+Thu Mar 10 02:25:15.880 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:15.880 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:15.881     <CWChannel: 0x7fa6efd12e70> [channelNumber=149(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:15.881     <CWChannel: 0x7fa6efd30b00> [channelNumber=153(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:25:15.881     <CWChannel: 0x7fa6efd16f70> [channelNumber=157(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:25:15.881 )} took 0.1474 seconds, returned 2 results
+Thu Mar 10 02:25:16.024 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:16.024     <CWChannel: 0x7fa6efd25040> [channelNumber=161(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:25:16.024     <CWChannel: 0x7fa6efd181d0> [channelNumber=165(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:16.024     <CWChannel: 0x7fa6efd48080> [channelNumber=12(2GHz), channelWidth={20MHz}]
+Thu Mar 10 02:25:16.024 )} took 0.1435 seconds, returned 0 results
+Thu Mar 10 02:25:16.255 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:16.255 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:16.255     <CWChannel: 0x7fa6efd22d50> [channelNumber=13(2GHz), channelWidth={20MHz}],
+Thu Mar 10 02:25:16.255     <CWChannel: 0x7fa6efd2f450> [channelNumber=52(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:16.255     <CWChannel: 0x7fa6efd246f0> [channelNumber=56(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:16.255 )} took 0.2308 seconds, returned 1 results
+Thu Mar 10 02:25:16.612 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:16.613     <CWChannel: 0x7fa6efd39040> [channelNumber=60(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:16.613     <CWChannel: 0x7fa6efd13c40> [channelNumber=64(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:16.613     <CWChannel: 0x7fa6efd2aff0> [channelNumber=100(5GHz), channelWidth={40MHz(+1)}]
+Thu Mar 10 02:25:16.613 )} took 0.3571 seconds, returned 0 results
+Thu Mar 10 02:25:16.977 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:25:16.978 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:16.978     <CWChannel: 0x7fa6efd24ac0> [channelNumber=104(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:16.978     <CWChannel: 0x7fa6efd17010> [channelNumber=108(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:16.978     <CWChannel: 0x7fa6efd19a70> [channelNumber=112(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:16.978 )} took 0.3648 seconds, returned 1 results
+Thu Mar 10 02:25:17.336 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:17.336     <CWChannel: 0x7fa6efd10730> [channelNumber=116(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:17.336     <CWChannel: 0x7fa6efd27ed0> [channelNumber=120(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:17.336     <CWChannel: 0x7fa6efd3f890> [channelNumber=124(5GHz), channelWidth={20MHz}]
+Thu Mar 10 02:25:17.336 )} took 0.3577 seconds, returned 0 results
+Thu Mar 10 02:25:17.699 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:17.699     <CWChannel: 0x7fa6efd3e470> [channelNumber=128(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:17.699     <CWChannel: 0x7fa6efd175c0> [channelNumber=132(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:25:17.699     <CWChannel: 0x7fa6efd49360> [channelNumber=136(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:17.699 )} took 0.3627 seconds, returned 0 results
+Thu Mar 10 02:25:17.941 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:17.941     <CWChannel: 0x7fa6efd2fd60> [channelNumber=140(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:25:17.941     <CWChannel: 0x7fa6efd0e250> [channelNumber=144(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:17.941 )} took 0.2423 seconds, returned 0 results
+Thu Mar 10 02:25:17.946 Roam: <airportd[616]> ROAMING PROFILES already set to SINGLE-BAND, SINGLE-AP for 2.4GHz on en0
+Thu Mar 10 02:25:17.949 Roam: <airportd[616]> ROAMING PROFILES already set to SINGLE-BAND, SINGLE-AP for 5GHz on en0
+Thu Mar 10 02:25:25.333 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.337 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.338 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.339 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:25:25.339 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:25.340 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=643, euid=205, egid=205)]
+Thu Mar 10 02:25:25.352 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.357 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.358 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.359 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:25.428 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:25:25.429 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:25.441 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.448 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.449 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:25:25.451 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:25:25.529 Info: <Wi-Fi Menu Extra[634]> took > 100ms (101ms) to query state for WiFi scan result menu items
+Thu Mar 10 02:25:25.543 Info: <Wi-Fi Menu Extra[634]> took 10ms to update UI for WiFi scan result menu items
+Thu Mar 10 02:25:28.416 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=643, euid=205, egid=205)]
+Thu Mar 10 02:25:28.418 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for 876C3AF9-33F8-4486-A796-32D57FBCD97E (services={
+Thu Mar 10 02:25:28.418 })
+Thu Mar 10 02:25:28.419 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:25:50.855 AutoJoin: <airportd[616]> BACKGROUND SCAN request on interface en0 with SSID list (null) 
+Thu Mar 10 02:25:50.860 Scan: <airportd[616]> Cache-assisted scan request on channel 1 does not require a live scan
+Thu Mar 10 02:25:50.860 Scan: <airportd[616]> Cache-assisted scan request on channel 2 does not require a live scan
+Thu Mar 10 02:25:50.860 Scan: <airportd[616]> Cache-assisted scan request on channel 3 does not require a live scan
+Thu Mar 10 02:25:50.861 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.861 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.861     <CWChannel: 0x7fa6f0a127c0> [channelNumber=1(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.861     <CWChannel: 0x7fa6f0a0a850> [channelNumber=2(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.861     <CWChannel: 0x7fa6f0a0d900> [channelNumber=3(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:25:50.861 )} took 0.0006 seconds, returned 5 results
+Thu Mar 10 02:25:50.861 Scan: <airportd[616]> Cache-assisted scan request on channel 4 does not require a live scan
+Thu Mar 10 02:25:50.861 Scan: <airportd[616]> Cache-assisted scan request on channel 5 does not require a live scan
+Thu Mar 10 02:25:50.861 Scan: <airportd[616]> Cache-assisted scan request on channel 6 does not require a live scan
+Thu Mar 10 02:25:50.861 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.861 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.861     <CWChannel: 0x7fa6f0a0d340> [channelNumber=4(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.861     <CWChannel: 0x7fa6f0a0cbb0> [channelNumber=5(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.861     <CWChannel: 0x7fa6f0a0e270> [channelNumber=6(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:25:50.861 )} took 0.0004 seconds, returned 3 results
+Thu Mar 10 02:25:50.861 Scan: <airportd[616]> Cache-assisted scan request on channel 7 does not require a live scan
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request on channel 8 does not require a live scan
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request on channel 9 does not require a live scan
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.862 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.862     <CWChannel: 0x7fa6f0a15d70> [channelNumber=7(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.862     <CWChannel: 0x7fa6f0a108c0> [channelNumber=8(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.862     <CWChannel: 0x7fa6f0a0c820> [channelNumber=9(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:25:50.862 )} took 0.0004 seconds, returned 2 results
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request on channel 10 does not require a live scan
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request on channel 11 does not require a live scan
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request on channel 36 does not require a live scan
+Thu Mar 10 02:25:50.862 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.862 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.862     <CWChannel: 0x7fa6f0a08230> [channelNumber=10(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.862     <CWChannel: 0x7fa6f0a09050> [channelNumber=11(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.862     <CWChannel: 0x7fa6f0a135b0> [channelNumber=36(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:25:50.862 )} took 0.0004 seconds, returned 4 results
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 40 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 44 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 48 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.863 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.863     <CWChannel: 0x7fa6f0a11e90> [channelNumber=40(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:25:50.863     <CWChannel: 0x7fa6f0a13620> [channelNumber=44(5GHz), channelWidth={40MHz(+1)}, active],
+Thu Mar 10 02:25:50.863     <CWChannel: 0x7fa6f0a063c0> [channelNumber=48(5GHz), channelWidth={40MHz(-1)}, active]
+Thu Mar 10 02:25:50.863 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 149 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 153 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 157 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.863 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.863     <CWChannel: 0x7fa6f0a0a190> [channelNumber=149(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.863     <CWChannel: 0x7fa6f0a0cee0> [channelNumber=153(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:25:50.863     <CWChannel: 0x7fa6f0a0dca0> [channelNumber=157(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:25:50.863 )} took 0.0004 seconds, returned 2 results
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 161 does not require a live scan
+Thu Mar 10 02:25:50.863 Scan: <airportd[616]> Cache-assisted scan request on channel 165 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 12 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.864 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a13490> [channelNumber=161(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a05f90> [channelNumber=165(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a0d6e0> [channelNumber=12(2GHz), channelWidth={20MHz}]
+Thu Mar 10 02:25:50.864 )} took 0.0003 seconds, returned 0 results
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 13 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 52 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 56 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.864 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a0dda0> [channelNumber=13(2GHz), channelWidth={20MHz}],
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a13690> [channelNumber=52(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a0d500> [channelNumber=56(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:50.864 )} took 0.0003 seconds, returned 1 results
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 60 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 64 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request on channel 100 does not require a live scan
+Thu Mar 10 02:25:50.864 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.864 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a13700> [channelNumber=60(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a0e4c0> [channelNumber=64(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:50.864     <CWChannel: 0x7fa6f0a13770> [channelNumber=100(5GHz), channelWidth={40MHz(+1)}]
+Thu Mar 10 02:25:50.864 )} took 0.0003 seconds, returned 0 results
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 104 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 108 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 112 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.865 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a09760> [channelNumber=104(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a137a0> [channelNumber=108(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a11b60> [channelNumber=112(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:50.865 )} took 0.0002 seconds, returned 1 results
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 116 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 120 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 124 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.865 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+    <CWChannel: 0x7fa6f0a0db10> [channelNumber=116(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a04ba0> [channelNumber=120(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a07b20> [channelNumber=124(5GHz), channelWidth={20MHz}]
+Thu Mar 10 02:25:50.865 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 128 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 132 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 136 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.865 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a19130> [channelNumber=128(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a07fb0> [channelNumber=132(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:25:50.865     <CWChannel: 0x7fa6f0a19190> [channelNumber=136(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:50.865 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 140 does not require a live scan
+Thu Mar 10 02:25:50.865 Scan: <airportd[616]> Cache-assisted scan request on channel 144 does not require a live scan
+Thu Mar 10 02:25:50.866 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:25:50.866 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:25:50.866     <CWChannel: 0x7fa6f0a0f340> [channelNumber=140(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:25:50.866     <CWChannel: 0x7fa6f0a11520> [channelNumber=144(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:25:50.866 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:26:46.785 Driver Discovery: <WiFiAgent[636]> __IOPMEventHandler: caps = CPU Net Disk 
+Thu Mar 10 02:26:46.785 Driver Discovery: <airportd[616]> _PMConnectionHandler: caps = CPU Net Disk 
+Thu Mar 10 02:26:46.785 Info: <WiFiAgent[636]> __IOPMEventHandler: Display OFF
+Thu Mar 10 02:26:46.785 Driver Discovery: <airportd[616]> _PMConnectionHandler: Being put into maintenance wake mode while fully awake.
+Thu Mar 10 02:26:46.786 Info: <airportd[616]> psCallback: powerSource = Battery Power
+Thu Mar 10 02:26:46.786 Info: <airportd[616]> psCallback: set powersave max throughput on en0
+Thu Mar 10 02:26:46.786 <kernel>  IOCTL (from pid 616) not recognized: 5 out of 353
+Offload: <airportd[616]> _configureTCPKeepAlive: awdl0 does not support TCP keep-alive offload
+Thu Mar 10 02:26:46.786 Offload: <airportd[616]> _configureTCPKeepAlive: en0 does support TCP keep-alive offload
+Thu Mar 10 02:26:46.786 Offload: <airportd[616]> _configureTCPKeepAlive: TCP keep-alive timeout count is 0
+Thu Mar 10 02:26:46.786 Offload: <airportd[616]> _configureTCPKeepAlive: TCP keep-alive enabled on en0
+Thu Mar 10 02:27:01.821 Driver Discovery: <airportd[616]> _PMConnectionHandler: caps = 
+Thu Mar 10 02:27:01.821 Driver Discovery: <WiFiAgent[636]> __IOPMEventHandler: caps = 
+Thu Mar 10 02:27:01.821 Info: <WiFiAgent[636]> __IOPMEventHandler: Sleeping
+Thu Mar 10 02:27:01.822 AutoJoin: <airportd[616]> BEST CONNECTED SCAN CANCELLED on interface en0
+Thu Mar 10 02:27:01.822 AutoJoin: <airportd[616]> BACKGROUND SCAN CANCELLED on interface en0
+Thu Mar 10 02:27:01.823 Offload: <airportd[616]> _tcpKeepAliveActive: TCP keep-alive is not active.
+Thu Mar 10 02:27:01.835 Offload: <airportd[616]> _configureScanOffloadParameters: Scan offloading disabled on en0 (permitted=1, swap=0, tcpKA=0, wow=0)
+Thu Mar 10 02:27:01.835 Info: <airportd[616]> SleepAcknowledgementCheckForHostAP: Checking sleep readiness for HostAP
+Thu Mar 10 02:27:01.835 <airportd[616]> SleepAcknowledgementCheck: Checking sleep readiness
+Thu Mar 10 02:27:01.835 WoW: <airportd[616]> SleepAcknowledgementCheck: <en0> Checking if auto-join is in progress before sleep acknowledgement
+Thu Mar 10 02:27:01.835 WoW: <airportd[616]> SleepAcknowledgementDelayForAutoJoinAttempt_block_invoke: AUTO-JOIN attempt complete for en0, re-checking sleep readiness
+Thu Mar 10 02:27:01.836 <airportd[616]> SleepAcknowledgementCheck: Checking sleep readiness
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:27:01.836 WoW: <airportd[616]> _wowEnabled: WoW is not active on en0
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:27:01.836 <airportd[616]> _acknowledgeSleepEvent: Acknowledging sleep event
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:27:01.836 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:27:01.836 Info: <airportd[616]> PRIORITY LOCK ADDED [client=airportd, type=4, interface=(null), priority=7]
+Thu Mar 10 02:27:01.837 Info: <airportd[616]> -[CWXPCSubsystem resetAutoJoinDisableState]_block_invoke: Auto-join disabled state reset
+Thu Mar 10 02:27:01.837 Info: <airportd[616]> -[CWXPCSubsystem clearScanCacheWithInterfaceName:daemon:familyAndDriver:connection:error:]: Clearing family+driver scan cache for interface en0
+Thu Mar 10 02:27:01.837 Info: <airportd[616]> REQUEST DEFERRED minimum=7 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:27:43.747 <kernel> postMessage::1349 APPLE80211_M_BSSID_CHANGED received
+Thu Mar 10 02:27:43.747  <kernel> AppleBCMWLANCore::getSSIDData(): Get failure: APPLE80211_IOC_SSID: -528342013
+Thu Mar 10 02:27:43.752 Driver Event: <airportd[616]> _bsd_80211_event_callback: AWDL_REALTIME_MODE_END (awdl0)
+Thu Mar 10 02:27:43.755 Info: <WiFiAgent[636]> current=(no_assoc) changed=(no_assoc, 4bars)
+Thu Mar 10 02:27:43.755 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:43.758 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.763 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.767 Driver Discovery: <WiFiAgent[636]> __IOPMEventHandler: caps = CPU Video Audio Net Disk Early 
+Thu Mar 10 02:27:43.767 Info: <WiFiAgent[636]> __IOPMEventHandler: Display ON
+Thu Mar 10 02:27:43.772 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:43.772 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:43.772 
+Thu Mar 10 02:27:43.772 P2P: <airportd[616]> _interfaceLinkChanged: Stopping IPv6 link local on awdl0
+Thu Mar 10 02:27:43.772 Driver Event: <airportd[616]> _bsd_80211_event_callback: AWDL_REALTIME_MODE_END (awdl0)
+Thu Mar 10 02:27:43.772 Driver Discovery: <airportd[616]> _PMConnectionHandler: caps = CPU Video Audio Net Disk Early 
+Thu Mar 10 02:27:43.772 Info: <airportd[616]> systemWokenByWiFi: System wake reason: <EC.KeyboardTouchpad>, was not woken by WiFi
+Thu Mar 10 02:27:43.773 Info: <airportd[616]> _updateWakeLimitCounters: TCP keep alive timed out 0 times on awdl0
+Thu Mar 10 02:27:43.773 Info: <airportd[616]> systemWokenByWiFi: System wake reason: <EC.KeyboardTouchpad>, was not woken by WiFi
+Thu Mar 10 02:27:43.773 Info: <airportd[616]> _updateWakeLimitCounters: TCP keep alive timed out 0 times on en0
+Thu Mar 10 02:27:43.773 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext clearAllProblematicNetworks]_block_invoke: Unblacklisting all networks.
+Thu Mar 10 02:27:43.773 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext clearAllNetworksBlacklistedForScanOffload]_block_invoke: Clearing all networks blacklisted for scan offload.
+Thu Mar 10 02:27:43.778 Offload: <airportd[616]> _tcpKeepAliveActive: TCP keep-alive is not active.
+Thu Mar 10 02:27:43.778 Driver Discovery: <airportd[616]> _PMConnectionHandler: USER WAKE, applying user power pref and performing auto-join for en0
+Thu Mar 10 02:27:43.778 Info: <airportd[616]> psCallback: powerSource = Battery Power
+Thu Mar 10 02:27:43.778 Info: <airportd[616]> psCallback: set powersave max throughput on en0
+Thu Mar 10 02:27:43.778 Offload: <airportd[616]> _configureTCPKeepAlive: awdl0 does not support TCP keep-alive offload
+Thu Mar 10 02:27:43.778 Offload: <airportd[616]> _configureTCPKeepAlive: en0 does support TCP keep-alive offload
+Thu Mar 10 02:27:43.778 Offload: <airportd[616]> _configureTCPKeepAlive: TCP keep-alive timeout count is 0
+Thu Mar 10 02:27:43.778 Offload: <airportd[616]> _configureTCPKeepAlive: TCP keep-alive enabled on en0
+Thu Mar 10 02:27:43.785 Info: <airportd[616]> airportdProcessDLILEvent: <en0> Setting power ON
+Thu Mar 10 02:27:43.785 AutoJoin: <airportd[616]> airportdProcessFullWake: Received full wake event for en0
+Thu Mar 10 02:27:43.785 AutoJoin: <airportd[616]> airportdProcessFullWake: Invoking auto-join for full wake event for en0
+Thu Mar 10 02:27:43.785 Info: <airportd[616]> __enableTemporarilyDisabledNetworks: Attempting to re-enable any temporarily-disabled network profiles
+Thu Mar 10 02:27:43.785 Info: <airportd[616]> PRIORITY LOCK REMOVED [client=airportd, type=4, interface=(null), priority=7]
+Thu Mar 10 02:27:43.785 AutoJoin: <airportd[616]> AUTO-JOIN trigger requested (Full Wake)
+Thu Mar 10 02:27:43.785 Info: <airportd[616]> REQUEST UN-DEFERRED minimum=-9223372036854775808 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:27:43.786 AutoJoin: <airportd[616]> no user logged in
+Thu Mar 10 02:27:43.792 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+
+Thu Mar 10 02:27:43.792 Driver Event: <airportd[616]> _bsd_80211_event_callback: AWDL_SYNC_STATE_CHANGED (awdl0)
+Thu Mar 10 02:27:43.792 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:27:43.792 Info: <airportd[616]> -[CWXPCSubsystem __clearFamilyScanCacheWithInterface:]_block_invoke: Clearing family+driver scan cache for interface en0 failed with error 82
+Thu Mar 10 02:27:43.792 Info: <airportd[616]> PRIORITY LOCK ADDED [client=airportd, type=4, interface=en0, priority=7]
+Thu Mar 10 02:27:43.792 Info: <airportd[616]> -[CWXPCSubsystem clearScanCacheWithInterfaceName:daemon:familyAndDriver:connection:error:]: Clearing family+driver scan cache for interface en0
+Thu Mar 10 02:27:43.793 Info: <airportd[616]> REQUEST DEFERRED minimum=7 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:27:43.793 Driver Event: <airportd[616]> _bsd_80211_event_callback: AWDL_REALTIME_MODE_END (awdl0)
+Thu Mar 10 02:27:43.793 AutoJoin: <airportd[616]> AUTO-JOIN STARTED for interface en0 (Full Wake)
+Thu Mar 10 02:27:43.793 AutoJoin: <airportd[616]> RECOVERY MODE => auto-join using NVRAM
+Thu Mar 10 02:27:43.793 Driver Event: <airportd[616]> _bsd_80211_event_callback: AWDL_REALTIME_MODE_END (awdl0)
+Thu Mar 10 02:27:43.798 Info: <airportd[616]> -[CWXPCInterfaceContext __setAWDLOperatingMode:interface:error:]: attempting to set AWDL mode to 2
+Thu Mar 10 02:27:43.798 Info: <airportd[616]> SUSPEND AWDL for interface en0, timeout=20.0s, reason=AutoJoin, token=3
+Thu Mar 10 02:27:43.798 Info: <WiFiAgent[636]> current=(no_assoc, aj) changed=(aj)
+Thu Mar 10 02:27:43.801 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:43.801 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:43.801 
+Thu Mar 10 02:27:43.801 Driver Event: <airportd[616]> _bsd_80211_event_callback: DRIVER_AVAILABLE (en0)
+Thu Mar 10 02:27:43.801 Driver Event: <airportd[616]> _bsd_80211_event_callback: driver unavailable (reason=0xe0821804, subreason=0x0, flags=0x0)
+Thu Mar 10 02:27:43.802 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.802 <airportd[616]> __doNVRAMAutoJoin: No scan results (null)
+Thu Mar 10 02:27:43.802 AutoJoin: <airportd[616]> Installer environment, will not continue AutoHotspot
+Thu Mar 10 02:27:43.802 AutoJoin: <airportd[616]> AUTO-JOIN COMPLETED for interface en0, took 0.0094 seconds, returned result 'failure', error [NO ERROR]
+Thu Mar 10 02:27:43.802 Info: <airportd[616]> PRIORITY LOCK REMOVED [client=airportd, type=4, interface=en0, priority=7]
+Thu Mar 10 02:27:43.802 Info: <airportd[616]> REQUEST UN-DEFERRED minimum=-9223372036854775808 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:27:43.806 AutoJoin: <airportd[616]> BACKGROUND SCAN CANCELLED on interface en0
+Thu Mar 10 02:27:43.806 Info: <airportd[616]> -[CWXPCInterfaceContext driverAvailabilityReport:]_block_invoke: -[CWXPCInterfaceContext driverAvailabilityReport:]_block_invoke: alloc failed
+Thu Mar 10 02:27:43.812 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:43.812 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:43.812 
+Thu Mar 10 02:27:43.812 Driver Event: <airportd[616]> _bsd_80211_event_callback: AWDL_SYNC_STATE_CHANGED (awdl0)
+Thu Mar 10 02:27:43.812 Info: <airportd[616]> -[CWXPCSubsystem __clearFamilyScanCacheWithInterface:]_block_invoke: Clearing family+driver scan cache for interface en0 failed with error 82
+Thu Mar 10 02:27:43.815 Info: <airportd[616]> RESUME AWDL for interface en0, reason=AutoJoin token=3
+Thu Mar 10 02:27:43.815 Info: <airportd[616]> -[CWXPCInterfaceContext __setAWDLOperatingMode:interface:error:]: attempting to set AWDL mode to 0
+Thu Mar 10 02:27:43.815 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext __scheduleAutoJoinRetryWithInterval:]: Auto-join will retry in 1.000000 seconds.
+Thu Mar 10 02:27:43.815 Driver Event: <airportd[616]> _bsd_80211_event_callback: LINK_CHANGED (en0)
+Thu Mar 10 02:27:43.816 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.820 AutoJoin: <airportd[616]> BEST CONNECTED SCAN CANCELLED on interface en0
+Thu Mar 10 02:27:43.820 <airportd[616]> _handleLinkEvent: Unable to process link event, op mode request returned 82 (Device power is off)
+Thu Mar 10 02:27:43.820 Info: <airportd[616]> -[CWXPCSubsystem __submitLinkChangeMetric:involuntary:interface:network:linkDownReason:linkDownSubreason:isAWDLUp:awdlState:lastSecurityIssueCount:]: link change metric data: (null)
+Thu Mar 10 02:27:43.820 Driver Event: <airportd[616]> _bsd_80211_event_callback: SSID_CHANGED (en0)
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:27:43.820 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:27:43.821 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:27:43.821 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:27:43.821 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:27:43.821 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.821 Driver Event: <airportd[616]> _bsd_80211_event_callback: BSSID_CHANGED (en0)
+Thu Mar 10 02:27:43.821 Info: <WiFiAgent[636]> current=(no_assoc) changed=(aj)
+Thu Mar 10 02:27:43.821 Info: <airportd[616]> _bsd_80211_event_callback: Frequency Band updated <1>
+Thu Mar 10 02:27:43.821 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.822 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.828 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:43.828 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:43.828 
+Thu Mar 10 02:27:43.828 Driver Event: <airportd[616]> _bsd_80211_event_callback: LINK_CHANGED (en0)
+Thu Mar 10 02:27:43.828 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.828 Driver Event: <airportd[616]> _bsd_80211_event_callback: POWER_CHANGED (en0)
+Thu Mar 10 02:27:43.828 BTC: <airportd[616]> BluetoothCoexistenceTickle: Triggering BTC status notification
+Thu Mar 10 02:27:43.828 <airportd[616]> _bsd_80211_event_callback: Failed to get power setting from device : err 0
+Thu Mar 10 02:27:43.828 
+Thu Mar 10 02:27:43.829 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:27:43.848 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.849 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:43.849 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:43.849 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:43.850 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:43.851 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:43.851 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=645, euid=205, egid=205)]
+Thu Mar 10 02:27:43.851 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.851 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.853 Info: <WiFiAgent[636]> QUERY WIFI DEBUG LOGGING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.853 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.854 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.855 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:43.855 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:43.855 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:43.856 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:43.857 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:43.922 P2P: <airportd[616]> _interfaceLinkChanged: Starting IPv6 link local on awdl0
+Thu Mar 10 02:27:43.930 Driver Event: <airportd[616]> _bsd_80211_event_callback: DRIVER_AVAILABLE (en0)
+Thu Mar 10 02:27:43.930 Driver Event: <airportd[616]> _bsd_80211_event_callback: driver available (reason=0xe0821803, subreason=0x0, flags=0x0)
+Thu Mar 10 02:27:43.930 AutoJoin: <airportd[616]> AUTO-JOIN trigger requested (Driver Available)
+Thu Mar 10 02:27:43.930 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:27:43.930 Info: <airportd[616]> -[CWXPCInterfaceContext driverAvailabilityReport:]_block_invoke: -[CWXPCInterfaceContext driverAvailabilityReport:]_block_invoke: alloc failed
+Thu Mar 10 02:27:43.930 Info: <airportd[616]> -[CWXPCSubsystem queryBSSIDForInterfaceWithName:connection:error:]: Failed to query current BSSID, returned error code -3903
+Thu Mar 10 02:27:43.938 Driver Event: <airportd[616]> _bsd_80211_event_callback: POWER_CHANGED (en0)
+Thu Mar 10 02:27:43.938 BTC: <airportd[616]> BluetoothCoexistenceTickle: Triggering BTC status notification
+Thu Mar 10 02:27:43.939 P2P: <airportd[616]> AwdlNodeShouldBeMarkedUp: awdl0 should be marked up
+Thu Mar 10 02:27:43.939 P2P: <airportd[616]> _bsd_80211_event_callback: Marking awdl0 up because en0 was powered on
+Thu Mar 10 02:27:43.939 P2P: <airportd[616]> _interfaceLinkChanged: Starting IPv6 link local on awdl0
+Thu Mar 10 02:27:43.944 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:27:43.945 AutoJoin: <airportd[616]> no user logged in
+Thu Mar 10 02:27:43.945 Info: <airportd[616]> PRIORITY LOCK ADDED [client=airportd, type=4, interface=en0, priority=7]
+Thu Mar 10 02:27:43.945 Info: <airportd[616]> -[CWXPCSubsystem clearScanCacheWithInterfaceName:daemon:familyAndDriver:connection:error:]: Clearing family+driver scan cache for interface en0
+Thu Mar 10 02:27:43.945 Info: <airportd[616]> REQUEST DEFERRED minimum=7 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:27:43.945 AutoJoin: <airportd[616]> AUTO-JOIN STARTED for interface en0 (Driver Available)
+Thu Mar 10 02:27:43.945 AutoJoin: <airportd[616]> RECOVERY MODE => auto-join using NVRAM
+Thu Mar 10 02:27:43.962 Info: <WiFiAgent[636]> current=(no_assoc, aj) changed=(aj)
+Thu Mar 10 02:27:43.986 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:43.986 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:43.986 
+Thu Mar 10 02:27:43.986 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:27:43.987 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:27:44.086 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:44.086 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 1 took 0.1241 seconds, returned 1 results
+Thu Mar 10 02:27:44.184 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 2 took 0.0977 seconds, returned 0 results
+Thu Mar 10 02:27:44.255 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:44.255 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 3 took 0.0713 seconds, returned 1 results
+Thu Mar 10 02:27:44.326 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 4 took 0.0707 seconds, returned 0 results
+Thu Mar 10 02:27:44.397 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:44.397 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 5 took 0.0709 seconds, returned 3 results
+Thu Mar 10 02:27:44.468 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 6 took 0.0708 seconds, returned 0 results
+Thu Mar 10 02:27:44.540 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 7 took 0.0715 seconds, returned 0 results
+Thu Mar 10 02:27:44.612 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:44.612 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 8 took 0.0718 seconds, returned 1 results
+Thu Mar 10 02:27:44.682 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 9 took 0.0700 seconds, returned 0 results
+Thu Mar 10 02:27:44.751 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:44.751 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 10 took 0.0687 seconds, returned 4 results
+Thu Mar 10 02:27:44.820 AutoJoin: <airportd[616]> AUTO-JOIN trigger requested (Retry Timer)
+Thu Mar 10 02:27:44.820 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:44.820 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 11 took 0.0688 seconds, returned 1 results
+Thu Mar 10 02:27:44.825 AutoJoin: <airportd[616]> no user logged in
+Thu Mar 10 02:27:44.830 AutoJoin: <airportd[616]> Ignoring redundant auto-join invocation for interface en0
+Thu Mar 10 02:27:44.912 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 36 took 0.0925 seconds, returned 0 results
+Thu Mar 10 02:27:45.001 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 40 took 0.0888 seconds, returned 0 results
+Thu Mar 10 02:27:45.061 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 44 took 0.0598 seconds, returned 0 results
+Thu Mar 10 02:27:45.086 Driver Discovery: <airportd[616]> _PMConnectionHandler: caps = CPU Video Audio Net Disk 
+Thu Mar 10 02:27:45.086 Info: <airportd[616]> _PMConnectionHandler: caps did not changed except for 'early' bit, will not update global wake counter
+Thu Mar 10 02:27:45.086 Driver Discovery: <WiFiAgent[636]> __IOPMEventHandler: caps = CPU Video Audio Net Disk 
+Thu Mar 10 02:27:45.086 Info: <WiFiAgent[636]> __IOPMEventHandler: Display ON
+Thu Mar 10 02:27:45.086 Info: <airportd[616]> systemWokenByWiFi: System wake reason: <EC.KeyboardTouchpad>, was not woken by WiFi
+Thu Mar 10 02:27:45.086 Info: <airportd[616]> _updateWakeLimitCounters: TCP keep alive timed out 0 times on awdl0
+Thu Mar 10 02:27:45.089 Info: <airportd[616]> systemWokenByWiFi: System wake reason: <EC.KeyboardTouchpad>, was not woken by WiFi
+Thu Mar 10 02:27:45.089 Info: <airportd[616]> _updateWakeLimitCounters: TCP keep alive timed out 0 times on en0
+Thu Mar 10 02:27:45.090 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext clearAllProblematicNetworks]_block_invoke: Unblacklisting all networks.
+Thu Mar 10 02:27:45.090 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext clearAllNetworksBlacklistedForScanOffload]_block_invoke: Clearing all networks blacklisted for scan offload.
+Thu Mar 10 02:27:45.091 Offload: <airportd[616]> _tcpKeepAliveActive: TCP keep-alive is not active.
+Thu Mar 10 02:27:45.091 Driver Discovery: <airportd[616]> _PMConnectionHandler: USER WAKE, applying user power pref and performing auto-join for en0
+Thu Mar 10 02:27:45.092 Info: <airportd[616]> psCallback: powerSource = Battery Power
+Thu Mar 10 02:27:45.092 Info: <airportd[616]> psCallback: set powersave max throughput on en0
+Thu Mar 10 02:27:45.092 <kernel>  IOCTL (from pid 616) not recognized: 5 out of 353
+Thu Mar 10 02:27:45.092 Offload: <airportd[616]> _configureTCPKeepAlive: awdl0 does not support TCP keep-alive offload
+Thu Mar 10 02:27:45.092 Offload: <airportd[616]> _configureTCPKeepAlive: en0 does support TCP keep-alive offload
+Thu Mar 10 02:27:45.092 Offload: <airportd[616]> _configureTCPKeepAlive: TCP keep-alive timeout count is 0
+Thu Mar 10 02:27:45.092 Offload: <airportd[616]> _configureTCPKeepAlive: TCP keep-alive enabled on en0
+Thu Mar 10 02:27:45.093 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_ADDR_DELETED
+Thu Mar 10 02:27:45.093 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:45.093 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:45.093 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_ADDR_DELETED
+Thu Mar 10 02:27:45.093 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:45.093 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:45.097 Info: <airportd[616]> airportdProcessDLILEvent: <en0> Setting power ON
+Thu Mar 10 02:27:45.097 Driver Event: <airportd[616]> _bsd_80211_event_callback: POWER_CHANGED (en0)
+Thu Mar 10 02:27:45.097 BTC: <airportd[616]> BluetoothCoexistenceTickle: Triggering BTC status notification
+Thu Mar 10 02:27:45.097 P2P: <airportd[616]> AwdlNodeShouldBeMarkedUp: awdl0 should be marked up
+Thu Mar 10 02:27:45.097 P2P: <airportd[616]> _bsd_80211_event_callback: Marking awdl0 up because en0 was powered on
+Thu Mar 10 02:27:45.097 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:27:45.097 P2P: <airportd[616]> _interfaceLinkChanged: Starting IPv6 link local on awdl0
+Thu Mar 10 02:27:45.098 AutoJoin: <airportd[616]> airportdProcessFullWake: Received full wake event for en0
+Thu Mar 10 02:27:45.098 AutoJoin: <airportd[616]> airportdProcessFullWake: Invoking auto-join for full wake event for en0
+Thu Mar 10 02:27:45.098 Info: <airportd[616]> __enableTemporarilyDisabledNetworks: Attempting to re-enable any temporarily-disabled network profiles
+Thu Mar 10 02:27:45.098 AutoJoin: <airportd[616]> AUTO-JOIN trigger requested (Full Wake)
+Thu Mar 10 02:27:45.098 AutoJoin: <airportd[616]> BACKGROUND SCAN SCHEDULED on interface en0 in 60.0s with SSID list (null), remaining SSID list (null)
+Thu Mar 10 02:27:45.102 AutoJoin: <airportd[616]> no user logged in
+Thu Mar 10 02:27:45.102 AutoJoin: <airportd[616]> Ignoring redundant auto-join invocation for interface en0
+Thu Mar 10 02:27:45.109 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_ADDR_DELETED
+Thu Mar 10 02:27:45.109 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:45.109 Offload: <airportd[616]> _ipv6EventCallback: OFF
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/IPv6'
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP'
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> _processDHCPChanges: State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> _processDHCPChanges: DHCP airport_changed = 1
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> _setDHCPMessage: dhcpInfoKey "State:/Network/Interface/en0/AirPort/DHCP Message" = (null)
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/IPv4'
+Thu Mar 10 02:27:45.109 SC: <airportd[616]> IPV4 State change for en0
+Thu Mar 10 02:27:45.111 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv4'
+Thu Mar 10 02:27:45.111 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv6'
+Thu Mar 10 02:27:45.120 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 48 took 0.0588 seconds, returned 0 results
+Thu Mar 10 02:27:45.125 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:45.125 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:45.125 
+Thu Mar 10 02:27:45.130 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:45.130 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:45.187 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:45.187 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 149 took 0.0671 seconds, returned 1 results
+Thu Mar 10 02:27:45.255 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 153 took 0.0686 seconds, returned 0 results
+Thu Mar 10 02:27:45.271 Info: <Wi-Fi Menu Extra[634]> machine wake
+Thu Mar 10 02:27:45.271 Info: <WiFiAgent[636]> START MONITORING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.271 Info: <WiFiAgent[636]> QUERY UI STATE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.271 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:45.272 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.272 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.325 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 157 took 0.0690 seconds, returned 0 results
+Thu Mar 10 02:27:45.372 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.380 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.383 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.383 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.384 Info: <Wi-Fi Menu Extra[634]> took > 100ms (112ms) to query state for all WiFi menu items
+Thu Mar 10 02:27:45.384 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:45.384 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:45.386 Info: <WiFiAgent[636]> QUERY WIFI DEBUG LOGGING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.386 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.387 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.406 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 161 took 0.0818 seconds, returned 0 results
+Thu Mar 10 02:27:45.411 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:45.411 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:45.480 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.488 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 165 took 0.0820 seconds, returned 0 results
+Thu Mar 10 02:27:45.489 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.497 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.498 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.498 Info: <Wi-Fi Menu Extra[634]> took > 100ms (114ms) to query state for all WiFi menu items
+Thu Mar 10 02:27:45.498 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:45.498 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:45.498 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.499 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.567 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.573 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.577 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.578 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.578 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:45.579 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:45.582 Info: <WiFiAgent[636]> QUERY WIFI DEBUG LOGGING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.583 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.584 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.618 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:45.624 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.629 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.629 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:45.630 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:45.650 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 12 took 0.1619 seconds, returned 0 results
+Thu Mar 10 02:27:45.809 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 13 took 0.1584 seconds, returned 0 results
+Thu Mar 10 02:27:45.941 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 52 took 0.1321 seconds, returned 0 results
+Thu Mar 10 02:27:46.068 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:46.068 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 56 took 0.1266 seconds, returned 1 results
+Thu Mar 10 02:27:46.200 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 60 took 0.1319 seconds, returned 0 results
+Thu Mar 10 02:27:46.331 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 64 took 0.1312 seconds, returned 0 results
+Thu Mar 10 02:27:46.403 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:46.403 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 100 took 0.0715 seconds, returned 1 results
+Thu Mar 10 02:27:46.475 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:46.475 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 104 took 0.0721 seconds, returned 1 results
+Thu Mar 10 02:27:46.607 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 108 took 0.1319 seconds, returned 0 results
+Thu Mar 10 02:27:46.739 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 112 took 0.1314 seconds, returned 0 results
+Thu Mar 10 02:27:46.882 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 116 took 0.1431 seconds, returned 0 results
+Thu Mar 10 02:27:46.927 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=645, euid=205, egid=205)]
+Thu Mar 10 02:27:46.928 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for E04AAE26-6F1F-4D8F-A226-B9A5AFBE03FF (services={
+Thu Mar 10 02:27:46.928 })
+Thu Mar 10 02:27:46.929 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:27:47.023 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 120 took 0.1409 seconds, returned 0 results
+Thu Mar 10 02:27:47.165 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 124 took 0.1416 seconds, returned 0 results
+Thu Mar 10 02:27:47.306 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 128 took 0.1415 seconds, returned 0 results
+Thu Mar 10 02:27:47.379 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:27:47.379 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 132 took 0.0726 seconds, returned 1 results
+Thu Mar 10 02:27:47.521 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 136 took 0.1417 seconds, returned 0 results
+Thu Mar 10 02:27:47.662 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 140 took 0.1410 seconds, returned 0 results
+Thu Mar 10 02:27:47.803 AutoJoin: <airportd[616]> Successful cache-assisted auto-join scan request on channel 144 took 0.1413 seconds, returned 0 results
+Thu Mar 10 02:27:47.812 Assoc: <airportd[616]> Will associate to [ssid=Megacable_2.4G_7166, bssid=c2:b1:01:e6:e7:1e, channel=(channel=5, width=20), ibss=no, cc=MX, rssi=-58, rsn=(mcast=tkip, ucast={ tkip aes_ccm }, auths={ psk }, caps=0x0), wpa=(mcast=tkip, ucast={ tkip ccmp }, auths={ psk }), wep=no]
+Thu Mar 10 02:27:47.814 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:27:47.814 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:27:47.814 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:27:47.815 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Thu Mar 10 02:27:47.815 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:27:47.816 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:27:47.816 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:27:47.816 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:27:47.816 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:27:47.816 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:27:47.816 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:27:47.817 Assoc: <airportd[616]> -[CWXPCSubsystem __associateToWiFiNetwork:tetherDevice:password:is8021X:passpointDomain:remember:possiblyHidden:updateUserKeychain:interface:processName:suspendAWDLToken:error:]_block_invoke: CWAWDMetricsOneStatsRecordAssocStats [WIFI_METRICS_ONESTATS_ASSOC_START_EVENT]
+Thu Mar 10 02:27:47.817 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats. Processing Event:1 
+Thu Mar 10 02:27:47.817 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats: OneStats is NOT Configured! No-op here- Returning!
+Thu Mar 10 02:27:47.817 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:27:47.825 Info: <airportd[616]> -[CWXPCInterfaceContext __setAWDLOperatingMode:interface:error:]: attempting to set AWDL mode to 2
+Thu Mar 10 02:27:47.825 Info: <airportd[616]> SUSPEND AWDL for interface en0, timeout=10.0s, reason=Assoc, token=4
+Thu Mar 10 02:27:47.925 <kernel> postMessage::1349 APPLE80211_M_BSSID_CHANGED received
+Thu Mar 10 02:27:47.925  Driver Event: <airportd[616]> _bsd_80211_event_callback: LINK_CHANGED (en0)
+Thu Mar 10 02:27:47.930 <kernel> postMessage::1349 APPLE80211_M_BSSID_CHANGED received
+Thu Mar 10 02:27:47.930  AutoJoin: <airportd[616]> BEST CONNECTED SCAN SCHEDULED on interface en0 in 20.0s
+Thu Mar 10 02:27:47.979 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_LL_ADDR
+Thu Mar 10 02:27:47.979 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:47.979 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:47.979 Driver Event: <airportd[616]> _bsd_80211_event_callback: SSID_CHANGED (en0)
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:27:47.980 Driver Event: <airportd[616]> _bsd_80211_event_callback: BSSID_CHANGED (en0)
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:27:47.980 Info: <airportd[616]> _bsd_80211_event_callback: Frequency Band updated <1>
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:27:47.980 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:27:47.980 Driver Event: <airportd[616]> _bsd_80211_event_callback: LINK_CHANGED (en0)
+Thu Mar 10 02:27:47.981 Driver Event: <airportd[616]> _bsd_80211_event_callback: BSSID_CHANGED (en0)
+Thu Mar 10 02:27:47.981 Info: <airportd[616]> _bsd_80211_event_callback: Frequency Band updated <1>
+Thu Mar 10 02:27:47.989 Driver Event: <airportd[616]> _bsd_80211_event_callback: SSID_CHANGED (en0)
+Thu Mar 10 02:27:47.990 Info: <WiFiAgent[636]> current=(no_ip, aj, 4bars) changed=(no_assoc, no_ip, 4bars)
+Thu Mar 10 02:27:47.991 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:47.994 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.038 Assoc: <airportd[616]> Successfully associated to Wi-Fi network Megacable_2.4G_7166 on interface en0
+Thu Mar 10 02:27:48.038 Assoc: <airportd[616]> -[CWXPCSubsystem __associateToWiFiNetwork:tetherDevice:password:is8021X:passpointDomain:remember:possiblyHidden:updateUserKeychain:interface:processName:suspendAWDLToken:error:]_block_invoke_2: CWAWDMetricsOneStatsRecordAssocStats [WIFI_METRICS_ONESTATS_ASSOC_COMPLETE_EVENT]
+Thu Mar 10 02:27:48.038 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats. Processing Event:2 
+Thu Mar 10 02:27:48.038 Info: <airportd[616]> CWAWDMetricsOneStatsRecordAssocStats: OneStats is NOT Configured! No-op here- Returning!
+Thu Mar 10 02:27:48.038 Info: <airportd[616]> -[CWXPCInterfaceContext __manageProblematicNetworks:addProblematic:reason:]: null profile
+Thu Mar 10 02:27:48.038 Info: <airportd[616]> -[CWXPCInterfaceContext manageNetworksBlacklistedForScanOffload:blacklistNetwork:reason:]_block_invoke: null profile
+Thu Mar 10 02:27:48.038 Info: <airportd[616]> -[CWXPCInterfaceContext manageNetworksBlacklistedForScanOffload:blacklistNetwork:reason:]_block_invoke: 0 network(s) blacklisted for scan offload
+Thu Mar 10 02:27:48.039 AutoJoin: <airportd[616]> Successfully updated Wi-Fi configuration following association, took 0.0002 seconds
+Thu Mar 10 02:27:48.039 AutoJoin: <airportd[616]> -[CWXPCInterfaceContext __updateAutoJoinRetryIntervals]: On battery power, changing to inactive retry interval.
+Thu Mar 10 02:27:48.041 Roam: <airportd[616]> ROAMING PROFILES already set to SINGLE-BAND, SINGLE-AP for 2.4GHz on en0
+Thu Mar 10 02:27:48.046 Roam: <airportd[616]> ROAMING PROFILES already set to SINGLE-BAND, SINGLE-AP for 5GHz on en0
+Thu Mar 10 02:27:48.052 Info: <airportd[616]> SUSPEND AWDL for interface en0, timeout=10.0s, reason=WaitForIP, token=5
+Thu Mar 10 02:27:48.052 Info: <airportd[616]> RESUME AWDL for interface en0, reason=Assoc token=4
+Thu Mar 10 02:27:48.066 Info: <airportd[616]> QUERY SCAN CACHE request received from pid 616 (airportd)
+Thu Mar 10 02:27:48.075 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.076 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=646, euid=205, egid=205)]
+Thu Mar 10 02:27:48.081 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.082 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.092 Info: <airportd[616]> QUERY SCAN CACHE request received from pid 616 (airportd)
+Thu Mar 10 02:27:48.099 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.103 AutoJoin: <airportd[616]> Successful association to network 'Megacable_2.4G_7166' took 0.2999 seconds
+Thu Mar 10 02:27:48.104 AutoJoin: <airportd[616]> AUTO-JOIN COMPLETED for interface en0, took 4.1590 seconds, returned result 'success', error [NO ERROR]
+Thu Mar 10 02:27:48.104 Info: <airportd[616]> PRIORITY LOCK REMOVED [client=airportd, type=4, interface=en0, priority=7]
+Thu Mar 10 02:27:48.104 Info: <airportd[616]> REQUEST UN-DEFERRED minimum=-9223372036854775808 [client=airportd, type=10, interface=en0, priority=2]
+Thu Mar 10 02:27:48.104 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.105 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.111 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: <en0> Handle Bluetooth Coex: FrequencyBand <1>, Bluetooth Bandwidth Utilization <0>, Clamshell Mode <0>
+Thu Mar 10 02:27:48.111 BTC: <airportd[616]> __BluetoothCoexHandleUpdateForNode: Driver supports APPLE80211_CAP_COEX_PROFILE_OFFLOAD. Airportd won't BluetoothCoexModeSet() and defer coex profile loading to UDM coex manager (UCM/WRM) ...
+Thu Mar 10 02:27:48.111 
+Thu Mar 10 02:27:48.111 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID_STR'
+Thu Mar 10 02:27:48.111 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEP40'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothPagingInProgress '
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AirPlay'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/AutoJoinTimestamp'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BSSID'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/SSID'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CHANNEL'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Busy'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/Power Status'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/WEPOPENSYSTEM'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/CachedScanRecord'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/UserMode8021X'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BluetoothAudioInUse'
+Thu Mar 10 02:27:48.112 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Interface/en0/AirPort/BusyUI'
+Thu Mar 10 02:27:48.113 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/IPv4'
+Thu Mar 10 02:27:48.113 SC: <airportd[616]> IPV4 State change for en0
+Thu Mar 10 02:27:48.113 Assoc: <airportd[616]> <en0> IPv4/ROUTER ASSIGNED [ip=192.168.1.3, router=192.168.1.1]
+Thu Mar 10 02:27:48.114 SC: <airportd[616]> IP Address: 192.168.1.3
+Thu Mar 10 02:27:48.114 SC: <airportd[616]> Router IP Address: 192.168.1.1
+Thu Mar 10 02:27:48.114 SC: <airportd[616]> Default Gateway IP Address: 192.168.1.1
+Thu Mar 10 02:27:48.114 SC: <airportd[616]> Router MAC Address: c0:b1:01:c6:e7:1e
+Thu Mar 10 02:27:48.114 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.114 Info: <airportd[616]> -[CWXPCInterfaceContext __setAWDLOperatingMode:interface:error:]: attempting to set AWDL mode to 0
+Thu Mar 10 02:27:48.117 Info: <WiFiAgent[636]> current=(4bars) changed=(no_ip, aj)
+Thu Mar 10 02:27:48.120 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP'
+Thu Mar 10 02:27:48.120 SC: <airportd[616]> _processDHCPChanges: State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP
+Thu Mar 10 02:27:48.120 SC: <airportd[616]> _processDHCPChanges: DHCP airport_changed = 1
+Thu Mar 10 02:27:48.120 Info: <airportd[616]> -[CWXPCSubsystem internal_submitIPConfigLatencyMetric:leaseDuration:]: IPConfig Latency metric data: (null)
+Thu Mar 10 02:27:48.120 SC: <airportd[616]> _setDHCPMessage: dhcpInfoKey "State:/Network/Interface/en0/AirPort/DHCP Message" = (null)
+Thu Mar 10 02:27:48.120 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv4'
+Thu Mar 10 02:27:48.122 Assoc: <airportd[616]> <en0> IPv4/ROUTER ASSIGNED [ip=192.168.1.3, router=192.168.1.1]
+Thu Mar 10 02:27:48.134 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.140 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.145 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.145 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.146 Info: <Wi-Fi Menu Extra[634]> took > 100ms (154ms) to query state for all WiFi menu items
+Thu Mar 10 02:27:48.146 Info: <Wi-Fi Menu Extra[634]> Updating all WiFi menu items
+Thu Mar 10 02:27:48.146 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:48.149 Info: <WiFiAgent[636]> QUERY WIFI DEBUG LOGGING request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.149 Info: <WiFiAgent[636]> QUERY DIAGNOSTICS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.150 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.165 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.171 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.174 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.175 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.175 Info: <Wi-Fi Menu Extra[634]> monitorMode 0, airplay 0, internetSharing 0
+Thu Mar 10 02:27:48.175 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:27:48.176 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.181 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.184 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.185 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.185 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.209 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:27:48.209 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.216 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.222 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.222 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.224 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.261 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:27:48.261 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.269 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.275 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.276 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.277 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.302 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=yes, ipv4Primary=yes, ipv6Primary=no]
+Thu Mar 10 02:27:48.302 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:48.314 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:27:48.314 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.320 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=yes, ipv4Primary=yes, ipv6Primary=no]
+Thu Mar 10 02:27:48.320 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:48.320 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.327 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.327 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:48.328 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:48.975 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_USER_ADDR
+Thu Mar 10 02:27:48.975 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:48.975 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:51.129 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=646, euid=205, egid=205)]
+Thu Mar 10 02:27:51.130 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for 2B9409CB-3876-4112-83FB-CA715F148692 (services={
+Thu Mar 10 02:27:51.130 })
+Thu Mar 10 02:27:51.131 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:27:51.736 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP'
+Thu Mar 10 02:27:51.736 SC: <airportd[616]> _processDHCPChanges: State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/DHCP
+Thu Mar 10 02:27:51.736 SC: <airportd[616]> _processDHCPChanges: DHCP airport_changed = 1
+Thu Mar 10 02:27:51.737 Info: <airportd[616]> -[CWXPCSubsystem internal_submitIPConfigLatencyMetric:leaseDuration:]: IPConfig Latency metric data: (null)
+Thu Mar 10 02:27:51.737 SC: <airportd[616]> _setDHCPMessage: dhcpInfoKey "State:/Network/Interface/en0/AirPort/DHCP Message" = (null)
+Thu Mar 10 02:27:52.491 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_RTADV_ADDR
+Thu Mar 10 02:27:52.491 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:52.491 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:52.491 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:4a5:42bd:9a50:4c96
+Thu Mar 10 02:27:52.491 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:e44a:7b49:4906:59a2
+Thu Mar 10 02:27:52.741 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Service/547829EB-D5BE-405D-A667-4250E225D0F0/IPv6'
+Thu Mar 10 02:27:52.742 Assoc: <airportd[616]> <en0> IPv4/ROUTER ASSIGNED [ip=192.168.1.3, router=192.168.1.1]
+Thu Mar 10 02:27:52.747 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv4'
+Thu Mar 10 02:27:52.747 SC: <airportd[616]> airportdProcessSystemConfigurationEvent: Processing 'State:/Network/Global/IPv6'
+Thu Mar 10 02:27:52.762 Assoc: <airportd[616]> <en0> IPv4/ROUTER ASSIGNED [ip=192.168.1.3, router=192.168.1.1]
+Thu Mar 10 02:27:53.141 Assoc: <airportd[616]> <en0> REACHABILITY [reachable=yes, ipv4Primary=yes, ipv6Primary=yes]
+Thu Mar 10 02:27:53.141 Assoc: <airportd[616]> <awdl0> REACHABILITY [reachable=no, ipv4Primary=no, ipv6Primary=no]
+Thu Mar 10 02:27:53.492 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_USER_ADDR
+Thu Mar 10 02:27:53.492 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:53.492 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:53.492 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:4a5:42bd:9a50:4c96
+Thu Mar 10 02:27:53.492 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:e44a:7b49:4906:59a2
+Thu Mar 10 02:27:53.498 Offload: <airportd[616]> _ipv6EventCallback: en0 KEV_INET6_NEW_USER_ADDR
+Thu Mar 10 02:27:53.498 Offload: <airportd[616]> _ipv6EventCallback: New NDP settings for en0:
+Thu Mar 10 02:27:53.498 Offload: <airportd[616]> _ipv6EventCallback: 	fe80::1c9f:3f46:28cf:af8
+Thu Mar 10 02:27:53.498 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:4a5:42bd:9a50:4c96
+Thu Mar 10 02:27:53.498 Offload: <airportd[616]> _ipv6EventCallback: 	2806:264:5485:913b:e44a:7b49:4906:59a2
+Thu Mar 10 02:27:54.177 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.181 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.181 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.182 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:27:54.182 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:54.185 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=647, euid=205, egid=205)]
+Thu Mar 10 02:27:54.192 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.197 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.198 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.199 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:54.219 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:27:54.219 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:54.226 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.230 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.231 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:27:54.232 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:27:57.259 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=647, euid=205, egid=205)]
+Thu Mar 10 02:27:57.261 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for 55731F00-2D2E-461F-9F25-84DBD01E021E (services={
+Thu Mar 10 02:27:57.261 })
+Thu Mar 10 02:27:57.262 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:28:07.979 AutoJoin: <airportd[616]> BEST CONNECTED SCAN request on interface en0 for network 'Megacable_2.4G_7166' 
+Thu Mar 10 02:28:08.091 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.091     <CWChannel: 0x7fa6f0a1aa60> [channelNumber=1(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.091     <CWChannel: 0x7fa6f0a0c580> [channelNumber=2(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.091     <CWChannel: 0x7fa6f0a0d220> [channelNumber=3(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:28:08.091 )} took 0.1068 seconds, returned 0 results
+Thu Mar 10 02:28:08.203 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:08.204 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.204     <CWChannel: 0x7fa6f0a0cbb0> [channelNumber=4(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.204     <CWChannel: 0x7fa6f0a106e0> [channelNumber=5(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.204     <CWChannel: 0x7fa6f0a1bc20> [channelNumber=6(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:28:08.204 )} took 0.1126 seconds, returned 3 results
+Thu Mar 10 02:28:08.315 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:08.316 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.316     <CWChannel: 0x7fa6f0a1c000> [channelNumber=7(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.316     <CWChannel: 0x7fa6f0a1f490> [channelNumber=8(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.316     <CWChannel: 0x7fa6f0a0dcb0> [channelNumber=9(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:28:08.316 )} took 0.1118 seconds, returned 1 results
+Thu Mar 10 02:28:08.405 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:08.405 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.405     <CWChannel: 0x7fa6f0a1cb90> [channelNumber=10(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.405     <CWChannel: 0x7fa6f0a0cd10> [channelNumber=11(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.405     <CWChannel: 0x7fa6f0a09bc0> [channelNumber=36(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:28:08.405 )} took 0.0891 seconds, returned 1 results
+Thu Mar 10 02:28:08.574 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.574     <CWChannel: 0x7fa6f0a291a0> [channelNumber=40(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:28:08.574     <CWChannel: 0x7fa6f0a1dd80> [channelNumber=44(5GHz), channelWidth={40MHz(+1)}, active],
+Thu Mar 10 02:28:08.574     <CWChannel: 0x7fa6f0a05f90> [channelNumber=48(5GHz), channelWidth={40MHz(-1)}, active]
+Thu Mar 10 02:28:08.574 )} took 0.1687 seconds, returned 0 results
+Thu Mar 10 02:28:08.718 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:08.718 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.718     <CWChannel: 0x7fa6f0a19190> [channelNumber=149(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.718     <CWChannel: 0x7fa6f0a10d60> [channelNumber=153(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:28:08.718     <CWChannel: 0x7fa6efd4d590> [channelNumber=157(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:28:08.718 )} took 0.1440 seconds, returned 2 results
+Thu Mar 10 02:28:08.859 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:08.859     <CWChannel: 0x7fa6f0a0d900> [channelNumber=161(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:28:08.859     <CWChannel: 0x7fa6f0a1c6c0> [channelNumber=165(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:08.859     <CWChannel: 0x7fa6f0a15d70> [channelNumber=12(2GHz), channelWidth={20MHz}]
+Thu Mar 10 02:28:08.859 )} took 0.1408 seconds, returned 0 results
+Thu Mar 10 02:28:09.097 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:09.098 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:09.098     <CWChannel: 0x7fa6f0a0dc80> [channelNumber=13(2GHz), channelWidth={20MHz}],
+Thu Mar 10 02:28:09.098     <CWChannel: 0x7fa6f0a1d800> [channelNumber=52(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:09.098     <CWChannel: 0x7fa6f0a0f450> [channelNumber=56(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:09.098 )} took 0.2390 seconds, returned 1 results
+Thu Mar 10 02:28:09.442 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:09.442 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:09.442     <CWChannel: 0x7fa6f0a0fb00> [channelNumber=60(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:09.442     <CWChannel: 0x7fa6f0a1d1b0> [channelNumber=64(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:09.442     <CWChannel: 0x7fa6efd39df0> [channelNumber=100(5GHz), channelWidth={40MHz(+1)}]
+Thu Mar 10 02:28:09.442 )} took 0.3443 seconds, returned 1 results
+Thu Mar 10 02:28:09.744 Driver Event: <airportd[616]> _bsd_80211_event_callback: SCAN_CACHE_UPDATED (en0)
+Thu Mar 10 02:28:09.745 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:09.745     <CWChannel: 0x7fa6f0a0a190> [channelNumber=104(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:09.745     <CWChannel: 0x7fa6efd42c80> [channelNumber=108(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:09.745     <CWChannel: 0x7fa6f0a13f80> [channelNumber=112(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:09.745 )} took 0.3023 seconds, returned 1 results
+Thu Mar 10 02:28:10.100 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:10.100     <CWChannel: 0x7fa6efd12ac0> [channelNumber=116(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:10.100     <CWChannel: 0x7fa6f0a11520> [channelNumber=120(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:10.100     <CWChannel: 0x7fa6f0a063c0> [channelNumber=124(5GHz), channelWidth={20MHz}]
+Thu Mar 10 02:28:10.100 )} took 0.3552 seconds, returned 0 results
+Thu Mar 10 02:28:10.458 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:10.458     <CWChannel: 0x7fa6f0a0e220> [channelNumber=128(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:10.458     <CWChannel: 0x7fa6f0a0aab0> [channelNumber=132(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:28:10.458     <CWChannel: 0x7fa6f0a0b240> [channelNumber=136(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:10.458 )} took 0.3574 seconds, returned 0 results
+Thu Mar 10 02:28:10.707 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:10.707     <CWChannel: 0x7fa6f0a0fbb0> [channelNumber=140(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:28:10.707     <CWChannel: 0x7fa6f0a0c820> [channelNumber=144(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:10.707 )} took 0.2489 seconds, returned 0 results
+Thu Mar 10 02:28:10.711 Roam: <airportd[616]> ROAMING PROFILES already set to SINGLE-BAND, SINGLE-AP for 2.4GHz on en0
+Thu Mar 10 02:28:10.712 Roam: <airportd[616]> ROAMING PROFILES already set to SINGLE-BAND, SINGLE-AP for 5GHz on en0
+Thu Mar 10 02:28:18.173 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.178 IPC: <airportd[616]> ADDED XPC CLIENT CONNECTION [locationd (pid=657, euid=205, egid=205)]
+Thu Mar 10 02:28:18.179 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.179 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.180 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:28:18.180 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:28:18.186 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.192 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.192 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.193 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:28:18.211 Info: <Wi-Fi Menu Extra[634]> Updating WiFi scan result menu items
+Thu Mar 10 02:28:18.211 Info: <WiFiAgent[636]> QUERY CACHED SCAN RESULTS request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:28:18.217 Info: <airportd[616]> TRIMMED QUERY SCAN CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.221 Info: <airportd[616]> QUERY GAS CACHE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.221 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 636 (WiFiAgent)
+Thu Mar 10 02:28:18.223 Info: <airportd[616]> GET CURRENT TETHER DEVICE request received from pid 634 (macOS Utilities)
+Thu Mar 10 02:28:21.235 IPC: <airportd[616]> INVALIDATED XPC CLIENT CONNECTION [locationd (pid=657, euid=205, egid=205)]
+Thu Mar 10 02:28:21.236 Info: <airportd[616]> <awdl0> Will clear all active AWDL peer traffic registrations for 101FDE13-FC1A-4003-8FE6-C12BD766130F (services={
+Thu Mar 10 02:28:21.236 })
+Thu Mar 10 02:28:21.237 WoW: <airportd[616]> WoW not supported on awdl0, skipping
+Thu Mar 10 02:28:45.099 AutoJoin: <airportd[616]> BACKGROUND SCAN request on interface en0 with SSID list (null) 
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 1 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 2 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 3 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.109 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a0cbb0> [channelNumber=1(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a0cee0> [channelNumber=2(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a15000> [channelNumber=3(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:28:45.109 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 4 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 5 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 6 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.109 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a0d4d0> [channelNumber=4(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a04320> [channelNumber=5(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a10390> [channelNumber=6(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:28:45.109 )} took 0.0002 seconds, returned 3 results
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 7 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 8 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 9 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.109 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a0fdc0> [channelNumber=7(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a0f750> [channelNumber=8(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.109     <CWChannel: 0x7fa6f0a0dcb0> [channelNumber=9(2GHz), channelWidth={20MHz}, active]
+Thu Mar 10 02:28:45.109 )} took 0.0002 seconds, returned 1 results
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 10 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 11 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request on channel 36 does not require a live scan
+Thu Mar 10 02:28:45.109 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.110 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a15d70> [channelNumber=10(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a0a910> [channelNumber=11(2GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a0d500> [channelNumber=36(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:28:45.110 )} took 0.0002 seconds, returned 1 results
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 40 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 44 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 48 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.110 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a0c4f0> [channelNumber=40(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a16cf0> [channelNumber=44(5GHz), channelWidth={40MHz(+1)}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a0d900> [channelNumber=48(5GHz), channelWidth={40MHz(-1)}, active]
+Thu Mar 10 02:28:45.110 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 149 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 153 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 157 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.110 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a0f450> [channelNumber=149(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a09230> [channelNumber=153(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a10690> [channelNumber=157(5GHz), channelWidth={40MHz(+1)}, active]
+Thu Mar 10 02:28:45.110 )} took 0.0002 seconds, returned 2 results
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 161 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 165 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 12 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.110 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a11700> [channelNumber=161(5GHz), channelWidth={40MHz(-1)}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a09bc0> [channelNumber=165(5GHz), channelWidth={20MHz}, active],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a0cd10> [channelNumber=12(2GHz), channelWidth={20MHz}]
+Thu Mar 10 02:28:45.110 )} took 0.0002 seconds, returned 0 results
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 13 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 52 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request on channel 56 does not require a live scan
+Thu Mar 10 02:28:45.110 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.110 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a1c3e0> [channelNumber=13(2GHz), channelWidth={20MHz}],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a148b0> [channelNumber=52(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:45.110     <CWChannel: 0x7fa6f0a06e80> [channelNumber=56(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:45.110 )} took 0.0002 seconds, returned 1 results
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 60 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 64 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 100 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.111 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a14910> [channelNumber=60(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a19190> [channelNumber=64(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0dc70> [channelNumber=100(5GHz), channelWidth={40MHz(+1)}]
+Thu Mar 10 02:28:45.111 )} took 0.0001 seconds, returned 1 results
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 104 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 108 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 112 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.111 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0f420> [channelNumber=104(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0dc80> [channelNumber=108(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a12690> [channelNumber=112(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:45.111 )} took 0.0001 seconds, returned 1 results
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 116 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 120 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 124 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.111 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a1abb0> [channelNumber=116(5GHz), channelWidth={40MHz(+1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0c820> [channelNumber=120(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0abd0> [channelNumber=124(5GHz), channelWidth={20MHz}]
+Thu Mar 10 02:28:45.111 )} took 0.0001 seconds, returned 0 results
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 128 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 132 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 136 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.111 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0fbb0> [channelNumber=128(5GHz), channelWidth={40MHz(-1)}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a04ba0> [channelNumber=132(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a0e220> [channelNumber=136(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:45.111 )} took 0.0001 seconds, returned 0 results
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 140 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request on channel 144 does not require a live scan
+Thu Mar 10 02:28:45.111 Scan: <airportd[616]> Cache-assisted scan request does not require a live scan
+Thu Mar 10 02:28:45.111 AutoJoin: <airportd[616]> Successful cache-assisted background scan request with channels {(
+    <CWChannel: 0x7fa6f0a19130> [channelNumber=140(5GHz), channelWidth={20MHz}],
+Thu Mar 10 02:28:45.111     <CWChannel: 0x7fa6f0a063c0> [channelNumber=144(5GHz), channelWidth={40MHz(-1)}]
+Thu Mar 10 02:28:45.111 )} took 0.0001 seconds, returned 0 results

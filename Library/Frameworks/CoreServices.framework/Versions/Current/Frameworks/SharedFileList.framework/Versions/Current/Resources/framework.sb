@@ -1,0 +1,6 @@
+
+;; SharedFileList
+(allow mach-lookup
+	(global-name "com.apple.coreservices.sharedfilelistd.xpc")
+	(global-name "com.apple.coreservices.sharedfilelistd.mig")
+	(global-name "com.apple.coreservices.sharedfilelistd.async-mig"))

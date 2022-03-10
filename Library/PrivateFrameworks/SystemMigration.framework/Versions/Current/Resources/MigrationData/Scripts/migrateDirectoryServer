@@ -1,0 +1,45 @@
+#!/bin/bash
+
+sourcepath="$1"
+destpath="$2"
+migrationtype="$3"
+dirserv_prefs="/Library/Preferences/com.apple.openldap.plist"
+sourcetype=""
+
+if [ ! -d "${sourcepath}" ]; then
+exit 0;
+fi
+
+if [ ! -d "${destpath}" ]; then
+exit 0;
+fi
+
+if [ ! -f "${sourcepath}${dirserv_prefs}" ]; then
+exit 0;
+fi
+
+if [ -z "${SRCSYSTEMVERSION}" ]; then
+exit 1;
+fi
+
+case ${migrationtype} in
+"os_install") sourcetype="System"
+              ;;
+"migration")  sourcetype="Migration"
+              destpath="/"
+              ;;
+*) exit 1;;
+esac
+
+slapconfig_path="${destpath}/usr/sbin/slapconfig"
+
+if [ ! -x "${slapconfig_path}" ]; then
+exit 1;
+fi
+
+/usr/bin/codesign --verify "${slapconfig_path}"
+if [ "$?" != "0" ]; then
+exit 1;
+fi
+
+DYLD_FALLBACK_FRAMEWORK_PATH="${destpath}/System/Library/PrivateFrameworks:${destpath}/System/Library/PrivateFrameworks/DirectoryServer.framework/Frameworks:${destpath}/System/Library/PrivateFrameworks/AccountPolicy.framework/Frameworks" DYLD_LIBRARY_PATH="${destpath}/usr/lib" "${slapconfig_path}" -migrateldapserver 0 "${sourcepath}" "${destpath}" "${SRCSYSTEMVERSION}" ${sourcetype}  en

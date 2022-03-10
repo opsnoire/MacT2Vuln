@@ -1,0 +1,261 @@
+#!/bin/bash
+
+overridesPath="/private/var/db/launchd.db/com.apple.launchd/overrides.plist";
+overridesDir="/private/var/db/launchd.db/com.apple.launchd";
+systemLaunchDaemonPath="/System/Library/LaunchDaemons/"
+apacheLaunchDaemonPlistFile="org.apache.httpd.plist"
+plistBuddy="/usr/libexec/PlistBuddy";
+finalDstRoot="${DSTROOT}";
+if [[ -n "$DEFERREDINSTALLROOT" ]]; then
+	finalDstRoot="$DEFERREDINSTALLROOT";
+fi
+
+# Compares two version strings with an arbitrary number of period-delimited
+# "minor" version numbers (e.g. 7.5.0.0.0). Takes two parameters: the version
+# to check and the target version (the minimum version required for success).
+#
+# Usage:
+# $version_to_check=`defaults read /path/to/bundle/Contents/version CFBundleShortVersionString`
+# $target_to_meet_or_exceed="7.5.0"
+# if [[ sui_compare_version_numbers ${version_to_check} ${target_to_meet_or_exceed} ]]; then
+#   echo "Success. Checked version ($1) meets or exceeds target ($2)."
+# else
+#   echo "Failure. Checked version ($1) is less than target ($2)."
+# fi
+#
+# Returns 0 on success (check version meets or exceeds target)
+#         1 if target ($2) is less than version ($1)
+#         2 if target ($2) is equal to version ($1)
+# Written by Ben Mitchell.
+function sui_compare_version_numbers() {
+	# Split the versions on periods. IFS is a special variable in bash that
+	# contains the word delimiter. Changing the delimiter allows declare to be
+	# used to split a string on an arbitrary character.
+	local IFS=".";
+	declare -a sui_compare_check=($1);
+	declare -a sui_compare_target=($2);
+
+	# Get the length of each array.
+	sui_compare_check_length=${#sui_compare_check[*]}
+	sui_compare_target_length=${#sui_compare_target[*]}
+
+	# Iterate and compare each token.
+	for((i = 0; i < sui_compare_target_length; i++));
+	do
+		check_token=${sui_compare_check[$i]}
+		target_token=${sui_compare_target[$i]}
+
+		# If we reach the end of the check array, presume subsequent tokens are 0.
+		if [[ $i -ge $sui_compare_check_length ]]; then
+			check_token="0"
+		fi
+
+		# Check for inequality between the two tokens.
+		if [[ $target_token -gt $check_token ]]; then
+			# The target version is greater. Fail.
+			return 1
+		elif [[ $target_token -lt $check_token ]]; then
+			# The version to check is greater. Succeed.
+			return 0
+		fi
+
+		# Tokens must be equal to one another. Continue to the next token.
+	done
+	return 2
+}
+
+# Per 16634168 (and 16931797), remove launchd 2's "already migrated" flag.
+# Force launchd to upgrade from the overrides.plist data of launchd 1.0 if we're
+# upgrading from a source older than 10.10 (where launchd 2 was introduced).
+if sui_compare_version_numbers "10.10" "${SRCSYSTEMVERSION}"; then
+	/bin/echo "Forcing launchd to migrate to newer launchd config";
+	/bin/rm -f "${DSTROOT}/private/var/db/com.apple.xpc.launchd/disabled.migrated"
+fi
+
+# Service list per 11065945, 11843741
+obsoleteServices=(
+	com.apple.AppleVNCServer
+	com.apple.DeviceManagement.SCEPHelper
+	com.apple.HeadlessStartup
+	com.apple.IPAliases
+	com.apple.Rooms
+	com.apple.afctl
+	com.apple.collabauthd
+	com.apple.collabcored1
+	com.apple.collabcored2
+	com.apple.collabcored3
+	com.apple.collabcored4
+	com.apple.collabd
+	com.apple.collabd.expire
+	com.apple.collabd.notifications
+	com.apple.collabd.quicklook
+	com.apple.collabfeedd
+	com.apple.collabsandboxd
+	com.apple.devicemanager
+	com.apple.diskspacemonitor
+	com.apple.emailrules
+	com.apple.emailrules.nightly
+	com.apple.hwmond
+	com.apple.learnjunkmail
+	com.apple.mail_migration
+	com.apple.natd
+	com.apple.passwordreset
+	com.apple.pcastserverd
+	com.apple.ppp.l2tp
+	com.apple.ppp.pptp
+	com.apple.push_notify
+	com.apple.salearn
+	com.apple.serialnumberd
+	com.apple.servermgrd
+	com.apple.swupdate.host
+	com.apple.swupdate.sync
+	com.apple.updatesa
+	com.apple.watchdogtimerd
+	com.apple.wiki_sieve_manager
+	com.apple.wikid
+	com.apple.wikid.logcompressor
+	com.apple.wikid.mailinglists
+	com.apple.wikid.quicklook
+	com.apple.xftpd
+	com.apple.xgridd.pcastserver
+	com.apple.xserve.serial-ports
+	edu.cmu.andrew.cyrus.master
+	org.addressbookserver.addressbookserver
+	org.apache.htcacheclean
+	org.apache.tomcat
+	org.calendarserver.calendarserver
+	org.clamav.clamd
+	org.clamav.freshclam
+	org.clamav.freshclam-init
+	org.dovecot.dovecotd
+	org.dovecot.fts.update
+	org.jabber.jabberd
+	org.jabber.jabberd_notification
+	org.jabber.proxy65
+	org.list.mailmanctl
+	org.mysql.mysqld
+	org.postgresql.postgres
+	org.amavis.amavisd
+	org.amavis.amavisd_cleanup
+	org.freeradius.radiusd
+	org.isc.named
+);
+
+function deleteObsoleteOverrides() {
+	for obsoleteService in ${obsoleteServices[@]}; do
+		/bin/echo removing override for ${obsoleteService};
+		${plistBuddy} -c "delete :${obsoleteService}" "${finalDstRoot}/${overridesPath}" 2>/dev/null;
+	done
+}
+
+# Updated per 10806436
+serverExceptions=(
+					org.apache.httpd
+					org.net-snmp.snmpd
+					);
+
+function setDisabledKey() {
+	local label="${1}";
+	local disabled="${2}";
+	${plistBuddy} -c "add ${label} dict" "${finalDstRoot}/${overridesPath}" 2>/dev/null;
+	${plistBuddy} -c "delete :${label}:Disabled" "${finalDstRoot}/${overridesPath}" 2>/dev/null;
+	${plistBuddy} -c "add ${label}:Disabled bool ${disabled}" "${finalDstRoot}/${overridesPath}";
+}
+
+function deleteReferenceToKey()
+{
+	local label="${1}";
+	${plistBuddy} -c "delete :${label}" "${finalDstRoot}/${overridesPath}" 2>/dev/null;
+}
+
+function applyCustomOverrides() {
+	deleteReferenceToKey com.apple.mDNSResponder;
+	deleteReferenceToKey com.apple.mDNSResponderHelper;
+	deleteReferenceToKey com.apple.stackshot;
+	setDisabledKey com.apple.hdiejectd 0;
+}
+
+function disableServerExceptions() {
+	for exception in ${serverExceptions[@]}; do
+		/bin/echo disabling ${exception};
+		setDisabledKey ${exception} 1;
+	done
+}
+
+isServerMigration=0;
+# As of Mountain Lion, it's a server migration if the Source was a server.
+if [[ -e "${SRCROOT}/System/Library/CoreServices/ServerVersion.plist" ]]; then
+	isServerMigration=1;
+fi
+
+if [[ ! -d "${finalDstRoot}/${overridesDir}" ]]; then
+	/bin/mkdir -p "${finalDstRoot}/${overridesDir}";
+fi
+
+# If we've copied over an overrides.plist, then let's just do some clean up
+if [[ -e "${DSTROOT}/${overridesPath}" ]]; then
+	/bin/echo "Cleaning up contents of ${DSTROOT}/private/var/db/launchd.db";
+
+	disableServerExceptions;
+	deleteObsoleteOverrides;
+
+	for override in "${finalDstRoot}"/private/var/db/launchd.db/com.apple.launchd.peruser.*; do
+		if [[ "${override}" =~ .*com.apple.launchd.peruser\.(.*) ]]; then
+			chown -R "${BASH_REMATCH[1]}" "${override}";
+		fi
+	done
+	
+	applyCustomOverrides;
+	
+	exit;
+fi
+
+# Otherwise, let's create an overrides.plist with the contents of the LaunchDaemon/LaunchAgent plist values
+/bin/echo "Migrating launchd states to overrides.plist";
+/bin/rm -f "${finalDstRoot}/${overridesPath}";
+
+for plist in "${SRCROOT}"/System/Library/LaunchDaemons/*.plist "${SRCROOT}"/System/Library/LaunchAgents/*.plist; do
+	if [[ ${isServerMigration} == 1 ]]; then
+		skip=0;
+		for exception in ${serverExceptions[@]}; do
+			if [[ ${plist} =~ ${exception} ]]; then
+				/bin/echo skipping ${plist};
+				skip=1;
+				break;
+			fi
+		done
+	
+		if [[ ${skip} == 1 ]]; then
+			continue;
+		fi
+	fi
+	
+	disabled="`${plistBuddy} -c 'print Disabled' \"${plist}\" 2>&1`";
+	if [[ $? != "0" ]]; then
+		disabled="0";
+	fi
+	
+	label="`${plistBuddy} -c 'print Label' \"${plist}\" 2>&1`";
+
+	if [[ $? != "0" ]]; then
+		/bin/echo "Unable to get label for ${plist}; skipping..."
+		continue;
+	fi
+
+	# 9724382 & 10516428
+	if [[ ${label} == "com.apple.stackshot" ]]; then
+	        continue;
+	fi
+
+	if [[ $? == "0" ]]; then
+		setDisabledKey ${label} ${disabled};
+		/bin/chmod 600 "${finalDstRoot}/${overridesPath}";
+	fi
+done
+
+if [[ ${isServerMigration} == 1 ]]; then
+	# Clean up override entries belonging to services which no longer exist
+	deleteObsoleteOverrides;
+fi
+
+applyCustomOverrides;

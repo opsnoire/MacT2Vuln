@@ -1,0 +1,610 @@
+2022-03-10 02:24:15+00 localhost opendirectoryd[230]: opendirectoryd (build 692.100) launched - installer mode
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Failed to open file <private> [2: No such file or directory]
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Initialize trigger support
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Failed to open file <private> [2: No such file or directory]
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Failed to open file <private> [2: No such file or directory]
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] created endpoint for mach service 'com.apple.private.opendirectoryd.rpc'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Registered RPC over XPC 'reset_cache' for service 'com.apple.private.opendirectoryd.rpc'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Registered RPC over XPC 'reset_online' for service 'com.apple.private.opendirectoryd.rpc'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Registered RPC over XPC 'reset_statistics' for service 'com.apple.private.opendirectoryd.rpc'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Registered RPC over XPC 'show' for service 'com.apple.private.opendirectoryd.rpc'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] starting endpoint for service 'com.apple.private.opendirectoryd.rpc'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] UID: 0, EUID: 0, GID: 0, EGID: 0, PID: 241, PROC: sandboxd ODNodeCreateWithNameAndOptions request, SessionID: 00000000-0000-0000-0000-000000000000, Name: /Local/Default, Options: 0x0
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Setting external work dequeue limit to 256
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Setting external work limit to 128
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Failed to open file <private> [2: No such file or directory]
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Registered node with name '/Configure' as hidden
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Configure'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Configure'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - notified opendirectoryd:nodes;register;/Configure
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Failed to open file <private> [2: No such file or directory]
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Registered node with name '/Local' as hidden
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Local'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Local'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - notified opendirectoryd:nodes;register;/Local
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Local'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [session] loading configuration for '/Local' from '/System/Library/OpenDirectory/Configurations/Local.plist'
+2022-03-10 02:24:16+00 localhost opendirectoryd[230]: [default] Loaded bundle at path '/System/Library/OpenDirectory/Modules/PlistFile.bundle'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Trigger - new attribute trigger watching for 'opendirectoryd:records;modify;/Local/Default;dsRecTypeStandard:Config;CIFSServer;dsAttrTypeStandard:XMLPlist'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [default] Failed to open file <private> [2: No such file or directory]
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] unable to find authentication module 'AppleID'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Registered subnode with name '/Local/Default'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Local/Default'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Local/Default'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Registering for network changes
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Trigger - notified opendirectoryd:nodes;register;/Local/Default
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] nodestate - starting check for '/Local/Default'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] an error of 2100 'Connection failed to node '/Local/Default'' occurred
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] ODNodeCreateWithNameAndOptions failed with result 2100
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] failed to open local node for internal record copy
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] service discovery skipped for node '/Local/Default'
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Node is 10.7 or later
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] initiating reconnect for A07E70BF-0510-4A7C-A8F0-C65DB75D6671
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] nodestate - flagging '/Local/Default' online
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Trigger - notified opendirectoryd:nodes;online;/Local/Default
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Internal: ODNodeCreateWithNameAndOptions request, SessionID: 00000000-0000-0000-0000-000000000000, Name: /Local/Default, Options: 0x0
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] node assigned UUID - 2B2CEC5C-832A-4E82-9F27-04F89FB5B582
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] ODNodeCreateWithNameAndOptions completed
+2022-03-10 02:24:17+00 localhost opendirectoryd[230]: [session] Trigger - fired node event 'register' for '/Local/Default'
+2022-03-10 02:24:18+00 localhost Installer Progress[225]: Progress UI App Starting
+2022-03-10 02:24:24+00 localhost powerd[217]: powerd process is started
+2022-03-10 02:24:24+00 localhost powerd[217]: Assertion Created. Type:PreventUserIdleDisplaySleep Name:'Running FSCK' Id:0x500008000 Process:fsck_apfs [System: PrevDisp kDisp]
+2022-03-10 02:24:24+00 localhost powerd[217]: Assertion Created. Type:PreventUserIdleDisplaySleep Name:'Running FSCK' Id:0x500008001 Process:fsck_apfs [System: PrevDisp kDisp]
+2022-03-10 02:24:24+00 localhost Unknown[589]: kern.boottime: { sec = 1646879041, usec = 892181 } Thu Mar 10 02:24:01 2022
+2022-03-10 02:24:24+00 localhost powerd[217]: Assertion Created. Type:InternalPreventDisplaySleep Name:'com.apple.powermanagement.delayDisplayOff' Id:0x1000008002 Process:powerd [System: PrevDisp IntPrevDisp kDisp]
+2022-03-10 02:24:24+00 localhost powerd[217]: Assertion Released. Type:PreventUserIdleDisplaySleep Name:'Running FSCK' Id:0x500008001 Process:fsck_apfs [System: PrevDisp IntPrevDisp kDisp]
+2022-03-10 02:24:24+00 localhost powerd[217]: Assertion Released. Type:PreventUserIdleDisplaySleep Name:'Running FSCK' Id:0x500008000 Process:fsck_apfs [System: IntPrevDisp kDisp]
+2022-03-10 02:24:24+00 localhost opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:24+00 localhost opendirectoryd[230]: [session] UID: 0, EUID: 0, GID: 0, EGID: 0, PID: 231, PROC: apsd ODNodeCreateWithNameAndOptions request, SessionID: 00000000-0000-0000-0000-000000000000, Name: /Search, Options: 0x0
+2022-03-10 02:24:24+00 localhost opendirectoryd[230]: [session] ODNodeCreateWithNameAndOptions failed with result 2000
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] UID: 0, EUID: 0, GID: 0, EGID: 0, PID: 241, PROC: sandboxd ODNodeCreateWithNameAndOptions request, SessionID: 00000000-0000-0000-0000-000000000000, Name: /Local/Default, Options: 0x0
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] node assigned UUID - B96425E5-72EA-411F-8E04-AD3C089375B5
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] ODNodeCreateWithNameAndOptions completed
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] UID: 0, EUID: 0, GID: 0, EGID: 0, PID: 241, PROC: sandboxd ODQueryCreateWithNode request, NodeID: B96425E5-72EA-411F-8E04-AD3C089375B5, RecordType(s): dsRecTypeStandard:Users, Attribute: dsAttrTypeStandard:UniqueID, MatchType: GreaterThan, Equality: Number, Value(s): 500, Requested Attributes: dsAttrTypeStandard:NFSHomeDirectory,dsAttrTypeStandard:GeneratedUID,dsAttrTypeStandard:RecordName,dsAttrTypeStandard:UniqueID,dsAttrTypeStandard:AppleMetaRecordName,dsAttrTypeStandard:RecordType,dsAttrTypeStandard:AppleMetaNodeLocation, Max Results: 2147483647
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] queuing request to connection - A07E70BF-0510-4A7C-A8F0-C65DB75D6671 - CFBundle 0x7ff86d406b20 </System/Library/OpenDirectory/Modules/PlistFile.bundle> (bundle, loaded)
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] ODQueryCreateWithNode completed
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] UID: 0, EUID: 0, GID: 0, EGID: 0, PID: 241, PROC: sandboxd ODNodeRelease request, NodeID: B96425E5-72EA-411F-8E04-AD3C089375B5
+2022-03-10 02:24:25+00 localhost opendirectoryd[230]: [session] ODNodeRelease completed
+2022-03-10 02:24:25+00 localhost Unknown[608]: Launching the Language Chooser for an OS Install
+2022-03-10 02:24:25+00 localhost bspowerassertiontool[602]: Tool exited successfully (0).
+2022-03-10 02:24:25+00 localhost launchprogresswindow[605]: ISAP: Show progress UI called
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: setting hostname to "MacBook-Pro.local"
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: XHC0: enable (default)
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: XHC20: enable (default)
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: VHC128: enable (default)
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: ap1: enable (default)
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:27+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:28+00 MacBook-Pro opendirectoryd[230]: [session] Processing a network change notification
+2022-03-10 02:24:39+00 MacBook-Pro opendirectoryd[230]: [session] PID: 231, Client: 'apsd', exited with 0 session(s), 0 node(s) and 0 active request(s)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: en3: enable (default)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: en3: ioctl(SIOCSQOSMARKINGENABLED) failed: Operation not permitted
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: en0: enable (default)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: en1: enable (default)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: en2: enable (default)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:47+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: inet_set_autoaddr(en3, 1) failed, Operation not permitted (1)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: inet_set_autoaddr(en3, 1) failed, Operation not permitted (1)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: siocsifcgaprep_in6(en3) failed, Operation not permitted (1)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: siocll_start(en3) failed, Operation not permitted (1)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: siocautoconf_start(en3) failed, Operation not permitted (1)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: siocautoconf_stop(en3) failed, Operation not permitted (1)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: AUTOMATIC-V6 en3: status = 'internal error'
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: en0: no SSID
+2022-03-10 02:24:47+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: network changed
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: bridge0 link INACTIVE
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: bridge0: enable (default)
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: bridge0: link inactive timer fired
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: DHCP bridge0: status = 'media inactive'
+2022-03-10 02:24:47+00 MacBook-Pro configd[216]: AUTOMATIC-V6 bridge0: status = 'media inactive'
+2022-03-10 02:24:48+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:24:49+00 MacBook-Pro opendirectoryd[230]: [session] UID: 0, EUID: 0, GID: 0, EGID: 0, PID: 619, PROC: apsd ODNodeCreateWithNameAndOptions request, SessionID: 00000000-0000-0000-0000-000000000000, Name: /Search, Options: 0x0
+2022-03-10 02:24:49+00 MacBook-Pro opendirectoryd[230]: [session] ODNodeCreateWithNameAndOptions failed with result 2000
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: QoS marking policy: awdl0: enable (default)
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: QoS marking policy: llw0: enable (default)
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restrict_avapps=0
+2022-03-10 02:24:49+00 MacBook-Pro configd[216]: QoS marking policy: sysctl net.qos.policy.restricted=0
+2022-03-10 02:24:49+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	}
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	}
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: IASGetCurrentInstallPhaseList: phases = (
+	        {
+	        ConclusionDelay = 0;
+	        InstallPhase = "Boot 1";
+	        InstallPhaseActualPercentageKey = "46.6796875";
+	        InstallPhasePercentageKey = 47;
+	    },
+	        {
+	        ConclusionDelay = 0;
+	        InstallPhase = "Language Chooser";
+	        InstallPhaseActualPercentageKey = "53.3203125";
+	        InstallPhasePercentageKey = 53;
+	    }
+	)
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: IASGetCurrentInstallPhase: Current phase name is "Boot 1"
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: currentPhase = "<IASPPhase: 0x600001d833e0: 'Boot 1', percentage 46.7, delay 0>", phases = (
+	    "<IASPPhase: 0x600001d833e0: 'Boot 1', percentage 46.7, delay 0>",
+	    "<IASPPhase: 0x600001d83400: 'Language Chooser', percentage 53.3, delay 0>"
+	)
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: IASGetCurrentInstallPhaseList: phases = (
+	        {
+	        ConclusionDelay = 0;
+	        InstallPhase = "Boot 1";
+	        InstallPhaseActualPercentageKey = "46.6796875";
+	        InstallPhasePercentageKey = 47;
+	    },
+	        {
+	        ConclusionDelay = 0;
+	        InstallPhase = "Language Chooser";
+	        InstallPhaseActualPercentageKey = "53.3203125";
+	        InstallPhasePercentageKey = 53;
+	    }
+	)
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: IASGetCurrentInstallPhase: Current phase name is "Boot 1"
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: currentPhase = "<IASPPhase: 0x600001da8460: 'Boot 1', percentage 46.7, delay 0>", phases = (
+	    "<IASPPhase: 0x600001da8460: 'Boot 1', percentage 46.7, delay 0>",
+	    "<IASPPhase: 0x600001da8480: 'Language Chooser', percentage 53.3, delay 0>"
+	)
+2022-03-10 02:24:50+00 MacBook-Pro configd[216]: network changed
+2022-03-10 02:24:50+00 MacBook-Pro configd[216]: network changed: DNS*
+2022-03-10 02:24:50+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:50+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:24:50+00 MacBook-Pro configd[216]: en0: no SSID
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: Progress app is loading…
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: Progress app is running…
+2022-03-10 02:24:50+00 MacBook-Pro Installer Progress[225]: Showing Progress UI
+2022-03-10 02:24:50+00 MacBook-Pro configd[216]: en0: no SSID
+2022-03-10 02:24:51+00 MacBook-Pro Installer Progress[225]: There are 0 window(s) and 1 display(s), 1 window(s) will be added
+2022-03-10 02:24:51+00 MacBook-Pro Installer Progress[225]: IOProgressColorTheme is set to 1
+2022-03-10 02:24:51+00 MacBook-Pro Installer Progress[225]: Created a window at {{0, 0}, {1440, 900}}
+2022-03-10 02:24:51+00 MacBook-Pro configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:24:54+00 MacBook-Pro configd[216]: en0: no SSID
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: en0 link ACTIVE
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: DHCP en0: status = 'network changed'
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: AUTOMATIC-V6 en0: status = 'network changed'
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:24:55+00 MacBook-Pro Installer Progress[225]: Status is ""
+2022-03-10 02:24:55+00 MacBook-Pro Installer Progress[225]: Alternate status is ""
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:24:55+00 MacBook-Pro opendirectoryd[230]: [session] Processing a network change notification
+2022-03-10 02:24:55+00 MacBook-Pro Installer Progress[225]: Setting window alpha values to 0.0
+2022-03-10 02:24:55+00 MacBook-Pro Installer Progress[225]: Ordering windows front
+2022-03-10 02:24:55+00 MacBook-Pro Installer Progress[225]: Ordering windows front
+2022-03-10 02:24:55+00 MacBook-Pro Installer Progress[225]: Setting window alpha values to 1.0
+2022-03-10 02:24:55+00 MacBook-Pro configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:24:58+00 MacBook-Pro Language Chooser[609]: LCA: most frequent language: es
+2022-03-10 02:24:58+00 MacBook-Pro Language Chooser[609]: LCA: most frequent language: en
+2022-03-10 02:24:58+00 MacBook-Pro Language Chooser[609]: LCA: most frequent country code: MX
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: Using progress phase: Language Chooser
+2022-03-10 02:24:59+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	}
+2022-03-10 02:24:59+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e874d0>";
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	}
+2022-03-10 02:24:59+00 MacBook-Pro Unknown[610]: 2022-03-10 02:24:59.065 Language Chooser[609:2268] NSDisabledCharacterPaletteMenuItem=YES
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: Setup: Factory cable attached: 0
+2022-03-10 02:24:59+00 MacBook-Pro Unknown[610]: Setting boot completed.
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: StartupManagerFailureReason: 0x01
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: StartupManagerFailureReason: 0x01
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: Could not read prev-lang:kbd to set keyboard.
+2022-03-10 02:24:59+00 MacBook-Pro Unknown[610]: 2022-03-10 02:24:59.275 Language Chooser[609:2268] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7ff33bc11530 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: No primary language hint found
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: StartupManagerFailureReason: 0x01
+2022-03-10 02:24:59+00 MacBook-Pro Language Chooser[609]: Launching the Springboard using language code "en"
+2022-03-10 02:24:59+00 MacBook-Pro Installer Progress[225]: IASSetCurrentInstallPhase: Current phase name set to "Language Chooser"
+2022-03-10 02:25:00+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: StartupManagerFailureReason: 0x01
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: Creating connection
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: Connection = 0x7fe8d9504b30, callers = (
+	    "<IASUPCaller: 0x7fe8d7c2dd90>"
+	)
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: client 0x7fe8d9505e90: phaseName = "Install Springboard", registering connection
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: client 0x7fe8d9505e90: phaseName = "Install Springboard" was created
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: client 0x7fe8d9505e90: phaseName = "Install Springboard", hide progress UI called
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: ISAP: hide progress UI called
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: ISAP: hide progress UI called
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: client 0x7fe8d9505e90: phaseName = "Install Springboard" is being released
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: Releasing Connection
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e874d0>";
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	    "D5DF83E9-B9A2-4272-B1C6-2BF8E55949B9" =     {
+	        "Phase Name" = "Install Springboard";
+	        "Process ID" = 634;
+	        UUID = "D5DF83E9-B9A2-4272-B1C6-2BF8E55949B9";
+	    };
+	}
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e874d0>";
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	    "D5DF83E9-B9A2-4272-B1C6-2BF8E55949B9" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e979d0>";
+	        "Phase Name" = "Install Springboard";
+	        "Process ID" = 634;
+	        UUID = "D5DF83E9-B9A2-4272-B1C6-2BF8E55949B9";
+	    };
+	}
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Hiding Progress UI
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Setting window alpha values to 0.0
+2022-03-10 02:25:00+00 MacBook-Pro OSIESpringboard[634]: Can not connect to /var/run/systemkeychaincheck.socket: No such file or directory
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e874d0>";
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	    "D5DF83E9-B9A2-4272-B1C6-2BF8E55949B9" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e96490>";
+	        "Phase Name" = "Install Springboard";
+	        "Process ID" = 634;
+	        UUID = "D5DF83E9-B9A2-4272-B1C6-2BF8E55949B9";
+	    };
+	}
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e874d0>";
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	}
+2022-03-10 02:25:00+00 MacBook-Pro Language Chooser[609]: StartupManagerFailureReason: 0x01
+2022-03-10 02:25:00+00 MacBook-Pro Language Chooser[609]: Not hiding Language Chooser in window counter
+2022-03-10 02:25:00+00 MacBook-Pro Installer Progress[225]: Ordering windows out
+2022-03-10 02:25:00+00 MacBook-Pro configd[216]: AUTOMATIC-V6 en0: publish success
+2022-03-10 02:25:00+00 MacBook-Pro configd[216]: network changed: v6(en0+:2806:264:5485:913b:4a5:42bd:9a50:4c96) DNS+ Proxy+ SMB
+2022-03-10 02:25:00+00 MacBook-Pro configd[216]: Publishing data to agent DNSAgent-_defaultDNS (73 bytes)
+2022-03-10 02:25:00+00 MacBook-Pro configd[216]: Publishing data to agent DNSAgent-@en0 (73 bytes)
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: 2022-03-10 02:25:00.704 macOS Utilities[634:2815] NSDisabledCharacterPaletteMenuItem=YES
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: 2022-03-10 02:25:00.786 macOS Utilities[634:2815] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7fe8d91252a0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: 2022-03-10 02:25:00.917 Boot Recovery Assistant[637:2837] NSDisabledCharacterPaletteMenuItem=YES
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: 2022-03-10 02:25:00.922 macOS Utilities[634:2815] TISFileInterrogator updateSystemInputSources false but old data invalid: currentCacheHeaderPtr nonNULL? 0, ->cacheFormatVersion 0, ->magicCookie 00000000, inputSourceTableCountSys 0
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: 2022-03-10 02:25:00.934 Boot Recovery Assistant[637:2837] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7f971f51b2a0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: Keyboard Layouts: duplicate keyboard layout identifier -17410.
+2022-03-10 02:25:00+00 MacBook-Pro Unknown[610]: Keyboard Layouts: keyboard layout identifier -17410 has been replaced with -28673.
+2022-03-10 02:25:00+00 MacBook-Pro Boot Recovery Assistant[637]: Starting reporting logs from NVRAM state
+2022-03-10 02:25:01+00 MacBook-Pro Unknown[610]: Keyboard Layouts: duplicate keyboard layout identifier -14934.
+2022-03-10 02:25:01+00 MacBook-Pro Unknown[610]: Keyboard Layouts: keyboard layout identifier -14934 has been replaced with -28674.
+2022-03-10 02:25:01+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: AUTOMATIC-V6 en0: publish success
+2022-03-10 02:25:01+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: AUTOMATIC-V6 en0: publish success
+2022-03-10 02:25:01+00 MacBook-Pro bosreporter[639]: Starting with BridgeOSInstall-72 (built Jun  5 2020 23:50:57)
+2022-03-10 02:25:01+00 MacBook-Pro bosreporter[639]: Enqueuing request to report update failure from previous boot (with error check = 1)
+2022-03-10 02:25:01+00 MacBook-Pro Boot Recovery Assistant[637]: StartupManagerFailureReason: 0x01
+2022-03-10 02:25:01+00 MacBook-Pro Boot Recovery Assistant[637]: Clearing non-volatile NVRAM variable: AppleSecureBootFailureReason
+2022-03-10 02:25:01+00 MacBook-Pro Boot Recovery Assistant[637]: Clearing non-volatile NVRAM variable: AppleSecureBootKernelFailureReason
+2022-03-10 02:25:01+00 MacBook-Pro Boot Recovery Assistant[637]: Clearing non-volatile NVRAM variable: StartupManagerFailureReason
+2022-03-10 02:25:01+00 MacBook-Pro bosreporter[639]: BOSUpdateStarted isn't set, skipping log collection
+2022-03-10 02:25:01+00 MacBook-Pro OSIESpringboard[634]: -[SpringboardController utilityDidAppear:]: NSConcreteNotification 0x7fe8d9106c80 {name = com.apple.installdvdspringboard.utilityappear; object = <NSConcreteTask: 0x7fe8d931e900>}
+2022-03-10 02:25:01+00 MacBook-Pro Language Chooser[609]: Hide in progress window hack
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: DHCP en0: setting 192.168.1.3 netmask 255.255.255.0 broadcast 192.168.1.255
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: LINKLOCAL en0: status = 'success'
+2022-03-10 02:25:01+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: DHCP en0: publish success
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: network changed: v4(en0+:192.168.1.3) v6(en0:2806:264:5485:913b:4a5:42bd:9a50:4c96) DNS! Proxy SMB
+2022-03-10 02:25:01+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: Publishing data to agent DNSAgent-_defaultDNS (87 bytes)
+2022-03-10 02:25:01+00 MacBook-Pro configd[216]: Publishing data to agent DNSAgent-@en0 (87 bytes)
+2022-03-10 02:25:01+00 192 configd[216]: setting hostname to "192.168.1.3"
+2022-03-10 02:25:03+00 192 Language Chooser[609]: ISAP: Done with Phase "Language Chooser"
+2022-03-10 02:25:03+00 192 Installer Progress[225]: Done with phase = "Language Chooser"
+2022-03-10 02:25:03+00 192 Installer Progress[225]: IASClearInstallProgress: Clearing Registry
+2022-03-10 02:25:03+00 192 Installer Progress[225]: Ending progress UI via 100% progress
+2022-03-10 02:25:03+00 192 Installer Progress[225]: Setting window alpha values to 0.0
+2022-03-10 02:25:03+00 192 Installer Progress[225]: Ordering windows out
+2022-03-10 02:25:03+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:25:03+00 192 configd[216]: set_arp_linklocal(en3) SIOCARPIPLL 0 failed, Operation not permitted
+2022-03-10 02:25:03+00 192 configd[216]: arp_client_open_fd: bpf_setif(en3) failed: Device not configured (6)
+2022-03-10 02:25:05+00 192 Installer Progress[225]: Unable to quit because there are connected processes
+2022-03-10 02:25:05+00 192 Installer Progress[225]: Connected processes {
+	    "10101614-5A51-4307-BCF8-AA67B9B0AFE6" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003e874d0>";
+	        "Phase Name" = "Language Chooser";
+	        "Process ID" = 609;
+	        UUID = "10101614-5A51-4307-BCF8-AA67B9B0AFE6";
+	    };
+	    "6B0FED49-C768-424E-A60F-EEBD71D21F19" =     {
+	        CompletionHandlerKey = "<__NSMallocBlock__: 0x600003ea4730>";
+	        "Phase Name" = "Launch Progress Window";
+	        "Process ID" = 605;
+	        UUID = "6B0FED49-C768-424E-A60F-EEBD71D21F19";
+	    };
+	}
+2022-03-10 02:25:06+00 192 opendirectoryd[230]: [session] Processing a network change notification
+2022-03-10 02:25:12+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:25:21+00 192 configd[216]: DHCP en3: reported address acquisition failure symptom
+2022-03-10 02:25:21+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:25:30+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:25:39+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:25:47+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:25:56+00 192 configd[216]: DHCP en3: status = 'no server'
+2022-03-10 02:26:24+00 192 powerd[217]: Assertion TimedOut. Type:InternalPreventDisplaySleep Name:'com.apple.powermanagement.delayDisplayOff' Id:0x1000008002 Process:powerd [System: IntPrevDisp kDisp]
+2022-03-10 02:26:32+00 192 powerd[217]: Display is turned off
+2022-03-10 02:26:46+00 192 powerd[217]: Assertion Released. Type:Idle Sleep Preventer Name:'IODisplayWrangler' Id:0x0 Process: [System: No Assertions]
+2022-03-10 02:26:46+00 192 powerd[217]: Assertion Created. Type:InternalPreventSleep Name:'com.apple.powermanagement.darkwakelinger' Id:0xd00008011 Process:powerd [System: SRPrevSleep kCPU]
+2022-03-10 02:26:56+00 192 configd[216]: inet_set_autoaddr(en3, 1) failed, Operation not permitted (1)
+2022-03-10 02:26:56+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:26:57+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:27:00+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:27:01+00 192 powerd[217]: Assertion TimedOut. Type:InternalPreventSleep Name:'com.apple.powermanagement.darkwakelinger' Id:0xd00008011 Process:powerd [System: SRPrevSleep kCPU]
+2022-03-10 02:27:01+00 192 powerd[217]: Entering Sleep state due to 'Idle Sleep': battCap:100 pwrSrc: Batt
+2022-03-10 02:27:01+00 192 opendirectoryd[230]: [session] Received power notification - disabling network activity
+2022-03-10 02:27:01+00 192 configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:27:03+00 192 configd[216]: en3 link INACTIVE
+2022-03-10 02:27:03+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:43+00 192 opendirectoryd[230]: [session] Processing a network change notification
+2022-03-10 02:27:43+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:43+00 192 configd[216]: en0 link INACTIVE
+2022-03-10 02:27:43+00 192 configd[216]: en0: no SSID
+2022-03-10 02:27:43+00 192 opendirectoryd[230]: [session] Received power notification - enabling network activity
+2022-03-10 02:27:43+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:43+00 192 powerd[217]: Display is turned on
+2022-03-10 02:27:43+00 192 powerd[217]: Assertion Created. Type:MaintenanceWake Name:'mDNSResponder:maintenance' Id:0xd00008019 Process:mDNSResponder [System: No Assertions]
+2022-03-10 02:27:43+00 192 powerd[217]: Assertion Released. Type:MaintenanceWake Name:'mDNSResponder:maintenance' Id:0xd00008019 Process:mDNSResponder [System: No Assertions]
+2022-03-10 02:27:43+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:43+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:44+00 192 configd[216]: en3 link ACTIVE
+2022-03-10 02:27:44+00 192 configd[216]: en3: link status changed at wake
+2022-03-10 02:27:44+00 192 configd[216]: en3: link inactive timer fired
+2022-03-10 02:27:44+00 192 configd[216]: inet_set_autoaddr(en3, 0) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: DHCP en3: status = 'media inactive'
+2022-03-10 02:27:44+00 192 configd[216]: set_arp_linklocal(en3) SIOCARPIPLL 0 failed, Operation not permitted
+2022-03-10 02:27:44+00 192 configd[216]: LINKLOCAL en3: status = 'media inactive'
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_stop(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: AUTOMATIC-V6 en3: status = 'media inactive'
+2022-03-10 02:27:44+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:44+00 192 configd[216]: siocll_stop(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: DHCP en3: status = 'network changed'
+2022-03-10 02:27:44+00 192 configd[216]: inet_set_autoaddr(en3, 1) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:27:44+00 192 configd[216]: set_arp_linklocal(en3) SIOCARPIPLL 0 failed, Operation not permitted
+2022-03-10 02:27:44+00 192 configd[216]: arp_client_open_fd: bpf_setif(en3) failed: Device not configured (6)
+2022-03-10 02:27:44+00 192 configd[216]: set_arp_linklocal(en3) SIOCARPIPLL 0 failed, Operation not permitted
+2022-03-10 02:27:44+00 192 configd[216]: arp_client_open_fd: bpf_setif(en3) failed: Device not configured (6)
+2022-03-10 02:27:44+00 192 configd[216]: siocsifcgaprep_in6(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: siocll_start(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_start(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_stop(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: AUTOMATIC-V6 en3: status = 'internal error'
+2022-03-10 02:27:44+00 192 configd[216]: set_arp_linklocal(en3) SIOCARPIPLL 0 failed, Operation not permitted
+2022-03-10 02:27:44+00 192 configd[216]: LINKLOCAL en3: status = 'success'
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_start(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_stop(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: AUTOMATIC-V6 en3: status = 'internal error'
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_start(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: siocautoconf_stop(en3) failed, Operation not permitted (1)
+2022-03-10 02:27:44+00 192 configd[216]: AUTOMATIC-V6 en3: status = 'internal error'
+2022-03-10 02:27:44+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:45+00 192 powerd[217]: Wake from Deep Idle [CDNVA] : due to EC.KeyboardTouchpad/User
+	 battCap:100 pwrSrc: Batt
+2022-03-10 02:27:45+00 192 configd[216]: en0: link inactive timer fired
+2022-03-10 02:27:45+00 192 configd[216]: DHCP en0: removing 192.168.1.3
+2022-03-10 02:27:45+00 192 configd[216]: en0: removed IP address 192.168.1.3
+2022-03-10 02:27:45+00 192 configd[216]: DHCP en0: status = 'media inactive'
+2022-03-10 02:27:45+00 192 configd[216]: LINKLOCAL en0: status = 'media inactive'
+2022-03-10 02:27:45+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:45+00 192 configd[216]: AUTOMATIC-V6 en0: status = 'media inactive'
+2022-03-10 02:27:45+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:45+00 192 configd[216]: en0: no SSID
+2022-03-10 02:27:45+00 192 configd[216]: DHCP en0: status = 'network changed'
+2022-03-10 02:27:45+00 192 configd[216]: DHCP bridge0: status = 'network changed'
+2022-03-10 02:27:45+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:45+00 192 configd[216]: LINKLOCAL en0: status = 'success'
+2022-03-10 02:27:45+00 192 configd[216]: network changed: v4(en0-:192.168.1.3) v6(en0-:2806:264:5485:913b:4a5:42bd:9a50:4c96) DNS- Proxy-
+2022-03-10 02:27:45+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:45+00 MacBook-Pro configd[216]: setting hostname to "MacBook-Pro.local"
+2022-03-10 02:27:45+00 MacBook-Pro opendirectoryd[230]: [session] Received power notification (system has powered on)
+2022-03-10 02:27:45+00 MacBook-Pro configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:27:45+00 MacBook-Pro powerd[217]: Assertion Created. Type:UserIsActive Name:'com.apple.iohideventsystem.queue.tickle serviceID:1000007ed name:NULL product:Apple Internal Keyb eventType:11' Id:0x90000801c Process:hidd [System: DeclUser kDisp]
+2022-03-10 02:27:47+00 MacBook-Pro configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:27:47+00 MacBook-Pro configd[216]: en0 link ACTIVE
+2022-03-10 02:27:47+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:27:47+00 MacBook-Pro configd[216]: DHCP en0: status = 'network changed'
+2022-03-10 02:27:47+00 MacBook-Pro configd[216]: AUTOMATIC-V6 en0: status = 'network changed'
+2022-03-10 02:27:47+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:47+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: en0: SSID Megacable_2.4G_7166 BSSID c2:b1:1:e6:e7:1e
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: DHCP en0: setting 192.168.1.3 netmask 255.255.255.0 broadcast 192.168.1.255
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: DHCP en0: publish success
+2022-03-10 02:27:48+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: LINKLOCAL en0: status = 'success'
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: network changed: v4(en0+:192.168.1.3) DNS+ Proxy+ SMB
+2022-03-10 02:27:48+00 MacBook-Pro opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: Publishing data to agent DNSAgent-_defaultDNS (73 bytes)
+2022-03-10 02:27:48+00 MacBook-Pro configd[216]: Publishing data to agent DNSAgent-@en0 (73 bytes)
+2022-03-10 02:27:48+00 192 configd[216]: setting hostname to "192.168.1.3"
+2022-03-10 02:27:48+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:51+00 192 configd[216]: DHCP en0: publish success
+2022-03-10 02:27:52+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:52+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:27:52+00 192 configd[216]: AUTOMATIC-V6 en0: publish success
+2022-03-10 02:27:52+00 192 configd[216]: network changed: v4(en0:192.168.1.3) v6(en0+:2806:264:5485:913b:4a5:42bd:9a50:4c96) DNS! Proxy SMB
+2022-03-10 02:27:52+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:52+00 192 configd[216]: Publishing data to agent DNSAgent-_defaultDNS (87 bytes)
+2022-03-10 02:27:52+00 192 configd[216]: Publishing data to agent DNSAgent-@en0 (87 bytes)
+2022-03-10 02:27:53+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:53+00 192 configd[216]: AUTOMATIC-V6 en0: publish success
+2022-03-10 02:27:53+00 192 opendirectoryd[230]: [session] Received a network change notification
+2022-03-10 02:27:53+00 192 configd[216]: AUTOMATIC-V6 en0: publish success
+2022-03-10 02:27:57+00 192 opendirectoryd[230]: [session] Processing a network change notification
+2022-03-10 02:28:01+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:28:01+00 192 configd[216]: set_arp_linklocal(en3) SIOCARPIPLL 0 failed, Operation not permitted
+2022-03-10 02:28:01+00 192 configd[216]: arp_client_open_fd: bpf_setif(en3) failed: Device not configured (6)
+2022-03-10 02:28:07+00 192 Boot Recovery Assistant[637]: Launching Startup Disk
+2022-03-10 02:28:07+00 192 Boot Recovery Assistant[637]: Waiting for pid
+2022-03-10 02:28:07+00 192 Boot Recovery Assistant[637]: Obtained pid
+2022-03-10 02:28:07+00 192 Boot Recovery Assistant[637]: Starting window timer for pid 648
+2022-03-10 02:28:07+00 192 Unknown[610]: 2022-03-10 02:28:07.863 Startup Disk[648:3391] NSDisabledCharacterPaletteMenuItem=YES
+2022-03-10 02:28:07+00 192 Boot Recovery Assistant[637]: Window is being shown, adjusting focus
+2022-03-10 02:28:08+00 192 powerd[217]: Assertion Created. Type:ExternalMedia Name:'com.apple.powermanagement.externalmediamounted' Id:0x80000801e Process:powerd [System: DeclUser kDisp]
+2022-03-10 02:28:09+00 192 Unknown[610]: 2022-03-10 02:28:09.196 Startup Disk[648:3391] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7fafd1404de0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:28:09+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:28:17+00 192 configd[216]: DHCP en3: reported address acquisition failure symptom
+2022-03-10 02:28:17+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:28:19+00 192 OSIESpringboard[634]: -[SpringboardController startupDiskDidTerminate]
+2022-03-10 02:28:19+00 192 OSIESpringboard[634]: Startup Disk terminated but we still have a launched utility task (path = /System/Installation/CDIS/Boot Recovery Assistant.app/Contents/MacOS/Boot Recovery Assistant, pid = 637), adjusting focus
+2022-03-10 02:28:19+00 192 Unknown[610]: 
+2022-03-10 02:28:19+00 192 Boot Recovery Assistant[637]: Task /System/Applications/Utilities/Startup Disk.app/Contents/MacOS/Startup Disk exited 0
+2022-03-10 02:28:19+00 192 Boot Recovery Assistant[637]: Quitting after task termination
+2022-03-10 02:28:20+00 192 OSIESpringboard[634]: -[SpringboardController utilityDidTerminate:]: NSConcreteNotification 0x7fe8dcda61e0 {name = NSTaskDidTerminateNotification; object = <NSConcreteTask: 0x7fe8d931e900>}
+2022-03-10 02:28:20+00 192 OSIESpringboard[634]: -[SpringboardController showWindow]
+2022-03-10 02:28:20+00 192 OSIESpringboard[634]: -[SpringboardController _launchKeyRecoveryAssistantForAuthentication]
+2022-03-10 02:28:21+00 192 KeyRecoveryAssistant[658]: Running KeyRecoveryAssistant-115 (/AppleInternal/BuildRoot/Library/Caches/com.apple.xbs/Sources/KeyRecoveryAssistant/KeyRecoveryAssistant-115)
+2022-03-10 02:28:21+00 192 KeyRecoveryAssistant[658]: Device is activated but not locked: <no error>
+2022-03-10 02:28:21+00 192 Unknown[610]: 2022-03-10 02:28:21.362 KeyRecoveryAssistant[658:3548] NSDisabledCharacterPaletteMenuItem=YES
+2022-03-10 02:28:21+00 192 storagekitd[660]: Starting SKDaemon...
+2022-03-10 02:28:21+00 192 storagekitd[660]: Client entitled for destructive operations
+2022-03-10 02:28:21+00 192 storagekitd[660]: Adding client connection <NSXPCConnection: 0x7f9941104a50> connection on mach service named com.apple.storagekitd from pid 658
+2022-03-10 02:28:21+00 192 OSIESpringboard[634]: -[SpringboardController utilityDidAppear:]: NSConcreteNotification 0x7fe8d9098620 {name = com.apple.installdvdspringboard.utilityappear; object = <NSConcreteTask: 0x7fe8d9457280>}
+2022-03-10 02:28:21+00 192 Unknown[610]: 2022-03-10 02:28:21.516 KeyRecoveryAssistant[658:3548] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7fa3632593d0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:28:24+00 192 Unknown[610]: 2022-03-10 02:28:24.213 Startup Disk[661:3593] TISFileInterrogator updateSystemInputSources false but old data invalid: currentCacheHeaderPtr nonNULL? 0, ->cacheFormatVersion 0, ->magicCookie 00000000, inputSourceTableCountSys 0
+2022-03-10 02:28:24+00 192 Unknown[610]: Keyboard Layouts: duplicate keyboard layout identifier -17410.
+2022-03-10 02:28:24+00 192 Unknown[610]: Keyboard Layouts: keyboard layout identifier -17410 has been replaced with -28673.
+2022-03-10 02:28:24+00 192 Unknown[610]: Keyboard Layouts: duplicate keyboard layout identifier -14934.
+2022-03-10 02:28:24+00 192 Unknown[610]: Keyboard Layouts: keyboard layout identifier -14934 has been replaced with -28674.
+2022-03-10 02:28:24+00 192 KeyRecoveryAssistant[658]: Connected to daemon. Language set to: en
+2022-03-10 02:28:24+00 192 KeyRecoveryAssistant[658]: Connected to daemon. Language set to: en
+2022-03-10 02:28:24+00 192 Unknown[610]: 2022-03-10 02:28:24.861 KeyRecoveryAssistant[658:3549] Connected to daemon. Language set to: en
+2022-03-10 02:28:24+00 192 Unknown[610]: 2022-03-10 02:28:24.861 KeyRecoveryAssistant[658:3549] Connected to daemon. Language set to: en
+2022-03-10 02:28:25+00 192 KeyRecoveryAssistant[658]: setSystemToRecover: unset volume
+2022-03-10 02:28:25+00 192 KeyRecoveryAssistant[658]: Hiding APFS volume 'Inst', no users on volume
+2022-03-10 02:28:25+00 192 KeyRecoveryAssistant[658]: Hiding APFS volume 'Preboot', no users on volume
+2022-03-10 02:28:25+00 192 KeyRecoveryAssistant[658]: Auth mode, but no internal FV volumes and activation lock isn't enabled. Just exit
+2022-03-10 02:28:25+00 192 KeyRecoveryAssistant[658]: Quitting after successful auth...
+2022-03-10 02:28:25+00 192 Unknown[610]: Connected to daemon. Language set to: en
+2022-03-10 02:28:25+00 192 Unknown[610]: Connected to daemon. Language set to: en
+2022-03-10 02:28:25+00 192 storagekitd[660]: Removing client connection <SKDaemonConnection: 0x7f9941105730>
+2022-03-10 02:28:25+00 192 storagekitd[660]: No more connections, storagekitd will exit...
+2022-03-10 02:28:25+00 192 OSIESpringboard[634]: -[SpringboardController _keyRecoveryAssistantDidTerminateAfterAuthentication:]: NSConcreteNotification 0x7fe8d7caf6b0 {name = NSTaskDidTerminateNotification; object = <NSConcreteTask: 0x7fe8d9457280>}
+2022-03-10 02:28:25+00 192 OSIESpringboard[634]: KeyRecoveryAssistant authentication was successful (200)
+2022-03-10 02:28:25+00 192 OSIESpringboard[634]: -[SpringboardController utilityDidTerminate:]: NSConcreteNotification 0x7fe8d7caf6b0 {name = NSTaskDidTerminateNotification; object = <NSConcreteTask: 0x7fe8d9457280>}
+2022-03-10 02:28:25+00 192 OSIESpringboard[634]: -[SpringboardController showWindow]
+2022-03-10 02:28:25+00 192 Unknown[610]: 2022-03-10 02:28:25.620 Startup Disk[661:3593] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7ffcc3208030 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:28:26+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:28:34+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:28:43+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:28:45+00 192 Unknown[610]: 2022-03-10 02:28:45.281 Startup Security Utility[666:3650] Setting NVRAM 94b73556-2197-4702-82a8-3e1337dafbfb:AppleSecureVariableWriteInRecoveryTest to {length = 1, bytes = 0xaa}, result = 0xe00002bc
+2022-03-10 02:28:45+00 192 Unknown[610]: 2022-03-10 02:28:45.343 Startup Security Utility[666:3650] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7fe2d784f3f0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:28:45+00 192 OSIESpringboard[634]: -[SpringboardController utilityDidAppear:]: NSConcreteNotification 0x7fe8d7c215d0 {name = com.apple.installdvdspringboard.utilityappear; object = <NSConcreteTask: 0x7fe8dcf04fd0>}
+2022-03-10 02:28:47+00 192 OSIESpringboard[634]: -[SpringboardController utilityDidTerminate:]: NSConcreteNotification 0x7fe8d933df60 {name = NSTaskDidTerminateNotification; object = <NSConcreteTask: 0x7fe8dcf04fd0>}
+2022-03-10 02:28:47+00 192 OSIESpringboard[634]: -[SpringboardController showWindow]
+2022-03-10 02:28:51+00 192 configd[216]: DHCP en3: status = 'no server'
+2022-03-10 02:28:59+00 192 OSIESpringboard[634]: -[SpringboardController startupDiskDidTerminate]
+2022-03-10 02:28:59+00 192 OSIESpringboard[634]: Startup Disk terminated and we don't have a launched utility task, showing window
+2022-03-10 02:28:59+00 192 OSIESpringboard[634]: -[SpringboardController showWindow]
+2022-03-10 02:29:02+00 192 Unknown[610]: 2022-03-10 02:29:02.666 Terminal[667:3722] NSDisabledCharacterPaletteMenuItem=YES
+2022-03-10 02:29:03+00 192 Unknown[610]: 2022-03-10 02:29:03.067 Terminal[667:3722] NSSoftLinking - The Quartz framework's library couldn't be loaded from /System/Library/Frameworks/Quartz.framework/Versions/A/Quartz.
+2022-03-10 02:29:03+00 192 Unknown[610]: 2022-03-10 02:29:03.093 Terminal[667:3722] unable to obtain configuration from file:///Library/Preferences/com.apple.ViewBridge.plist due to Error Domain=NSCocoaErrorDomain Code=260 "The file “com.apple.ViewBridge.plist” couldn’t be opened because there is no such file." UserInfo={NSFilePath=/Library/Preferences/com.apple.ViewBridge.plist, NSUnderlyingError=0x7fd444d073e0 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+2022-03-10 02:29:03+00 192 OSIESpringboard[634]: -[SpringboardController utilityDidAppear:]: NSConcreteNotification 0x7fe8d90cb470 {name = com.apple.installdvdspringboard.utilityappear; object = <NSConcreteTask: 0x7fe8dcf04fd0>}
+2022-03-10 02:29:03+00 192 Unknown[610]: 2022-03-10 02:29:03.307 Terminal[667:3722] TISFileInterrogator updateSystemInputSources false but old data invalid: currentCacheHeaderPtr nonNULL? 0, ->cacheFormatVersion 0, ->magicCookie 00000000, inputSourceTableCountSys 0
+2022-03-10 02:29:03+00 192 Unknown[610]: Keyboard Layouts: duplicate keyboard layout identifier -17410.
+2022-03-10 02:29:03+00 192 Unknown[610]: Keyboard Layouts: keyboard layout identifier -17410 has been replaced with -28673.
+2022-03-10 02:29:03+00 192 Unknown[610]: Keyboard Layouts: duplicate keyboard layout identifier -14934.
+2022-03-10 02:29:03+00 192 Unknown[610]: Keyboard Layouts: keyboard layout identifier -14934 has been replaced with -28674.
+2022-03-10 02:29:28+00 192 Unknown[610]: 2022-03-10 02:29:28.221 Terminal[667:3722] NSSoftLinking - The SidecarUI framework's library couldn't be loaded from (null).
+2022-03-10 02:29:29+00 192 powerd[217]: Assertion Released. Type:ExternalMedia Name:'com.apple.powermanagement.externalmediamounted' Id:0x80000801e Process:powerd [System: DeclUser kDisp]
+2022-03-10 02:29:35+00 192 powerd[217]: Assertion Released. Type:PreventUserIdleSystemSleep Name:'com.apple.diskmanagementd' Id:0x10000801d Process:diskmanagementd [System: DeclUser kDisp]
+2022-03-10 02:29:51+00 192 configd[216]: inet_set_autoaddr(en3, 1) failed, Operation not permitted (1)
+2022-03-10 02:29:51+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:29:52+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:29:55+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:29:59+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:08+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:17+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:25+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:33+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:41+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:50+00 192 configd[216]: DHCP en3: INIT transmit failed
+2022-03-10 02:30:58+00 192 configd[216]: DHCP en3: status = 'no server'

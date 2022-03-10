@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/System/Library/PrivateFrameworks/SystemMigration.framework/Resources/safecp -f "$SRCROOT"/private/var/db/dslocal/nodes/Default/groups/com.apple.sharepoint.group* "$DSTROOT"/private/var/db/dslocal/nodes/Default/groups/

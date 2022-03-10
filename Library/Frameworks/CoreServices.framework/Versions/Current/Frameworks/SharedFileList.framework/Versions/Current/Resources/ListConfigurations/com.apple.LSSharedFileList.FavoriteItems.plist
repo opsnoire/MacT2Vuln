@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultItems</key>
+	<array>
+		<dict>
+			<key>URL</key>
+			<string>nwnode://domain-AirDrop</string>
+			<key>CustomItemProperties</key>
+			<dict>
+				<key>com.apple.LSSharedFileList.SpecialItemIdentifier</key>
+				<string>com.apple.LSSharedFileList.IsMeetingRoom</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>URL</key>
+			<string>file:///System/Library/CoreServices/Finder.app/Contents/Resources/MyLibraries/myDocuments.cannedSearch</string>
+		</dict>
+		<dict>
+			<key>NSSearchPathDirectory</key>
+			<integer>1</integer>
+			<key>NSSearchPathDomainMask</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>NSSearchPathDirectory</key>
+			<integer>12</integer>
+			<key>NSSearchPathDomainMask</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>NSSearchPathDirectory</key>
+			<integer>9</integer>
+			<key>NSSearchPathDomainMask</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>NSSearchPathDirectory</key>
+			<integer>15</integer>
+			<key>NSSearchPathDomainMask</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PropertyOverrides</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.ForceTemplateIcons</key>
+		<true/>
+	</dict>
+	<key>DefaultsDomain</key>
+	<string>com.apple.sidebarlists</string>
+	<key>DefaultsKey</key>
+	<string>favoriteitems</string>
+	<key>IsOrdered</key>
+	<true/>
+	<key>ListClass</key>
+	<string>FavoritesListController</string>
+</dict>
+</plist>

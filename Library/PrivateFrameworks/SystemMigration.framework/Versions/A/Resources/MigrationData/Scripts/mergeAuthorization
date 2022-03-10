@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# As requested in 10831980
+
+authorizationPath="/private/etc/authorization"
+
+if [[ -f "${SRCROOT}/${authorizationPath}" ]]; then
+	/bin/echo "Merging authorizations from ${SRCROOT}${authorizationPath} into ${DSTROOT}${authorizationPath}";
+	# First have to copy the Source version to a temp location, because we are going to need to modify it.
+	/System/Library/PrivateFrameworks/SystemMigration.framework/Resources/safecp -f -l "${SRCROOT}${authorizationPath}" "${DSTROOT}${authorizationPath}.source"
+
+	# Merge the new file into the old - going in this direction preserves changes made by Apple to Apple rights. (11516496)
+	/usr/bin/security authorization merge "${DSTROOT}${authorizationPath}" "${DSTROOT}${authorizationPath}.source"
+	
+	# Now replace the new file with the merged file.
+	/System/Library/PrivateFrameworks/SystemMigration.framework/Resources/safecp -f -l "${DSTROOT}${authorizationPath}.source" "${DSTROOT}${authorizationPath}"
+
+	# Clean up the temporary file
+	rm "${DSTROOT}${authorizationPath}.source"
+fi
+

@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+my $PLISTBUDDY = "/usr/libexec/PlistBuddy";
+my $plist = $ARGV[0];
+my $key = $ARGV[1];
+my $type = $ARGV[2];
+
+my $value = `$PLISTBUDDY -c "print $key" \Q$ENV{SRCROOT}/$plist\E 2>&1`;
+chomp $value;
+if (!$?) {
+	`$PLISTBUDDY -c "delete $key" \Q$ENV{DSTROOT}/$plist\E`;
+	`$PLISTBUDDY -c "add $key $type $value" \Q$ENV{DSTROOT}/$plist\E`;
+} else {
+	`$PLISTBUDDY -c "delete $key" \Q$ENV{DSTROOT}/$plist\E`;
+}

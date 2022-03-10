@@ -1,0 +1,40 @@
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk PKINITMechanism:auth,privileged during import of authenticate
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk LocalAuthentication:context during import of localauthentication-context
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:login during import of system.login.fus
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:success during import of system.login.fus
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:done during import of system.login.fus
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk RestartAuthorization:restart during import of system.restart
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk RestartAuthorization:success during import of system.restart
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk RestartAuthorization:shutdown during import of system.shutdown
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk RestartAuthorization:success during import of system.shutdown
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk KerberosAgent:kerberos-dialog during import of com.apple.KerberosAgent
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk KerberosAgent:kerberos-authenticate,privileged during import of com.apple.KerberosAgent
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:login during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:FDESupport,privileged during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk PKINITMechanism:auth,privileged during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:success during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk HomeDirMechanism:login,privileged during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk HomeDirMechanism:status during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk MCXMechanism:login during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk CryptoTokenKit:login during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [authd] Warning mechanism not found on disk loginwindow:done during import of system.login.console
+Mar 10 02:24:24 localhost authd[345]: [logging-persist] cannot open file at line 43353 of [378230ae7f]
+Mar 10 02:24:24 localhost authd[345]: [logging-persist] os_unix.c:43353: (0) open(/var/db/DetachedSignatures) - Undefined error: 0
+Mar 10 02:24:24 localhost authd[345]: [User Defaults] using backstop value (
+	    en
+	) to avoid returning NULL for key AppleLanguages in kCFPreferencesCurrentApplication
+Mar 10 02:24:24 localhost authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:24:24 localhost authd[345]: Can not connect to /var/run/systemkeychaincheck.socket: No such file or directory
+Mar 10 02:24:24 localhost authd[345]: [storagemgr] using system preferences
+Mar 10 02:24:24 localhost authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:24:55 MacBook-Pro authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:25:25 --- last message repeated 2 times ---
+Mar 10 02:28:07 192 authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:28:07 192 authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:28:19 --- last message repeated 3 times ---
+Mar 10 02:28:19 192 authd[345]: [authd] Succeeded authorizing right 'system.preferences.startupdisk' by client '/usr/libexec/diskmanagementd' [649] for authorization created by '/System/Applications/Utilities/Startup Disk.app' [648] (B,0) (engine 4)
+Mar 10 02:28:21 192 authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:28:51 --- last message repeated 8 times ---
+Mar 10 02:29:12 192 authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:29:12 192 authd[345]: [SecError] Trust evaluate failure: [leaf TemporalValidity]
+Mar 10 02:29:48 --- last message repeated 5 times ---

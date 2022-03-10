@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Bundle Identifier</key>
+		<string>com.betteradvertising.ghostery</string>
+		<key>Developer Identifier</key>
+		<string>HPY23A294X</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>net.adblockultimate.adblockultimatesafari</string>
+	    <key>Developer Identifier</key>
+	    <string>TG54C588MZ</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.GreatCanadianRebates</string>
+	    <key>Developer Identifier</key>
+	    <string>W9E6M74QYG</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.MilesBooster</string>
+	    <key>Developer Identifier</key>
+	    <string>MV6783W5B3</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Jiggy</string>
+	    <key>Developer Identifier</key>
+	    <string>8ME85Z596X</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Gynny</string>
+	    <key>Developer Identifier</key>
+	    <string>5RTD492RZ4</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.CouponPaste</string>
+	    <key>Developer Identifier</key>
+	    <string>7S928LG25Q</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.igivebutton</string>
+	    <key>Developer Identifier</key>
+	    <string>LADKC5GH9G</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.FlyingBlue</string>
+	    <key>Developer Identifier</key>
+	    <string>EWJTWJL2DZ</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.DealDoktor</string>
+	    <key>Developer Identifier</key>
+	    <string>N64U5Y52L6</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.iConsumerButton</string>
+	    <key>Developer Identifier</key>
+	    <string>CNCS47ASSE</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.goodshop</string>
+	    <key>Developer Identifier</key>
+	    <string>24MGUH34FU</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.RotaryGumdrop</string>
+	    <key>Developer Identifier</key>
+	    <string>24MGUH34FU</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.mallforafrica.mfa</string>
+	    <key>Developer Identifier</key>
+	    <string>9R6NA9X2US</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.skaggivara.Uniblock</string>
+	    <key>Developer Identifier</key>
+	    <string>9ZWDNJ5X28</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Ziggedy</string>
+	    <key>Developer Identifier</key>
+	    <string>S82JAB9M6M</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Rewards4Racing</string>
+	    <key>Developer Identifier</key>
+	    <string>L6C8C726SQ</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>org.adremover.safari</string>
+	    <key>Developer Identifier</key>
+	    <string>G9R433UN62</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.CashBag</string>
+	    <key>Developer Identifier</key>
+	    <string>WPHQAS3C45</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.GetLucky</string>
+	    <key>Developer Identifier</key>
+	    <string>PV79DKGW8E</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>shop.com.shopbuddyus</string>
+	    <key>Developer Identifier</key>
+	    <string>28KV99LX3X</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Prescrit</string>
+	    <key>Developer Identifier</key>
+	    <string>DPQ487PKR3</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.mallforafrica.mfa</string>
+	    <key>Developer Identifier</key>
+	    <string>W67LVM7587</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.REDBALLSYSTEM</string>
+	    <key>Developer Identifier</key>
+	    <string>HBVB3NXYY6</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.mallforafrica.mfw</string>
+	    <key>Developer Identifier</key>
+	    <string>W67LVM7587</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.VratnePenizeczPipomnek</string>
+	    <key>Developer Identifier</key>
+	    <string>ZS3LM3PHVF</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.el1t.uBlock</string>
+	    <key>Developer Identifier</key>
+	    <string>3NU33NW2M3</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.shopicks.safari</string>
+	    <key>Developer Identifier</key>
+	    <string>52637H29AM</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.adguard.safari</string>
+	    <key>Developer Identifier</key>
+	    <string>N33TQXN8C7</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.ADDNAMEHERE</string>
+	    <key>Developer Identifier</key>
+	    <string>CZCWQWV4GL</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.ShopBuddyCA</string>
+	    <key>Developer Identifier</key>
+	    <string>28KV99LX3X</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.DeippiesnlSpaarhulp</string>
+	    <key>Developer Identifier</key>
+	    <string>H8MVFTTJJ3</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Cashrewards</string>
+	    <key>Developer Identifier</key>
+	    <string>WPDLU326V5</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.ShopandGivereminder</string>
+	    <key>Developer Identifier</key>
+	    <string>5KWKJVWBTS</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.TheCouponCabinSidekick</string>
+	    <key>Developer Identifier</key>
+	    <string>WMZWU4Q2GQ</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.CardRewards</string>
+	    <key>Developer Identifier</key>
+	    <string>3ACY27EPZZ</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.MrRebatesQuickCashButton</string>
+	    <key>Developer Identifier</key>
+	    <string>Z2MRMKMX53</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Amikash</string>
+	    <key>Developer Identifier</key>
+	    <string>P77C556755</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.jen.dialectic.safari.extension</string>
+	    <key>Developer Identifier</key>
+	    <string>Q88976HC4B</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.LassoBookmarkManager</string>
+	    <key>Developer Identifier</key>
+	    <string>R8K8S6YJ4S</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>org.easyfundraising.findandremind</string>
+	    <key>Developer Identifier</key>
+	    <string>555BZCNV65</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.imperosoftware.educationproextension</string>
+	    <key>Developer Identifier</key>
+	    <string>S5U8DNU5N3</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.MyPointsScore</string>
+	    <key>Developer Identifier</key>
+	    <string>PV79DKGW8E</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.MNOMarketplace</string>
+	    <key>Developer Identifier</key>
+	    <string>CM866NE8SN</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.GetPaidToCashAlert</string>
+	    <key>Developer Identifier</key>
+	    <string>E2Y4MPVMX5</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.Cashbackerassistenten</string>
+	    <key>Developer Identifier</key>
+	    <string>A8P5NWZHHN</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.LetyShops</string>
+	    <key>Developer Identifier</key>
+	    <string>8SY8U2YJ38</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.ObybSecurity</string>
+	    <key>Developer Identifier</key>
+	    <string>284W368NRK</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.MonalerteBonneJourne</string>
+	    <key>Developer Identifier</key>
+	    <string>7C828Y4MLX</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.toggleable.JavaScriptBlocker5</string>
+	    <key>Developer Identifier</key>
+	    <string>6S8J5HV3H4</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.CashbackBar</string>
+	    <key>Developer Identifier</key>
+	    <string>88JURJY7LE</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.StartShop</string>
+	    <key>Developer Identifier</key>
+	    <string>FV5TZ6G77E</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.stopallads.stopalladssafari</string>
+	    <key>Developer Identifier</key>
+	    <string>W5672G9B78</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.CashBackButton</string>
+	    <key>Developer Identifier</key>
+	    <string>CM866NE8SN</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.ShopBackCashbackButton</string>
+	    <key>Developer Identifier</key>
+	    <string>63768R85VC</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.findx.privacycontrol</string>
+	    <key>Developer Identifier</key>
+	    <string>5QE6FTCMP9</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.pcvark.adblocker</string>
+	    <key>Developer Identifier</key>
+	    <string>RQA86TX865</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>redmorph.com</string>
+	    <key>Developer Identifier</key>
+	    <string>6CZ737N7YQ</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.FatWalletExpress</string>
+	    <key>Developer Identifier</key>
+	    <string>MUA2CU723E</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.RedCrossbyGoodshop</string>
+	    <key>Developer Identifier</key>
+	    <string>24MGUH34FU</string>
+	</dict>
+	<dict>
+	    <key>Bundle Identifier</key>
+	    <string>com.ci.flipgiveco</string>
+	    <key>Developer Identifier</key>
+	    <string>-2GQADC863</string>
+	</dict>
+</array>
+</plist>

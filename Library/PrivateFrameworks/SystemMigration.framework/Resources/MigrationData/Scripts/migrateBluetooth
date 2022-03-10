@@ -1,0 +1,21 @@
+#!/bin/bash
+
+prefsPath="/Library/Preferences";
+btPrefs="${prefsPath}/com.apple.Bluetooth.plist";
+plistBuddy="/usr/libexec/PlistBuddy";
+
+function migrate() {
+	logger -p install.info "Migrating ${prefsPath}";
+	/System/Library/PrivateFrameworks/SystemMigration.framework/Resources/safecp -f "${SRCROOT}/${btPrefs}" "${DSTROOT}/${prefsPath}";
+}
+
+if [[ ! -e "${DSTROOT}/${prefsPath}" ]]; then
+	migrate;
+	exit;
+fi
+
+${plistBuddy} -c "print HIDDevices:0" "${DSTROOT}/${prefsPath}" &>/dev/null;
+if [[ $? != 0 ]]; then
+	migrate;
+	exit;
+fi

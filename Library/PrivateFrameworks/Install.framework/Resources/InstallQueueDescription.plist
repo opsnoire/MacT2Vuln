@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>post failure recovery</string>
+		<key>Description</key>
+		<string>prepares the disk to retry after failed installation</string>
+		<key>OSClassName</key>
+		<string>OSRecoverFailedInstallQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>pre-reap sizing</string>
+		<key>Description</key>
+		<string>calculates expected reap size, and ensures enough space for install</string>
+		<key>OSClassName</key>
+		<string>OSPreInstallSizingQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>fsck target</string>
+		<key>Description</key>
+		<string>fsck the target volume</string>
+		<key>OSClassName</key>
+		<string>OSVolumeFsckQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>ensure recovery partition</string>
+		<key>Description</key>
+		<string>creates or updates the recovery partition using BaseSystem.dmg</string>
+		<key>OSClassName</key>
+		<string>OSCreateRecoverySystemQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>download packages</string>
+		<key>Description</key>
+		<string>copies or downloads selected packages into a cache on local disk for installation</string>
+		<key>OSClassName</key>
+		<string>OSDownloadPackagesQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>verify packages</string>
+		<key>Description</key>
+		<string>xar verifies selected packages queued for installation</string>
+		<key>OSClassName</key>
+		<string>OSVerifyMediaQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>create archive</string>
+		<key>Description</key>
+		<string>create an archive of the old system for reaping and migration</string>
+		<key>OSClassName</key>
+		<string>OSPreUpgradeInstallQueueElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>activate vm</string>
+		<key>Description</key>
+		<string>enable vm with swap files on the target disk, reserves disk, enables journaling</string>
+		<key>OSClassName</key>
+		<string>OSVolumeSetupQueueElement</string>
+		<key>IFClassName</key>
+		<string>IFVolumeSetupElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>reap old system</string>
+		<key>Description</key>
+		<string>reap system files in the previous system archive</string>
+		<key>OSClassName</key>
+		<string>OSSystemReaperQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>start logging to disk</string>
+		<key>Description</key>
+		<string>routes the install log buffer to a file on the target</string>
+		<key>OSClassName</key>
+		<string>OSAttachLogQueueElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>copy base system</string>
+		<key>Description</key>
+		<string>copies the base system</string>
+		<key>OSClassName</key>
+		<string>OSBaseSystemCopierQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>install packages with PackageKit</string>
+		<key>Description</key>
+		<string>installs packages using PackageKit</string>
+		<key>IFClassName</key>
+		<string>IFPKInstallElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>write helper cookies</string>
+		<key>Description</key>
+		<string>writes language cookie for macbuddy and install type cookie for server</string>
+		<key>OSClassName</key>
+		<string>OSCookiesQueueElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>remove temporary directory</string>
+		<key>Description</key>
+		<string>removes temporary directory used by IF-based package installs</string>
+		<key>IFClassName</key>
+		<string>IFRemoveTempDirsElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>bless target disk</string>
+		<key>Description</key>
+		<string>execs /usr/sbin/bless on the target volume on non-media-based os install</string>
+		<key>OSClassName</key>
+		<string>OSBlessDiskQueueElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>finalize target disk</string>
+		<key>Description</key>
+		<string>blesses disk for media-based os install, releases reserved disks</string>
+		<key>OSClassName</key>
+		<string>OSFinalizeDiskQueueElement</string>
+		<key>IFClassName</key>
+		<string>IFFinalizeDiskElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>migrate users and files</string>
+		<key>Description</key>
+		<string>migrates users and files from the archive to the new system</string>
+		<key>OSClassName</key>
+		<string>OSPostUpgradeInstallQueueElement</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>end of install tasks</string>
+		<key>Description</key>
+		<string>touches files on the target volume based on paths installed</string>
+		<key>OSClassName</key>
+		<string>OSEndOfInstallJobQueueElement</string>
+		<key>IFClassName</key>
+		<string>IFEndOfInstallJobElement</string>
+		<key>Attributes</key>
+		<array>
+			<string>instant</string>
+		</array>
+	</dict>
+</array>
+</plist>

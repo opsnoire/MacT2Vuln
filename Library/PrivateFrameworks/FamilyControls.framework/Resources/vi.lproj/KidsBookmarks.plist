@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.chamhoc.vn</string>
+				<key>title</key>
+				<string>chamhoc.vn</string>
+			</dict>
+			<key>URLString</key>
+			<string>http://www.chamhoc.vn</string>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+		</dict>
+		<dict>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.webtretho.com</string>
+				<key>title</key>
+				<string>Web Trẻ Thơ</string>
+			</dict>
+			<key>URLString</key>
+			<string>http://www.webtretho.com</string>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+		</dict>
+		<dict>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.vuontre.com</string>
+				<key>title</key>
+				<string>Vườn Trẻ Thờ</string>
+			</dict>
+			<key>URLString</key>
+			<string>http://www.vuontre.com</string>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+		</dict>
+		<dict>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://mamnon.com</string>
+				<key>title</key>
+				<string>Mầm Non</string>
+			</dict>
+			<key>URLString</key>
+			<string>http://mamnon.com</string>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.tntp.org.vn</string>
+				<key>title</key>
+				<string>Báo thiếu niên nhi đồng</string>
+			</dict>
+			<key>URLString</key>
+			<string>http://www.tntp.org.vn</string>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+		</dict>
+		<dict>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.nxbtre.com.vn</string>
+				<key>title</key>
+				<string>Nhà xuất bản trẻ</string>
+			</dict>
+			<key>URLString</key>
+			<string>http://www.nxbtre.com.vn</string>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+		</dict>
+	</array>
+	<key>Title</key>
+	<string>Bookmarks Bar</string>
+	<key>WebBookmarkType</key>
+	<string>WebBookmarkTypeList</string>
+</dict>
+</plist>

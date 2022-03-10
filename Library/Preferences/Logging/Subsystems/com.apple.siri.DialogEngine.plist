@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   com.apple.siri.DialogEngine.plist
+   DialogEngine
+
+   Copyright (c) 2020 Apple Inc.. All rights reserved.
+-->
+<plist version="1.0">
+<dict>
+    <key>DEFAULT-OPTIONS</key>
+    <dict>
+		<key>Level</key>
+		<dict>
+			<key>Enable</key>
+			<string>Debug</string>
+			<key>Persist</key>
+			<string>Debug</string>
+		</dict>
+        <key>Signpost-Scope</key>
+        <string>Process</string>
+        <key>Signpost-Persisted</key>
+        <true/>
+    </dict>
+</dict>
+</plist>

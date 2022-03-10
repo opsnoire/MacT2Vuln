@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applaunch</key>
+	<dict>
+		<key>Signpost-Persisted</key>
+		<true/>
+		<key>Signpost-Scope</key>
+		<string>System</string>
+	</dict>
+	<key>cas</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>2</integer>
+			<key>Info</key>
+			<string>1</string>
+		</dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Default</string>
+			<key>Enable</key>
+			<string>Info</string>
+		</dict>
+	</dict>
+	<key>DEFAULT-OPTIONS</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>2</integer>
+			<key>Info</key>
+			<string>1</string>
+		</dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Default</string>
+			<key>Enable</key>
+			<string>Info</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

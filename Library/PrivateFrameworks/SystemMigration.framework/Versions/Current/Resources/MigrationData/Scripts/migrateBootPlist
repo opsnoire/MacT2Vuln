@@ -1,0 +1,129 @@
+#!/usr/bin/perl
+
+my $SRCROOT = $ENV{SRCROOT};
+my $DSTROOT = $ENV{DSTROOT};
+
+my $SERVERVERSIONPLIST = "/System/Library/CoreServices/ServerVersion.plist";
+my $BOOTPLIST = "/Library/Preferences/SystemConfiguration/com.apple.Boot.plist";
+
+my $PLISTBUDDY = "/usr/libexec/PlistBuddy";
+my $CHOWN = "/usr/sbin/chown";
+my $CHMOD = "/bin/chmod";
+
+# The Boot.plist needs to be processed if we are migrating from a pre-Lion server
+
+if (CheckVersion("${SRCROOT}${SERVERVERSIONPLIST}", "10.7", "ProductVersion", "<")) {
+	
+	# Boot.plist has already been copied to the destination so we look there
+	
+	my $bootplistAlreadyExisted = (-e "${DSTROOT}${BOOTPLIST}");
+	
+	my $kernelFlags = `$PLISTBUDDY -c "print 'Kernel Flags'" "${DSTROOT}${BOOTPLIST}" 2>&1`;
+	
+	$kernelFlags = "" if $?;
+	
+	chomp($kernelFlags);
+	
+	my @kernelFlags = split(/ /, $kernelFlags);
+	my @newKernelFlags = ();
+	
+	foreach my $flag (@kernelFlags) {
+		
+		# Don't migrate "srv" and "serverperfmode"
+		
+		if ($flag !~ /^srv=/ && $flag !~ /^serverperfmode=/) {
+			
+			push(@newKernelFlags, $flag);
+		}
+	}
+	
+	# Enable "serverperfmode" by default
+	
+	push(@newKernelFlags, "serverperfmode=1");
+	
+	my $newKernelFlags = join(" ", @newKernelFlags);
+	
+	`$PLISTBUDDY -c "delete 'Kernel Flags'" "${DSTROOT}${BOOTPLIST}" 2>&1`;
+	
+	`$PLISTBUDDY -c "add 'Kernel Flags' string '${newKernelFlags}'" "${DSTROOT}${BOOTPLIST}" 2>&1`;
+	
+	# Set default permissions if the Boot.plist didn't already exist
+	
+	if (!$bootplistAlreadyExisted) {
+		
+		`$CHOWN root:admin "${DSTROOT}${BOOTPLIST}"`;
+		`$CHMOD 644 "${DSTROOT}${BOOTPLIST}"`;
+	}
+}
+
+sub CheckVersion
+{
+    my $path            = $_[0];
+    my $version         = $_[1];
+    my $keyName         = $_[2];
+    my $operator        = $_[3];
+
+    if (! -e $path) {
+        return 0;
+    }
+
+    if (!$operator) {
+        $operator = "==";
+    }
+
+    my $oldSeperator = $/;
+    $/ = \0;
+
+    open( PLIST, "$path") || do {
+        return 0;
+    };
+
+    $plistData = <PLIST>;
+    $plistData =~ /<dict>(.*?)<\/dict>/gis;
+
+    @items = split(/<key>/, $plistData);
+
+    shift @items;
+    foreach $item (@items) {
+        $item =~ /(.*?)<\/key>.*?<string>(.*?)<\/string>/gis;
+        $versiondata{ $1 } = $2;
+    }
+
+    close(PLIST);
+
+    $/ = $oldSeperator;
+
+    @theVersionArray = split(/\./, $versiondata{$keyName});
+    for ($i = 0; $i < 3; $i++) {
+        if(!$theVersionArray[$i]) {
+            $theVersionArray[$i] = '0';
+        }
+    }
+
+    @versionArray = split(/\./, $version);
+    
+    my $actualVersion;
+
+    for ($i = 0; $i < 3; $i++) {
+        if (($theVersionArray[$i] != $versionArray[$i]) or ($i == 2)) {
+
+            $actualVersion = $theVersionArray[$i];
+            $version = $versionArray[$i];
+
+            last;
+        }
+    }
+
+	if( $operator eq  '<' ){ return int($actualVersion)  < int($version); }
+	if( $operator eq 'lt' ){ return int($actualVersion)  < int($version); }
+	if( $operator eq  '>' ){ return int($actualVersion)  > int($version); }
+	if( $operator eq 'gt' ){ return int($actualVersion)  > int($version); }
+	if( $operator eq '<=' ){ return int($actualVersion) <= int($version); }
+	if( $operator eq 'le' ){ return int($actualVersion) <= int($version); }
+	if( $operator eq '>=' ){ return int($actualVersion) >= int($version); }
+	if( $operator eq 'ge' ){ return int($actualVersion) >= int($version); }
+	if( $operator eq '==' ){ return int($actualVersion) == int($version); }
+	if( $operator eq 'eq' ){ return int($actualVersion) == int($version); }
+	if( $operator eq '!=' ){ return int($actualVersion) != int($version); }
+	if( $operator eq 'ne' ){ return int($actualVersion) != int($version); }
+}

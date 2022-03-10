@@ -1,0 +1,15 @@
+﻿/*
+    This file has a UTF-8 BOM in it so it can be included from a UTF-16 page
+    without specifying an explicit character set. When editing it, please be
+    sure to preserve the BOM (first three bytes of the file, EF BB BF).
+*/
+
+@media (prefers-dark-interface) {
+    body {
+        background: rgb(30, 30, 30);
+    }
+
+    .error-message, .suggestion-prompt {
+        color: rgb(110, 110, 110);
+    }
+}

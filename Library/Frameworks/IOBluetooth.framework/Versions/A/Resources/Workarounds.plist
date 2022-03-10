@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BTWorkaroundRevision</key>
+	<dict/>
+	<key>BTWorkaroundPID</key>
+	<dict>
+		<key>0x000E008A</key>
+		<dict>
+			<key>BTWorkaroundDisableAbsoluteVolume</key>
+			<true/>
+			<key>Jambox Mini</key>
+			<string></string>
+		</dict>
+		<key>0x0200290B</key>
+		<dict>
+			<key>BTWorkaroundAACFix</key>
+			<false/>
+			<key>BTWorkaroundRevisionRangeEnd</key>
+			<integer>511</integer>
+			<key>Studio Wireless</key>
+			<string></string>
+		</dict>
+		<key>0x1200290B</key>
+		<dict>
+			<key>BTWorkaroundRevisionRangeEnd</key>
+			<integer>271</integer>
+			<key>BTWorkaroundAACFix</key>
+			<false/>
+			<key>Powerbeats Wireless</key>
+			<string></string>
+		</dict>
+		<key>0x4C630094</key>
+		<dict>
+			<key>BTWorkaroundAACBlacklist</key>
+			<true/>
+			<key>Sony WI-C400</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>BTWorkaroundVID</key>
+	<dict>
+		<key>0x004C</key>
+		<dict>
+			<key>BTWorkaroundAACFix</key>
+			<true/>
+			<key>Apple devices have AAC fix</key>
+			<string></string>
+		</dict>
+		<key>0x290B</key>
+		<dict>
+			<key>BTWorkaroundAACFix</key>
+			<true/>
+			<key>Beats devices have AAC fix</key>
+			<string></string>
+		</dict>
+		<key>0x009E</key>
+		<dict>
+			<key>BTWorkaroundAACFix</key>
+			<true/>
+			<key>Bose devices have AAC fix</key>
+			<string></string>
+		</dict>
+	</dict>
+	<key>BTWorkaroundDeviceName</key>
+	<dict>
+		<key>Jawbone ICON</key>
+		<dict>
+			<key>BTWorkaroundTimeout</key>
+			<integer>5</integer>
+		</dict>
+		<key>BlueBuds X</key>
+		<dict>
+			<key>BTWorkaroundConstantBitpool</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

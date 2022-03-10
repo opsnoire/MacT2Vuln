@@ -1,0 +1,15 @@
+.low-res {
+    display: inherit;
+}
+.high-res {
+    display: none;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+    .low-res {
+        display: none;
+    }
+    .high-res {
+        display: inherit;
+    }
+}

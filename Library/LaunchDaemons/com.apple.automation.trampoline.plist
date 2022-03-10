@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.automation.trampoline</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/automation_trampoline</string>
+		<string>--launchd</string>
+		<string>--output</string>
+		<string>/var/log/automation_trampoline.log</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>POSIXSpawnType</key>
+	<string>Background</string>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>EnablePressuredExit</key>
+	<false/>
+</dict>
+</plist>

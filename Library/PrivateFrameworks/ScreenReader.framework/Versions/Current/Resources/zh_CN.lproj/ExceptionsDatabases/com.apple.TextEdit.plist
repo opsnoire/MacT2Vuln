@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIElement</key>
+	<dict>
+		<key>AXTextArea</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ContainsText</key>
+				<dict>
+					<key>    A
+</key>
+					<dict>
+						<key>MTText</key>
+						<string>    [[char LTRL]]A[[char NORM]]
+</string>
+					</dict>
+					<key>Command + A</key>
+					<dict>
+						<key>MTText</key>
+						<string>Command + [[char LTRL]]A[[char NORM]]</string>
+					</dict>
+					<key>Option + A</key>
+					<dict>
+						<key>MTText</key>
+						<string>Option + [[char LTRL]]A[[char NORM]]</string>
+					</dict>
+					<key>Shift + A</key>
+					<dict>
+						<key>MTText</key>
+						<string>Shift + [[char LTRL]]A[[char NORM]]</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

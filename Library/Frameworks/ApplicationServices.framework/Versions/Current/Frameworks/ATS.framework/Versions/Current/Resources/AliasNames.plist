@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<!-- Postscript Name Alias Dictionary -->
+	<dict>
+	</dict>
+	<!-- Family Name Alias Dictionary -->
+	<dict>
+		<key>#GungSeo</key>
+		<string>GungSeo</string>
+		<key>#PCMyungjo</key>
+		<string>PCMyungjo</string>
+		<key>#HeadLineA</key>
+		<string>HeadLineA</string>
+		<key>#PilGi</key>
+		<string>PilGi</string>
+	</dict>
+	<!-- Full Name Alias Dictionary -->
+	<dict>
+		<key>#GungSeo Regular</key>
+		<string>GungSeo Regular</string>
+		<key>#PCMyungjo Regular</key>
+		<string>PCMyungjo Regular</string>
+		<key>#HeadLineA Regular</key>
+		<string>HeadLineA Regular</string>
+		<key>#PilGi Regular</key>
+		<string>PilGi Regular</string>
+	</dict>
+	<!-- QD Family Name Alias Dictionary: stored as Hex (for the native encoding represenation) as at the time of search, we don't know the encoding -->
+	<dict>
+		<key>23B1C3BCADC3BC</key>			<!-- #GungSeo -->
+		<string>B1C3BCADC3BC</string>
+		<key>235043B8EDC1B6</key>			<!-- #PCMyungjo -->
+		<string>5043B8EDC1B6</string>
+		<key>23C7ECB5E5B6F3C0CE41</key>		<!-- #HeadLineA -->
+		<string>C7ECB5E5B6F3C0CE41</string>
+		<key>23C7CAB1E2C3BC</key>			<!-- #PilGi -->
+		<string>C7CAB1E2C3BC</string>
+	</dict>
+</array>
+</plist>

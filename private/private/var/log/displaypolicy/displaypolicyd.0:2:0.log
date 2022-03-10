@@ -1,0 +1,21 @@
+2022-03-10 02:24:47.322917+0000: PolicyEngine started: 7800020000000000, Time: Thu Mar 10 02:24:47 2022
+2022-03-10 02:24:48.042281+0000: NOTICE: kAGDCCallbackCapability: 0x9 [ Validate ModeSet]
+2022-03-10 02:24:48.165717+0000: NOTICE: No accelerator mode, limiting GPU capability 0:0:2:3 -> 0:0:2:2
+2022-03-10 02:24:48.206363+0000: NOTICE: Vendor portmap 0xe mst 0xc ddc 0xc aux 0xe
+2022-03-10 02:24:48.206472+0000: NOTICE: Features policyd 0x0 kernel 0x0
+2022-03-10 02:24:48.332161+0000: NOTICE: Populated addr 1.0 bad:f00d UUID 0 order 0:0 tx 2:2 dsp 1 WL 0 MS 0 edid 128 undef 0 DSC 0
+2022-03-10 02:24:48.577390+0000: NOTICE: Populated addr 1.0 bad:f00d UUID 0 order 0:0 tx 2:2 dsp 1 WL 0 MS 0 edid 128 undef 0 DSC 0
+2022-03-10 02:24:48.577406+0000: NOTICE: FB AGDC state FB[0] - ON
+2022-03-10 02:24:48.578464+0000: NOTICE: accepted No_Media_Mode enter, Thu Mar 10 02:24:48 2022
+2022-03-10 02:24:48.578476+0000: NOTICE: accepted No_Media_Mode exit, Thu Mar 10 02:24:48 2022
+2022-03-10 02:24:48.578506+0000: NOTICE: doChange: addr 1.0 [7]
+2022-03-10 02:24:48.578512+0000: NOTICE: doChange: addr 2.0 [7]
+2022-03-10 02:24:48.581720+0000: NOTICE: doChange: addr 3.0 [7]
+2022-03-10 02:24:48.589967+0000: NOTICE: doChange: addr 1.0 [7]
+2022-03-10 02:24:48.589981+0000: NOTICE: doChange: addr 2.0 [7]
+2022-03-10 02:24:48.593273+0000: NOTICE: doChange: addr 3.0 [7]
+2022-03-10 02:26:46.826762+0000: NOTICE: accepted No_Media_Mode enter, Thu Mar 10 02:26:46 2022
+2022-03-10 02:27:45.242970+0000: NOTICE: accepted No_Media_Mode exit, Thu Mar 10 02:27:45 2022
+2022-03-10 02:27:45.254986+0000: NOTICE: doChange: addr 1.0 [7]
+2022-03-10 02:27:45.255028+0000: NOTICE: doChange: addr 2.0 [7]
+2022-03-10 02:27:45.258001+0000: NOTICE: doChange: addr 3.0 [7]

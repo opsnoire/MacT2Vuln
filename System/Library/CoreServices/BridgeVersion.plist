@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BridgeBuildGroup</key>
+	<string>0</string>
+	<key>BridgeProductBuildVersion</key>
+	<string>19P54242a</string>
+	<key>BridgeVersion</key>
+	<string>19.16.14242.5.1</string>
+	<key>CatalogURL</key>
+	<string>https://swscan.apple.com/content/catalogs/others/index-12seed-12-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog.gz</string>
+	<key>IsSeed</key>
+	<string>YES</string>
+	<key>SEPEpoch</key>
+	<dict>
+		<key>Major</key>
+		<integer>1</integer>
+		<key>Minor</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

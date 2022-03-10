@@ -1,0 +1,31 @@
+(version 1)
+
+(deny default)
+
+(debug deny)
+
+(allow file-ioctl
+       (literal "/dev/dtracehelper")
+       )
+
+(allow file-read-data)
+
+(allow file-read-metadata)
+
+(allow file-write*
+       (subpath "/private/tmp")
+       )
+
+(allow file-write-data
+       (literal "/dev/dtracehelper")
+       )
+
+(allow ipc-posix-shm)
+
+(allow mach-lookup)
+
+(allow process-exec
+       (subpath "/System")
+       )
+
+(allow sysctl-read)

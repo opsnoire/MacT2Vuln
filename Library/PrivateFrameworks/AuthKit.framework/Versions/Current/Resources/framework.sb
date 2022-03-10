@@ -1,0 +1,26 @@
+;;
+;; AuthKit framework - sandbox profile
+;; Copyright (c) 2015 Apple Inc. All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice. The contents of this file are also auto-generated and not
+;; user editable; it may be overwritten at any time.
+;;
+
+(allow mach-lookup (global-name "com.apple.ak.auth.xpc"))
+(allow mach-lookup (global-name "com.apple.ak.anisette.xpc"))
+(allow mach-lookup (global-name "com.apple.ak.authorizationservices.xpc"))
+
+
+;; Needed to allow consumers access to CoreCDP functionality
+
+(allow mach-lookup (global-name "com.apple.cdp.daemon"))
+(allow mach-lookup (global-name "com.apple.mobile.keybagd.xpc"))
+
+;; Needed to allow consumers to obtain authright when trying to reset password.
+
+(if (entitlement "com.apple.authkit.client.internal")
+    (allow authorization-right-obtain
+        (right-name "com.apple.icloud.passwordreset")
+        (right-name "com.apple.icloud.validatePassword")))

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.webcontentfilter.proxy</key>
+		<true/>
+	</dict>
+	<key>Label</key>
+	<string>com.apple.webcontentfilter.proxy</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>sandbox-exec</string>
+		<string>-n</string>
+		<string>/System/Library/PrivateFrameworks/WebContentAnalysis.framework/Resources/webfilterproxyd.sb</string>
+		<string>/System/Library/PrivateFrameworks/WebContentAnalysis.framework/Resources/webfilterproxyd</string>
+	</array>
+	<key>EnableTransactions</key>
+	<true/>
+	<key>Sockets</key>
+	<dict>
+		<key>MyListenerSocket</key>
+		<dict>
+			<key>SockServiceName</key>
+			<string>10011</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

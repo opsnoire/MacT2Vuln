@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alwaysAllowHTTPS</key>
+	<false/>
+	<key>com.apple.webfilterctl.recoveryOS</key>
+	<true/>
+	<key>filterWhitelist</key>
+	<array>
+		<string>http://www.me.com</string>
+		<string>http://www.icloud.com</string>
+		<string>http://www.apple.com</string>
+	</array>
+	<key>noOverridingAllowed</key>
+	<true/>
+	<key>restrictWeb</key>
+	<true/>
+	<key>useContentFilter</key>
+	<true/>
+	<key>whitelistEnabled</key>
+	<false/>
+</dict>
+</plist>

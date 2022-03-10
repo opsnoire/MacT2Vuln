@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebBookmarkType</key>
+	<string>WebBookmarkTypeList</string>
+	<key>Title</key>
+	<string>Bookmarks Bar</string>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.disney.gr/</string>
+				<key>title</key>
+				<string>Disney</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.disney.gr/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.mikrosanagnostis.gr/istoria.asp</string>
+				<key>title</key>
+				<string>Ο μικρός αναγνώστης</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.mikrosanagnostis.gr/istoria.asp</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.mikrapaidia.gr</string>
+				<key>title</key>
+				<string>Διαδικτυακή εκπαιδευτική πύλη ψυχαγωγίας και μάθησης για μικρά παιδιά</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.mikrapaidia.gr</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.fhw.gr/imeakia/</string>
+				<key>title</key>
+				<string>Παιχνίδια μνήμης, λογικής, γνώσεων</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.fhw.gr/imeakia/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.pi-schools.gr/software/dimotiko</string>
+				<key>title</key>
+				<string>Εκπαιδευτικό Λογισμικό Δημοτικού</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>URLString</key>
+			<string>http://www.pi-schools.gr/software/dimotiko</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://ebooks.edu.gr/new</string>
+				<key>title</key>
+				<string>Διαδραστικά σχολικά βιβλία</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://ebooks.edu.gr/new</string>
+		</dict>
+	</array>
+</dict>
+</plist>

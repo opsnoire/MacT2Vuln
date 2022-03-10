@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Σ</key>
+	<string>\sum</string>
+	<key>∞</key>
+	<string>\infty</string>
+	<key>∫</key>
+	<string>\int</string>
+	<key>∫∫</key>
+	<string>\iint</string>
+	<key>∫∫∫</key>
+	<string>\iiint</string>
+	<key>∫∫∫∫</key>
+	<string>\iiiint</string>
+	<key>∮</key>
+	<string>\oint</string>
+	<key>Π</key>
+	<string>\prod</string>
+	<key>∪</key>
+	<string>\bigcup</string>
+	<key>∩</key>
+	<string>\bigcap</string>
+	<key>∧</key>
+	<string>\bigwedge</string>
+	<key>∨</key>
+	<string>\bigvee</string>
+</dict>
+</plist>

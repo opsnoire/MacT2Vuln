@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ListClass</key>
+	<string>RecentsListController</string>
+	<key>ItemPropertyOverrides</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.OverrideIcon.OSType</key>
+		<string>srvr</string>
+	</dict>
+	<key>DefaultsKey</key>
+	<string>Hosts</string>
+	<key>DefaultsDomain</key>
+	<string>com.apple.recentitems</string>
+	<key>DefaultProperties</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.MaxAmount</key>
+		<integer>10</integer>
+	</dict>
+</dict>
+</plist>

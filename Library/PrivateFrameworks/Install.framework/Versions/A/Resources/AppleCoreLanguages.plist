@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!-- http://lre.apple.com/DevTierCountry1.html -->
+<dict>
+	<key>tier0</key>
+	<dict>
+		<key>de</key>
+		<string>German</string>
+		<key>en</key>
+		<string>English</string>
+		<key>fr</key>
+		<string>French</string>
+		<key>jp</key>
+		<string>Japanese</string>
+	</dict>
+	<key>tier1</key>
+	<dict>
+		<key>nl</key>
+		<string>Dutch</string>
+		<key>it</key>
+		<string>Italian</string>
+		<key>es</key>
+		<string>Spanish</string>
+		<key>zh_CN</key>
+		<string>Simplified Chinese</string>
+	</dict>
+	<key>tier2</key>
+	<dict>
+		<key>zh_TW</key>
+		<string>Traditional Chinese</string>
+		<key>da</key>
+		<string>Danish</string>
+		<key>fi</key>
+		<string>Finnish</string>
+		<key>ko</key>
+		<string>Korean</string>
+		<key>no</key>
+		<string>Norwegian</string>
+		<key>pl</key>
+		<string>Polish</string>
+		<key>pt</key>
+		<string>Portuguese</string>
+		<key>pt_PT</key>
+		<string>Portuguese</string>
+		<key>ru</key>
+		<string>Russian</string>
+		<key>sv</key>
+		<string>Swedish</string>
+	</dict>
+</dict>
+</plist>

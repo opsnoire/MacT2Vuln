@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>NETWORK_PREFS</key>
+	<dict>
+		<key>RECONNECT_COUNT</key>
+		<integer>4</integer>
+		<key>RECONNECT_INTERVAL</key>
+		<integer>30</integer>
+		<key>DEFAULT_PORT</key>
+		<integer>548</integer>
+		<key>TICKLE_TIMEOUT</key>
+		<integer>120</integer>
+		<key>TICKLE_INTERVAL</key>
+		<integer>30</integer>
+	</dict>
+	<key>SECURITY_PREFS</key>
+	<dict>
+		<key>KEYCHAIN_PASSWORD_LOOKUP</key>
+		<true/>
+		<key>REQUIRE_USER_CERT</key>
+		<false/>
+		<key>REQUIRE_SECURE_CONNECTION</key>
+		<false/>
+		<key>ROOT_CERTIFICATE_LIST</key>
+		<array>
+			<data>
+			
+			</data>
+		</array>
+		<key>REQUIRE_SERVER_CERT</key>
+		<false/>
+		<key>ROOT_CERT_PATH</key>
+		<string></string>
+		<key>CLEARTXT_WARNING</key>
+		<integer>0</integer>
+		<key>USER_CERT_DEFAULT</key>
+		<string>$(HOME)/.cert</string>
+		<key>ENABLED_UAMS</key>
+		<array>
+			<string>No User Authentication</string>
+			<string>Cleartxt Password</string>
+			<string>2Way Randnum Exchange</string>
+			<string>DHCAST128</string>
+		</array>
+		<key>ALLOW_CLEARTXT</key>
+		<false/>
+		<key>KEYCHAIN_USER_CERT</key>
+		<false/>
+		<key>KEYCHAIN_PASSWORD_STORAGE</key>
+		<true/>
+	</dict>
+	<key>PREF_REDIRECT_LOCATION</key>
+	<string></string>
+	<key>UI_PREFS</key>
+	<dict>
+		<key>ENABLE_LOGON_MESSAGE</key>
+		<true/>
+		<key>ENABLE_SERVER_MESSAGE</key>
+		<true/>
+		<key>SHOW_PASSWORD_METRIC</key>
+		<integer>0</integer>
+	</dict>
+	<key>DEBUG_PREFS</key>
+	<dict>
+		<key>KERNEL_LOG_LEVEL</key>
+		<integer>0</integer>
+		<key>LOG_LEVEL</key>
+		<integer>0</integer>
+		<key>KERNEL_LOG_PATH</key>
+		<string></string>
+		<key>LOG_PATH</key>
+		<string></string>
+	</dict>
+	<key>VALID_PREFS</key>
+	<true/>
+	<key>PREF_REDIRECT</key>
+	<false/>
+</dict>
+</plist>

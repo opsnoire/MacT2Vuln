@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>grunntall</string>
+		<string>senket tekst</string>
+		<string>hevet tekst</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>verdimengde</string>
+		<string>uttrykk etter verdimengde</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>grunntall</string>
+		<string>senket tekst</string>
+		<string>hevet tekst</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>grunntall</string>
+		<string>senket tekst</string>
+		<string>hevet tekst</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>rotindeks</string>
+		<string>radikand</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>teller</string>
+		<string>nevner</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>over</string>
+		<string>grunntall</string>
+		<string>under</string>
+	</array>
+</dict>
+</plist>

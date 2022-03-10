@@ -1,0 +1,3 @@
+(allow mach-lookup
+       (global-name "com.apple.pluginkit.pkd")
+       (extension "com.apple.pluginkit.plugin-service"))

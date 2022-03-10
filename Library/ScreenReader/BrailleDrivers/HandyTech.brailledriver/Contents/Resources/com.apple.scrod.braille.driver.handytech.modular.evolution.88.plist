@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>66305.67329</string>
+		<key>SCRCommand</key>
+		<string>SCRBraille.panLeft</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>68353.69377</string>
+		<key>SCRCommand</key>
+		<string>SCRBraille.panRight</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>66305</string>
+		<key>SCRCommand</key>
+		<string>Global.interactUp</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>67329</string>
+		<key>SCRCommand</key>
+		<string>Global.interactDown</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>68353</string>
+		<key>SCRCommand</key>
+		<string>Global.interactUp</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>69377</string>
+		<key>SCRCommand</key>
+		<string>Global.interactDown</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>67329.69377</string>
+		<key>SCRCommand</key>
+		<string>Global.interactDownShift</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>66305.68353</string>
+		<key>SCRCommand</key>
+		<string>Global.interactUpShift</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>65536</string>
+		<key>SCRCommand</key>
+		<string>SCRBraille.primaryRouter</string>
+	</dict>
+	<dict>
+		<key>SCRBrailleInputIdentifier</key>
+		<string>65539</string>
+		<key>SCRCommand</key>
+		<string>SCRBraille.primaryStatusRouter</string>
+	</dict>
+</array>
+</plist>

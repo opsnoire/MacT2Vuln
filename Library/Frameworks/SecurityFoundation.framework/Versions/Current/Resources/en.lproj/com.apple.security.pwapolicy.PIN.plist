@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MinGoodLength</key>
+	<dict>
+		<key>Description</key>
+		<string>Minimum length for a good password</string>
+		<key>Message</key>
+		<string>This is a good length for a password</string>
+		<key>Value</key>
+		<integer>8</integer>
+	</dict>
+	<key>CharacterSetString</key>
+	<string>0123456789</string>
+	<key>Languages-Evaluate</key>
+	<string>en,de,es,fr,it,nl,pt,jp</string>
+	<key>MinVariety</key>
+	<dict>
+		<key>Description</key>
+		<string>Minimum number of different character sets required</string>
+		<key>Value</key>
+		<integer>1</integer>
+		<key>Message</key>
+		<string>Use a combination of upper and lower case letters, numbers and punctuation</string>
+	</dict>
+	<key>Languages-Suggest</key>
+	<string>en</string>
+	<key>MinLength</key>
+	<dict>
+		<key>Message</key>
+		<string>This is too short</string>
+		<key>Value</key>
+		<integer>4</integer>
+		<key>Description</key>
+		<string>Minimum length for the PIN</string>
+	</dict>
+	<key>MaxLength</key>
+	<dict>
+		<key>Message</key>
+		<string>This is too long</string>
+		<key>Description</key>
+		<string>Maximum length for the PIN</string>
+		<key>Value</key>
+		<integer>8</integer>
+	</dict>
+</dict>
+</plist>

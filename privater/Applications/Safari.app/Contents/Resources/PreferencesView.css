@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+body {
+    font: message-box;
+    min-width: 668px;
+    padding: 0;
+    margin: 10px 0 40px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    overflow: hidden;
+    background-color: transparent;
+    color: black;
+}
+
+.hidden {
+    display: none !important;
+}

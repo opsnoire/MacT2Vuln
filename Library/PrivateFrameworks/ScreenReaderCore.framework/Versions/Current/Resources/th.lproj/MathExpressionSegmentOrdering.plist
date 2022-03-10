@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>ฐาน</string>
+		<string>ตัวห้อย</string>
+		<string>ตัวยก</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>ช่วง</string>
+		<string>นิพจน์หลังจากระยะ</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>ฐาน</string>
+		<string>ตัวห้อย</string>
+		<string>ตัวยก</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>ฐาน</string>
+		<string>ตัวห้อย</string>
+		<string>ตัวยก</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>ดัชนีราก</string>
+		<string>ตัวถูกถอดกรณฑ์</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>ตัวเศษ</string>
+		<string>ตัวส่วน</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>ส่วน</string>
+		<string>ฐาน</string>
+		<string>เศษ</string>
+	</array>
+</dict>
+</plist>

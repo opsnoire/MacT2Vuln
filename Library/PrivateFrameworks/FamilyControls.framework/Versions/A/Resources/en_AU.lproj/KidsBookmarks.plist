@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebBookmarkType</key>
+	<string>WebBookmarkTypeList</string>
+	<key>Title</key>
+	<string>Bookmarks Bar</string>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://www.natgeokids.com/au/</string>
+				<key>title</key>
+				<string>National Geographic Kids</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://www.natgeokids.com/au/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://www.abc.net.au/abckids/</string>
+				<key>title</key>
+				<string>ABC Kids</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://www.abc.net.au/abckids/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://www.mathletics.com/au/</string>
+				<key>title</key>
+				<string>Mathletics</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://www.mathletics.com/au/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://www.questacon.edu.au</string>
+				<key>title</key>
+				<string>The National Science and Technology Centre</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://www.questacon.edu.au</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://readingeggs.com.au/</string>
+				<key>title</key>
+				<string>Reading Eggs</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://readingeggs.com.au/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.australiazoo.com.au</string>
+				<key>title</key>
+				<string>Australia Zoo</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.australiazoo.com.au</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://australianmuseum.net.au</string>
+				<key>title</key>
+				<string>The Australian Museum</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://australianmuseum.net.au</string>
+		</dict>
+	</array>
+</dict>
+</plist>

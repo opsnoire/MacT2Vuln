@@ -1,0 +1,124 @@
+
+/dev/rdisk0s1: fsck_hfs started at Thu Mar 10 02:24:18 2022
+/dev/rdisk0s1: /dev/rdisk0s1: ** /dev/rdisk0s1 (NO WRITE)
+/dev/rdisk0s1: ** Root file system
+/dev/rdisk0s1:    Executing fsck_hfs (version hfs-522.100.5).
+
+/dev/rdisk6: fsck_hfs started at Thu Mar 10 02:24:18 2022
+/dev/rdisk6: /dev/rdisk6: ERROR: volume /Volumes is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk6: fsck_hfs completed at Thu Mar 10 02:24:18 2022
+
+
+/dev/rdisk5: fsck_hfs started at Thu Mar 10 02:24:18 2022
+/dev/rdisk5: /dev/rdisk5: ERROR: volume /private/var/log/dm is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk5: fsck_hfs completed at Thu Mar 10 02:24:18 2022
+
+
+/dev/rdisk7: fsck_hfs started at Thu Mar 10 02:24:18 2022
+/dev/rdisk7: /dev/rdisk7: ERROR: volume /private/var/tmp is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk7: fsck_hfs completed at Thu Mar 10 02:24:18 2022
+
+
+/dev/rdisk4: fsck_hfs started at Thu Mar 10 02:24:18 2022
+
+/dev/rdisk8: fsck_hfs started at Thu Mar 10 02:24:18 2022
+/dev/rdisk4: /dev/rdisk4: ERROR: volume /private/var/log is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk4: fsck_hfs completed at Thu Mar 10 02:24:18 2022
+
+/dev/rdisk8: /dev/rdisk8: ERROR: volume /private/var/run is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk8: fsck_hfs completed at Thu Mar 10 02:24:18 2022
+
+
+/dev/rdisk9: fsck_hfs started at Thu Mar 10 02:24:18 2022
+/dev/rdisk9: /dev/rdisk9: ERROR: volume /private/tmp is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk9: fsck_hfs completed at Thu Mar 10 02:24:18 2022
+
+/dev/rdisk0s1: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk10: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk10: /dev/rdisk10: ERROR: volume /System/Installation is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk10: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk24: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk24: /dev/rdisk24: ERROR: volume /Library/Logs/DiagnosticReports is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk24: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk23: fsck_hfs started at Thu Mar 10 02:24:19 2022
+
+/dev/rdisk26: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk23: /dev/rdisk23: ERROR: volume /private/var/tmp/InstallerCookies is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk23: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+/dev/rdisk26: /dev/rdisk26: ERROR: volume /private/var/tmp/BridgeOSUpdateTemp is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk26: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk25: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk25: /dev/rdisk25: ERROR: volume /private/var/tmp/OSPersonalizationTemp is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk25: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk22: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk22: /dev/rdisk22: ERROR: volume /private/var/tmp/OSISPredicateUpdateProductTemp is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk22: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk21: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk21: /dev/rdisk21: ERROR: volume /private/var/tmp/RecoveryTemp is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk21: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk19: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk19: /dev/rdisk19: ERROR: volume /Library/Keychains is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk19: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk18: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk18: /dev/rdisk18: ERROR: volume /Library/Preferences/SystemConfiguration is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk18: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk20: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk20: /dev/rdisk20: ERROR: volume /Library/Security/Trust Settings is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk20: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk17: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk17: /dev/rdisk17: ERROR: volume /Library/Preferences/Logging is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk17: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk12: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk12: /dev/rdisk12: ERROR: volume /private/var/folders is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk12: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk11: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk11: /dev/rdisk11: ERROR: volume /private/var/db is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk11: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk14: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk14: /dev/rdisk14: ** /dev/rdisk14 (NO WRITE)
+
+/dev/rdisk16: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk16: /dev/rdisk16: ERROR: volume /Library/Preferences is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk16: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+/dev/rdisk14:    Executing fsck_hfs (version hfs-522.100.5).
+
+/dev/rdisk15: fsck_hfs started at Thu Mar 10 02:24:19 2022
+QUICKCHECK ONLY; FILESYSTEM CLEAN
+/dev/rdisk14: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+/dev/rdisk15: /dev/rdisk15: ERROR: volume /private/var/root/Library/Containers is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk15: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+
+
+/dev/rdisk13: fsck_hfs started at Thu Mar 10 02:24:19 2022
+/dev/rdisk13: /dev/rdisk13: ERROR: volume /private/var/root/Library is mounted with write access. Re-run with (-l) to freeze volume.
+/dev/rdisk13: fsck_hfs completed at Thu Mar 10 02:24:19 2022
+

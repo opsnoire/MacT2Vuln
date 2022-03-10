@@ -1,0 +1,149 @@
+#!/bin/sh
+# Copyright 2000-2009, Apple Inc.
+
+#
+#
+# NOTICE! 
+# Most of rc.cdrom is in rc.install temporarily while portions are migrated to launchd
+#
+#
+
+#
+# Disable prebinding-on-the-fly while we're CD booted
+#
+export DYLD_NO_FIX_PREBINDING=1
+
+#
+# 8712081 
+#
+export XTYPE_IGNORE_SERVER=1
+
+#
+# mount root_device to update vnode information
+#
+mount -u -o ro /
+
+#
+# Sanity check date & time. Pin to 4/1/1976.
+#
+if [ `date +%s` -lt 197193600 ]; then
+  date 040100001976
+fi
+
+#
+# Create a RAM disk with same perms as mountpoint
+#
+RAMDisk()
+{
+  mntpt="$1"
+  rdsize="$2"
+  echo "Creating RAM Disk for $mntpt"
+  dev=`hdik -drivekey system-image=yes -nomount "ram://$rdsize"`
+  if [ $? -eq 0 ] ; then
+    newfs_hfs $dev
+    # save & restore fs permissions covered by the mount
+    eval `/usr/bin/stat -s "$mntpt"`
+    mount -t hfs -o union -o nobrowse $dev "$mntpt"
+    chown "$st_uid:$st_gid" "$mntpt"
+    chmod "$st_mode" "$mntpt"
+  fi
+}
+
+
+if [ -f "/etc/rc.diag.cdrom" ]; then
+	. /etc/rc.diag.cdrom
+elif [ -x /etc/rc.gh.cdrom ]; then
+	. /etc/rc.gh.cdrom
+else
+	RAMDisk /var/log 20480
+	mkdir -p /var/log/dm
+	RAMDisk /var/log/dm 20480
+	RAMDisk /Volumes 1024
+	RAMDisk /var/tmp 1024
+	RAMDisk /var/run 1024
+	RAMDisk /private/tmp 4096
+
+	RAMDisk /System/Installation 1024
+
+	RAMDisk /var/db 1024
+	RAMDisk /var/folders 24576 
+	RAMDisk /var/root/Library 8192
+	RAMDisk /Library/ColorSync/Profiles/Displays 2048
+
+	mkdir /var/root/Library/Keychains
+	mkdir /var/root/Library/Containers
+	
+	mkdir /var/tmp/RecoveryTemp
+        mkdir /var/tmp/InstallerCookies
+	mkdir /var/tmp/OSISPredicateUpdateProductTemp
+	mkdir -m 1777 /var/db/mds
+
+	RAMDisk /var/root/Library/Containers 4096
+	RAMDisk	/Library/Preferences 1024
+	RAMDisk /Library/Preferences/Logging 4096
+	RAMDisk	/Library/Preferences/SystemConfiguration 1024
+	RAMDisk /Library/Keychains 2048
+	RAMDisk "/Library/Security/Trust Settings" 1024
+	RAMDisk /var/tmp/RecoveryTemp 12288
+	RAMDisk /var/tmp/OSISPredicateUpdateProductTemp 12288 
+	RAMDisk /var/tmp/InstallerCookies 1024
+	RAMDisk /Library/Logs/DiagnosticReports/ 4096
+
+	BOOT_RECOVERY_REQUIRED_TOOL="/System/Installation/CDIS/Boot Recovery Assistant.app/Contents/Resources/recovery_required"
+	if [ -f "$BOOT_RECOVERY_REQUIRED_TOOL" ] ; then
+		PERSONALIZATION_RAMDISK_REQUIRED=`"$BOOT_RECOVERY_REQUIRED_TOOL" personalization`
+		if [ $PERSONALIZATION_RAMDISK_REQUIRED = "1" ] ; then
+			mkdir /var/tmp/OSPersonalizationTemp
+			RAMDisk /var/tmp/OSPersonalizationTemp 20480 # 10 MB
+		fi
+
+		BRIDGEOS_RAMDISK_REQUIRED=`"$BOOT_RECOVERY_REQUIRED_TOOL" bridgeos`
+		if [ $BRIDGEOS_RAMDISK_REQUIRED = "1" ] ; then
+			mkdir /var/tmp/BridgeOSUpdateTemp
+			RAMDisk /var/tmp/BridgeOSUpdateTemp 4194304 # 2.0 GB
+		fi
+	fi
+fi
+
+# use or create the boot cache playlist, and allow B&I to force 32-bit playlist generation
+FORCETHIRTYTWO="false"
+if sysctl kern.bootargs | grep -q "no64exec" ; then
+	FORCETHIRTYTWO="true"
+fi
+
+SIXTYFOURBIT=`sysctl -n hw.cpu64bit_capable`
+
+if [ $SIXTYFOURBIT = "0" -o $FORCETHIRTYTWO = "true" ] ; then
+	echo "using 32-bit bootcache playlist"
+	BootCacheControl -f /var/db/BootCache.playlist32 start
+elif [ $SIXTYFOURBIT = "1" ] ; then
+	echo "using 64-bit bootcache playlist"
+	BootCacheControl -f /var/db/BootCache.playlist start
+fi
+
+#
+# Add a environment variable so people who need to know
+# they are running in the OS Install environment can know
+# without stating anything.
+#
+launchctl setenv __OSINSTALL_ENVIRONMENT 1
+launchctl setenv CI_DEFAULT_OPENCL_USAGE 0
+
+BOOT_ARGS=$(/usr/sbin/sysctl kern.bootargs)
+if [[ $BOOT_ARGS == *"-rootdmg-ramdisk"* ]]; then
+    launchctl setenv __OSINSTALL_RAM_DISK 1
+fi
+
+# 9594832
+if /usr/sbin/nvram recovery-boot-mode 2>&1 | /usr/bin/grep -e 'locked$' -e 'guest$' > /dev/null; then
+	launchctl setenv __OSINSTALL_GUEST_MODE 1
+fi
+
+# tell launchd to commence with loading the system.
+# for the OS Install environment only, /etc/rc.install is included in this process.
+touch /var/run/rc.cdrom.done
+launchctl load -D system
+
+# this script sleeps forever; the installer or startup disk will always reboot the system. 
+sleep 9999999
+

@@ -1,0 +1,30 @@
+#!/bin/sh
+
+# Cribbed from /usr/libexec/ntpd-wrapper. Will wait for DNS to be available before
+# invoking sntp, but does not need to handle starting a server, or any configurability.
+# Intended for use in the BaseSystem only.
+
+PATH=/usr/sbin:/usr/bin:/bin
+TIMEOUT=30
+KEY=State:/Network/Global/DNS
+DNS=/var/run/resolv.conf
+# sentinel to special case DNS readiness at boot
+LOG=/var/run/sntp.log
+
+ipconfig waitall
+
+if [[ ! -f ${LOG} ]]; then
+    DEADLINE=$((SECONDS+TIMEOUT))
+    for (( CURTIMEOUT=TIMEOUT; SECONDS < DEADLINE; CURTIMEOUT=DEADLINE-SECONDS )); do
+	if scutil -w ${KEY} -t ${CURTIMEOUT}; then
+	    if [[ -f ${DNS} ]]; then 
+			break;
+	    fi			# else retry false alarms
+	else
+	    logger -p daemon.err "$0: scutil key ${KEY} not present after ${TIMEOUT} seconds"
+	    break;
+	fi
+    done
+fi
+
+sntp -S -K /dev/null time.apple.com

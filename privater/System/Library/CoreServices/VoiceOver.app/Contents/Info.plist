@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>VoiceOver</string>
+	<key>CFBundleExecutable</key>
+	<string>VoiceOverStarter</string>
+	<key>CFBundleIconFile</key>
+	<string>voiceover</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.VoiceOver</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>VoiceOver</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>10</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>708.14</string>
+	<key>LSBackgroundOnly</key>
+	<true/>
+	<key>LSLaunchDLabel</key>
+	<string>com.apple.VoiceOver</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.7.0</string>
+	<key>LSUIElement</key>
+	<string>1</string>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2004-2018 Apple Inc. All Rights Reserved.</string>
+	<key>NSSupportsSuddenTermination</key>
+	<string>YES</string>
+	<key>OSAScriptingDefinition</key>
+	<string>VoiceOver.sdef</string>
+	<key>POSIXSpawnType</key>
+	<string>Interactive</string>
+</dict>
+</plist>

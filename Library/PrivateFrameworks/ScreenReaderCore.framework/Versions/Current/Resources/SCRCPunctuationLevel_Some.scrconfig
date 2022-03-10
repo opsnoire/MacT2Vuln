@@ -1,0 +1,60 @@
+//
+// SCRPunctuationLevel_Some.strings
+// These are meant to be spoken when you want to hear some punctuation (default settings)
+//
+// Tables for various puntuation verboseness levels
+// Possible values:
+//      Ignore      = 0
+//      Replace     = 1
+//      Preappend   = 2
+//      Append      = 3
+//      Remove      = 4
+
+"0025" = "1"; // [ % ]
+"002b" = "1"; // [ + ]
+"002f" = "1"; // [ / ]
+"003c" = "1"; // [ < ]
+"003d" = "1"; // [ = ]
+"003e" = "1"; // [ > ]
+"0040" = "1"; // [ @ ]
+"007b" = "3"; // [ { ]
+"007d" = "2"; // [ } ]
+"00a1" = "1"; // [ ¡ ]
+"00a6" = "1"; // [ ¦ ]
+"00ac" = "1"; // [ ¬ ]
+"2022" = "1"; // [ • ]
+"2032" = "1"; // [ ′ ]
+"2216" = "1"; // [ ∖ ]
+"2217" = "1"; // [ ∗ ]
+"2218" = "1"; // [ ∘ ]
+"2219" = "1"; // [ ∙ ]
+"22c5" = "1"; // [ ⋅ ]
+"203e" = "1"; // [ ‾ ]
+"2981" = "1"; // [ ⦁  ]
+"30fb" = "1"; // [ ・ ]
+
+// These also exist in level All, but we want different rules when encountering these in the Some context
+// Specifically, in All they are replaced, but in some we should ignore so the synthesizer can use them to apply its own speaking rules.
+"0026" = "0"; // [ & ]
+"0027" = "0"; // [ ' ]
+"002d" = "0"; // [ - ]
+"0060" = "0"; // [ ` ]
+"00ad" = "0"; // [ ­ ]
+"2010" = "0"; // [ ‐ ]
+"2011" = "0"; // [ ‑ ]
+"2012" = "0"; // [ ‒ ]
+"2013" = "0"; // [ – ]
+"2014" = "0"; // [ — ]
+"2015" = "0"; // [ ― ]
+"2018" = "0"; // [ ‘ ]
+"2019" = "0"; // [ ’ ]
+"3001" = "0"; // [ 、 ]
+"3002" = "0"; // [ 。 ]
+"ff01" = "0"; // [ ！ ]
+"ff03" = "0"; // [ ＃ ]
+"ff05" = "0"; // [ ％ ]
+"ff06" = "0"; // [ ＆ ]
+"ff07" = "0"; // [ ＇ ]
+"ff0c" = "0"; // [ ， ]
+"ff1f" = "0"; // [ ？ ]
+

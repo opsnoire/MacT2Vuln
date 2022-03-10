@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0000 - ServiceRecordHandle</key>
+	<integer>0</integer>
+	<key>0001 - ServiceClassIDList</key>
+	<array>
+		<data>
+		EAA=
+		</data>
+	</array>
+	<key>0200 - VersionNumberList</key>
+	<array>
+		<dict>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<data>
+			AQA=
+			</data>
+		</dict>
+	</array>
+</dict>
+</plist>

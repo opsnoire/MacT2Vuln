@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>KeyNames</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string>($0A)</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string>Return</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string>Tab</string>
+		<string>Space</string>
+		<string></string>
+		<string>Delete</string>
+		<string>($34)</string>
+		<string>Esc</string>
+		<string>Control</string>
+		<string>Command</string>
+		<string>Shift</string>
+		<string>Caps Lock</string>
+		<string>Option</string>
+		<string>Control</string>
+		<string>Shift</string>
+		<string>Option</string>
+		<string>Control</string>
+		<string>($3F)</string>
+		<string>F17</string>
+		<string>. (Keypad)</string>
+		<string>($42)</string>
+		<string>* (Keypad)</string>
+		<string>($44)</string>
+		<string>+ (Keypad)</string>
+		<string>($46)</string>
+		<string>Clear</string>
+		<string>($48)</string>
+		<string>($49)</string>
+		<string>($4A)</string>
+		<string>/ (Keypad)</string>
+		<string>Enter</string>
+		<string>($4D)</string>
+		<string>- (Keypad)</string>
+		<string>F18</string>
+		<string>F19</string>
+		<string>= (Keypad)</string>
+		<string>0 (Keypad)</string>
+		<string>1 (Keypad)</string>
+		<string>2 (Keypad)</string>
+		<string>3 (Keypad)</string>
+		<string>4 (Keypad)</string>
+		<string>5 (Keypad)</string>
+		<string>6 (Keypad)</string>
+		<string>7 (Keypad)</string>
+		<string>($5A)</string>
+		<string>8 (Keypad)</string>
+		<string>9 (Keypad)</string>
+		<string>($5D)</string>
+		<string>($5E)</string>
+		<string>($5F)</string>
+		<string>F5</string>
+		<string>F6</string>
+		<string>F7</string>
+		<string>F3</string>
+		<string>F8</string>
+		<string>F9</string>
+		<string>($66)</string>
+		<string>F11</string>
+		<string>($68)</string>
+		<string>F13</string>
+		<string>F16</string>
+		<string>F14</string>
+		<string>($6C)</string>
+		<string>F10</string>
+		<string>($6E)</string>
+		<string>F12</string>
+		<string>Record</string>
+		<string>F15</string>
+		<string>Help</string>
+		<string>Home</string>
+		<string>Page Up</string>
+		<string>Del</string>
+		<string>F4</string>
+		<string>End</string>
+		<string>F2</string>
+		<string>Page Down</string>
+		<string>F1</string>
+		<string>Left Arrow</string>
+		<string>Right Arrow</string>
+		<string>Down Arrow</string>
+		<string>Up Arrow</string>
+		<string>Start</string>
+	</array>
+	<key>ModifierKeyNames</key>
+	<array>
+		<string>Command+</string>
+		<string>Shift+</string>
+		<string>Caps Lock+</string>
+		<string>Option+</string>
+		<string>Control+</string>
+	</array>
+	<key>ValidListenKeys</key>
+	<array>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<true/>
+		<false/>
+		<true/>
+		<true/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+		<true/>
+		<true/>
+		<false/>
+		<true/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<false/>
+		<true/>
+	</array>
+</dict>
+</plist>

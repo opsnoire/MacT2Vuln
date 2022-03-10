@@ -1,0 +1,73 @@
+;;; Copyright (c) 2019 Apple Inc.  All Rights reserved.
+;;;
+;;; WARNING: The sandbox rules in this file currently constitute
+;;; Apple System Private Interface and are subject to change at any time and
+;;; without notice.
+;;;
+(version 1)
+
+(deny default)
+(deny file-map-executable process-info* nvram*)
+(deny dynamic-code-generation)
+
+(import "system.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+(allow process-info* (target self))
+(allow iokit-get-properties)
+
+;; For resolving symlinks, realpath(3), and equivalents.
+(allow file-read-metadata)
+
+;; For validating the entitlements of clients.
+(allow process-info-codesignature)
+
+(allow user-preference-read
+    (preference-domain "com.apple.coremedia")
+    (preference-domain "com.apple.coreaudio")
+    (preference-domain "com.apple.avfoundation")
+    (preference-domain "kCFPreferencesAnyApplication"))
+
+(allow user-preference-read user-preference-write
+    (preference-domain "com.apple.voicememod"))
+
+(allow file-read* file-write*
+    (subpath (param "VMSUPPORT"))
+    (subpath (param "TMPDIR"))
+    (subpath (param "CACHESDIR"))
+    (subpath "/private/var/tmp")
+    (subpath "/private/tmp"))
+    
+(allow file-read*
+    (subpath (param "VMFRAMEWORK")))
+
+(allow mach-lookup
+    (global-name "com.apple.metadata.mds")
+    (global-name "com.apple.accountsd.accountmanager")
+    (global-name "com.apple.lsd.mapdb")
+    (global-name "com.apple.lsd.modifydb")
+    (global-name "com.apple.spotlight.IndexAgent")
+    (global-name "com.apple.tccd")
+    (global-name "com.apple.tccd.system")
+    (global-name "com.apple.audio.AudioComponentRegistrar")
+    (global-name "com.apple.powerlog.plxpclogger.xpc")
+    (global-name "com.apple.CoreDisplay.Notification")
+    (global-name "com.apple.coredatad.cloudkit")
+    (global-name "com.apple.windowserver.active")
+    (global-name "com.apple.SystemConfiguration.configd")
+    (global-name "com.apple.system.opendirectoryd.api")
+    (global-name "com.apple.coreservices.quarantine-resolver")
+    (global-name "com.apple.apsd")
+    (global-name "com.apple.audio.coreaudiod")
+    (global-name "com.apple.audio.audiohald")
+    (global-name "com.apple.cloudd")
+    (global-name "com.apple.CoreDisplay.master"))
+
+(allow file-map-executable
+    (subpath "/System/Library/Components/AudioCodecs.component")
+    (subpath "/System/Library/Components/CoreAudio.component")
+    (subpath "/System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAHALPlugIn.bundle"))
+
+(allow system-fsctl
+    (fsctl-command APFSIOC_GET_CLONE_INFO))

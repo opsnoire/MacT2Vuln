@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BrailleDriverAutoDetectDictionaries</key>
+	<array>
+		<dict>
+			<key>IOProviderClass</key>
+			<string>IOHIDDevice</string>
+			<key>VendorID</key>
+			<integer>1944</integer>
+		</dict>
+	</array>
+	<key>BrailleDriverBluetoothSearchDictionary</key>
+	<dict>
+		<key>BrailleDriverBluetoothDeviceNameRegexPatterns</key>
+		<array>
+			<string>ALVA BC6(4|8)0.*</string>
+		</array>
+		<key>BrailleDriverBluetoothSPDUUID16ServiceClass</key>
+		<integer>4353</integer>
+	</dict>
+	<key>BrailleDriverModels</key>
+	<dict>
+		<key>com.apple.scrod.braille.driver.alva.6.series.BC640</key>
+		<dict>
+			<key>size</key>
+			<integer>40</integer>
+		</dict>
+		<key>com.apple.scrod.braille.driver.alva.6.series.BC680</key>
+		<dict>
+			<key>size</key>
+			<integer>80</integer>
+		</dict>
+	</dict>
+	<key>BrailleDriverType</key>
+	<integer>6</integer>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391024</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.scrod.braille.driver.alva.6.series</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Alva 6 Series</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>10</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>708.14</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11O62d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15.6</string>
+	<key>DTSDKBuild</key>
+	<string>19G2006</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1140</string>
+	<key>DTXcodeBuild</key>
+	<string>11O62d</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2007-2018 Apple Inc. All Rights Reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>SCROAlva6SeriesBrailleDriver</string>
+</dict>
+</plist>

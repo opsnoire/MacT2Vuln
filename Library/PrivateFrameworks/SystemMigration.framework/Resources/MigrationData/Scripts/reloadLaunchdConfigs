@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+foreach my $plist (@ARGV) {
+	system("/bin/launchctl", "unload", $plist);
+	system("/bin/launchctl", "load", $plist);
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>με βάση το</string>
+		<string>δείκτης</string>
+		<string>εκθέτης</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>εύρος</string>
+		<string>παράσταση μετά από εύρος</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>με βάση το</string>
+		<string>δείκτης</string>
+		<string>εκθέτης</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>με βάση το</string>
+		<string>δείκτης</string>
+		<string>εκθέτης</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>βαθμός ρίζας</string>
+		<string>υπόριζο</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>αριθμητής</string>
+		<string>παρονομαστής</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>με παρονομαστή</string>
+		<string>με βάση το</string>
+		<string>κάτω από</string>
+	</array>
+</dict>
+</plist>

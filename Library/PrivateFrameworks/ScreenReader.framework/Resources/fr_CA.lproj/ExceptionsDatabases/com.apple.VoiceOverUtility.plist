@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIElement</key>
+	<dict>
+		<key>AXPopUpButton</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ExactMatch</key>
+				<dict>
+					<key>Text Attributes</key>
+					<dict>
+						<key>MTText</key>
+						<string>Texte [[inpt phon]]1AEtrIXby2UWts[[inpt text]] :</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<key>AXStaticText</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ExactMatch</key>
+				<dict>
+					<key>Text Attributes:</key>
+					<dict>
+						<key>MTText</key>
+						<string>Texte [[inpt phon]]1AEtrIXby2UWts[[inpt text]] :</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<key>AXCheckBox</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ExactMatch</key>
+				<dict>
+					<key>Scroll gesture moves content instead of scroll bar</key>
+					<dict>
+						<key>MTText</key>
+						<string>Le geste du défilement déplace [[ctxt WSKP]]le[[ctxt WORD]] contenu plutôt que la barre de défilement</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

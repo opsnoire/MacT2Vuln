@@ -1,0 +1,203 @@
+;; THIS IS THE MACOS SANDBOX FILE
+
+(version 1)
+(import "system.sb")
+
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+(define (home-subpath home-relative-subpath)
+        (subpath (string-append (param "_HOME") home-relative-subpath)))
+(define (home-literal home-relative-literal)
+        (literal (string-append (param "_HOME") home-relative-literal)))
+(define (home-prefix home-relative-subpath)
+        (prefix (string-append (param "_HOME") home-relative-subpath)))
+(define (home-regex home-relative-regex)
+        (regex (string-append "^" (regex-quote (param "_HOME")) home-relative-regex)))
+
+(allow file-read* file-write*
+    (home-subpath "/Library/Suggestions")
+    (home-subpath "/Library/PersonalizationPortrait")
+    (home-subpath "/Library/Logs/PersonalizationPortrait")
+    (home-subpath "/Library/Metadata/com.apple.IntelligentSuggestions")
+    (home-literal "/Library/SyncedPreferences/com.apple.CoreSuggestions.plist")
+    (home-literal "/Library/Keychains/login.keychain") ;; Security.framework
+    (regex #"^/private/var/folders/[^/]+/[^/]+/C/mds/") ;; Security.framework
+    (subpath (param "_TMPDIR")) ;; AddressBook lock, SQLite
+    (mount-relative-regex "^/\\.TemporaryItems(/|$)") ;; NSData atomic write
+    (home-subpath "/Library/Calendars") ;; EventKit
+    (home-subpath "/Library/Application Support/AddressBook") ;; this needs to be r/w even if we only read: <rdar://problem/20454859>
+    (home-subpath "/Library/Caches/com.apple.parsecd/CustomFeedback/") ;; Parsec feedback (Trystero uploads) <rdar://problem/33038387>
+    (home-subpath "/Library/Caches/com.apple.proactive.eventtracker") ;; PET 2.0
+
+)
+
+(allow file-write-create
+    (home-literal "/Library/Metadata")
+)
+
+(allow file-read*
+    (literal "/Library/Preferences/.GlobalPreferences.plist") ;; rdar://49540921
+    (home-literal "/Library/Preferences/.GlobalPreferences.plist") ;; rdar://49540921
+    (home-regex #"/Library/Preferences/ByHost/\.GlobalPreferences\..*\.plist$") ;; rdar://49540921
+    (literal "/Library/Keychains/System.keychain") ;; Security.framework
+    (literal "/private/var/db/mds/messages/se_SecurityMessages") ;; Security.framework
+    (literal "/private/var/db/mds/system/mdsObject.db") ;; Security.framework
+    (literal "/private/var/db/mds/system/mdsDirectory.db") ;; Spotlight
+    (home-literal "/Library/Application Support/SyncServices/Local/SyncingClients.plist") ;; EventKit
+    (literal "/Library/Application Support/CrashReporter/SubmitDiagInfo.domains") ;; MessageTracer
+    (home-subpath "/Library/Mail") ;; Mail attachments
+    (subpath "/private/var/db/datadetectors/sys") ;; Data Detectors sources
+    (home-subpath "/Library/Application Support/Knowledge") ;; _DKKnowledgeStore
+)
+
+(allow file-read* file-write*
+    (literal "/private/var/db/mds/system/mds.lock") ;; Security.framework
+)
+
+;; <rdar://problem/31989235>
+(allow file-read* (home-literal "/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure.plist"))
+(allow file-read* (regex #"\.app$"))
+(allow file-read* (regex #"\.app/Contents$"))
+(allow file-read* (regex #"\.app/Contents/Resources$"))
+(allow file-read* (regex #"/InfoPlist\.strings$"))
+(allow file-read* (regex #"/Info.plist$"))
+(allow file-read* (regex #"\.lproj$"))
+
+(allow mach-lookup
+    (global-name "com.apple.awdd") ;; Trystero training sessions and stats (AWD)
+    (global-name "com.apple.accountsd.accountmanager") ;; EventKit
+    (global-name "com.apple.apsd") ;; SGDCloudKitSync (APNS)
+    (global-name "com.apple.CalendarAgent")
+    (global-name "com.apple.CalendarAgent.database")
+    (global-name "com.apple.CalendarAgent.proxy")
+    (global-name "com.apple.ContactsAgent.general")
+    (global-name "com.apple.cloudd") ;; SGDCloudKitSync (CloudKit)
+    (global-name "com.apple.contacts.donation.agent") ;; <rdar://problem/47520172>
+    (global-name "com.apple.coreduetd") ;; SGDPowerBudget
+    (global-name "com.apple.coreduetd.knowledge.user") ;; PersonalizationPortrait
+    (global-name "com.apple.coreduetd.context") ;; SGDPowerBudget
+    (global-name "com.apple.corerecents.recentsd") ;; for significant pseudo-contacts
+    (global-name "com.apple.CoreServices.coreservicesd") ;; apparently needed by -[NSURL getResourceValue:forKey:error:]
+    (global-name "com.apple.spotlight.SearchAgent")
+    (global-name "com.apple.spotlight.IndexAgent")
+    (global-name "com.apple.DiskArbitration.diskarbitrationd") ;; NSData atomic write
+    (global-name "com.apple.distributed_notifications@Uv3")
+    (global-name "com.apple.locationd.desktop.registration") ;; rdar://52199820
+    (global-name "com.apple.locationd.desktop.synchronous") ;; rdar://52199820
+    (global-name "com.apple.lsd.mapdb") ;; apparently needed by -[NSURL getResourceValue:forKey:error:]
+    (global-name "com.apple.lsd.modifydb") ;; same, see <rdar://problem/21302822>
+    (global-name "com.apple.metadata.mds") ;; <rdar://problem/28957199>
+    (global-name "com.apple.mobileassetd") ;; SGAsset
+    (global-name "com.apple.mobileassetd.v2") ;; SGAsset
+    (global-name "com.apple.reversetemplated")
+    (global-name "com.apple.rtcreportingd")
+    (global-name "com.apple.securityd.xpc") ;; SecItemCopyMatching
+    (global-name "com.apple.SecurityServer") ;; Security.framework
+    (global-name "com.apple.suggestd.contacts") ;; So that code in PersonalizationPortraitInternals call back into suggestd
+    (global-name "com.apple.syncdefaultsd")
+    (global-name "com.apple.system.opendirectoryd.api") ;; AddressBook.framework
+    (global-name "com.apple.SystemConfiguration.configd") ;; SGDCloudKitSync (APNS)
+    (global-name "com.apple.tccd")
+    (global-name "com.apple.windowserver.active") ;; AGDCloudKitSync (APNS)
+    (global-name "com.apple.FileCoordination") ;; MailServices for reimport
+    (global-name "com.apple.duetactivityscheduler") ;; Duet activityStartedWithParameters:/activityStoppedWithParameters
+    (global-name "com.apple.remindd") ;; Reminders found in Apps
+    (global-name "com.apple.routined.registration") ;; LocationsOfInterest via CoreRoutine
+    (global-name "com.apple.dprivacyd") ;; 55668594
+    (global-name "com.apple.dprivacyagentd")) ;; 55668594
+
+(allow file-read-metadata
+    (literal "/Library/Caches/com.apple.DiagnosticReporting.HasBeenAppleInternal"))
+
+;; See <rdar://problem/21827956>
+;; We can't use shared-preferences-read as it's only defined in application.sb
+(allow user-preference-read (preference-domain "com.apple.iCal"))
+(allow user-preference-read user-preference-write (preference-domain "com.apple.suggestions"))
+(allow user-preference-read user-preference-write (preference-domain "com.apple.suggestd"))
+(allow user-preference-read user-preference-write (preference-domain "com.apple.corespotlightui"))
+(allow user-preference-read (preference-domain "com.apple.security"))
+(allow file-read* (home-literal "/Library/Preferences/com.apple.security.plist"))
+(allow file-read* (literal "/Library/Preferences/com.apple.security.plist"))
+(allow user-preference-read (preference-domain "com.apple.security.revocation"))
+(allow file-read* (home-literal "/Library/Preferences/com.apple.security.revocation.plist"))
+(allow file-read* (literal "/Library/Preferences/com.apple.security.revocation.plist"))
+(allow file-read* (subpath "/Library/Managed Preferences")) ;; <rdar://problem/53906543>
+(allow managed-preference-read (preference-domain "kCFPreferencesAnyApplication")) ;; <rdar://problem/53906543>
+
+;; CrashReporter support
+(allow file-read-metadata file-read-xattr
+    (home-subpath "/Library/Logs/CrashReporter"))
+(allow file-read* file-write*
+    (home-prefix "/Library/Logs/CrashReporter/personalization_")
+    (home-prefix "/Library/Logs/CrashReporter/.personalization_"))
+
+;;; Homedir readable paths
+(allow file-read* (home-literal "/.CFUserTextEncoding"))
+
+
+(allow file-read-metadata) ;; <rdar://problem/18320786>
+
+(allow ipc-posix-shm-read* ipc-posix-shm-write-data
+    (ipc-posix-name "com.apple.AppleDatabaseChanged") ;; Security.framework
+)
+
+(allow ipc-posix-shm-read-data
+    (ipc-posix-name-regex #"^/tmp/com.apple.csseed.[0-9]+$") ;; <rdar://21302822>
+)
+
+(allow system-fsctl ; <rdar://problem/20724399>
+    (fsctl-command (_IO "h" 47)) ; HFSIOC_SET_HOTFILE_STATE
+    (fsctl-command (_IO "z" 23)) ; afpfsByteRangeLock2FSCTL
+)
+
+;; <rdar://problem/22190886>
+(allow file-read* (home-subpath "/Library/Caches/GeoServices"))
+
+;; SGAsset
+(allow file-read* (require-all
+      (subpath "/Library/Assets")
+      (extension "com.apple.assets.read")))
+
+;; SGAsset <rdar://problem/26320796>
+(allow user-preference-read (preference-domain "com.apple.SoftwareUpdate"))
+
+;; PersonalizationPortrait rdar://problem/33593450
+(allow user-preference-read (preference-domain "com.apple.assistant.support"))
+;; PersonalizationPortrait <rdar://problem/41010496>
+(allow user-preference-read user-preference-write (preference-domain "com.apple.proactive.PersonalizationPortrait"))
+
+;; Address book
+;; Copied and pasted from application.sb,
+;; excluding the addressbook lock dir part and everything below it (we don't need it and relies on functions only provided in application.sb)
+(allow distributed-notification-post)
+(with-filter (extension "com.apple.tcc.kTCCServiceAddressBook")
+    (allow mach-lookup
+           (global-name "com.apple.AddressBook.abd")
+           (global-name "com.apple.AddressBook.AddressBookApplicationFrameworkIPC")
+           (global-name "com.apple.AddressBook.AssistantService")
+           (global-name "com.apple.AddressBook.ContactsAccountsService")
+           (global-name "com.apple.AddressBook.SourceSync")
+           (global-name "com.apple.ContactsAgent.addressbook"))
+    (allow user-preference-read user-preference-write (preference-domain "com.apple.AddressBook")) ; (this line modified from application.sb to remove dependency on a function)
+    (allow file-read* file-write*
+           (home-subpath "/Library/Application Support/AddressBook")))
+
+;; For reminder model inference
+(allow iokit-open
+    (iokit-user-client-class "AGXSharedUserClient")
+    (iokit-user-client-class "AGXCommandQueue"))
+
+;; For reminder model inference
+(allow sysctl-read
+    (sysctl-name "kern.bootsessionuuid"))
+
+;; <rdar://problem/45164692>
+(allow mach-lookup
+    (global-name "com.apple.coreduetd.people"))
+(allow file-read*
+    (literal "/private/var/db/CoreDuet/People/interactionC.db")
+    (literal "/private/var/db/CoreDuet/People/interactionC.db-shm")
+    (literal "/private/var/db/CoreDuet/People/interactionC.db-wal"))
+(allow file-write*
+    (literal "/private/var/db/CoreDuet/People/interactionC.db-shm"))

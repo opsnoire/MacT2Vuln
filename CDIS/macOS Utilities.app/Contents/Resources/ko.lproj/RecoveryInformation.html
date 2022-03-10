@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>복구 정보</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="../recovery.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<body>
+<div id="startpage-intro"> <div class="startpage-logo"><img src="../apple_icon_larger.jpg" alt="Apple Logo" /></div><!--closes startpage-logo--></div>
+<h1>복구 정보</h1>
+
+<div class="intro">
+
+<p>이 문서에는 macOS 복구에서 사용할 수 있는 앱 및 옵션에 대한 정보가 포함되어 있습니다.</p>
+<p> 아래의 항목을 통해 컴퓨터 내장 디스크를 복구하는 방법, 사용자의 파일 및 사용자 설정을 그대로 유지하며 새로운 macOS 복사본을 다시 설치하는 방법, Time Machine 백업을 통해 시스템을 복원하는 방법 및 macOS를 지우고 다시 설치하는 방법을 배울 수 있습니다.</p>
+
+<p>macOS 유틸리티의 유틸리티 메뉴에서 시동 보안 유틸리티, 네트워크 유틸리티 및 터미널을 이용할 수 있습니다. <a href="https://www.apple.com/kr/support">Apple 지원 웹 사이트</a>에서 이 내용에 관한 추가 정보를 검색할 수 있습니다.</p>
+
+ <p><span class="legal-prefix">참고:</span>Mac 모델에 따라 시동 보안 유틸리티에서 사용할 수 있는 옵션이 달라집니다. iMac Pro의 경우 추가 정보를 보려면 <a href="https://support.apple.com/HT208198">시동 보안 유틸리티에 관하여</a>를 참조하십시오.</p>
+
+</div><!--closes intro-->
+
+<div class="topic">
+<h2>인터넷 연결하기</h2>
+
+<div class="taskintro">
+
+<p>macOS를 다시 설치하려면 인터넷 연결이 필요합니다. 인터넷에 연결하려면 무선 또는 유선 네트워크 연결을 사용하십시오.</p>
+
+<p>인터넷 연결이 없는 경우에도 디스크 유틸리티를 통해 디스크를 복구하거나 Time Machine을 사용하여 백업 파일로 Mac을 복원할 수 있습니다.</p>
+
+</div>
+<!--closes task intro-->
+
+
+ <div class="taskintro">
+  
+  <p>Wi-Fi 메뉴 아이콘(화면 오른쪽 상단 모서리)에 막대가 있는 경우
+   <img src="../IL_WiFi_osx.png" alt="Wi-Fi menu icon with bars" /> Wi-Fi는
+   켜져 있습니다. Wi-Fi 메뉴 아이콘이 비어 있는 경우<img src="../IL_WiFiOff_osx.png"
+    alt="empty Wi-Fi menu icon" />, Wi-Fi는 꺼져 있습니다. 무선 네트워크에 연결하려면
+   먼저 Wi-Fi를 켜야 합니다.</p>
+  
+ </div>
+ <!--closes task intro-->
+ 
+ <div class="task">
+  
+  <ul class="unordered list">
+   
+   <li><i>Wi-Fi 켜기:</i> <img src="../IL_WiFiOff_osx.png"
+    alt="empty Wi-Fi menu icon" />을 클릭하고 Wi-Fi 켜기를 선택하십시오.</li>
+  </ul>
+ </div>
+ 
+ <div class="taskintro">
+  <p>무선 네트워크에 연결하려면 다음 중 하나를 수행하십시오.</p>
+ </div>
+ 
+ <div class="task">
+  
+  <ul class="unordered list">
+   
+   <li><i>네트워크에 연결하기:</i> <img src="../IL_WiFi_osx.png"
+    alt="Wi-Fi menu icon with bars" />을 클릭하고 네트워크를 선택하십시오. 필요한 경우에는
+    네트워크의 암호를 입력합니다.</li>
+   
+   <li><i>폐쇄형 네트워크에 연결하기:</i> <img src="../IL_WiFi_osx.png"
+    alt="Wi-Fi menu icon with bars" />을 클릭하고 다른 네트워크에 연결을 선택하십시오. 네트워크
+    이름을 입력하고 필요한 경우에는 네트워크 암호도 입력합니다.</li>
+   
+  </ul>
+ </div>
+ <!--closes task-->
+ 
+
+<div class="outro">
+
+<p>인터넷에 연결하면 macOS를 다시 설치하거나 <a href="https://www.apple.com/kr/support">Apple 지원 웹 사이트</a>에서 더 많은 정보를 얻거나 다른 웹 사이트를 탐색할 수 있습니다. Safari 브라우저 플러그인과 확장 프로그램은 비활성화됩니다.</p>
+
+<p> macOS 유틸리티 윈도우로 돌아가려면 Safari > Safari 종료를 선택하십시오.</p>
+ 
+ </div><!--closes outro-->
+</div><!--closes topic-->
+
+
+
+
+
+
+
+<div class="topic">
+<h2>디스크 복구하기</h2>
+
+<div class="taskintro">
+
+<p>컴퓨터에 문제가 있거나 컴퓨터를 시작한 후에 macOS 유틸리티 윈도우가 나타나는 경우 컴퓨터의 내장 디스크를 복구해야 할 수 있습니다.</p>
+
+
+<p><span class="legal-prefix">참고:</span>이 윈도우를 닫거나 Safari를 종료하기 전에 아래 지침을 메모해 두십시오.</p>
+</div><!--closes intro-->
+
+<!--closes task intro-->
+<div class="task">
+<ol class="list-number">
+
+<li>Safari > Safari 종료를 선택하십시오.</li> 
+
+<li>macOS 유틸리티 윈도우에서 디스크 유틸리티를 선택한 다음, 계속을 클릭하십시오.</li>
+
+<li>왼쪽에 있는 목록에서 해당 디스크를 선택하십시오.</li>
+
+<li>검사/복구 버튼을 클릭한 다음, 실행을 클릭하고 화면상의 지침을 따르십시오.</li>
+
+
+</ol>
+</div><!--closes task-->
+
+<div class="outro">
+
+<p>디스크 유틸리티가 사용자의 디스크를 복구할 수 없는 경우 가능한 많은 정보를 백업한 후에 이 문서 후반부에 있는 ‘macOS 지우고 다시 설치하기’에 있는 지침을 따르십시오.</p>
+
+<p> macOS 유틸리티 윈도우로 돌아가려면 디스크 유틸리티 > 디스크 유틸리티 종료를 선택하십시오.</p>
+
+
+</div><!--closes outro-->
+</div><!--closes topic-->
+
+
+
+
+
+
+
+
+<div class="topic">
+<h2>macOS 다시 설치하기</h2>
+
+<div class="taskintro">
+
+<p>일부의 경우 macOS를 다시 설치해야 할 수 있으며 사용자의 파일 및 사용자 설정을 그대로 유지한 상태로 macOS를 다시 설치할 수 있습니다.</p>
+<p><span class="legal-prefix">참고:</span>이 윈도우를 닫거나 Safari를 종료하기 전에 아래 지침을 메모해 두십시오.</p>
+</div><!--closes intro-->
+<!--closes task intro-->
+
+<div class="task">
+<ol class="list-number">
+
+<li>Safari > Safari 종료를 선택하십시오.</li>
+
+<li>인터넷에 연결되어 있는지 확인하십시오(무선 네트워크에 연결하려면 이 문서 초반부에 있는 ‘인터넷 연결하기’의 지침을 따르십시오).</li>
+
+<li><p>macOS 다시 설치를 선택한 다음, 계속을 클릭하고 화면상의 지침을 따르십시오.</p>
+ <p><b>중요:</b> 디스크를 선택하는 패널에서 현재의 macOS 디스크를 선택하십시오(대부분의 경우 사용 가능한 디스크는 하나뿐임). </p>
+</li>
+</ol>
+
+
+
+
+</div><!--closes task-->
+
+</div><!--closes topic-->
+
+
+
+
+
+
+
+
+<div class="topic">
+<h2>Time Machine을 사용하여 시스템 복원하기</h2>
+
+<div class="taskintro">
+
+<p>이전에 Time Machine 백업을 생성한 적이 있는 경우 Time Machine 백업으로부터 복원 옵션을 사용하여 컴퓨터에 있는 모든 항목을 이전 상태로 복원하십시오.</p>
+
+<p><b>중요:</b> 오직 Time Machine 백업만을 사용하여 백업의 소스인 컴퓨터에 정보를 복원하십시오. 이 Mac의 정보를 새로운 컴퓨터로 전송하려면 macOS 복원을 종료하고 Mac을 재시동한 다음, macOS에 설치된 마이그레이션 지원 앱을 사용하십시오.</p>
+
+<p><span class="legal-prefix">참고:</span>이 윈도우를 닫거나 Safari를 종료하기 전에 아래 지침을 메모해 두십시오.</p>
+</div><!--closes intro-->
+<!--closes task intro-->
+<div class="task">
+<ol class="list-number">
+
+<li>Safari > Safari 종료를 선택하십시오.</li>
+
+<li>사용자의 백업이 Time Capsule에 있을 경우 인터넷에 연결되어 있는지 확인하십시오(무선 네트워크에 연결하려면 이 문서 초반부에 있는 ‘인터넷 연결하기’의 지침을 따르십시오).</li>
+
+<li>Time Machine 백업에서 복원을 선택한 후에 계속을 클릭하고 화면상의 지침을 따르십시오.</li>
+
+</ol>
+</div><!--closes task-->
+
+
+</div><!--closes topic-->
+
+
+
+
+
+
+
+<div class="topic">
+<h2>macOS 지우고 다시 설치하기</h2>
+
+<div class="taskintro">
+
+<p>macOS를 지우고 다시 설치하면 사용자 계정, 네트워크 설정, 사용자의 모든 파일 및 폴더가 삭제됩니다. macOS를 지우기 전에 시스템에 로그인하여 아래의 지침을 따른 다음, 보관하려는 모든 파일을 다른 디스크나 저장 장치로 복사하여 백업하십시오. 또한, 네트워크 환경설정에 있는 네트워크 설정 정보를 메모해 두면 macOS를 다시 설치한 후에 네트워크에 더 쉽게 다시 연결할 수 있습니다.</p>
+<p><span class="legal-prefix">참고:</span>이 윈도우를 닫거나 Safari를 종료하기 전에 아래 지침을 메모해 두십시오.</p>
+</div><!--closes intro-->
+<!--closes task intro-->
+
+<div class="task">
+<ol class="list-number">
+
+<li>Safari > Safari 종료를 선택하십시오.</li>
+
+<li>인터넷에 연결되어 있는지 확인하십시오(무선 네트워크에 연결하려면 이 문서 초반부에 있는 ‘인터넷 연결하기’의 지침을 따르십시오).</li>
+
+<li>디스크 유틸리티를 선택한 다음 계속을 클릭하십시오.</li>
+
+<li>왼쪽에 있는 목록에서 디스크를 선택한 다음, 지우기 버튼을 클릭하십시오.</li>
+
+<li>디스크 이름을 입력하고 포맷 팝업 메뉴에서 APFS를 선택한 다음, 지우기를 클릭하십시오.</li>
+
+<li>디스크가 지워지면 디스크 유틸리티 > 디스크 유틸리티 종료를 선택하십시오. </li>
+
+<li>macOS 다시 설치를 선택하고 계속을 클릭한 다음, 화면상의 지침을 따르십시오.</li>
+
+
+</ol>
+</div><!--closes task-->
+
+</div><!--closes topic-->
+
+
+
+
+
+
+<div class="topic">
+<h2>macOS 복구 종료하기</h2>
+
+<div class="taskintro">
+
+<p> Time Machine으로 시스템을 복원하거나 macOS를 다시 설치하는 경우, Mac은 대부분 자동으로 재시동됩니다. 하지만 기존의 macOS로 로그인해야 할 상황(예: 이전 섹션에서 설명한 대로 파일을 백업하려는 경우)이 생길 수도 있습니다.</p>
+
+<p><span class="legal-prefix">참고:</span>이 윈도우를 닫거나 Safari를 종료하기 전에 아래 지침을 메모해 두십시오.</p>
+
+</div><!--closes intro-->
+<!--closes task intro-->
+
+<div class="task">
+<ul class="unordered list">
+
+<li><i>macOS 복구 나가기:</i> Apple 메뉴에서 재시동 또는 시스템 종료를 선택하십시오.</li>
+</ul>
+
+<p>종료하기 전에 다른 시동 디스크를 선택하려면 Apple 메뉴에서 시동 디스크를 선택하십시오.</p>
+
+
+</div><!--closes task-->
+
+
+</div><!--closes topic-->
+
+
+</body>
+</html>

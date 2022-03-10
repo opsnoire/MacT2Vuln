@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0001 - ServiceClassIDList</key>
+	<array>
+		<data>EgA=</data>
+	</array>
+	<key>0005 - BrowseGroupList*</key>
+	<array>
+		<data>EAI=</data>
+	</array>
+	<key>0006 - LanguageBaseAttributeIDList*</key>
+	<array>
+		<dict>
+			<key>DataElementSize</key>
+			<integer>2</integer>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<integer>25966</integer>
+		</dict>
+		<dict>
+			<key>DataElementSize</key>
+			<integer>2</integer>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<integer>106</integer>
+		</dict>
+		<dict>
+			<key>DataElementSize</key>
+			<integer>2</integer>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<integer>256</integer>
+		</dict>
+	</array>
+	<key>0204 - PrimaryRecord</key>
+	<true/>
+	<key>0200 - SpecificationID</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AQM=</data>
+	</dict>
+	<key>0202 - ProductID</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>QAA=</data>
+	</dict>
+	<key>0201 - VendorID</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AEw=</data>
+	</dict>
+	<key>0203 - Version</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>EBE=</data>
+	</dict>
+	<key>0205 - VendorIDSource</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AAE=</data>
+	</dict>
+	<key>A000 - Apple Supported Features</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>3</integer>
+		<key>DataElementType</key>
+		<integer>2</integer>
+		<key>DataElementValue</key>
+		<data>AbAGxA==</data>
+	</dict>
+	<key>AFFF - Apple Supported Features Version</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AAE=</data>
+	</dict>
+</dict>
+</plist>

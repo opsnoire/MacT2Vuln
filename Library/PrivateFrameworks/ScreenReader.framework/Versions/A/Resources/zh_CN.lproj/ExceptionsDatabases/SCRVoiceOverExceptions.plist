@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Text</key>
+    <dict>
+
+        <key>ExactMatch</key>
+        <dict>
+        
+            <key>Echo VoiceOver cursor contents</key>
+            <dict>
+                <key>MTText</key>
+                <string>使旁白光标区 [[inpt phon]]_k1AAnt2EHnts[[inpt text]] 发出回声</string>
+            </dict>
+
+            <key>Pauses the current speech or resumes previously paused speech.</key>
+            <dict>
+                <key>MTText</key>
+                <string>暂停当前语音或 [[inpt phon]]_rIYz1UWms[[inpt text]] 以前暂停了的语音。</string>
+            </dict>
+
+            <key>Key Echo speaks each key that is pressed.</key>
+            <dict>
+                <key>MTText</key>
+                <string>按键[[slnc 10]] 回声将读出按下的每个键。</string>
+            </dict>
+
+            <key>Command echo speaks the name of the performed command.</key>
+            <dict>
+                <key>MTText</key>
+                <string>命令回声将读出执行的 [[emph +]]命令的名称。</string>
+            </dict>
+
+            <key>Screen curtain darkens the video display.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Screen curtain [[emph +]]会使 [[emph +]]视频显示变暗。</string>
+            </dict>
+
+            <key>Disabling word echo mode</key>
+            <dict>
+                <key>MTText</key>
+                <string>停用单词 [[emph +]] 回声模式</string>
+            </dict>
+
+            <key>Starting keyboard help. Starting keyboard help.  Type keys to hear their names.  Hold down the VoiceOver keys while typing to hear VoiceOver commands. Press the Escape key at the top left corner of the keyboard to stop help.</key>
+            <dict>
+                <key>MTText</key>
+                <string>开始键盘帮助。键入按键来听听它们的名称。在按住 [[emph +]]旁[[emph -]]白[[emph -]] 按键的同时键入，以便听听旁白命令。按下键盘 [[emph +]]左[[emph +]]上[[slnc 50]] 角的 [[emph +]]Escape 键来 [[emph +]]停止实践。</string>
+            </dict>
+
+            <key>This window cannot be resized</key>
+            <dict>
+                <key>MTText</key>
+                <string>此窗口[[emph +]]不能[[emph +]]被调整大小</string>
+            </dict>
+
+            <key>Moves the window down on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将窗口在屏幕上向下[[emph +]]移动。</string>
+            </dict>
+
+            <key>Moves the window to the left on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将窗口在屏幕上向左[[emph +]]移动。</string>
+            </dict>
+
+            <key>Moves the window to the right on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将窗口在屏幕上向右[[slnc 50]]移动。</string>
+            </dict>
+
+            <key>Cannot move window right any further.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能 [[slnc 50]]再 [[emph +]]向右移动窗口了。</string>
+            </dict>
+
+            <key>Step window up</key>
+            <dict>
+                <key>MTText</key>
+                <string>将窗口[[slnc 20]]提升。</string>
+            </dict>
+
+            <key>Cannot move window up any further. </key>
+            <dict>
+                <key>MTText</key>
+                <string>不能再向上 [[slnc 30]]移动窗口了。</string>
+            </dict>
+
+            <key>Steps the window right on the screen in increments.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将窗口在屏幕上向右 [[slnc 30]]逐步移动。</string>
+            </dict>
+
+            <key>Cannot move window right any further. </key>
+            <dict>
+                <key>MTText</key>
+                <string>不能再 [[slnc 30]]向右移动窗口了。</string>
+            </dict>
+
+            <key>Cannot make window height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将窗口 [[slnc 30]]的高度调整得更高了。</string>
+            </dict>
+
+            <key>Cannot make sheet height any shorter. </key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的高度 [[slnc 20]]调整得更低了。</string>
+            </dict>
+
+            <key>Cannot make sheet height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的高度 [[slnc 20]]调整得更高了。</string>
+            </dict>
+
+            <key>Cannot make sheet width any more narrow.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的宽度 [[slnc 20]]调整得更窄了。</string>
+            </dict>
+
+            <key>Cannot make sheet height any shorter.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的高度[[slnc 20]]调整得更低了。</string>
+            </dict>
+
+            <key>Cannot make sheet height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的高度[[slnc 20]]调整得更高了。</string>
+            </dict>
+
+            <key>Cannot make sheet width any narrower.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的宽度 [[slnc 20]]调整得更窄了。</string>
+            </dict>
+
+            <key>Cannot make sheet width any wider.</key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将表单的宽度 [[slnc 20]]调整得更宽了。</string>
+            </dict>
+
+            <key>Web links menu</key>
+            <dict>
+                <key>MTText</key>
+                <string>Web [[emph +]]链接菜单。</string>
+            </dict>
+
+            <key>Lists the available links on the web page.</key>
+            <dict>
+                <key>MTText</key>
+                <string>列出可用的 [[emph +]]链接 [[slnc 20]][[emph +]]（Web 页面上的）。</string>
+            </dict>
+
+            <key>Confirming text field. </key>
+            <dict>
+                <key>MTText</key>
+                <string>确认 [[emph +]]文本栏。</string>
+            </dict>
+
+            <key>Cannot confirm text field. </key>
+            <dict>
+                <key>MTText</key>
+                <string>无法确认 [[emph +]]文本栏。</string>
+            </dict>
+
+            <key>Confirm text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>确认 [[emph +]]文本栏</string>
+            </dict>
+
+            <key>Clear search field</key>
+            <dict>
+                <key>MTText</key>
+                <string>清除 [[emph +]]搜索栏</string>
+            </dict>
+
+            <key>Clearing search field</key>
+            <dict>
+                <key>MTText</key>
+                <string>正在清除 [[emph +]]搜索栏</string>
+            </dict>
+
+            <key>Cannot clear search field.</key>
+            <dict>
+                <key>MTText</key>
+                <string>无法清除[[emph +]]搜索栏。</string>
+            </dict>
+
+            <key>Interact with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>与 [[emph +]]文本栏互动。</string>
+            </dict>
+
+            <key>Edit or echo the contents of the text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>编辑 [[slnc 20]] 或使 [[emph +]] 文本栏的内容发出回声</string>
+            </dict>
+
+            <key>Stop interacting with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>停止与 [[emph +]]文本栏互动</string>
+            </dict>
+
+            <key>Stops interacting with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>停止与 [[emph +]]文本栏互动</string>
+            </dict>
+
+            <key>Reads from the start of the text field to the cursor position.</key>
+            <dict>
+                <key>MTText</key>
+                <string>从 [[emph +]]文本栏的开头读到 [[emph +]]光标位置。</string>
+            </dict>
+
+            <key>Reads from the cursor position to the end of the text field.</key>
+            <dict>
+                <key>MTText</key>
+                <string>从 [[emph +]]光标位置读到 [[emph +]]文本栏的 [[emph +]]末尾。</string>
+            </dict>
+
+            <key>Moves splitter up or down</key>
+            <dict>
+                <key>MTText</key>
+                <string>将分割器 [[emph +]]上移 [[slnc 20]]或下移[[emph +]]</string>
+            </dict>
+
+            <key>Moves the scrollable area up one page.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将可滚动区域上移 [[slnc 10]] 一页。</string>
+            </dict>
+
+            <key>Moves splitter left or right</key>
+            <dict>
+                <key>MTText</key>
+                <string>将分割器左移 [[slnc 10]] 或右移 [[slnc 10]]</string>
+            </dict>
+
+            <key>Minimizes the area above or left of the splitter.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将区域 [[emph +]] 最小化到分割器的上方 [[slnc 10]] 或 [[emph +]] 左方。</string>
+            </dict>
+
+            <key>Top/left area is already maximized. </key>
+            <dict>
+                <key>MTText</key>
+                <string>上方/左方 [[slnc 10]] 区域已最大化。</string>
+            </dict>
+
+            <key>Increases the value or steps forward through a list</key>
+            <dict>
+                <key>MTText</key>
+                <string>增加值：或在列表中以步进式前进 [[slnc 10]]</string>
+            </dict>
+
+            <key>Opening dropdown list</key>
+            <dict>
+                <key>MTText</key>
+                <string>打开 [[slnc 10]][[emph +]] 下拉列表</string>
+            </dict>
+
+            <key>Closing dropdown list</key>
+            <dict>
+                <key>MTText</key>
+                <string>关闭 [[slnc 10]][[emph +]] 下拉列表</string>
+            </dict>
+
+            <key>currently not busy</key>
+            <dict>
+                <key>MTText</key>
+                <string>当前 [[emph +]] 不繁忙</string>
+            </dict>
+
+            <key>This application has no menubar.</key>
+            <dict>
+                <key>MTText</key>
+                <string>此应用程序 [[emph +]] 没有菜单栏。</string>
+            </dict>
+
+            <key>nothing is in the VoiceOver cursor</key>
+            <dict>
+                <key>MTText</key>
+                <string>在旁白光标没有东西 [[emph +]]</string>
+            </dict>
+
+            <key>nothing has keyboard focus</key>
+            <dict>
+                <key>MTText</key>
+                <string>没有东西 [[emph +]]具有键盘焦点</string>
+            </dict>
+
+            <key>Performs the default action on the item in the VoiceOver cursor.</key>
+            <dict>
+                <key>MTText</key>
+                <string>在旁白光标的 [[slnc 10]] 项上执行默认操作 [[slnc 50]]。</string>
+            </dict>
+
+            <key>Moves the keyboard focus to the item in the VoiceOver cursor.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将键盘焦点移动到旁白光标中的 [[slnc 10]] [[emph +]] 项上。</string>
+            </dict>
+
+            <key>There is no item with keyboard focus</key>
+            <dict>
+                <key>MTText</key>
+                <string>没有 [[emph +]] 项有键盘焦点。</string>
+            </dict>
+
+            <key>menubar</key>
+            <dict>
+                <key>MTText</key>
+                <string>[[inpt phon]]_m1EHnyUW _bAAr[[inpt text]]</string>
+            </dict>
+
+            <key>Cannot move up any further </key>
+            <dict>
+                <key>MTText</key>
+                <string>不能将 [[slnc 10]] 再往上移了</string>
+            </dict>
+
+            <key>Move VoiceOver cursor left to nearest item.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将旁白光标 [[slnc 10]] 左移 [[slnc 10]] 至最接近的项。</string>
+            </dict>
+
+            <key>Focus VoiceOver cursor out to inspect surrounding items.</key>
+            <dict>
+                <key>MTText</key>
+                <string>将旁白光标焦点聚焦到外部 [[slnc 10]] 以检查周围的项。</string>
+            </dict>
+
+            <key>Move VoiceOver cursor to item linked to current item</key>
+            <dict>
+                <key>MTText</key>
+                <string>将旁白光标移动到链接 [[slnc 10]] 至当前项的项</string>
+            </dict>
+
+            <key>Allows the item to be controlled with the keyboard.</key>
+            <dict>
+                <key>MTText</key>
+                <string>允许 [[slnc 10]] 使用键盘对项进行控制 [[slnc 10]]。</string>
+            </dict>
+
+            <key>Add the item in the VoiceOver cursor to the list of selected items</key>
+            <dict>
+                <key>MTText</key>
+                <string>将旁白光标中的 [[slnc 10]] 项添加到选定项列表</string>
+            </dict>
+
+            <key>Shows current item's contextual menu if it has one</key>
+            <dict>
+                <key>MTText</key>
+                <string>显示当前项的关联菜单（如果它 [[emph +]] 有一个）</string>
+            </dict>
+
+            <key>Interact with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>与[[emph +]]文本栏互动。</string>
+            </dict>
+
+            <key>Edit or echo the contents of the text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>编辑 [[slnc 10]] 或使 [[emph +]]文本栏的内容发出回声</string>
+            </dict>
+
+        </dict>
+        
+    </dict>
+</dict>
+</plist>

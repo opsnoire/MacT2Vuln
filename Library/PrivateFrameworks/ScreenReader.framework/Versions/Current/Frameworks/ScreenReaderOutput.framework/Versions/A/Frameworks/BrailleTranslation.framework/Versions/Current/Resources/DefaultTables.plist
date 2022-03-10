@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>en</key>
+	<string>com.apple.scrod.braille.table.duxbury.eng-xueb</string>
+	<key>es</key>
+	<string>com.apple.scrod.braille.table.duxbury.spa</string>
+	<key>es-MX</key>
+	<string>com.apple.scrod.braille.table.duxbury.spa-xre</string>
+	<key>he-IR</key>
+	<string>com.apple.scrod.braille.table.duxbury.heb-isr</string>
+	<key>he-US</key>
+	<string>com.apple.scrod.braille.table.duxbury.heb-usa</string>
+</dict>
+</plist>

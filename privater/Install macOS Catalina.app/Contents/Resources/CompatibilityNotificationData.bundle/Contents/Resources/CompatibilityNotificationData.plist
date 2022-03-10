@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10.15</key>
+	<dict>
+		<key>Applications (i386)</key>
+		<dict>
+			<key>Ignore</key>
+			<dict>
+				<key>com.microsoft.onenote.mac</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>15.0</string>
+					<key>Maximum Version</key>
+					<string>15.24</string>
+				</dict>
+				<key>com.microsoft.Outlook</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>15.0</string>
+					<key>Maximum Version</key>
+					<string>15.24</string>
+				</dict>
+				<key>com.microsoft.Powerpoint</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>15.0</string>
+					<key>Maximum Version</key>
+					<string>15.24</string>
+				</dict>
+				<key>com.microsoft.Word</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>15.0</string>
+					<key>Maximum Version</key>
+					<string>15.24</string>
+				</dict>
+				<key>com.microsoft.Excel</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>15.0</string>
+					<key>Maximum Version</key>
+					<string>15.24</string>
+				</dict>
+				<key>com.divx.DivX_Preferences</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divx.TransferWizard</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divxinc.uninstalldivxformac</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divx.DivXUpdate</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divx.DivXEngine</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divx.DivX_Player</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divx.DivXMediaServer</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.divx.DivXConverter</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.riotgames.leagueoflegends</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.riotgames.LeagueofLegends.LeagueClient</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>org.audacityteam.audacity</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>2.3.1.0 </string>
+				</dict>
+				<key>com.amazon.Kindle</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>50157</string>
+				</dict>
+				<key>com.adobe.switchboard-2.0</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+				<key>com.bittorrent.BitTorrent</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+				</dict>
+			</dict>
+			<key>Mapping</key>
+			<dict>
+				<key>com.macromedia.fireworks</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>13.0</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.PDApp.AAMUpdatesNotifier</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>9.9</string>
+					<key>Minimum Version</key>
+					<string>6.0</string>
+					<key>Application Name</key>
+					<string>AdobeApplicationManagerKey</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.estoolkit-4.0</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Application Name</key>
+					<string>AdobeExtendScriptToolkitKey</string>
+				</dict>
+				<key>com.adobe.PDApp</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>6.0</string>
+					<key>Maximum Version</key>
+					<string>9.9</string>
+					<key>Application Name</key>
+					<string>AdobeApplicationManagerKey</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.distiller</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Maximum Version</key>
+					<string>11</string>
+					<key>Application Name</key>
+					<string>AdobeAcrobatDistillerKey</string>
+					<key>Group With</key>
+					<string>AdobeAcrobatGroupKey</string>
+				</dict>
+				<key>com.adobe.Acrobat.Pro</key>
+				<dict>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Maximum Version</key>
+					<string>11</string>
+					<key>Application Name</key>
+					<string>AdobeAcrobatKey</string>
+					<key>Group With</key>
+					<string>AdobeAcrobatGroupKey</string>
+				</dict>
+				<key>com.adobe.ExtensionManager</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>7.0</string>
+					<key>Minimum Version</key>
+					<string>0</string>
+					<key>Application Name</key>
+					<string>AdobeExtensionManagerKey</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.flash</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>12.9</string>
+					<key>Minimum Version</key>
+					<string>0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.Audition.5.0</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>5.9</string>
+					<key>Minimum Version</key>
+					<string>0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.dreamweaver-12.0</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>12.9</string>
+					<key>Minimum Version</key>
+					<string>0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.InDesign</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>8900</string>
+					<key>Minimum Version</key>
+					<string>0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.microsoft.Messenger</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>8.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.Communicator</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>13.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.office.setupassistant</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.Excel</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.Outlook</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.DocumentConnection</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.Powerpoint</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.Word</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.office.uploadcenter</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.myday</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.rdc</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>2.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.outlook.database_utility</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.ClipGallery</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.AlertsDaemon</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.openxml.chart.app</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.language_register</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.Graph</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.openxml.excel.app</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.EquationEditor</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.autoupdate2</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>2.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.SyncServicesAgent</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+				<key>com.microsoft.outlook.office_reminders</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>14.9</string>
+					<key>Group With</key>
+					<string>MicrosoftOffice2011GroupKey</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>Applications (i386 Dependent)</key>
+		<dict>
+			<key>Mapping</key>
+			<dict>
+				<key>com.apple.Aperture</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>4.0</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Application Name</key>
+					<string>ApertureKey</string>
+				</dict>
+				<key>com.apple.iPhoto</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>1000</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Application Name</key>
+					<string>iPhotoKey</string>
+				</dict>
+				<key>adobe.SpeedGrade</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>10.0</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Application Name</key>
+					<string>AdobeSpeedgradeKey</string>
+				</dict>
+				<key>com.adobe.illustrator</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>16.0.4</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.Photoshop</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>13.2</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+				<key>com.adobe.AdobePremierePro</key>
+				<dict>
+					<key>Maximum Version</key>
+					<string>6.2</string>
+					<key>Minimum Version</key>
+					<string>0.0</string>
+					<key>Group With</key>
+					<string>AdobeCreativeSuiteGroupKey</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@0/display0/AppleBacklightDisplay-610-a03e</key>
+	<dict>
+		<key>startup-timing</key>
+		<data>
+		AAAAAAAAAIADEACAAAAAAAAAAAAAAAAAAAAAAAAAAABACwAACAcAAAIAAAAB
+		AAAAkGyKDwAAAACQbIoPAAAAAJBsig8AAAAAAAoAAFAAAAAIAAAAIAAAAEAG
+		AAAuAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+		AAIAAAAAAAAAAQAEAAEAAQAAAAAAAAAAAAAAAAAAAAAA
+		</data>
+		<key>version</key>
+		<integer>2</integer>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Text</key>
+    <dict>
+
+        <key>ExactMatch</key>
+        <dict>
+        
+            <key>Echo VoiceOver cursor contents</key>
+            <dict>
+                <key>MTText</key>
+                <string>Echo VoiceOver cursor [[inpt phon]]_k1AAnt2EHnts[[inpt text]]</string>
+            </dict>
+
+            <key>Pauses the current speech or resumes previously paused speech.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Pauses the current speech or [[inpt phon]]_rIYz1UWms[[inpt text]] previously paused speech.</string>
+            </dict>
+
+            <key>Key Echo speaks each key that is pressed.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Key[[slnc 10]] Echo speaks each key that is pressed.</string>
+            </dict>
+
+            <key>Command echo speaks the name of the performed command.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Command echo speaks the name of the performed [[emph +]]command.</string>
+            </dict>
+
+            <key>Screen curtain darkens the video display.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Screen curtain [[emph +]]darkens the [[emph +]]video display.</string>
+            </dict>
+
+            <key>Disabling word echo mode</key>
+            <dict>
+                <key>MTText</key>
+                <string>Disabling word [[emph +]]echo mode</string>
+            </dict>
+
+            <key>Starting keyboard help. Starting keyboard help.  Type keys to hear their names.  Hold down the VoiceOver keys while typing to hear VoiceOver commands. Press the Escape key at the top left corner of the keyboard to stop help.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Starting keyboard help.  Type keys to hear their names.  Hold down the [[emph +]]Voice[[emph -]]Over [[emph -]]keys while typing to hear VoiceOver commands.  Press the [[emph +]]Escape key at the [[emph +]]top[[slnc 50]] [[emph +]]left corner to [[emph +]]stop practicing.</string>
+            </dict>
+
+            <key>This window cannot be resized</key>
+            <dict>
+                <key>MTText</key>
+                <string>This window [[emph +]]cannot [[emph +]]be resized</string>
+            </dict>
+
+            <key>Moves the window down on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves the window [[emph +]]down on the screen.</string>
+            </dict>
+
+            <key>Moves the window to the left on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves the window too the [[emph +]]left on the screen.</string>
+            </dict>
+
+            <key>Moves the window to the right on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves the window too the right [[slnc 50]]on the screen.</string>
+            </dict>
+
+            <key>Cannot move window right any further.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot move window right [[slnc 50]]any [[emph +]]further.</string>
+            </dict>
+
+            <key>Step window up</key>
+            <dict>
+                <key>MTText</key>
+                <string>Step window [[slnc 20]]up.</string>
+            </dict>
+
+            <key>Cannot move window up any further. </key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot move window up [[slnc 30]]any further.</string>
+            </dict>
+
+            <key>Steps the window right on the screen in increments.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Steps the window right [[slnc 30]]on the screen in increments.</string>
+            </dict>
+
+            <key>Cannot move window right any further. </key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot move window right [[slnc 30]]any further.</string>
+            </dict>
+
+            <key>Cannot make window height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make window height [[slnc 30]]any taller.</string>
+            </dict>
+
+            <key>Cannot make sheet height any shorter. </key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet height [[slnc 20]]any shorter.</string>
+            </dict>
+
+            <key>Cannot make sheet height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet height [[slnc 20]]any taller.</string>
+            </dict>
+
+            <key>Cannot make sheet width any more narrow.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet width [[slnc 20]]any more narrow.</string>
+            </dict>
+
+            <key>Cannot make sheet height any shorter.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet height [[slnc 20]]any shorter.</string>
+            </dict>
+
+            <key>Cannot make sheet height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet height [[slnc 20]]any taller.</string>
+            </dict>
+
+            <key>Cannot make sheet width any narrower.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet width [[slnc 20]]any narrower.</string>
+            </dict>
+
+            <key>Cannot make sheet width any wider.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot make sheet width [[slnc 20]]any wider.</string>
+            </dict>
+
+            <key>Web links menu</key>
+            <dict>
+                <key>MTText</key>
+                <string>Web [[emph +]]links menu.</string>
+            </dict>
+
+            <key>Lists the available links on the web page.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Lists the available [[emph +]]links [[slnc 20]]on the [[emph +]]web page.</string>
+            </dict>
+
+            <key>Confirming text field. </key>
+            <dict>
+                <key>MTText</key>
+                <string>Confirming [[emph +]]text field.</string>
+            </dict>
+
+            <key>Cannot confirm text field. </key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot confirm [[emph +]]text field.</string>
+            </dict>
+
+            <key>Confirm text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Confirm [[emph +]]text field</string>
+            </dict>
+
+            <key>Clear search field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Clear [[emph +]]search field</string>
+            </dict>
+
+            <key>Clearing search field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Clearing [[emph +]]search field</string>
+            </dict>
+
+            <key>Cannot clear search field.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot clear[[emph +]]search field.</string>
+            </dict>
+
+            <key>Interact with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Interact with [[emph +]]text field</string>
+            </dict>
+
+            <key>Edit or echo the contents of the text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Edit [[slnc 20]]or echo the contents of the [[emph +]]text field</string>
+            </dict>
+
+            <key>Stop interacting with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Stop interacting with [[emph +]]text field</string>
+            </dict>
+
+            <key>Stops interacting with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Stops interacting with [[emph +]]text field</string>
+            </dict>
+
+            <key>Reads from the start of the text field to the cursor position.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Reads from the start of the [[emph +]]text field to the [[emph +]]cursor position.</string>
+            </dict>
+
+            <key>Reads from the cursor position to the end of the text field.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Reads from the [[emph +]]cursor position to the [[emph +]]end of the [[emph +]]text field.</string>
+            </dict>
+
+            <key>Moves splitter up or down</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves splitter [[emph +]]up [[slnc 20]]or [[emph +]]down</string>
+            </dict>
+
+            <key>Moves the scrollable area up one page.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves the scrollable area up [[slnc 10]]one page.</string>
+            </dict>
+
+            <key>Moves splitter left or right</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves splitter left [[slnc 10]]or [[slnc 10]] right</string>
+            </dict>
+
+            <key>Minimizes the area above or left of the splitter.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Minimizes the area [[emph +]]above [[slnc 10]]or [[emph +]]left of the splitter.</string>
+            </dict>
+
+            <key>Top/left area is already maximized. </key>
+            <dict>
+                <key>MTText</key>
+                <string>Top/left [[slnc 10]]area is already maximized. </string>
+            </dict>
+
+            <key>Increases the value or steps forward through a list</key>
+            <dict>
+                <key>MTText</key>
+                <string>Increases the value: or steps[[slnc 10]] forward through a list</string>
+            </dict>
+
+            <key>Opening dropdown list</key>
+            <dict>
+                <key>MTText</key>
+                <string>Opening[[slnc 10]][[emph +]] dropdown list</string>
+            </dict>
+
+            <key>Closing dropdown list</key>
+            <dict>
+                <key>MTText</key>
+                <string>Closing [[slnc 10]][[emph +]] dropdown list</string>
+            </dict>
+
+            <key>currently not busy</key>
+            <dict>
+                <key>MTText</key>
+                <string>currently [[emph +]] not busy</string>
+            </dict>
+
+            <key>This application has no menubar.</key>
+            <dict>
+                <key>MTText</key>
+                <string>This application [[emph +]]has no menubar.</string>
+            </dict>
+
+            <key>nothing is in the VoiceOver cursor</key>
+            <dict>
+                <key>MTText</key>
+                <string>nothing is [[emph +]]in the VoiceOver cursor</string>
+            </dict>
+
+            <key>nothing has keyboard focus</key>
+            <dict>
+                <key>MTText</key>
+                <string>nothing [[emph +]]has keyboard focus</string>
+            </dict>
+
+            <key>Performs the default action on the item in the VoiceOver cursor.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Performs the default action[[slnc 50]] on the [[slnc 10]] item in the VoiceOver cursor.</string>
+            </dict>
+
+            <key>Moves the keyboard focus to the item in the VoiceOver cursor.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Moves the keyboard focus to the [[slnc 10]] [[emph +]]item in the VoiceOver cursor.</string>
+            </dict>
+
+            <key>There is no item with keyboard focus</key>
+            <dict>
+                <key>MTText</key>
+                <string>There [[emph +]]is no item with keyboard focus</string>
+            </dict>
+
+            <key>menubar</key>
+            <dict>
+                <key>MTText</key>
+                <string>[[inpt phon]]_m1EHnyUW _bAAr[[inpt text]]</string>
+            </dict>
+
+            <key>Cannot move up any further </key>
+            <dict>
+                <key>MTText</key>
+                <string>Cannot move up [[slnc 10]]any further</string>
+            </dict>
+
+            <key>Move VoiceOver cursor left to nearest item.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Move VoiceOver cursor [[slnc 10]]left [[slnc 10]]to nearest item.</string>
+            </dict>
+
+            <key>Focus VoiceOver cursor out to inspect surrounding items.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Focus VoiceOver cursor out [[slnc 10]]to inspect surrounding items.</string>
+            </dict>
+
+            <key>Move VoiceOver cursor to item linked to current item</key>
+            <dict>
+                <key>MTText</key>
+                <string>Move VoiceOver cursor to item linked [[slnc 10]]to current item</string>
+            </dict>
+
+            <key>Allows the item to be controlled with the keyboard.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Allows the item [[slnc 10]]to be controlled[[slnc 10]] with the keyboard.</string>
+            </dict>
+
+            <key>Add the item in the VoiceOver cursor to the list of selected items</key>
+            <dict>
+                <key>MTText</key>
+                <string>Add the[[slnc 10]] item in the VoiceOver cursor to the list of selected items</string>
+            </dict>
+
+            <key>Shows current item's contextual menu if it has one</key>
+            <dict>
+                <key>MTText</key>
+                <string>Shows current item's contextual menu if it [[emph +]]has one</string>
+            </dict>
+
+            <key>Interact with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Interact with [[emph +]]text field</string>
+            </dict>
+
+            <key>Edit or echo the contents of the text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>Edit or[[slnc 10]] echo the contents of the [[emph +]]text field</string>
+            </dict>
+
+        </dict>
+        
+    </dict>
+</dict>
+</plist>

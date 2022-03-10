@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ABOUT_ITEMS</key>
+	<array>
+		<dict>
+			<key>allowLaunch</key>
+			<true/>
+			<key>launchName</key>
+			<string>AirPort Admin Utility.app</string>
+			<key>title</key>
+			<string>AirPort Admin Utility:</string>
+			<key>versionPath</key>
+			<string>/Contents/version.plist</string>
+		</dict>
+		<dict>
+			<key>allowLaunch</key>
+			<true/>
+			<key>launchName</key>
+			<string>AirPort Setup Assistant.app</string>
+			<key>title</key>
+			<string>AirPort Setup Assistant:</string>
+			<key>versionPath</key>
+			<string>/Contents/version.plist</string>
+		</dict>
+	</array>
+	<key>Application-Group</key>
+	<string>AirPort</string>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391024</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>AirPort</string>
+	<key>CFBundleGetInfoString</key>
+	<string>13.0, Copyright © 2000–2017 Apple Inc. All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.menuextra.airport</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>AirPort</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>13.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11O62d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15.6</string>
+	<key>DTSDKBuild</key>
+	<string>19G828</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1140</string>
+	<key>DTXcodeBuild</key>
+	<string>11O62d</string>
+	<key>LSHasLocalizedDisplayName</key>
+	<true/>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+	<key>NSMenuExtraWidth</key>
+	<integer>22</integer>
+	<key>NSPrincipalClass</key>
+	<string>AirPortExtra</string>
+	<key>SIGNAL_MAP_QUAL</key>
+	<array>
+		<integer>0</integer>
+		<integer>20</integer>
+		<integer>40</integer>
+		<integer>60</integer>
+		<integer>80</integer>
+	</array>
+	<key>SIGNAL_MAP_TX</key>
+	<array>
+		<integer>0</integer>
+		<integer>1</integer>
+		<integer>5</integer>
+		<integer>12</integer>
+		<integer>36</integer>
+	</array>
+	<key>USE_COMMQUAL</key>
+	<true/>
+	<key>USE_TXRATE</key>
+	<true/>
+</dict>
+</plist>

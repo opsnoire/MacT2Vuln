@@ -1,0 +1,17 @@
+;;
+;; fontworker - sandbox profile
+;; Copyright 2011-2012 Apple, Inc.  All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute 
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice.
+;;
+;; 
+
+(version 1)
+
+(deny default)
+(debug deny)
+(import "system.sb")
+
+(import "fontworkerinternal.sb")

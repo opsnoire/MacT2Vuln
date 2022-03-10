@@ -1,0 +1,42 @@
+graphName "builtin_headphone_out"
+
+; macros
+; Uncomment the fs definition below if you want to process the graph offline
+; [def fs 44100]
+[def numChans 2]
+
+; boxes
+in in
+out out
+box NBandEQ (aufx nbeq) 1 1
+box split split 1 2
+box leftGain dbgn 1 1
+box rightGain dbgn 1 1
+box leftBalance dbgn 1 1
+box rightBalance dbgn 1 1
+box join join 2 1
+box NFP nfnp 1 1
+
+; wires
+wire in NFP ([fs] [numChans])
+wire NFP NBandEQ ([fs] [numChans])
+wire NBandEQ split ([fs] [numChans])
+wire (split 0) leftGain ([fs] 1)
+wire leftGain leftBalance ([fs] 1)
+wire leftBalance (join 0) ([fs] 1)
+wire (split 1) rightGain ([fs] 1)
+wire rightGain rightBalance ([fs] 1)
+wire rightBalance (join 1) ([fs] 1)
+wire join out ([fs] [numChans])
+
+; graph-level parameters
+param mvol 0
+wireGraphParam mvol (leftGain 0)
+wireGraphParam mvol (rightGain 0)
+param mmut 0
+wireGraphParam mmut (leftGain 1)
+wireGraphParam mmut (rightGain 1)
+param lbal 0
+wireGraphParam lbal (leftBalance 0)
+param rbal 0
+wireGraphParam rbal (rightBalance 0)

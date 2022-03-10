@@ -1,0 +1,62 @@
+(version 1)
+
+(import "system.sb")
+
+(define system (equal? "YES" (param "SYSTEM")))
+(define root (equal? "YES" (param "ROOT")))
+
+(allow generic-issue-extension
+       (extension-class-regex #"^com\.apple\.tcc\."))
+
+(allow file-read*)
+
+(allow file-write*
+       (subpath (param "CACHEDIR"))
+       (subpath (param "TEMPDIR")))
+
+(let ((home (if system "" (param "HOME"))))
+  (when home
+    (allow file-write-create
+           (literal (string-append home "/Library"))
+           (literal (string-append home "/Library/Application Support")))
+    (allow file-write*
+           (subpath (string-append home "/Library/Application Support/com.apple.TCC")))))
+
+(allow ipc-posix-shm
+       (ipc-posix-name-regex #"^/tmp/com\.apple\.csseed\.")
+       (ipc-posix-name "com.apple.AppleDatabaseChanged"))
+
+(allow mach-lookup
+       (global-name-regex #"^com\.apple\.distributed_notifications@")
+       (global-name "com.apple.CoreServices.coreservicesd")
+       (global-name "com.apple.FileProvider")
+       (global-name "com.apple.SecurityServer")
+       (global-name "com.apple.UNCUserNotification")
+       (global-name "com.apple.coreservices.quarantine-resolver")
+       (global-name "com.apple.lsd.mapdb")
+       (global-name "com.apple.lsd.modifydb")
+       (global-name "com.apple.notificationcenterui.tcc")
+       (global-name "com.apple.ocspd")
+       (global-name "com.apple.sysextd")
+       (global-name "com.apple.pluginkit.pkd")
+       (global-name "com.apple.tccd.system")
+       (global-name "com.apple.universalaccessAuthWarn"))
+
+(allow system-fsctl
+       (fsctl-command 31255))           ; afpfsByteRangeLock2FSCTL
+
+(when root
+  (allow file-write-data
+         (literal "/private/var/db/mds/system/mds.lock"))
+  (allow mach-lookup
+         (global-name "com.apple.tccd"))
+  (allow system-audit)
+  (allow mach-per-user-lookup mach-task-name))
+
+(allow user-preference-read
+    (preference-domain "com.apple.tccd"))
+
+(with-filter (system-attribute apple-internal)
+  (allow process-fork)
+  (allow process-exec (with no-sandbox)
+      (literal "/usr/bin/sample")))

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>signexceptions</key>
+	<array>
+		<dict>
+			<key>bundleid</key>
+			<string>com.adobe.director.projector</string>
+			<key>procname</key>
+			<string>Director</string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.skype.skype</string>
+			<key>procname</key>
+			<string>Skype</string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.launcher</string>
+			<key>procname</key>
+			<string>World of Warcraft</string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.downloader</string>
+			<key>procname</key>
+			<string>World of Warcraft</string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.worldofwarcraft</string>
+			<key>procname</key>
+			<string>World of Warcraft</string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.Installer</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.starcraft2</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.errorreporter</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.BNUpdate</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.Patcher</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.Starcraft</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.WarcraftIII</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.blizzard.Diablo2</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.armygame.operations</string>
+			<key>procname</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.aspyr.lego.star.wars</string>
+			<key>procname</key>
+			<string>LEGO Star Wars</string>
+		</dict>
+		<dict>
+			<key>bundleid</key>
+			<string>com.epicgames.ut2004</string>
+			<key>procname</key>
+			<string>Unreal Tournament 2004</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>BNUp</string>
+			<key>procname</key>
+			<string>BNUpdate (Carbon)</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>BNu2</string>
+			<key>procname</key>
+			<string>BNUpdate (Carbon)</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>SWar</string>
+			<key>procname</key>
+			<string>Starcraft (Carbon)</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>StCm</string>
+			<key>procname</key>
+			<string>StarCraft Map Editor</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>Dbl2</string>
+			<key>procname</key>
+			<string>Diablo II</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>PJ03</string>
+			<key>procname</key>
+			<string>Director MX</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>PJ07</string>
+			<key>procname</key>
+			<string>Director</string>
+		</dict>
+		<dict>
+			<key>creator</key>
+			<string>FP98</string>
+			<key>procname</key>
+			<string>Flash</string>
+		</dict>
+	</array>
+	<key>version</key>
+	<string>1.1</string>
+</dict>
+</plist>

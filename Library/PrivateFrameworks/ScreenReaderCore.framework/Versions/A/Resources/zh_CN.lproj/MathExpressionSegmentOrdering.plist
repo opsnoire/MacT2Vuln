@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>底数</string>
+		<string>下标</string>
+		<string>上标</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>范围</string>
+		<string>范围后表达式</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>底数</string>
+		<string>下标</string>
+		<string>上标</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>底数</string>
+		<string>下标</string>
+		<string>上标</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>根指数</string>
+		<string>被开方数</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>分子</string>
+		<string>分母</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>大于</string>
+		<string>底数</string>
+		<string>小于</string>
+	</array>
+</dict>
+</plist>

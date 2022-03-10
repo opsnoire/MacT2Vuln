@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Text</key>
+    <dict>
+
+        <key>ExactMatch</key>
+        <dict>
+        
+            <key>Echo VoiceOver cursor contents</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソルの内容を読み上げる</string>
+            </dict>
+
+            <key>Pauses the current speech or resumes previously paused speech.</key>
+            <dict>
+                <key>MTText</key>
+                <string>現在の読み上げを一時停止するか、前に一時停止した読み上げを再開します。</string>
+            </dict>
+
+            <key>Key Echo speaks each key that is pressed.</key>
+            <dict>
+                <key>MTText</key>
+                <string>キー読み上げによって、押された各キーを読み上げます。</string>
+            </dict>
+
+            <key>Command echo speaks the name of the performed command.</key>
+            <dict>
+                <key>MTText</key>
+                <string>コマンド読み上げによって、実行されたコマンドの名前を読み上げます。</string>
+            </dict>
+
+            <key>Screen curtain darkens the video display.</key>
+            <dict>
+                <key>MTText</key>
+                <string>スクリーンカーテンによってビデオの表示を暗くします。</string>
+            </dict>
+
+            <key>Disabling word echo mode</key>
+            <dict>
+                <key>MTText</key>
+                <string>単語読み上げモードを無効にします</string>
+            </dict>
+
+            <key>Starting keyboard help. Starting keyboard help.  Type keys to hear their names.  Hold down the VoiceOver keys while typing to hear VoiceOver commands. Press the Escape key at the top left corner of the keyboard to stop help.</key>
+            <dict>
+                <key>MTText</key>
+                <string>キーボードヘルプを開始します。キーを押すと、その名前が読み上げられます。VoiceOver キーを押したまま入力を行うと、VoiceOver コマンドが読み上げられます。ヘルプを中止するには、キーボードの左上隅にある Esc キーを押します。</string>
+            </dict>
+
+            <key>This window cannot be resized</key>
+            <dict>
+                <key>MTText</key>
+                <string>このウインドウのサイズは変更できません</string>
+            </dict>
+
+            <key>Moves the window down on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウを画面上で下に移動します。</string>
+            </dict>
+
+            <key>Moves the window to the left on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウを画面上で左に移動します。</string>
+            </dict>
+
+            <key>Moves the window to the right on the screen.</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウを画面上で右に移動します。</string>
+            </dict>
+
+            <key>Cannot move window right any further.</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウをこれ以上右に移動できません。</string>
+            </dict>
+
+            <key>Step window up</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウを 1 段上に移動します。</string>
+            </dict>
+
+            <key>Cannot move window up any further. </key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウをこれ以上上に移動できません。</string>
+            </dict>
+
+            <key>Steps the window right on the screen in increments.</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウを画面上で 1 段ずつ右に移動します。</string>
+            </dict>
+
+            <key>Cannot move window right any further. </key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウをこれ以上右に移動できません。</string>
+            </dict>
+
+            <key>Cannot make window height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>ウインドウの高さを広げられません。</string>
+            </dict>
+
+            <key>Cannot make sheet height any shorter. </key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの高さを縮められません。</string>
+            </dict>
+
+            <key>Cannot make sheet height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの高さを広げられません。</string>
+            </dict>
+
+            <key>Cannot make sheet width any more narrow.</key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの幅をこれ以上縮められません。</string>
+            </dict>
+
+            <key>Cannot make sheet height any shorter.</key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの高さを縮められません。</string>
+            </dict>
+
+            <key>Cannot make sheet height any taller.</key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの高さを広げられません。</string>
+            </dict>
+
+            <key>Cannot make sheet width any narrower.</key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの幅を縮められません。</string>
+            </dict>
+
+            <key>Cannot make sheet width any wider.</key>
+            <dict>
+                <key>MTText</key>
+                <string>シートの幅を広げられません。</string>
+            </dict>
+
+            <key>Web links menu</key>
+            <dict>
+                <key>MTText</key>
+                <string>Web リンクメニュー。</string>
+            </dict>
+
+            <key>Lists the available links on the web page.</key>
+            <dict>
+                <key>MTText</key>
+                <string>Web ページ内の使用可能なリンクをリストします。</string>
+            </dict>
+
+            <key>Confirming text field. </key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドを確認します。</string>
+            </dict>
+
+            <key>Cannot confirm text field. </key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドを確認できません。</string>
+            </dict>
+
+            <key>Confirm text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドを確認</string>
+            </dict>
+
+            <key>Clear search field</key>
+            <dict>
+                <key>MTText</key>
+                <string>検索フィールドを消去</string>
+            </dict>
+
+            <key>Clearing search field</key>
+            <dict>
+                <key>MTText</key>
+                <string>検索フィールドを消去します</string>
+            </dict>
+
+            <key>Cannot clear search field.</key>
+            <dict>
+                <key>MTText</key>
+                <string>検索フィールドを消去できません。</string>
+            </dict>
+
+            <key>Interact with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドを操作</string>
+            </dict>
+
+            <key>Edit or echo the contents of the text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドの内容を編集するか読み上げます</string>
+            </dict>
+
+            <key>Stop interacting with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドの操作を中止</string>
+            </dict>
+
+            <key>Stops interacting with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドの操作を中止します</string>
+            </dict>
+
+            <key>Reads from the start of the text field to the cursor position.</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドの先頭からカーソルの位置までを読み上げます。</string>
+            </dict>
+
+            <key>Reads from the cursor position to the end of the text field.</key>
+            <dict>
+                <key>MTText</key>
+                <string>カーソルの位置からテキストフィールドの末尾までを読み上げます。</string>
+            </dict>
+
+            <key>Moves splitter up or down</key>
+            <dict>
+                <key>MTText</key>
+                <string>スプリッタを上または下に動かします</string>
+            </dict>
+
+            <key>Moves the scrollable area up one page.</key>
+            <dict>
+                <key>MTText</key>
+                <string>スクロール可能領域を 1 ページ上に移動します。</string>
+            </dict>
+
+            <key>Moves splitter left or right</key>
+            <dict>
+                <key>MTText</key>
+                <string>スプリッタを左または右に動かします</string>
+            </dict>
+
+            <key>Minimizes the area above or left of the splitter.</key>
+            <dict>
+                <key>MTText</key>
+                <string>スプリッタの上または左の領域を最小化します。</string>
+            </dict>
+
+            <key>Top/left area is already maximized. </key>
+            <dict>
+                <key>MTText</key>
+                <string>すでに上または左の領域が最大化されています。</string>
+            </dict>
+
+            <key>Increases the value or steps forward through a list</key>
+            <dict>
+                <key>MTText</key>
+                <string>値を増やすか、リスト内で 1 つ後の項目に移動します</string>
+            </dict>
+
+            <key>Opening dropdown list</key>
+            <dict>
+                <key>MTText</key>
+                <string>ドロップダウンリストを開きます</string>
+            </dict>
+
+            <key>Closing dropdown list</key>
+            <dict>
+                <key>MTText</key>
+                <string>ドロップダウンリストを閉じます</string>
+            </dict>
+
+            <key>currently not busy</key>
+            <dict>
+                <key>MTText</key>
+                <string>現在使用中ではありません</string>
+            </dict>
+
+            <key>This application has no menubar.</key>
+            <dict>
+                <key>MTText</key>
+                <string>このアプリケーションにはメニューバーがありません。</string>
+            </dict>
+
+            <key>nothing is in the VoiceOver cursor</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソルの中には何もありません</string>
+            </dict>
+
+            <key>nothing has keyboard focus</key>
+            <dict>
+                <key>MTText</key>
+                <string>キーボードの操作対象になっているものはありません</string>
+            </dict>
+
+            <key>Performs the default action on the item in the VoiceOver cursor.</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソルの項目のデフォルトアクションを実行します。</string>
+            </dict>
+
+            <key>Moves the keyboard focus to the item in the VoiceOver cursor.</key>
+            <dict>
+                <key>MTText</key>
+                <string>キーボードの操作対象を VoiceOver カーソル内の項目に移動します。</string>
+            </dict>
+
+            <key>There is no item with keyboard focus</key>
+            <dict>
+                <key>MTText</key>
+                <string>キーボードの操作対象になっている項目がありません</string>
+            </dict>
+
+            <key>menubar</key>
+            <dict>
+                <key>MTText</key>
+                <string>メニューバー</string>
+            </dict>
+
+            <key>Cannot move up any further </key>
+            <dict>
+                <key>MTText</key>
+                <string>これ以上上に移動できません</string>
+            </dict>
+
+            <key>Move VoiceOver cursor left to nearest item.</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソルを左方向の一番近い項目に移動します。</string>
+            </dict>
+
+            <key>Focus VoiceOver cursor out to inspect surrounding items.</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソルの操作対象から外して周囲の項目を調べます。</string>
+            </dict>
+
+            <key>Move VoiceOver cursor to item linked to current item</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソルを現在の項目にリンクされた項目に移動します</string>
+            </dict>
+
+            <key>Allows the item to be controlled with the keyboard.</key>
+            <dict>
+                <key>MTText</key>
+                <string>項目をキーボードで制御できるようにします。</string>
+            </dict>
+
+            <key>Add the item in the VoiceOver cursor to the list of selected items</key>
+            <dict>
+                <key>MTText</key>
+                <string>VoiceOver カーソル内の項目を選択された項目のリストに追加します</string>
+            </dict>
+
+            <key>Shows current item's contextual menu if it has one</key>
+            <dict>
+                <key>MTText</key>
+                <string>現在の項目のコンテクストメニューがある場合は表示します</string>
+            </dict>
+
+            <key>Interact with text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドを操作</string>
+            </dict>
+
+            <key>Edit or echo the contents of the text field</key>
+            <dict>
+                <key>MTText</key>
+                <string>テキストフィールドの内容を編集するか読み上げます</string>
+            </dict>
+
+        </dict>
+        
+    </dict>
+</dict>
+</plist>

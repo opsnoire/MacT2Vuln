@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Startup Disk.app</string>
+		<key>RequireAuth</key>
+		<false/>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Reset Password.app</string>
+		<key>RequireAuth</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Disk Utility.app</string>
+		<key>RequireAuth</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Terminal.app</string>
+		<key>RequireAuth</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/System Profiler.app</string>
+		<key>RequireAuth</key>
+		<false/>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ar</key>
+	<string>تثبيت macOS</string>
+	<key>ca</key>
+	<string>Instal·lar el macOS</string>
+	<key>cs</key>
+	<string>Instalace macOS</string>
+	<key>da</key>
+	<string>Installer macOS</string>
+	<key>de</key>
+	<string>macOS installieren</string>
+	<key>el</key>
+	<string>Εγκατάσταση macOS</string>
+	<key>en</key>
+	<string>Install macOS</string>
+	<key>es</key>
+	<string>Instalar macOS</string>
+	<key>fi</key>
+	<string>Asenna macOS</string>
+	<key>fr</key>
+	<string>Installer macOS</string>
+	<key>he</key>
+	<string>התקן את macOS</string>
+	<key>hr</key>
+	<string>Instaliranje sustava macOS</string>
+	<key>hu</key>
+	<string>A macOS telepítése</string>
+	<key>id</key>
+	<string>Instal macOS</string>
+	<key>it</key>
+	<string>Installazione macOS</string>
+	<key>jp</key>
+	<string>macOSインストール</string>
+	<key>ko</key>
+	<string>macOS 설치</string>
+	<key>ms</key>
+	<string>Pasang macOS</string>
+	<key>nb</key>
+	<string>Installer macOS</string>
+	<key>nl</key>
+	<string>macOS installeren</string>
+	<key>pl</key>
+	<string>Instalacja macOS</string>
+	<key>pt-PT</key>
+	<string>Instalação do macOS</string>
+	<key>pt-BR</key>
+	<string>Instalação do macOS</string>
+	<key>ro</key>
+	<string>Instalare macOS</string>
+	<key>ru</key>
+	<string>Установка macOS</string>
+	<key>sk</key>
+	<string>Inštalátor macOS</string>
+	<key>sv</key>
+	<string>Installera macOS</string>
+	<key>th</key>
+	<string>ติดตั้ง macOS</string>
+	<key>tr</key>
+	<string>macOS Yükle</string>
+	<key>uk</key>
+	<string>Інсталяція macOS</string>
+	<key>vi</key>
+	<string>Cài đặt macOS</string>
+	<key>zh-Hans</key>
+	<string>安装 macOS</string>
+	<key>zh-Hant</key>
+	<string>安裝 macOS</string>
+	<key>es-419</key>
+	<string>Instalar macOS</string>
+</dict>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DSP Devices</key>
+	<dict>
+		<key>Built-in Headphone</key>
+		<dict>
+			<key>Parameters</key>
+			<dict>
+				<key>OutputVolumeInitial</key>
+				<integer>0</integer>
+				<key>OutputVolumeMin</key>
+				<real>-63.5</real>
+				<key>OutputVolumeMax</key>
+				<integer>0</integer>
+				<key>InputVolumeInitial</key>
+				<integer>0</integer>
+				<key>InputVolumeMin</key>
+				<integer>-12</integer>
+				<key>InputVolumeMax</key>
+				<integer>12</integer>
+			</dict>
+		</dict>
+		<key>Built-in Microphone</key>
+		<dict>
+			<key>Parameters</key>
+			<dict>
+				<key>InputVolumeInitial</key>
+				<integer>0</integer>
+				<key>InputVolumeMin</key>
+				<integer>-12</integer>
+				<key>InputVolumeMax</key>
+				<integer>12</integer>
+			</dict>
+		</dict>
+		<key>Built-in Speaker</key>
+		<dict>
+			<key>Parameters</key>
+			<dict>
+				<key>TapStreamChannelCount</key>
+				<integer>2</integer>
+				<key>OutputVolumeInitial</key>
+				<integer>0</integer>
+				<key>OutputVolumeMin</key>
+				<real>-63.5</real>
+				<key>OutputVolumeMax</key>
+				<integer>0</integer>
+			</dict>
+		</dict>
+	</dict>
+	<key>Underlying Devices</key>
+	<dict>
+		<key>Bridge Loopback</key>
+		<dict/>
+		<key>Digital Mic</key>
+		<dict/>
+		<key>Codec Input</key>
+		<dict/>
+		<key>Codec Output</key>
+		<dict/>
+		<key>Speaker</key>
+		<dict>
+			<key>Parameters</key>
+			<dict>
+				<key>OutputVolumeScalarMin</key>
+				<real>0.35</real>
+				<key>OutputVolumeScalarMax</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

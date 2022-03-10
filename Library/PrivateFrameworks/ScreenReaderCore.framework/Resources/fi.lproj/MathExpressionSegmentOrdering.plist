@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>kanta</string>
+		<string>alaindeksi</string>
+		<string>yläindeksi</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>väli</string>
+		<string>lauseke välin jälkeen</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>kanta</string>
+		<string>alaindeksi</string>
+		<string>yläindeksi</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>kanta</string>
+		<string>alaindeksi</string>
+		<string>yläindeksi</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>juuren indeksi</string>
+		<string>juurrettava</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>osoittaja</string>
+		<string>nimittäjä</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>yli</string>
+		<string>kanta</string>
+		<string>alle</string>
+	</array>
+</dict>
+</plist>

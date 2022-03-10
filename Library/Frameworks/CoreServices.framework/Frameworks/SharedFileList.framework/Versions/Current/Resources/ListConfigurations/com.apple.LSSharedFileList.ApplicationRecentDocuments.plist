@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ListClass</key>
+	<string>RecentsListController</string>
+	<key>BookmarkComparitor</key>
+	<string>CompareBookmarkWeak</string>
+	<key>DefaultsKey</key>
+	<string>RecentDocuments</string>
+	<key>ApplicationScoped</key>
+	<true/>
+	<key>DefaultProperties</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.MaxAmount</key>
+		<integer>10</integer>
+	</dict>
+	<key>UnrestrictedBundleIdentifiers</key>
+	<array>
+		<string>com.apple.Finder</string>
+		<string>com.apple.Dock</string>
+		<string>com.apple.appkit.xpc.openAndSavePanelService</string>
+	</array>
+</dict>
+</plist>

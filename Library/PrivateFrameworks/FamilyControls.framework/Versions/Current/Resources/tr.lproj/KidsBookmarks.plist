@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebBookmarkType</key>
+	<string>WebBookmarkTypeList</string>
+	<key>Title</key>
+	<string>Bookmarks Bar</string>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://disneyturkiye.com.tr</string>
+				<key>title</key>
+				<string>Disney Türkiye</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://disneyturkiye.com.tr</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>https://www.mentalup.net/zeka-oyunlari</string>
+				<key>title</key>
+				<string>Zeka Oyunları</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>https://www.mentalup.net/zeka-oyunlari</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://cocuk.meb.gov.tr</string>
+				<key>title</key>
+				<string>MEB Çocuk</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://cocuk.meb.gov.tr</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.kulturcocuk.gov.tr/</string>
+				<key>title</key>
+				<string>Çocuk Kulübü</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.kulturcocuk.gov.tr/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.atlikarincam.com/</string>
+				<key>title</key>
+				<string>ATLIKARINCA</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.atlikarincam.com/</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.afacancocuk.com/</string>
+				<key>title</key>
+				<string>AFACAN ÇOCUK</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.afacancocuk.com/</string>
+		</dict>
+	</array>
+</dict>
+</plist>

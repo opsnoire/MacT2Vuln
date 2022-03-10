@@ -1,0 +1,21 @@
+graphName "builtin_headphone_in_general"
+
+; macros
+; Uncomment the fs definition below if you want to process the graph offline
+; [def fs 44100]
+[def numChans 1]
+
+in in
+out out
+
+box gain dbgn 1 1
+box NBandEQ (aufx nbeq) 1 1
+
+wire in gain ([fs] [numChans])
+wire gain NBandEQ ([fs] [numChans])
+wire NBandEQ out ([fs] [numChans])
+
+param mvol 0
+wireGraphParam mvol (gain 0)
+param mmut 1
+wireGraphParam mmut (gain 1)

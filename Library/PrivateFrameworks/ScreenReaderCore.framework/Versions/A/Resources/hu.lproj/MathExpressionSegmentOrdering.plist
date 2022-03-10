@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>alap</string>
+		<string>alsó index</string>
+		<string>felső index</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>tartomány</string>
+		<string>kifejezés a tartomány után</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>alap</string>
+		<string>alsó index</string>
+		<string>felső index</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>alap</string>
+		<string>alsó index</string>
+		<string>felső index</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>gyökérindex</string>
+		<string>gyökjel alatti kifejezés</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>számláló</string>
+		<string>nevező</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>felett</string>
+		<string>alap</string>
+		<string>alatt</string>
+	</array>
+</dict>
+</plist>

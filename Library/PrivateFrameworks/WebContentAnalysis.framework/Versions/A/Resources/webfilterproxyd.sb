@@ -1,0 +1,59 @@
+(version 1)
+
+(deny default)
+
+(debug deny)
+
+(allow file-ioctl
+		(literal "/dev/dtracehelper")
+		)
+
+(allow file-read*)
+
+(allow file-write*
+		(subpath "/private/var/log/webfilterproxyd")
+		)
+
+(allow file-write-data
+		(literal "/dev/dtracehelper"					)
+		(literal "/private/var/db/DetachedSignatures"	)
+		(literal "/private/var/db/mds/system/mds.lock"	)
+		(subpath "/private/var/log/webfilterproxyd"		)
+		)
+
+(allow ipc-posix-shm)
+
+(allow mach-lookup)
+(allow mach-per-user-lookup)
+
+(allow network-bind)
+
+(allow network-inbound
+		( local		tcp	"localhost:*"	) ;; no network activity should
+		( remote	tcp	"localhost:*"	) ;; come in from the outside world
+		)
+       
+(allow network-outbound
+		( remote		tcp		"*:80"				) ;; http
+		( remote		tcp 	"*:443"				) ;; ssl
+		( remote		tcp		"*:8080"			) ;; http
+		( remote		tcp		"*:8118"			) ;; privoxy
+		( remote		tcp		"localhost:10011"	) ;; short-circuit to proxy
+		
+		;; unix domain sockets (see <rdar://6915304>)
+		;; This is needed by mDNSResponder, otherwise we will fail to reverse 
+		;; lookup IP addresses (and we will fail to validate https servers).
+		(literal "/private/var/run/mDNSResponder") 
+        (literal "/private/var/tmp/launchd/sock")
+        
+        		  
+		)
+
+(allow process-exec
+		(subpath "/System")
+		)
+        
+(allow sysctl-read)
+
+(allow signal)
+

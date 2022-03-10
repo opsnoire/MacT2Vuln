@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Firmware Password Utility.app</string>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Disk Utility.app</string>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Terminal.app</string>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/System Information.app</string>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Applications/Utilities/Network Utility.app</string>
+	</dict>
+	<dict>
+		<key>Path</key>
+		<string>/System/Library/CoreServices/Security Configuration.app</string>
+	</dict>
+</array>
+</plist>

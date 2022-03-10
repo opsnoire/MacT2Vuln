@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DisplayVendorID</key>
+	<integer>40557</integer>
+	<key>DisplayProductID</key>
+	<integer>30497</integer>
+	<key>edid-patches</key>
+        <array>
+            
+            <dict>
+                    <key>offset</key>
+                    <integer>146</integer>
+                    <key>data</key>
+                    <data>AQ==</data>
+            </dict>
+        </array>
+</dict>
+</plist>

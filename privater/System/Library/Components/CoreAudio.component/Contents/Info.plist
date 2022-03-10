@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AudioComponents</key>
+	<array>
+		<dict>
+			<key>description</key>
+			<string>AudioFile Component for QuickTime files</string>
+			<key>factoryFunction</key>
+			<string>QTAudioFileComponentFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>QTAudioFileComponent</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>MooV</string>
+			<key>type</key>
+			<string>afil</string>
+			<key>version</key>
+			<integer>65536</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's N-band Graphic Equalizer</string>
+			<key>factoryFunction</key>
+			<string>AUNBandEQFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUNBandEQ</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>nbeq</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's multitimbral software sampler/synthesizer</string>
+			<key>factoryFunction</key>
+			<string>MIDISynthFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMIDISynth</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>msyn</string>
+			<key>type</key>
+			<string>aumu</string>
+			<key>version</key>
+			<integer>65536</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's mono-timbral software sampler/synthesizer</string>
+			<key>factoryFunction</key>
+			<string>SamplerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUSampler</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>samp</string>
+			<key>tags</key>
+			<array>
+				<string>Sampler</string>
+				<string>Synthesizer</string>
+			</array>
+			<key>type</key>
+			<string>aumu</string>
+			<key>version</key>
+			<integer>65536</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's DLS or SoundFont based software synthesizer</string>
+			<key>factoryFunction</key>
+			<string>DLSMusicDeviceFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: DLSMusicDevice</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>dls </string>
+			<key>tags</key>
+			<array>
+				<string>Synthesizer</string>
+			</array>
+			<key>type</key>
+			<string>aumu</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>AudioDevice interface output unit</string>
+			<key>factoryFunction</key>
+			<string>AUHALFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AudioDeviceOutput</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>ahal</string>
+			<key>tags</key>
+			<array>
+				<string>Output</string>
+			</array>
+			<key>type</key>
+			<string>auou</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Default output unit that redirects its output to the user selected default device</string>
+			<key>factoryFunction</key>
+			<string>DefaultOutputAUFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: DefaultOutputUnit</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>def </string>
+			<key>tags</key>
+			<array>
+				<string>Output</string>
+			</array>
+			<key>type</key>
+			<string>auou</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>System Sounds output unit that redirects its output to the user selected System Sounds device</string>
+			<key>factoryFunction</key>
+			<string>SystemOutputAUFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: SystemOutputUnit</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>sys </string>
+			<key>tags</key>
+			<array>
+				<string>Output</string>
+			</array>
+			<key>type</key>
+			<string>auou</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Audio output unit that aggregates default input and output devices.</string>
+			<key>factoryFunction</key>
+			<string>AUIO_AudioIOFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUAudioIO</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>rioc</string>
+			<key>type</key>
+			<string>auou</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's time delay unit</string>
+			<key>factoryFunction</key>
+			<string>AUDelayFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUDelay</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>dely</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Delay</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's lowpass filter unit</string>
+			<key>factoryFunction</key>
+			<string>AULopassFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AULowpass</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>lpas</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's highpass filter unit</string>
+			<key>factoryFunction</key>
+			<string>AUHipassFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUHipass</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>hpas</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's bandpass filter unit</string>
+			<key>factoryFunction</key>
+			<string>AUBandpassFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUBandpass</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>bpas</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's multi-band filter</string>
+			<key>factoryFunction</key>
+			<string>AUFilterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUFilter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>filt</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>131328</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's compressor/expander</string>
+			<key>factoryFunction</key>
+			<string>AUDynamicsProcessorFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUDynamicsProcessor</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>dcmp</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Dynamics Processor</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's four-band compressor</string>
+			<key>factoryFunction</key>
+			<string>AUMultibandCompressorFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMultibandCompressor</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>mcmp</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Dynamics Processor</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>A Generic Output Unit</string>
+			<key>factoryFunction</key>
+			<string>AUGenericOutputFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: GenericOutput</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>genr</string>
+			<key>tags</key>
+			<array>
+				<string>Output</string>
+			</array>
+			<key>type</key>
+			<string>auou</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's stereo and mono mixer unit</string>
+			<key>factoryFunction</key>
+			<string>AUMixerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMixer</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>smxr</string>
+			<key>tags</key>
+			<array>
+				<string>Mixer</string>
+			</array>
+			<key>type</key>
+			<string>aumx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's matrix reverb unit</string>
+			<key>factoryFunction</key>
+			<string>AUMatrixReverbFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMatrixReverb</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>mrev</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Reverb</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's matrix reverb 2 unit</string>
+			<key>factoryFunction</key>
+			<string>AUMatrixReverbLiteFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUReverb2</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>rvb2</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Reverb</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's peak limiter unit</string>
+			<key>factoryFunction</key>
+			<string>AUPeakLimiterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUPeakLimiter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>lmtr</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Dynamics Processor</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's parametric EQ unit</string>
+			<key>factoryFunction</key>
+			<string>AUParametricEQFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUParametricEQ</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>pmeq</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's varispeed playback</string>
+			<key>factoryFunction</key>
+			<string>AUVarispeedFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUVarispeed</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>vari</string>
+			<key>tags</key>
+			<array>
+				<string>Offline Effect</string>
+				<string>Time Effect</string>
+			</array>
+			<key>type</key>
+			<string>auol</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's time/pitch processor</string>
+			<key>factoryFunction</key>
+			<string>AUPitchFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUTimePitch</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>tmpt</string>
+			<key>tags</key>
+			<array>
+				<string>Offline Effect</string>
+				<string>Time Effect</string>
+				<string>Pitch</string>
+			</array>
+			<key>type</key>
+			<string>auol</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's pitch-shifter</string>
+			<key>factoryFunction</key>
+			<string>AUPitchFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUPitch</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>tmpt</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Pitch</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's scheduled sound player</string>
+			<key>factoryFunction</key>
+			<string>AUScheduledSoundPlayerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUScheduledSoundPlayer</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>sspl</string>
+			<key>type</key>
+			<string>augn</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's audio file player</string>
+			<key>factoryFunction</key>
+			<string>AUAudioFilePlayerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUAudioFilePlayer</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>afpl</string>
+			<key>type</key>
+			<string>augn</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's deferred renderer</string>
+			<key>factoryFunction</key>
+			<string>AUDeferredRendererFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUDeferredRenderer</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>defr</string>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Delays samples on input by specified number of samples to output</string>
+			<key>factoryFunction</key>
+			<string>AUSampleDelayFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUSampleDelay</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>sdly</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Delay</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Splits Input Bus to 2 Output Buses</string>
+			<key>factoryFunction</key>
+			<string>AUSplitterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUSplitter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>splt</string>
+			<key>tags</key>
+			<array>
+				<string>Mixer</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Splits Input Bus to Multiple Output Buses</string>
+			<key>factoryFunction</key>
+			<string>AUMultiSplitterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMultiSplitter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>mspl</string>
+			<key>tags</key>
+			<array>
+				<string>Mixer</string>
+			</array>
+			<key>type</key>
+			<string>aumx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Merges 2 Input Buses to 1 Output Bus</string>
+			<key>factoryFunction</key>
+			<string>AUMergerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMerger</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>merg</string>
+			<key>tags</key>
+			<array>
+				<string>Mixer</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Transmit audio to AU Network Receiver</string>
+			<key>factoryFunction</key>
+			<string>AUNetSendFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUNetSend</string>
+			<key>resourceUsage</key>
+			<dict>
+				<key>network.client</key>
+				<true/>
+			</dict>
+			<key>subtype</key>
+			<string>nsnd</string>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Receive audio from AU Network Sender</string>
+			<key>factoryFunction</key>
+			<string>AUNetReceiveFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUNetReceive</string>
+			<key>subtype</key>
+			<string>nrcv</string>
+			<key>type</key>
+			<string>augn</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's distortion unit</string>
+			<key>factoryFunction</key>
+			<string>AUDistortionFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUDistortion</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>dist</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Distortion</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's Roger beep unit</string>
+			<key>factoryFunction</key>
+			<string>AURogerBeepFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AURogerBeep</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>rogr</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's matrix mixer</string>
+			<key>factoryFunction</key>
+			<string>AUMatrixMixerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMatrixMixer</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>mxmx</string>
+			<key>tags</key>
+			<array>
+				<string>Mixer</string>
+			</array>
+			<key>type</key>
+			<string>aumx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's multichannel mixer</string>
+			<key>factoryFunction</key>
+			<string>AUMultiChannelMixerFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUMultiChannelMixer</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>mcmx</string>
+			<key>tags</key>
+			<array>
+				<string>Mixer</string>
+			</array>
+			<key>type</key>
+			<string>aumx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's graphic EQ unit</string>
+			<key>factoryFunction</key>
+			<string>AUGraphicEQFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUGraphicEQ</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>greq</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's varispeed playback</string>
+			<key>factoryFunction</key>
+			<string>AUVarispeedFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUVarispeed</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>vari</string>
+			<key>tags</key>
+			<array>
+				<string>Time Effect</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's high shelf filter unit</string>
+			<key>factoryFunction</key>
+			<string>AUHighShelfFilterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUHighShelfFilter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>hshf</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's low shelf filter unit</string>
+			<key>factoryFunction</key>
+			<string>AULowShelfFilterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AULowShelfFilter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>lshf</string>
+			<key>tags</key>
+			<array>
+				<string>Effects</string>
+				<string>Filter</string>
+				<string>Equalizer</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's time/pitch processor</string>
+			<key>factoryFunction</key>
+			<string>AUPitchFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUTimePitch</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>tmpt</string>
+			<key>tags</key>
+			<array>
+				<string>Time Effect</string>
+				<string>Pitch</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>AudioConverter unit</string>
+			<key>factoryFunction</key>
+			<string>AUConverterFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUConverter</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>conv</string>
+			<key>tags</key>
+			<array>
+				<string>Format Converter</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's leaner time pitch</string>
+			<key>factoryFunction</key>
+			<string>AUNewTimePitchFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUNewTimePitch</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>nutp</string>
+			<key>tags</key>
+			<array>
+				<string>Time Effect</string>
+				<string>Pitch</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's leaner pitch shifter</string>
+			<key>factoryFunction</key>
+			<string>AUNewPitchFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUNewPitch</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>nutp</string>
+			<key>tags</key>
+			<array>
+				<string>Time Effect</string>
+				<string>Pitch</string>
+			</array>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's time domain time stretcher</string>
+			<key>factoryFunction</key>
+			<string>AUNotQuiteSoSimpleTimeFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AUNotQuiteSoSimpleTime</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>ipto</string>
+			<key>tags</key>
+			<array>
+				<string>Time Effect</string>
+			</array>
+			<key>type</key>
+			<string>aufc</string>
+			<key>version</key>
+			<integer>67072</integer>
+		</dict>
+		<dict>
+			<key>description</key>
+			<string>Apple's PCM to AAC to PCM round trip conversion</string>
+			<key>factoryFunction</key>
+			<string>AURoundTripAACFactory</string>
+			<key>manufacturer</key>
+			<string>appl</string>
+			<key>name</key>
+			<string>Apple: AURoundTripAAC</string>
+			<key>sandboxSafe</key>
+			<true/>
+			<key>subtype</key>
+			<string>raac</string>
+			<key>type</key>
+			<string>aufx</string>
+			<key>version</key>
+			<integer>131075</integer>
+		</dict>
+	</array>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391012</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CoreAudio</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.audio.units.Components</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CoreAudioComponents</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.14</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1.14</string>
+	<key>CSResourcesFileMapped</key>
+	<true/>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11O62d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15.6</string>
+	<key>DTSDKBuild</key>
+	<string>19G55</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1140</string>
+	<key>DTXcodeBuild</key>
+	<string>11O62d</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+	<key>UIDeviceFamily</key>
+	<array>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+	</array>
+</dict>
+</plist>

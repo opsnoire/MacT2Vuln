@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>आधार</string>
+		<string>सबस्क्रिप्ट</string>
+		<string>सुपरस्क्रिप्ट</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>रेंज</string>
+		<string>सीमा के बाद एक्सप्रेशन</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>आधार</string>
+		<string>सबस्क्रिप्ट</string>
+		<string>सुपरस्क्रिप्ट</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>आधार</string>
+		<string>सबस्क्रिप्ट</string>
+		<string>सुपरस्क्रिप्ट</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>रूट सूचकांक</string>
+		<string>रेडिकेंड</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>अंश</string>
+		<string>हर</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>के ऊपर</string>
+		<string>आधार</string>
+		<string>के नीचे</string>
+	</array>
+</dict>
+</plist>

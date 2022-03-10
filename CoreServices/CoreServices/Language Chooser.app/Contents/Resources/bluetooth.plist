@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>en</key>
+	<array>
+		<string>To pair a Bluetooth keyboard, turn it on and wait for your computer to connect to it.</string>
+		<string>This computer has connected to your keyboard. Enter the passcode displayed below and press Return.</string>
+	</array>
+	<key>en-AU</key>
+	<array>
+		<string>To pair a Bluetooth keyboard, turn it on and wait for your computer to connect to it.</string>
+		<string>This computer has connected to your keyboard. Enter the passcode displayed below and press Return.</string>
+	</array>
+	<key>en-GB</key>
+	<array>
+		<string>To pair a Bluetooth keyboard, turn it on and wait for your computer to connect to it.</string>
+		<string>This computer has connected to your keyboard. Enter the passcode displayed below and press Return.</string>
+	</array>
+	<key>ja</key>
+	<array>
+		<string>Bluetooth キーボードを登録するには、登録するキーボードの電源を入れて、コンピュータがキーボードに接続するまでお待ちください。</string>
+		<string>キーボードに接続しました。下に表示されている数字をキーボードで入力してReturn キーを押してください。</string>
+	</array>
+	<key>fr</key>
+	<array>
+		<string>Pour jumeler un clavier Bluetooth, allumez-le, puis attendez que l’ordinateur s’y connecte.</string>
+		<string>Cet ordinateur s’est connecté à votre clavier. Entrez le code affiché ci-dessous et appuyez sur la touche Retour.</string>
+	</array>
+	<key>fr-CA</key>
+	<array>
+		<string>Pour jumeler un clavier Bluetooth, allumez-le et attendez que votre ordinateur s’y connecte.</string>
+		<string>Cet ordinateur s’est connecté à votre clavier. Entrez le code affiché ci-dessous, puis appuyez sur Retour.</string>
+	</array>
+	<key>de</key>
+	<array>
+		<string>Um die Verbindung zu einer Bluetooth-Tastatur herzustellen, schalte sie ein und warte, bis der Computer die Verbindung hergestellt hat.</string>
+		<string>Dieser Computer hat eine Verbindung zu deiner Tastatur hergestellt. Gib den unten angezeigten Code ein und drücke auf den Zeilenschalter.</string>
+	</array>
+	<key>es</key>
+	<array>
+		<string>Para enlazar un teclado Bluetooth, enciéndelo y espera a que el ordenador establezca conexión con el teclado.</string>
+		<string>El ordenador ha establecido conexión con el teclado. Introduce el código que se muestra más abajo y pulsa Retorno.</string>
+	</array>
+	<key>it</key>
+	<array>
+		<string>Per abbinare una tastiera Bluetooth, attivala e attendi che si connetta al computer.</string>
+		<string>La tastiera si è connessa a questo computer. Inserisci il codice visualizzato di seguito e premi Invio.</string>
+	</array>
+	<key>pt-BR</key>
+	<array>
+		<string>Para emparelhar um teclado Bluetooth, ligue o teclado e aguarde até que o seu computador se conecte a ele.</string>
+		<string>Este computador se conectou ao seu teclado. Digite o código de acesso mostrado abaixo e pressione a tecla Retorno.</string>
+	</array>
+	<key>nl</key>
+	<array>
+		<string>Om een Bluetooth-toetsenbord te koppelen, schakel je het in en wacht je tot je computer er verbinding mee maakt.</string>
+		<string>Deze computer heeft verbinding gemaakt met je toetsenbord. Typ de hieronder getoonde toegangscode en druk op Return.</string>
+	</array>
+	<key>sv</key>
+	<array>
+		<string>Parkoppla ett Bluetooth-tangentbord genom att slå på det och vänta tills datorn ansluter till det.</string>
+		<string>Datorn har anslutit till tangentbordet. Ange lösenkoden nedan och tryck på returtangenten.</string>
+	</array>
+	<key>nb</key>
+	<array>
+		<string>Hvis du vil sammenkoble med et Bluetooth-tastatur, slår du på tastaturet og venter på at maskinen kobler til.</string>
+		<string>Maskinen er koblet til tastaturet. Oppgi sikkerhetskoden som vises nedenfor, og trykk på Retur.</string>
+	</array>
+	<key>da</key>
+	<array>
+		<string>Hvis du vil danne par med et Bluetooth-tastatur, skal du slå tastaturet til, og vente på at computeren opretter forbindelse.</string>
+		<string>Computeren har oprettet forbindelse til tastaturet. Skriv adgangskoden der vises nedenfor og tryk på Retur.</string>
+	</array>
+	<key>fi</key>
+	<array>
+		<string>Muodosta pari Bluetooth-näppäimistöstä laittamalla näppäimistö päälle, ja odota, että tietokone muodostaa yhteyden siihen.</string>
+		<string>Tietokone on muodostanut yhteyden näppäimistöön. Syötä alla näkyvä pääsykoodi ja paina rivinvaihtonäppäintä.</string>
+	</array>
+	<key>ru</key>
+	<array>
+		<string>Чтобы создать пару с клавиатурой Bluetooth, включите клавиатуру и дождитесь подключения компьютера к этой клавиатуре.</string>
+		<string>Данный компьютер подключился к Вашей клавиатуре. Введите код-пароль, отображенный ниже, и нажмите кнопку Return.</string>
+	</array>
+	<key>zh-CN</key>
+	<array>
+		<string>若要配对蓝牙键盘，请打开键盘电源并等待电脑连接。</string>
+		<string>这台电脑已连接到您的键盘。请输入下面显示的密码并按下 Return 键。</string>
+	</array>
+	<key>zh-TW</key>
+	<array>
+		<string>若要配對 Bluetooth 鍵盤，請開啟鍵盤電源並等待電腦連接。</string>
+		<string>此電腦已連接鍵盤。請輸入下方顯示的密碼並按下 Return。</string>
+	</array>
+	<key>zh-HK</key>
+	<array>
+		<string>如要配對藍牙鍵盤，請開啟藍牙鍵盤並等待你的電腦與鍵盤連接。</string>
+		<string>此電腦已與你的藍牙鍵盤連接。請輸入下方顯示的密碼，然後按 Return 鍵。</string>
+	</array>
+	<key>ko</key>
+	<array>
+		<string>Bluetooth 키보드를 연결하려면, Bluetooth 키보드를 켜고 컴퓨터에 연결될 때까지 기다리십시오.</string>
+		<string>이 컴퓨터가 사용자 키보드와 연결되었습니다. 아래에 표시된 암호를 입력하고 Return 키를 누르십시오.</string>
+	</array>
+	<key>pl</key>
+	<array>
+		<string>Aby połączyć w parę klawiaturę Bluetooth, włącz ją i poczekaj, aż komputer połączy się z nią.</string>
+		<string>Komputer połączył się z klawiaturą. Podaj kod wyświetlany poniżej i naciśnij Return.</string>
+	</array>
+	<key>pt-PT</key>
+	<array>
+		<string>Para emparelhar um teclado Bluetooth, ligue‑o e aguarde que seja detectado pelo computador.</string>
+		<string>Este computador estabeleceu ligação com o teclado. Digite o código que se segue e prima return.</string>
+	</array>
+	<key>ar</key>
+	<array>
+		<string>للاقتران بلوحة مفاتيح Bluetooth، قم بتشغيلها ثم انتظر الكمبيوتر الخاص بك للاتصال بها.</string>
+		<string>قام هذا الكمبيوتر بالاتصال بلوحة المفاتيح الخاصة بك. أدخل رمز الدخول المعروض أدناه ثم اضغط على مفتاح الرجوع.</string>
+	</array>
+	<key>cs</key>
+	<array>
+		<string>Chcete-li párovat klávesnici Bluetooth, zapněte ji a počkejte, až se k ní váš počítač připojí.</string>
+		<string>Počítač se připojil k vaší klávesnici. Zadejte kód zobrazený níže a stiskněte Return.</string>
+	</array>
+	<key>hu</key>
+	<array>
+		<string>Bluetooth-billentyűzet párosításához kapcsolja be, majd várjon, amíg a számítógép nem csatlakozik hozzá.</string>
+		<string>Ez a számítógép csatlakozott a billentyűzethez. Adja meg az alábbi jelkódot, majd nyomja meg az Entert.</string>
+	</array>
+	<key>tr</key>
+	<array>
+		<string>Bluetooth klavyeyle eşlenmek için, klavyeyi açın ve bilgisayarınızın ona bağlanmasını bekleyin.</string>
+		<string>Bu bilgisayar klavyenize bağlandı. Aşağıda görüntülenen parolayı girin ve Return tuşuna basın.</string>
+	</array>
+	<key>ca</key>
+	<array>
+		<string>Per enllaçar amb un teclat Bluetooth, activa’l i espera fins que l’ordinador s’hi connecti.</string>
+		<string>L’ordinador s’ha connectat al teclat. Introdueix el codi que es mostra a continuació i prem la tecla Retorn.</string>
+	</array>
+	<key>hr</key>
+	<array>
+		<string>Za uparivanje Bluetooth tipkovnice uključite je i pričekajte da se spoji s računalom.</string>
+		<string>Ovo računalo je spojeno s vašom tipkovnicom. Unesite niže prikazanu lozinku i pritisnite Return.</string>
+	</array>
+	<key>ro</key>
+	<array>
+		<string>Pentru asocierea unei tastaturi Bluetooth, porniți-o și așteptați conectarea computerului dvs. la aceasta.</string>
+		<string>Acest computer s-a conectat la tastatura dvs. Introduceți codul de acces afișat mai jos și apăsați tasta Retur.</string>
+	</array>
+	<key>he</key>
+	<array>
+		<string>על-מנת לקשר מקלדת Bluetooth, הפעל/י אותה והמתן/י שהמחשב יתחבר אליה.</string>
+		<string>המחשב התחבר למקלדת. הקש/י את קוד הגישה הבא והקש/י Return.</string>
+	</array>
+	<key>uk</key>
+	<array>
+		<string>Щоб створити пару із клавіатурою Bluetooth, увімкніть її та дочекайтесь, коли ваш комп’ютер під’єднається до неї.</string>
+		<string>Цей комп’ютер під’єднався до вашої клавіатури. Введіть пароль, який наведено нижче, і натисніть клавішу Return.</string>
+	</array>
+	<key>th</key>
+	<array>
+		<string>ในการจับคู่แป้นพิมพ์ Bluetooth ให้เปิดอุปกรณ์และคอยให้คอมพิวเตอร์เชื่อมต่อสำเร็จ</string>
+		<string>คอมพิวเตอร์นี้ได้เชื่อมต่อกับแป้นพิมพ์ของคุณแล้ว ให้ป้อนรหัสผ่านที่แสดงด้านล่างและกด Return</string>
+	</array>
+	<key>sk</key>
+	<array>
+		<string>Ak chcete spárovať Bluetooth klávesnicu, zapnite ju a počkajte, kým ju váš počítač pripojí.</string>
+		<string>Tento počítač sa pripojil k vašej klávesnici. Zadajte heslo zobrazené nižšie a stlačte kláves Return.</string>
+	</array>
+	<key>el</key>
+	<array>
+		<string>Για ζευγοποίηση ενός πληκτρολογίου Bluetooth, ενεργοποιήστε το και περιμένετε να συνδεθεί ο υπολογιστής με αυτό.</string>
+		<string>Αυτός ο υπολογιστής συνδέθηκε με το πληκτρολόγιό σας. Εισάγετε το συνθηματικό που εμφανίζεται παρακάτω και πατήστε Return.</string>
+	</array>
+	<key>id</key>
+	<array>
+		<string>Untuk memasangkan papan ketik Bluetooth, nyalakan papan ketik dan tunggu hingga komputer terhubung ke papan ketik tersebut.</string>
+		<string>Komputer ini telah tersambung ke papan ketik. Masukkan kode sandi yang ditampilkan di bawah ini, lalu tekan Kembali.</string>
+	</array>
+	<key>ms</key>
+	<array>
+		<string>Untuk pasangan papan kekunci Bluetooth, aktifkan ia dan tunggu komputer anda untuk bersambung dengannya.</string>
+		<string>Komputer ini telah disambungkan kepada papan kekunci anda. Masukkan kod laluan yang terpapar di bawah dan tekan Kembali.</string>
+	</array>
+	<key>es-419</key>
+	<array>
+		<string>Para enlazar un teclado Bluetooth, enciéndelo y espera a que tu computadora se conecte con él.</string>
+		<string>La computadora se conectó a tu teclado. Ingresa el código mostrado a continuación y presiona la tecla Intro.</string>
+	</array>
+	<key>vi</key>
+	<array>
+		<string>Để ghép đôi bàn phím Bluetooth, hãy bật bàn phím và đợi máy tính của bạn kết nối với bàn phím.</string>
+		<string>Máy tính này đã kết nối với bàn phím của bạn. Nhập mật khẩu được hiển thị bên dưới và nhấn Return.</string>
+	</array>
+</dict>
+</plist>

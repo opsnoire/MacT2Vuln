@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NONE</key>
+	<dict>
+		<key>Description</key>
+		<string>no partition map</string>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>0</integer>
+		<key>PartitionMap</key>
+		<false/>
+	</dict>
+	<key>SPUD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>512</integer>
+		<key>Description</key>
+		<string>single partition</string>
+		<key>Dualmode</key>
+		<false/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>64</integer>
+		<key>PMFormats</key>
+		<integer>1</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>0</integer>
+	</dict>
+	<key>GPTSPUD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>512</integer>
+		<key>Description</key>
+		<string>Single Partition - GUID Partitioning</string>
+		<key>Dualmode</key>
+		<false/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>40</integer>
+		<key>PMFormats</key>
+		<integer>16</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>0</integer>
+	</dict>
+	<key>MBRSPUD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>512</integer>
+		<key>Description</key>
+		<string>Single Partition - Master Boot Record Partitioning</string>
+		<key>Dualmode</key>
+		<false/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>63</integer>
+		<key>PMFormats</key>
+		<integer>8</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>0</integer>
+	</dict>
+	<key>SPCD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>2048</integer>
+		<key>Description</key>
+		<string>single partition CD/DVD</string>
+		<key>Dualmode</key>
+		<false/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>64</integer>
+		<key>PMFormats</key>
+		<integer>1</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>0</integer>
+		<key>Force 512 Byte Map</key>
+		<true/>
+	</dict>
+	<key>ISOCD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>2048</integer>
+		<key>Description</key>
+		<string>single partition CD/DVD with ISO data</string>
+		<key>Dualmode</key>
+		<false/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>64</integer>
+		<key>PMFormats</key>
+		<integer>1</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>0</integer>
+		<key>Force 512 Byte Map</key>
+		<true/>
+	</dict>
+	<key>UNIVERSAL CD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>2048</integer>
+		<key>Description</key>
+		<string>CD/DVD</string>
+		<key>Dualmode</key>
+		<true/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>64</integer>
+		<key>PMFormats</key>
+		<integer>3</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>1</integer>
+	</dict>
+	<key>UNIVERSAL HD</key>
+	<dict>
+		<key>Blocksize</key>
+		<integer>512</integer>
+		<key>Description</key>
+		<string>hard disk</string>
+		<key>Dualmode</key>
+		<false/>
+		<key>Expertmode</key>
+		<false/>
+		<key>Overhead</key>
+		<integer>64</integer>
+		<key>PMFormats</key>
+		<integer>1</integer>
+		<key>PartitionMap</key>
+		<true/>
+		<key>pmdomains</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

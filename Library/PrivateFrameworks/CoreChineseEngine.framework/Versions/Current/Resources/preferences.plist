@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>migrationComplete10_9_1</key>
+	<false/>
+	<key>migrationComplete10_13</key>
+	<false/>
+	<key>AdjustWordFrequencyZhuyin</key>
+	<true/>
+	<key>adjustWordFrequency</key>
+	<true/>
+	<key>adjustWordFrequencySucheng</key>
+	<true/>
+	<key>adjustWordFrequencyStroke</key>
+	<false/>
+	<key>adjustWordFrequencyWubixing</key>
+	<false/>
+	<key>CandidateWindowDirection</key>
+	<integer>0</integer>
+	<key>candidateWindowDirection</key>
+	<integer>0</integer>
+	<key>ZhuyinCandidateWindowDirection</key>
+	<integer>1</integer>
+	<key>FontSize</key>
+	<integer>16</integer>
+	<key>fontSize</key>
+	<integer>16</integer>
+	<key>showAssociatedWords</key>
+	<true/>
+	<key>autocorrectionEnabled</key>
+	<true/>
+	<key>DynamicPromptCangjie</key>
+	<true/>
+	<key>DynamicPromptSucheng</key>
+	<true/>
+	<key>shuangpinLayout</key>
+	<integer>1</integer>
+	<key>candidateWindowShowsDictionaryDefinitions</key>
+	<false/>
+	<key>fuzzyPinyinEnabled</key>
+	<false/>
+	<key>fuzzyPinyinPairs</key>
+	<array>
+		<string>z_zh</string>
+		<string>s_sh</string>
+		<string>c_ch</string>
+		<string>an_ang</string>
+		<string>en_eng</string>
+		<string>in_ing</string>
+	</array>
+	<key>wbhInputKeysDefined</key>
+	<true/>
+	<key>useWubiHuaSCIM</key>
+	<true/>
+	<key>useWubiHuaTCIM</key>
+	<false/>
+	<key>SCIMShowsTraditionalCharacters</key>
+	<false/>
+	<key>TCIMShowsSimplifiedCharacters</key>
+	<false/>
+	<key>usesLastUsedLatinKeyboardLayout</key>
+	<true/>
+	<key>usesHalfwidthPunctuation</key>
+	<false/>
+</dict>
+</plist>

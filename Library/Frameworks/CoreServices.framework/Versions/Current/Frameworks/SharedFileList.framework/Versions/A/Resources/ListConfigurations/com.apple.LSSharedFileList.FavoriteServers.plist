@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ItemPropertyOverrides</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.OverrideIcon.OSType</key>
+		<string>srvr</string>
+	</dict>
+	<key>PropertyOverrides</key>
+	<dict>
+		<key>com.apple.LSSharedFileList.ForceTemplateIcons</key>
+		<false/>
+	</dict>
+	<key>DefaultsDomain</key>
+	<string>com.apple.sidebarlists</string>
+	<key>DefaultsKey</key>
+	<string>favoriteservers</string>
+	<key>IsOrdered</key>
+	<true/>
+</dict>
+</plist>

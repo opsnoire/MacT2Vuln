@@ -1,0 +1,56 @@
+(version 1)
+
+(import "system.sb")
+
+(deny default iokit-get-properties process-info*)
+
+(deny process-info*)
+(allow process-info-pidinfo)
+(allow process-info-pidfdinfo (target self))
+(allow process-info-pidfileportinfo (target self))
+(allow process-info-setcontrol (target self))
+(allow process-info-dirtycontrol (target self))
+(allow process-info-rusage (target self))
+
+(allow file-read* (literal "/usr/libexec/colorsyncd"))
+
+(allow file-read-metadata file-read-data (literal "/"))
+(allow file-read-metadata)
+
+(allow authorization-right-obtain (right-name "system.colorsync.install.profile"))
+
+(define (allow-create-directory . filters)
+    (allow file-read-metadata
+           (apply require-any filters))
+    (allow file-read-metadata file-write-create
+        (require-all
+            (vnode-type DIRECTORY)
+            (apply require-any filters))))
+
+;; Allow the creation of only a directory at these paths.
+(allow-create-directory 
+    (literal "/Library/Caches")
+    (literal "/Library/Caches/ColorSync"))
+;; Allow reading the contents of our directory
+(allow file-read*  
+    (literal "/Library/Caches/ColorSync"))
+;; Allow full access to anything below our directory.
+(allow file-read* file-write* 
+    (prefix "/Library/Caches/ColorSync/"))
+
+(allow-create-directory 
+    (literal "/Library/ColorSync")
+    (literal "/Library/ColorSync/Profiles"))
+(allow file-read*  
+    (literal "/Library/ColorSync/Profiles"))
+(allow file-read* file-write* 
+    (prefix "/Library/ColorSync/Profiles/"))
+
+;; deny the removal of these pre-installed profiles.
+(deny file-write-unlink
+    (literal "/Library/ColorSync/Profiles/Black & White.icc")
+    (literal "/Library/ColorSync/Profiles/Blue Tone.icc")
+    (literal "/Library/ColorSync/Profiles/Lightness Decrease.icc")
+    (literal "/Library/ColorSync/Profiles/Lightness Increase.icc")
+    (literal "/Library/ColorSync/Profiles/Sepia Tone.icc")
+    (literal "/Library/ColorSync/Profiles/WebSafeColors.icc"))

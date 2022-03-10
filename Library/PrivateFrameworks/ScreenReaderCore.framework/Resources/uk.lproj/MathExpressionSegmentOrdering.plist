@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>основа</string>
+		<string>підрядковий</string>
+		<string>надрядковий</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>діапазон</string>
+		<string>допустимі межі виразу</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>основа</string>
+		<string>підрядковий</string>
+		<string>надрядковий</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>основа</string>
+		<string>підрядковий</string>
+		<string>надрядковий</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>показник кореня</string>
+		<string>підкореневий вираз</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>чисельник</string>
+		<string>знаменник</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>над</string>
+		<string>основа</string>
+		<string>до</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,45 @@
+;
+;	Copyright (C) 2019 Apple Inc. All Rights Reserved.
+;
+;	Sandbox profile for SharingXPCHelper.
+;
+
+(version 1)
+(deny default)
+
+(import "com.apple.corefoundation.sb")
+(import "system.sb")
+
+(corefoundation)
+
+;;; Darwin user directory defines
+(define (darwin-user-cache-subpath relative)
+	(subpath (string-append (param "_DARWIN_USER_CACHE") relative))
+)
+(define (darwin-user-temp-subpath relative)
+	(subpath (string-append (param "_DARWIN_USER_TEMP") relative))
+)
+;;; Home directory defines
+(define (home-literal relative)
+    (literal (string-append (param "_HOME") relative))
+)
+(define (home-prefix relative)
+    (prefix (string-append (param "_HOME") relative))
+)
+(define (home-subpath relative)
+    (subpath (string-append (param "_HOME") relative))
+)
+(define (home-regex relative-regex)
+    (regex (string-append "^" (regex-quote (param "_HOME")) relative-regex))
+)
+
+;;; SharingXPCHelper rules
+
+;;; For Sharing Dashboard
+(with-filter (system-attribute apple-internal)
+    (allow file-read*
+		(literal "/AppleInternal/Library/Preferences/com.apple.coreutils.dashboard.plist")
+    )
+)
+
+

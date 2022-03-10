@@ -1,0 +1,39 @@
+graphName "builtin_speaker_out"
+
+; macros
+; Uncomment the fs definition below if you want to process the graph offline
+; [def fs 44100]
+[def numChansIn 2]
+
+; boxes
+in in
+out out
+out ref
+
+box split split 1 2
+box Gain dbgn 1 1
+box NBandEQ (aufx nbeq) 1 1
+box Sum sum 2 1
+box ChannelCopier chancopy 1 1
+box NFP nfnp 1 1
+
+; wires
+wire in NFP ([fs] [numChansIn])
+wire NFP Gain ([fs] [numChansIn])
+wire Gain NBandEQ ([fs] [numChansIn])
+wire NBandEQ split ([fs] [numChansIn])
+
+wire (split 0) (Sum 0) ([fs] 1)
+wire (split 1) (Sum 1) ([fs] 1)
+wire Sum ChannelCopier ([fs] 1)
+wire ChannelCopier out ([fs] [numChansOut])
+wire NBandEQ ref ([fs] [numChansIn])
+
+; graph-level parameters
+param mvsc 0
+param mvol 0
+wireGraphParam mvol (Gain 0)
+param mmut 0
+wireGraphParam mmut (Gain 1)
+param lbal 0
+param rbal 0

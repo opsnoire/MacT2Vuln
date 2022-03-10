@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+body { 
+	font-family: 'Hiragino Kaku Gothic ProN' !important;
+	font-size: 12px !important;
+	margin-left: 1.2em !important;
+	margin-right: 2em !important;
+	margin-top: 1em !important;
+	-webkit-user-select: none;
+	color: text;
+}
+
+body.kotoeri_encoding_note_body {
+	font-family: -apple-system !important;
+	margin-top: 0.8em !important;
+	margin-bottom: 0.5em !important;
+	margin-right: 0 !important;
+	overflow-y: hidden;
+}
+
+div.kotoeri_encoding_note {
+	font-family: -apple-system !important;
+	font-size:11px !important;
+	line-height: 1em !important;
+}
+
+span.hw, span.ehw, span.vhw {
+	font-size:120% !important;
+	margin-bottom:0em !important;
+	font-family: "HiraKakuProN-W6" !important;
+}
+
+span.hg span.fg {
+	font-size:110% !important;
+	vertical-align:baseline !important;
+}
+
+span.sg {
+	margin-left: 0em !important;
+}
+
+span.sg span.fg {
+	font-size:90% !important;
+	font-family: "HiraKakuProN-W3" !important;
+}
+
+span.se1  {
+	margin-top: 0em !important;
+	margin-bottom: 0.4em !important;
+}
+
+span.se2Group {
+	margin-top: 0.1em !important;
+	margin-bottom: 0.2em !important;
+	margin-left: 0.1em !important;
+}
+
+span.se2 {
+	margin-top: 0.1em !important;
+	margin-bottom: 0.2em !important;
+	margin-left: 0em !important;
+}
+
+span.se3 {
+	margin-top: 0.1em !important;
+	margin-bottom: 0.2em !important;
+	margin-left: 1.35em !important;
+}
+
+span.se1 > span.sn,
+span.se1 span.sn.x_rrbg
+{
+	Background: -apple-system-secondary-label !important;
+	font-size:70% !important;
+	padding: 3px 3px 1px 3px !important;
+	-webkit-border-radius: 2px !important;
+}
+
+span.se2Group > span.sn, span.se2 > span.sn {
+	padding: 2px 2px 0px 2px !important;
+	-webkit-border-radius: 2px !important;
+}
+
+span.se3 > span.sn {
+	font-family: "HiraKakuProN-W6" !important;
+	margin-left: -1.35em !important;
+}
+
+span.se1 span.posg, span.se2Group > span.gg {
+	font-family: "HiraKakuProN-W3" !important;
+}
+
+span.ref {
+	font-family: "HiraKakuProN-W3" !important;
+	font-size:80% !important;
+}
+
+span.t_idioms span.subEntry,
+span.t_derivatives span.subEntry,
+span.t_homonym span.subEntry {
+	font-size: 100% !important;
+}
+
+span.t_idioms > span.lbl,
+span.t_derivatives > span.lbl,
+span.t_homonym > span.lbl {
+	padding: 2px 4px 1px 4px !important;
+	font-size:80% !important;
+	margin-right:1em !important;
+	vertical-align: 7% !important;
+}
+
+span.hg span.fg span.vg
+{
+	display:inline !important;
+}
+
+span.nlp,
+span.vg
+span.sg span.fg,
+span.ph.t_ルビ仮名,
+div.xrgBlock,
+span.subEntryBlock,
+span.hg > span.lbl,
+span.eg,
+span.gg,
+span.pr,
+span.note,
+span.infg
+{
+	display:none !important;
+}
+
+a	{
+	color:text !important;
+	text-decoration:none !important;
+}
+
+a:hover	{
+	color:text !important;
+	text-decoration:none !important;
+}
+
+hr {
+	height: 1px;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: -apple-system-quaternary-label;
+}

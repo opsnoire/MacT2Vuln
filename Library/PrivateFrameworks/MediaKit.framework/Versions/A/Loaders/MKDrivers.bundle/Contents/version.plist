@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>MediaKit</string>
+	<key>BuildVersion</key>
+	<string>5397</string>
+	<key>CFBundleShortVersionString</key>
+	<string>50</string>
+	<key>CFBundleVersion</key>
+	<string>923</string>
+	<key>ProjectName</key>
+	<string>MediaKit</string>
+	<key>SourceVersion</key>
+	<string>923000000000000</string>
+</dict>
+</plist>

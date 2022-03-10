@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<!--	Applications (such as Dictionary.app) can recognize that a
+				webpage has been restricted by looking for the following comment:	-->
+			
+		<!-- com.apple.parentalcontrols.webcontentfilter.accessrestricted -->
+		
+		<title>Access Restricted</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<script	type="text/javascript">
+			INCLUDE_JAVASCRIPT_FILE_NO_LOC
+		</script>
+		
+		<style type="text/css">
+			INCLUDE_CSS_FILE_NO_LOC
+		</style>
+		
+	</head>
+	
+	<!-- 
+		**** Localization notes **** 
+		
+		we use Javascript to break the (possibly very long) URL properly so that
+		it doesn't overflow. There seem to be no way to achieve that with either 
+		CSS styles or HTML for a URL which is for instance, AAAAAAAAA...(100 times)...A
+		
+		LoadPage(URLString, initial_max_num_of_characters, line_max_num_of_characters)
+
+		args:
+			- URLString: the blocked URL, 
+			- initial_max_num_of_characters: the max number of characters contained in the first line before breaking the URL
+			- line_max_num_of_characters: the max number of characters contained in the following lines 
+			
+		for example with LoadPage("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", 3, 28)
+		
+		the page would look like:
+		
+		[...]
+		You can't see the page: AAA
+		AAAAAAAAAAAAAAAAAAAAAAAAAAA
+		AAAAAAAAAAAAAAAAAAAAAAAAAAA
+		[...]
+
+		Since characters on webpage are rendered as variable sized fonts, it is 
+		a good idea to test manually the visual result of a long URL containing
+		only "A"s, being "A" a wide character (ie. testing the worst case scenario). 
+		
+		Localizers might have to change 'initial_max_num_of_characters' depending
+		on the length of how "You can't see the page" translate in an other language.
+	-->
+	
+	<body onload="javascript:LoadPage(	'USER_VISIBLE_RESTRICTED_URL_NO_LOC', 
+										32, 51)" >
+		
+		
+		
+		<div class="bubblecontainer"	id="Table">
+		
+			<div class="bubblerow"		id="TableRow">
+			
+				<div class="logocontainerleft"		id="icon" >
+					<!-- Icon will be displayed by Javascript -->
+				</div>
+				
+				<div class="textcontainerright"		id="TableRightColumn">
+				
+					<p class="title"	id="PageMainTitle">
+						Oops! You can&rsquo;t see pages on this website.
+					</p>
+			
+					
+					<p class="text"		id="RestrictedURLText">
+						You can&rsquo;t see the page
+						&#8220;<span id="restrictedURL"><!-- URL will be displayed by Javascript --></span>&#8221;
+						because it was blocked by Screen Time.
+					</p>
+
+				
+					<p class="text"		id="GoBackText">
+						To return to the page you were looking at, click Go Back. 
+					</p>
+					
+					
+					<p class="button"	id="GoBackButton">
+						<input type="button" value="  Go Back  " onclick="GoBack()">
+					</p>
+					
+				</div>
+				
+			</div>
+
+		</div>
+	
+	</body>
+
+</html>

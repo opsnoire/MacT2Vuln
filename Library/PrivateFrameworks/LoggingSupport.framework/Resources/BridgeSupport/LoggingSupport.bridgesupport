@@ -1,0 +1,381 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='1.0'>
+<struct name='OSLogEventLossCount' type64='{_OSLogEventLossCount=&quot;count&quot;I&quot;saturated&quot;B}'/>
+<constant name='OSLogConstructHighVolumeAgeLimit' type64='@'/>
+<constant name='OSLogConstructHighVolumeSizeLimit' type64='@'/>
+<constant name='OSLogConstructPersistAgeLimit' type64='@'/>
+<constant name='OSLogConstructPersistSizeLimit' type64='@'/>
+<constant name='OSLogConstructSignpostAgeLimit' type64='@'/>
+<constant name='OSLogConstructSignpostSizeLimit' type64='@'/>
+<constant name='OSLogConstructSpecialAgeLimit' type64='@'/>
+<constant name='OSLogConstructSpecialSizeLimit' type64='@'/>
+<constant name='OSLogErrorDomain' type64='@'/>
+<constant name='logarchive_key_base_size' type64='*'/>
+<constant name='logarchive_key_base_time' type64='*'/>
+<constant name='logarchive_key_eventlog' type64='*'/>
+<constant name='logarchive_key_fe_size' type64='*'/>
+<constant name='logarchive_key_fe_time' type64='*'/>
+<constant name='logarchive_key_hv_size' type64='*'/>
+<constant name='logarchive_key_hv_time' type64='*'/>
+<constant name='logarchive_key_livedata' type64='*'/>
+<constant name='logarchive_key_path' type64='*'/>
+<constant name='logarchive_key_sp_size' type64='*'/>
+<constant name='logarchive_key_sp_time' type64='*'/>
+<constant name='logarchive_key_ttl_size' type64='*'/>
+<constant name='logarchive_key_ttl_time' type64='*'/>
+<string_constant name='kAMDActivationStateKey' nsstring='true' value='ActivationState'/>
+<string_constant name='kAMDBuildVersionKey' nsstring='true' value='BuildVersion'/>
+<string_constant name='kAMDDTProductTypesKey' nsstring='true' value='DTProductTypes'/>
+<string_constant name='kAMDDeviceClassKey' nsstring='true' value='DeviceClass'/>
+<string_constant name='kAMDDeviceColorKey' nsstring='true' value='DeviceColor'/>
+<string_constant name='kAMDDeviceEnclosureColorKey' nsstring='true' value='DeviceEnclosureColor'/>
+<string_constant name='kAMDDeviceNameKey' nsstring='true' value='DeviceName'/>
+<string_constant name='kAMDProductNameKey' nsstring='true' value='ProductName'/>
+<string_constant name='kAMDProductTypeKey' nsstring='true' value='ProductType'/>
+<string_constant name='kAMDProductVersionKey' nsstring='true' value='ProductVersion'/>
+<string_constant name='kAMDProtocolVersionKey' nsstring='true' value='ProtocolVersion'/>
+<string_constant name='kAMDReservedBytesKey' nsstring='true' value='ReservedBytes'/>
+<string_constant name='kAMDSerialNumberKey' nsstring='true' value='SerialNumber'/>
+<string_constant name='kAMDUniqueDeviceIDKey' nsstring='true' value='UniqueDeviceID'/>
+<enum name='OSActivityEventFilterActivities' value64='1'/>
+<enum name='OSActivityEventFilterDefault' value64='7'/>
+<enum name='OSActivityEventFilterLogMessages' value64='4'/>
+<enum name='OSActivityEventFilterTraceMessages' value64='2'/>
+<enum name='OSActivityEventMessageTypeDebug' value64='2'/>
+<enum name='OSActivityEventMessageTypeError' value64='16'/>
+<enum name='OSActivityEventMessageTypeFault' value64='17'/>
+<enum name='OSActivityEventMessageTypeInfo' value64='1'/>
+<enum name='OSActivityEventMessageTypeRelease' value64='0'/>
+<enum name='OSActivityEventTypeActivityCreate' value64='513'/>
+<enum name='OSActivityEventTypeActivityTransition' value64='514'/>
+<enum name='OSActivityEventTypeLegacyLogMessage' value64='1152'/>
+<enum name='OSActivityEventTypeLogMessage' value64='1024'/>
+<enum name='OSActivityEventTypeLoss' value64='1792'/>
+<enum name='OSActivityEventTypeSignpost' value64='1536'/>
+<enum name='OSActivityEventTypeStatedumpEvent' value64='2560'/>
+<enum name='OSActivityEventTypeTimesync' value64='1280'/>
+<enum name='OSActivityEventTypeTraceMessage' value64='768'/>
+<enum name='OSActivityEventTypeUserAction' value64='515'/>
+<enum name='OSActivityPrintStyleCompact' value64='4'/>
+<enum name='OSActivityPrintStyleDefault' value64='0'/>
+<enum name='OSActivityPrintStyleJSON' value64='2'/>
+<enum name='OSActivityPrintStyleJSONNewlineDelimited' value64='3'/>
+<enum name='OSActivityPrintStyleSyslog' value64='1'/>
+<enum name='OSActivityStreamOptionLiveStream' value64='4'/>
+<enum name='OSActivityStreamOptionNoPrivateData' value64='2147483648'/>
+<enum name='OSActivityStreamOptionPreciseTimestamps' value64='8'/>
+<enum name='OSActivityStreamOptionProcessOnly' value64='1'/>
+<enum name='OSActivityStreamOptionTracePayload' value64='2'/>
+<enum name='OSActivityStreamOptionTypeDebug' value64='512'/>
+<enum name='OSActivityStreamOptionTypeInfo' value64='256'/>
+<enum name='OSLogEventDecomposedMessageCorrupt' value64='1'/>
+<enum name='OSLogEventDecomposedMessageFormatMalformed' value64='3'/>
+<enum name='OSLogEventDecomposedMessageMissing' value64='2'/>
+<enum name='OSLogEventDecomposedMessagePresent' value64='0'/>
+<enum name='OSLogEventLogTypeDebug' value64='2'/>
+<enum name='OSLogEventLogTypeDefault' value64='0'/>
+<enum name='OSLogEventLogTypeError' value64='16'/>
+<enum name='OSLogEventLogTypeFault' value64='17'/>
+<enum name='OSLogEventLogTypeInfo' value64='1'/>
+<enum name='OSLogEventMessageArgumentAvailable' value64='0'/>
+<enum name='OSLogEventMessageArgumentCategoryData' value64='3'/>
+<enum name='OSLogEventMessageArgumentCategoryInvalid' value64='0'/>
+<enum name='OSLogEventMessageArgumentCategoryScalar' value64='1'/>
+<enum name='OSLogEventMessageArgumentCategoryString' value64='2'/>
+<enum name='OSLogEventMessageArgumentMalformed' value64='4'/>
+<enum name='OSLogEventMessageArgumentMissing' value64='1'/>
+<enum name='OSLogEventMessageArgumentPrivacyDefault' value64='0'/>
+<enum name='OSLogEventMessageArgumentPrivacyPrivate' value64='2'/>
+<enum name='OSLogEventMessageArgumentPrivacyPublic' value64='1'/>
+<enum name='OSLogEventMessageArgumentRedacted' value64='2'/>
+<enum name='OSLogEventMessageArgumentTruncated' value64='3'/>
+<enum name='OSLogEventScalarArgumentCategoryDouble' value64='3'/>
+<enum name='OSLogEventScalarArgumentCategoryInt64' value64='2'/>
+<enum name='OSLogEventScalarArgumentCategoryInvalid' value64='0'/>
+<enum name='OSLogEventScalarArgumentCategoryLongDouble' value64='4'/>
+<enum name='OSLogEventScalarArgumentCategoryUInt64' value64='1'/>
+<enum name='OSLogEventScalarArgumentTypeChar' value64='1'/>
+<enum name='OSLogEventScalarArgumentTypeDouble' value64='13'/>
+<enum name='OSLogEventScalarArgumentTypeErrno' value64='5'/>
+<enum name='OSLogEventScalarArgumentTypeInt' value64='3'/>
+<enum name='OSLogEventScalarArgumentTypeInvalid' value64='0'/>
+<enum name='OSLogEventScalarArgumentTypeLong' value64='6'/>
+<enum name='OSLogEventScalarArgumentTypeLongDouble' value64='14'/>
+<enum name='OSLogEventScalarArgumentTypeLongLong' value64='7'/>
+<enum name='OSLogEventScalarArgumentTypeShort' value64='2'/>
+<enum name='OSLogEventScalarArgumentTypeUnsignedChar' value64='8'/>
+<enum name='OSLogEventScalarArgumentTypeUnsignedInt' value64='10'/>
+<enum name='OSLogEventScalarArgumentTypeUnsignedLong' value64='11'/>
+<enum name='OSLogEventScalarArgumentTypeUnsignedLongLong' value64='12'/>
+<enum name='OSLogEventScalarArgumentTypeUnsignedShort' value64='9'/>
+<enum name='OSLogEventScalarArgumentTypeWideInt' value64='4'/>
+<enum name='OSLogEventSignpostScopeProcess' value64='128'/>
+<enum name='OSLogEventSignpostScopeSystem' value64='192'/>
+<enum name='OSLogEventSignpostScopeThread' value64='64'/>
+<enum name='OSLogEventSignpostTypeEvent' value64='0'/>
+<enum name='OSLogEventSignpostTypeIntervalBegin' value64='1'/>
+<enum name='OSLogEventSignpostTypeIntervalEnd' value64='2'/>
+<enum name='OSLogEventStreamFlagsDoNotTrackActivities' value64='16'/>
+<enum name='OSLogEventStreamFlagsEnumerateBackwards' value64='8'/>
+<enum name='OSLogEventStreamFlagsExcludeActivities' value64='128'/>
+<enum name='OSLogEventStreamFlagsExcludeLogMessages' value64='512'/>
+<enum name='OSLogEventStreamFlagsExcludeTraceMessages' value64='256'/>
+<enum name='OSLogEventStreamFlagsIncludeDebug' value64='2'/>
+<enum name='OSLogEventStreamFlagsIncludeInfo' value64='1'/>
+<enum name='OSLogEventStreamFlagsIncludeLoss' value64='64'/>
+<enum name='OSLogEventStreamFlagsIncludePrivate' value64='4'/>
+<enum name='OSLogEventStreamFlagsIncludeSignposts' value64='32'/>
+<enum name='OSLogEventStreamInvalidationBacklogged' value64='2'/>
+<enum name='OSLogEventStreamInvalidationByRequest' value64='4'/>
+<enum name='OSLogEventStreamInvalidationDisconnected' value64='1'/>
+<enum name='OSLogEventStreamInvalidationEndOfStream' value64='5'/>
+<enum name='OSLogEventStreamInvalidationInitializationFailure' value64='9'/>
+<enum name='OSLogEventStreamInvalidationInsufficientPermissions' value64='7'/>
+<enum name='OSLogEventStreamInvalidationInvalidPosition' value64='3'/>
+<enum name='OSLogEventStreamInvalidationPredicateEvaluationFailure' value64='8'/>
+<enum name='OSLogEventStreamInvalidationUnsupported' value64='6'/>
+<enum name='OSLogEventTypeActivityCreate' value64='513'/>
+<enum name='OSLogEventTypeActivityTransition' value64='514'/>
+<enum name='OSLogEventTypeActivityUserAction' value64='515'/>
+<enum name='OSLogEventTypeLogMessage' value64='1024'/>
+<enum name='OSLogEventTypeLoss' value64='1792'/>
+<enum name='OSLogEventTypeSignpost' value64='1536'/>
+<enum name='OSLogEventTypeStatedump' value64='2560'/>
+<enum name='OSLogEventTypeTimesync' value64='1280'/>
+<enum name='OSLogEventTypeTraceMessage' value64='768'/>
+<enum name='OSLogPersistenceOptionDebug' value64='3'/>
+<enum name='OSLogPersistenceOptionInfo' value64='1'/>
+<enum name='OSLogPersistenceOptionLiveDataOnly' value64='4'/>
+<enum name='OSLogPersistenceOptionLoss' value64='32'/>
+<enum name='OSLogPersistenceOptionNoLiveData' value64='8'/>
+<enum name='OSLogPersistenceOptionNoMemoryOnlyData' value64='16'/>
+<enum name='OSLogPersistenceOptionNoPrivateData' value64='1073741824'/>
+<enum name='OSLogPersistenceStateCorrupt' value64='3'/>
+<enum name='OSLogPersistenceStateSupported' value64='2'/>
+<enum name='OSLogPersistenceStateUnopened' value64='0'/>
+<enum name='OSLogPersistenceStateUnsupported' value64='1'/>
+<enum name='OSLogSourceErrorClientNotEntitled' value64='9'/>
+<enum name='OSLogSourceErrorInconsistentArchive' value64='2'/>
+<enum name='OSLogSourceErrorInvalidURL' value64='1'/>
+<enum name='OSLogSourceErrorLogdConnectionLost' value64='10'/>
+<enum name='OSLogSourceErrorRequiresUpgrade' value64='4'/>
+<enum name='OSLogSourceErrorResourceShortage' value64='6'/>
+<enum name='OSLogSourceErrorUnsupportedArchive' value64='3'/>
+<enum name='OSLogSourceErrorUpgradeFailed' value64='5'/>
+<enum name='OSLogSourceNoError' value64='0'/>
+<enum name='OSLogSourceWarningPartialData' value64='8'/>
+<enum name='OSLogSourceWarningPartialMetadata' value64='7'/>
+<enum name='OSPersistenceOptionDebug' value64='3'/>
+<enum name='OSPersistenceOptionInfo' value64='1'/>
+<enum name='OSPersistenceOptionPrivateData' value64='2147483648'/>
+<enum name='OS_LOGD_OPTION_NO_STORAGE_LIMITS' value64='1'/>
+<enum name='kOSLogDeviceEventDelete' value64='1'/>
+<enum name='kOSLogDeviceEventNew' value64='0'/>
+<enum name='kOSLogDeviceNotTrusted' value64='2'/>
+<enum name='kOSLogPreferencesLevelDebug' value64='4'/>
+<enum name='kOSLogPreferencesLevelDefault' value64='2'/>
+<enum name='kOSLogPreferencesLevelInfo' value64='3'/>
+<enum name='kOSLogPreferencesLevelInherit' value64='1'/>
+<enum name='kOSLogPreferencesLevelNone' value64='0'/>
+<enum name='kOSLogPreferencesLevelOff' value64='0'/>
+<function name='OSLogClearOptions'>
+<arg type64='I'/>
+<retval type64='i'/>
+</function>
+<function name='OSLogConstructArchive'>
+<arg type64='@'/>
+<arg function_pointer='true' type64='@?'>
+<arg type64='*'/>
+<retval type64='v'/>
+</arg>
+<arg function_pointer='true' type64='@?'>
+<arg type64='i'/>
+<arg type64='*'/>
+<retval type64='i'/>
+</arg>
+<retval type64='i'/>
+</function>
+<function name='OSLogCreateArchive'>
+<arg type64='*'/>
+<arg type64='Q'/>
+<arg type64='q'/>
+<arg type64='B'/>
+<arg function_pointer='true' type64='@?'>
+<arg type64='*'/>
+<retval type64='v'/>
+</arg>
+<retval type64='i'/>
+</function>
+<function name='OSLogCreateArchiveWithDictionary'>
+<arg type64='@'/>
+<arg function_pointer='true' type64='@?'>
+<arg type64='*'/>
+<retval type64='v'/>
+</arg>
+<retval type64='i'/>
+</function>
+<function name='OSLogInstallProfilePayload'>
+<arg type64='@'/>
+<arg type64='^@'/>
+<retval type64='B'/>
+</function>
+<function name='OSLogRemoveProfilePayload'>
+<arg type64='@'/>
+<arg type64='^@'/>
+<retval type64='B'/>
+</function>
+<function name='OSLogSetOptions'>
+<arg type64='I'/>
+<retval type64='i'/>
+</function>
+<function name='OSLogValidateProfilePayload'>
+<arg type64='@'/>
+<arg type64='^@'/>
+<retval type64='B'/>
+</function>
+<class name='NSObject'>
+<method selector='activityStream:deviceUDID:deviceID:status:error:'>
+<retval type64='B'/>
+</method>
+<method selector='activityStream:results:'>
+<retval type64='B'/>
+</method>
+<method selector='activityStream:results:error:'>
+<retval type64='B'/>
+</method>
+<method selector='lossCount'>
+<retval type64='{_OSLogEventLossCount=IB}'/>
+</method>
+<method selector='persistence:results:error:'>
+<retval type64='B'/>
+</method>
+</class>
+<class name='OSActivityEvent'>
+<method selector='persisted'>
+<retval type64='B'/>
+</method>
+</class>
+<class name='OSActivityLossEvent'>
+<method selector='saturated'>
+<retval type64='B'/>
+</method>
+</class>
+<class name='OSActivityStream'>
+<method selector='establishTrust:'>
+<retval type64='B'/>
+</method>
+</class>
+<class name='OSLogEventLiveStore'>
+<method selector='prepareWithCompletionHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='@'/>
+<arg type64='@'/>
+<retval type64='v'/>
+</arg>
+</method>
+</class>
+<class name='OSLogEventLiveStream'>
+<method selector='setDroppedEventHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='@'/>
+<retval type64='v'/>
+</arg>
+</method>
+</class>
+<class name='OSLogEventStore'>
+<method selector='prepareWithCompletionHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='@'/>
+<arg type64='@'/>
+<retval type64='v'/>
+</arg>
+</method>
+<method selector='setProgressHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='d'/>
+<arg type64='@'/>
+<retval type64='v'/>
+</arg>
+</method>
+<method selector='setUpgradeConfirmationHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<retval type64='B'/>
+</arg>
+</method>
+</class>
+<class name='OSLogEventStream'>
+<method selector='initWithSource:skipNonSignpostFiles:'>
+<arg index='1' type64='B'/>
+</method>
+</class>
+<class name='OSLogEventStreamBase'>
+<method selector='setEventHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='@'/>
+<retval type64='v'/>
+</arg>
+</method>
+<method selector='setInvalidationHandler:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='Q'/>
+<arg type64='@'/>
+<retval type64='v'/>
+</arg>
+</method>
+</class>
+<class name='OSLogPersistence'>
+<method selector='enumerateFromLastBootWithBlock:'>
+<arg function_pointer='true' index='0' type64='@?'>
+<arg type64='@'/>
+<retval type64='B'/>
+</arg>
+</method>
+<method selector='enumerateFromStartDate:toEndDate:withBlock:'>
+<arg function_pointer='true' index='2' type64='@?'>
+<arg type64='@'/>
+<retval type64='B'/>
+</arg>
+</method>
+</class>
+<class name='OSLogPreferencesCategory'>
+<method selector='isLocked'>
+<retval type64='B'/>
+</method>
+<method selector='setSignpostEnabled:'>
+<arg index='0' type64='B'/>
+</method>
+<method selector='setSignpostPersisted:'>
+<arg index='0' type64='B'/>
+</method>
+<method selector='signpostEnabled'>
+<retval type64='B'/>
+</method>
+<method selector='signpostPersisted'>
+<retval type64='B'/>
+</method>
+</class>
+<class name='OSLogPreferencesProcess'>
+<method selector='isLocked'>
+<retval type64='B'/>
+</method>
+</class>
+<class name='OSLogPreferencesSubsystem'>
+<method selector='isLocked'>
+<retval type64='B'/>
+</method>
+</class>
+<informal_protocol name='OSActivityStreamDelegate'>
+<method selector='activityStream:results:' type64='B32@0:8@16@24'/>
+<method selector='activityStream:results:error:' type64='B40@0:8@16@24@32'/>
+</informal_protocol>
+<informal_protocol name='OSDeviceDelegate'>
+<method selector='activityStream:deviceUDID:deviceID:status:error:' type64='B56@0:8@16@24@32q40@48'/>
+</informal_protocol>
+<informal_protocol name='OSLogEventProvider'>
+<method selector='lossCount' type64='T{?=IB},R,N'/>
+</informal_protocol>
+<informal_protocol name='OSLogPersistenceDelegate'>
+<method selector='persistence:results:error:' type64='B40@0:8@16@24@32'/>
+</informal_protocol>
+</signatures>

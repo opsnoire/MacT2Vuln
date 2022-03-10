@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391024</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>com.apple.DictionaryServiceHelper</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.DictionaryServiceHelper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>com.apple.DictionaryServiceHelper</string>
+	<key>CFBundlePackageType</key>
+	<string>XPC!</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>323.6</string>
+	<key>DCSAppleDictionaries</key>
+	<array>
+		<string>/Library/Dictionaries/New Oxford American Dictionary.dictionary</string>
+		<string>/Library/Dictionaries/Oxford American Writer's Thesaurus.dictionary</string>
+		<string>/Library/Dictionaries/Oxford Dictionary of English.dictionary</string>
+		<string>/Library/Dictionaries/Oxford Thesaurus of English.dictionary</string>
+		<string>/Library/Dictionaries/The Standard Dictionary of Contemporary Chinese.dictionary</string>
+		<string>/Library/Dictionaries/Simplified Chinese - English.dictionary</string>
+		<string>/Library/Dictionaries/Diccionario General de la Lengua Española Vox.dictionary</string>
+		<string>/Library/Dictionaries/Spanish - English.dictionary</string>
+		<string>/Library/Dictionaries/Hindi.dictionary</string>
+		<string>/Library/Dictionaries/Portuguese.dictionary</string>
+		<string>/Library/Dictionaries/Russian.dictionary</string>
+		<string>/Library/Dictionaries/Sanseido Super Daijirin.dictionary</string>
+		<string>/Library/Dictionaries/Sanseido The WISDOM English-Japanese Japanese-English Dictionary.dictionary</string>
+		<string>/Library/Dictionaries/Duden Dictionary Data Set I.dictionary</string>
+		<string>/Library/Dictionaries/German - English.dictionary</string>
+		<string>/Library/Dictionaries/Korean.dictionary</string>
+		<string>/Library/Dictionaries/Korean - English.dictionary</string>
+		<string>/Library/Dictionaries/Multidictionnaire de la langue française.dictionary</string>
+		<string>/Library/Dictionaries/French - English.dictionary</string>
+		<string>/Library/Dictionaries/Turkish.dictionary</string>
+		<string>/Library/Dictionaries/Italian.dictionary</string>
+		<string>/Library/Dictionaries/Thai.dictionary</string>
+		<string>/Library/Dictionaries/Dutch.dictionary</string>
+		<string>/Library/Dictionaries/Swedish.dictionary</string>
+		<string>/Library/Dictionaries/Norwegian.dictionary</string>
+		<string>/Library/Dictionaries/Italian - English.dictionary</string>
+		<string>/Library/Dictionaries/Danish.dictionary</string>
+		<string>/Library/Dictionaries/Dutch - English.dictionary</string>
+		<string>/Library/Dictionaries/Apple Dictionary.dictionary</string>
+	</array>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11O62d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15.6</string>
+	<key>DTSDKBuild</key>
+	<string>19G49</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1140</string>
+	<key>DTXcodeBuild</key>
+	<string>11O62d</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+	<key>XPCService</key>
+	<dict>
+		<key>ServiceType</key>
+		<string>User</string>
+	</dict>
+</dict>
+</plist>

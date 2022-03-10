@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>These keys are defined in SUDiskImageConstants</string>
+	<key>create</key>
+	<dict>
+		<key>rules</key>
+		<dict>
+			<key>SPARSE</key>
+			<dict>
+				<key>Comment</key>
+				<string>Read/Write Sparse DMG</string>
+				<key>allow_arbitrary_sizes</key>
+				<true/>
+				<key>default_partition_map_type</key>
+				<string>GPTSPUD</string>
+			</dict>
+			<key>SPARSEBUNDLE</key>
+			<dict>
+				<key>Comment</key>
+				<string>Read/Write Sparse Bundle DMG</string>
+				<key>allow_arbitrary_sizes</key>
+				<true/>
+				<key>default_partition_map_type</key>
+				<string>GPTSPUD</string>
+			</dict>
+			<key>UDTO</key>
+			<dict>
+				<key>Comment</key>
+				<string>CD/DVD Master</string>
+				<key>allow_arbitrary_sizes</key>
+				<false/>
+				<key>sizes</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>177 MB (CD 8 cm)</string>
+						<key>size</key>
+						<integer>177000000</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>650 MB (CD, 74 min)</string>
+						<key>size</key>
+						<integer>650000000</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>700 MB (CD, 80 min)</string>
+						<key>size</key>
+						<integer>700000000</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>2.5 GB (DVD-RAM)</string>
+						<key>size</key>
+						<integer>2500000000</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>4.6 GB (DVD-R/DVD-RAM)</string>
+						<key>size</key>
+						<integer>4600000000</integer>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>8.3 GB (DVD+R DL)</string>
+						<key>size</key>
+						<integer>8300000000</integer>
+					</dict>
+				</array>
+				<key>default_partition_map_type</key>
+				<string>UNIVERSAL CD</string>
+			</dict>
+			<key>UDIF</key>
+			<dict>
+				<key>Comment</key>
+				<string>Read/Write DMG</string>
+				<key>allow_arbitrary_sizes</key>
+				<true/>
+				<key>default_partition_map_type</key>
+				<string>GPTSPUD</string>
+			</dict>
+		</dict>
+		<key>default_selections</key>
+		<dict>
+			<key>default_image_type</key>
+			<string>UDZO</string>
+			<key>default_blank_image_type</key>
+			<string>UDIF</string>
+			<key>default_partition_map_type</key>
+			<string>GPTSPUD</string>
+			<key>default_partition_format</key>
+			<string>kSKDiskFileSystemOSX</string>
+		</dict>
+		<key>invalid_partition_schemes</key>
+		<array>
+			<string>ISOCD</string>
+			<string>SPCD</string>
+			<string>UNIVERSAL HD</string>
+		</array>
+	</dict>
+</dict>
+</plist>

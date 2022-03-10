@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>OpenSourceImportDate</key>
+	<string>2019-06-27</string>
+	<key>OpenSourceLicense</key>
+	<string>LGPL 2.1</string>
+	<key>OpenSourceLicenseFile</key>
+	<string>LiblouisBrailleTables.txt</string>
+	<key>OpenSourceModifications</key>
+	<string></string>
+	<key>OpenSourceProject</key>
+	<string>liblouis</string>
+	<key>OpenSourceSHA1</key>
+	<string>96ad91c5deed5331e25f478ec370f5616957795d</string>
+	<key>OpenSourceURL</key>
+	<string>https://github.com/liblouis/liblouis/tree/v3.10.0</string>
+	<key>OpenSourceVersion</key>
+	<string>3.10.0</string>
+	<key>OpenSourceWebsiteURL</key>
+	<string>https://github.com/liblouis/liblouis</string>
+</dict>
+</plist>

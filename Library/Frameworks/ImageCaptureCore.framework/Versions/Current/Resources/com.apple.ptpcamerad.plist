@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnvironmentVariables</key>
+	<dict/>
+	<key>UserName</key>
+	<string>mobile</string>
+	<key>Disabled</key>
+	<false/>
+	<key>RunAtLoad</key>
+	<false/>
+	<key>Label</key>
+	<string>com.apple.ptpcamerad</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.ptpcamerad</key>
+		<true/>
+	</dict>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/ptpcamerad</string>
+	</array>
+</dict>
+</plist>

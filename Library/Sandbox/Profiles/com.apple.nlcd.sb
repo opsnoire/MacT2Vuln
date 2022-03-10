@@ -1,0 +1,27 @@
+;;
+;; nlcd - sandbox profile
+;; Copyright (c) 2014 Apple Inc.  All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute 
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice. The contents of this file are also auto-generated and not
+;; user editable; it may be overwritten at any time.
+;;
+
+(version 1)
+
+(deny default)
+
+(import "system.sb")
+
+(allow mach-lookup
+       (global-name "com.apple.pfd"))
+
+(allow system-socket)
+
+(allow sysctl-read
+       (sysctl-name "net.link.generic.system.if_attach_nx")
+       (sysctl-name "net.link.generic.system.enable_netagent"))
+
+(allow sysctl-write
+       (sysctl-name "net.link.generic.system.enable_netagent"))

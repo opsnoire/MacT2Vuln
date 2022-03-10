@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Text</key>
+	<dict>
+		<key>ExactMatch</key>
+		<dict>
+			<key>Add the item in the VoiceOver cursor to the list of selected items</key>
+			<dict>
+				<key>MTText</key>
+				<string>Aggiunge l'elemento [[slnc 10]]del cursore VoiceOver all'elenco degli elementi selezionati</string>
+			</dict>
+			<key>Allows the item to be controlled with the keyboard.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Consente che l'elemento [[slnc 10]]venga controllato[[slnc 10]] dalla tastiera.</string>
+			</dict>
+			<key>Cannot clear search field.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile cancellare il campo ricerca [[emph +]].</string>
+			</dict>
+			<key>Cannot confirm text field. </key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile confermare il campo testo [[emph +]].</string>
+			</dict>
+			<key>Cannot make sheet height any shorter.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile diminuire l'altezza del foglio [[slnc 20]].</string>
+			</dict>
+			<key>Cannot make sheet height any shorter. </key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile diminuire l'altezza del foglio [[slnc 20]].</string>
+			</dict>
+			<key>Cannot make sheet height any taller.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile aumentare l'altezza del foglio [[slnc 20]].</string>
+			</dict>
+			<key>Cannot make sheet width any more narrow.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile diminuire la larghezza del foglio [[slnc 20]].</string>
+			</dict>
+			<key>Cannot make sheet width any narrower.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile diminuire la larghezza del foglio [[slnc 20]].</string>
+			</dict>
+			<key>Cannot make sheet width any wider.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile aumentare la larghezza del foglio [[slnc 20]]</string>
+			</dict>
+			<key>Cannot make window height any taller.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile aumentare l'altezza della finestra [[slnc 30]].</string>
+			</dict>
+			<key>Cannot move up any further </key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile spostare ulteriormente verso l'alto [[slnc 10]]</string>
+			</dict>
+			<key>Cannot move window right any further.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile spostare [[emph +]] ulteriormente la finestra verso destra [[slnc 50]].</string>
+			</dict>
+			<key>Cannot move window right any further. </key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile spostare ulteriormente la finestra verso destra [[slnc 30]].</string>
+			</dict>
+			<key>Cannot move window up any further. </key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile spostare ulteriormente la finestra verso l'alto [[slnc 30]].</string>
+			</dict>
+			<key>Clear search field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Cancella [[emph +]]campo ricerca</string>
+			</dict>
+			<key>Clearing search field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Cancello [[emph +]]campo ricerca</string>
+			</dict>
+			<key>Closing dropdown list</key>
+			<dict>
+				<key>MTText</key>
+				<string>Chiudo [[slnc 10]][[emph +]] elenco a comparsa</string>
+			</dict>
+			<key>Command echo speaks the name of the performed command.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Comando eco dice il nome del [[emph +]]comando realizzato.</string>
+			</dict>
+			<key>Confirm text field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Conferma [[emph +]]campo ricerca</string>
+			</dict>
+			<key>Confirming text field. </key>
+			<dict>
+				<key>MTText</key>
+				<string>Confermo [[emph +]]campo ricerca</string>
+			</dict>
+			<key>Disabling word echo mode</key>
+			<dict>
+				<key>MTText</key>
+				<string>Disabilito modalità eco [[emph +]]parola</string>
+			</dict>
+			<key>Echo VoiceOver cursor contents</key>
+			<dict>
+				<key>MTText</key>
+				<string>Eco cursore di VoiceOver [[inpt phon]]_k1AAnt2EHnts[[inpt text]]</string>
+			</dict>
+			<key>Edit or echo the contents of the text field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Modifica o[[slnc 10]] eco il contenuto del campo [[emph +]]testo</string>
+			</dict>
+			<key>Focus VoiceOver cursor out to inspect surrounding items.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Focalizza il cursore di VoiceOver fuori [[slnc 10]]per esaminare gli elementi circostanti.</string>
+			</dict>
+			<key>Increases the value or steps forward through a list</key>
+			<dict>
+				<key>MTText</key>
+				<string>Aumenta il valore: o scorre[[slnc 10]] attraverso un elenco</string>
+			</dict>
+			<key>Interact with text field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Interagisce con [[emph +]]campo testo</string>
+			</dict>
+			<key>Key Echo speaks each key that is pressed.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Tasto[[slnc 10]] Eco dice il nome di ogni tasto premuto.</string>
+			</dict>
+			<key>Lists the available links on the web page.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Elenca i link [[emph +]]disponibili [[slnc 20]]sulla [[emph +]]pagina web.</string>
+			</dict>
+			<key>Minimizes the area above or left of the splitter.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Riduce l'area [[emph +]]superiore [[slnc 10]]o [[emph +]]a sinistra dello splitter.</string>
+			</dict>
+			<key>Move VoiceOver cursor left to nearest item.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta il cursore di VoiceOver [[slnc 10]]a sinistra [[slnc 10]]sull'elemento più vicino.</string>
+			</dict>
+			<key>Move VoiceOver cursor to item linked to current item</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta il cursore di VoiceOver sull'elemento vincolato all'elemento [[slnc 10]]attuale</string>
+			</dict>
+			<key>Moves splitter left or right</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta splitter a sinistra [[slnc 10]]o [[slnc 10]] a destra</string>
+			</dict>
+			<key>Moves splitter up or down</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta splitter [[emph +]]su [[slnc 20]]o [[emph +]]giù</string>
+			</dict>
+			<key>Moves the keyboard focus to the item in the VoiceOver cursor.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta il focus della tastiera sull'[[slnc 10]] [[emph +]]elemento del cursore di VoiceOver.</string>
+			</dict>
+			<key>Moves the scrollable area up one page.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta l'area di scorrimento in alto di[[slnc 10]]una pagina.</string>
+			</dict>
+			<key>Moves the window down on the screen.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta la finestra [[emph +]]in basso sullo schermo.</string>
+			</dict>
+			<key>Moves the window to the left on the screen.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta la finestra [[emph +]]a sinistra sullo schermo.</string>
+			</dict>
+			<key>Moves the window to the right on the screen.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Sposta la finestra a destra [[slnc 50]]sullo schermo.</string>
+			</dict>
+			<key>Opening dropdown list</key>
+			<dict>
+				<key>MTText</key>
+				<string>Apro[[slnc 10]][[emph +]] elenco a comparsa</string>
+			</dict>
+			<key>Pauses the current speech or resumes previously paused speech.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Interrompi il discorso attuale o [[inpt phon]]_rIYz1UWms[[inpt text]] il discorso interrotto in precedenza.</string>
+			</dict>
+			<key>Performs the default action on the item in the VoiceOver cursor.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Realizza azione di default[[slnc 50]] sull'elemento[[slnc 10]] nel cursore di VoiceOver.</string>
+			</dict>
+			<key>Reads from the cursor position to the end of the text field.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Legge dalla [[emph +]]posizione del cursore fino alla [[emph +]]fine del  [[emph +]]campo testo.</string>
+			</dict>
+			<key>Reads from the start of the text field to the cursor position.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Legge dall'inizio del [[emph +]]campo testo fino alla [[emph +]]posizione del cursore.</string>
+			</dict>
+			<key>Screen curtain darkens the video display.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Tende schermo [[emph +]]oscurano il [[emph +]]monitor del video.</string>
+			</dict>
+			<key>Shows current item's contextual menu if it has one</key>
+			<dict>
+				<key>MTText</key>
+				<string>Mostra menu contestuale elemento attuale se ne [[emph +]]possiede uno</string>
+			</dict>
+			<key>Starting keyboard help. Starting keyboard help.  Type keys to hear their names.  Hold down the VoiceOver keys while typing to hear VoiceOver commands. Press the Escape key at the top left corner of the keyboard to stop help.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Avvio aiuto tastiera. Digita i tasti per sentirne i nomi. Tieni premuto il tasto [[emph +]]Voice[[emph -]]Over [[emph -]]mentre digiti per sentire i comandi di VoiceOver.  Premi il tasto [[emph +]]Esc nell'angolo [[emph +]]in alto[[slnc 50]] [[emph +]]a sinistra per[[emph +]]interrompere l'esercitazione.</string>
+			</dict>
+			<key>Step window up</key>
+			<dict>
+				<key>MTText</key>
+				<string> Muovi la finestra [[slnc 20]]verso l'alto.</string>
+			</dict>
+			<key>Steps the window right on the screen in increments.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Muovi la finestra a destra [[slnc 30]]sullo schermo negli incrementi.</string>
+			</dict>
+			<key>Stop interacting with text field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Interrompi interazione con [[emph +]]campo testo</string>
+			</dict>
+			<key>Stops interacting with text field</key>
+			<dict>
+				<key>MTText</key>
+				<string>Interrompi interazione con [[emph +]]campo testo</string>
+			</dict>
+			<key>There is no item with keyboard focus</key>
+			<dict>
+				<key>MTText</key>
+				<string>Non ci sono [[emph +]]elementi con focus da tastiera</string>
+			</dict>
+			<key>This application has no menubar.</key>
+			<dict>
+				<key>MTText</key>
+				<string>Questa applicazione [[emph +]]non ha barra dei menu.</string>
+			</dict>
+			<key>This window cannot be resized</key>
+			<dict>
+				<key>MTText</key>
+				<string>Impossibile [[emph +]]contrarre [[emph +]]questa finestra.</string>
+			</dict>
+			<key>Top/left area is already maximized. </key>
+			<dict>
+				<key>MTText</key>
+				<string>L'area in alto/a sinistra [[slnc 10]]è già stata ingrandita. </string>
+			</dict>
+			<key>Web links menu</key>
+			<dict>
+				<key>MTText</key>
+				<string>Menu [[emph +]]link web.</string>
+			</dict>
+			<key>currently not busy</key>
+			<dict>
+				<key>MTText</key>
+				<string>attualmente [[emph +]] non occupato</string>
+			</dict>
+			<key>menubar</key>
+			<dict>
+				<key>MTText</key>
+				<string>[[inpt phon]]_m1EHnyUW _bAAr[[inpt text]]</string>
+			</dict>
+			<key>nothing has keyboard focus</key>
+			<dict>
+				<key>MTText</key>
+				<string>nulla [[emph +]]ha focus da tastiera</string>
+			</dict>
+			<key>nothing is in the VoiceOver cursor</key>
+			<dict>
+				<key>MTText</key>
+				<string>non c'è nulla [[emph +]]nel cursore di VoiceOver</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

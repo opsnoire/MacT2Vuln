@@ -1,0 +1,21 @@
+graphName "builtin_speaker_out_raw"
+
+; macros
+; Uncomment the fs definition below if you want to process the graph offline
+; [def fs 44100]
+[def numChansIn 2]
+[def numChansOut 2]
+
+; boxes
+in in
+out out
+out ref
+
+; wires
+wire in out ([fs] [numChansIn])
+wire in ref ([fs] [numChansIn])
+
+; graph-level parameters
+param mvol 0
+param mmut 0
+

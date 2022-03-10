@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>JIMPrefCapsLockActionKey</key>
+	<integer>0</integer>
+	<key>JIMPrefShiftKeyActionKey</key>
+	<integer>1</integer>
+	<key>JIMPrefTypingMethodKey</key>
+	<integer>0</integer>
+	<key>JIMPrefWindowsModeKey</key>
+	<false/>
+	<key>JIMPrefAutocorrectionKey</key>
+	<true/>
+	<key>JIMPrefLiveConversionKey</key>
+	<true/>
+	<key>JIMPrefCandidateWindowFontKey</key>
+	<string>HiraMinProN-W6</string>
+	<key>JIMPrefCandidateWindowFontSizeKey</key>
+	<integer>16</integer>
+	<key>JIMPrefPredictiveCandidateKey</key>
+	<true/>
+	<key>JIMPrefConvertWithPunctuationKey</key>
+	<false/>
+	<key>JIMPrefConvertWithArrowKey</key>
+	<false/>
+	<key>JIMPrefRomajiKeyboardLayoutKey</key>
+	<string>com.apple.keylayout.ABC</string>
+	<key>JIMPrefPunctuationTypeKey</key>
+	<integer>0</integer>
+	<key>JIMPrefCharacterForSlashKey</key>
+	<integer>1</integer>
+	<key>JIMPrefCharacterForYenKey</key>
+	<integer>0</integer>
+	<key>JIMPrefFullWidthNumeralCharactersKey</key>
+	<true/>
+	<key>JIMPrefSpecialtyDictionariesKey</key>
+	<array/>
+</dict>
+</plist>

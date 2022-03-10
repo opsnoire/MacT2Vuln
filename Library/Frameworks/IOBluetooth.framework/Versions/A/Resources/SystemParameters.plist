@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Mac-35C5E08120C7EEAF</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19008</real>
+	</dict>
+	<key>Mac-937CB26E2E02BB01</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19004</real>
+	</dict>
+	<key>Mac-9F18E312C5C2BF0B</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19005</real>
+	</dict>
+	<key>Mac-E43C1C25D4880AD6</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19002</real>
+	</dict>
+	<key>Mac-06F11F11946D27C5</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19000</real>
+	</dict>
+	<key>Mac-06F11FD93F0323C5</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19001</real>
+	</dict>
+	<key>Mac-FA842E06C61E91C5</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19006</real>
+		<key>Limit Bluetooth Low Energy Power</key>
+		<true/>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+		<key>DisableBTSAonWake</key>
+		<true/>
+	</dict>
+	<key>Mac-BE0E8AC46FE800CC</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19003</real>
+	</dict>
+	<key>Mac-42FD25EABCABB274</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19006</real>
+		<key>Limit Bluetooth Low Energy Power</key>
+		<true/>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+		<key>DisableBTSAonWake</key>
+		<true/>
+	</dict>
+	<key>Mac-81E3E92DD6088272</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>19007</real>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-C3EC7CD22292981F</key>
+	<dict>
+		<key>Limit Bluetooth Power</key>
+		<true/>
+		<key>Shared Antenna</key>
+		<true/>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-25</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18983</integer>
+	</dict>
+	<key>Mac-AFD8A9D944EA4843</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-25</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18984</integer>
+	</dict>
+	<key>Mac-00BE6ED71E35EB86</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-33</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-24</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18985</integer>
+	</dict>
+	<key>Mac-7DF2A3B5E5D671ED</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-33</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-24</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18987</integer>
+	</dict>
+	<key>Mac-FC02E91DDD3FA6A4</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-33</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-24</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18986</integer>
+	</dict>
+	<key>Mac-4BC72D62AD45599E</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-30</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18976</integer>
+	</dict>
+	<key>Mac-8ED6AF5B48C039E1</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-30</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18977</integer>
+	</dict>
+	<key>Mac-7BA5B2794B2CDB12</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-30</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18978</integer>
+	</dict>
+	<key>Mac-031AEE4D24BFF0B1</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-30</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18990</integer>
+	</dict>
+	<key>Mac-F65AE981FFA204ED</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-30</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18991</integer>
+	</dict>
+	<key>Mac-F60DEB81FF30ACF6</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-30</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18999</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-35C1E88140C3E6CF</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-28</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18992</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-7DF21CB3ED6977E5</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-28</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18993</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-031B6874CF7F642A</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-33</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-24</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18994</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-27ADBB7B4CEE8E61</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-33</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-24</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18995</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-189A3D4F975D5FFC</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-25</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18996</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-3CBD00234E554E41</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-25</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18997</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-2BD1B31983FE1663</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-35</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-25</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18998</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-77EB7D7DAF985301</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-33</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-24</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>DID ProductCode</key>
+		<integer>18994</integer>
+		<key>Limit Bluetooth Power ETSI</key>
+		<true/>
+	</dict>
+	<key>Mac-6F01561E16C75D06</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18981</integer>
+	</dict>
+	<key>Mac-4B7AC7E43945597E</key>
+	<dict>
+		<key>Proximity Threshold</key>
+		<integer>-45</integer>
+		<key>Immediate Proximity Threshold</key>
+		<integer>-40</integer>
+		<key>Max Proximity Threshold</key>
+		<integer>-50</integer>
+		<key>DID ProductCode</key>
+		<integer>18982</integer>
+	</dict>
+	<key>Mac-F42C8CC8</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<integer>18945</integer>
+		<key>ContinuitySupport</key>
+		<false/>
+	</dict>
+	<key>Mac-F42C89C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18946</real>
+	</dict>
+	<key>Mac-F42C86C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18946</real>
+	</dict>
+	<key>Mac-F226BEC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18947</integer>
+	</dict>
+	<key>Mac-F227BEC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18947</integer>
+	</dict>
+	<key>Mac-F42D89C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18948</real>
+	</dict>
+	<key>Mac-F42D86C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18948</real>
+	</dict>
+	<key>Mac-F42D88C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18951</integer>
+	</dict>
+	<key>Mac-F22C86C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18952</integer>
+	</dict>
+	<key>Mac-F2218EC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18953</integer>
+	</dict>
+	<key>Mac-F2218FC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18953</integer>
+	</dict>
+	<key>Mac-F22788AA</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18949</integer>
+	</dict>
+	<key>Mac-F221BEC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18954</integer>
+	</dict>
+	<key>Mac-F42D89A9</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18948</integer>
+	</dict>
+	<key>Mac-F42D86A9</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18950</integer>
+	</dict>
+	<key>Mac-F2268EC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18955</integer>
+	</dict>
+	<key>Mac-F2218EA9</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18953</real>
+	</dict>
+	<key>Mac-F2218FA9</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<real>18953</real>
+		<key>ContinuitySupport</key>
+		<false/>
+	</dict>
+	<key>Mac-F2268AC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18956</integer>
+	</dict>
+	<key>Mac-F22587C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18957</real>
+	</dict>
+	<key>Mac-F22587A1</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18957</real>
+	</dict>
+	<key>Mac-F22C8AC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18958</integer>
+	</dict>
+	<key>Mac-F2268CC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18959</integer>
+	</dict>
+	<key>Mac-F2268DC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18959</integer>
+	</dict>
+	<key>Mac-F2268DAE</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18960</integer>
+	</dict>
+	<key>Mac-F22589C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18961</integer>
+	</dict>
+	<key>Mac-F22586C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18962</integer>
+	</dict>
+	<key>Mac-F221DCC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18963</integer>
+	</dict>
+	<key>Mac-F22C89C8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18964</integer>
+	</dict>
+	<key>Mac-F222BEC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18965</integer>
+	</dict>
+	<key>Mac-F2238AC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18966</integer>
+	</dict>
+	<key>Mac-F2238BAE</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18967</integer>
+	</dict>
+	<key>Mac-F2208EC8</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18968</integer>
+	</dict>
+	<key>Mac-942C5DF58193131B</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<real>18969</real>
+	</dict>
+	<key>Mac-942452F5819B1C1B</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18970</integer>
+	</dict>
+	<key>Mac-94245B3640C91C81</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18971</integer>
+	</dict>
+	<key>Mac-94245A3940C91C80</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18972</integer>
+	</dict>
+	<key>Mac-942459F5819B171B</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18973</integer>
+	</dict>
+	<key>Mac-942B5BF58194151B</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18974</integer>
+	</dict>
+	<key>Mac-942B59F58194171B</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18975</integer>
+	</dict>
+	<key>Mac-742912EFDBEE19B3</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18979</integer>
+	</dict>
+	<key>Mac-C08A6BB70A942AC2</key>
+	<dict>
+		<key>ContinuitySupport</key>
+		<false/>
+		<key>DID ProductCode</key>
+		<integer>18980</integer>
+	</dict>
+	<key>Mac-66F35F19FE2A0D05</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<integer>18988</integer>
+	</dict>
+	<key>Mac-2E6FAB96566FE58C</key>
+	<dict>
+		<key>DID ProductCode</key>
+		<integer>18989</integer>
+	</dict>
+</dict>
+</plist>

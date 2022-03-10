@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.keyboardlayout.HangulIMKeyboardLayouts</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>HangulIMKeyboardLayouts</string>
+	<key>CFBundleShortVersionString</key>
+	<string>6.4</string>
+	<key>CFBundleVersion</key>
+	<string>$(KOREANIM_BUILD_VERSION)</string>
+	<key>CSResourcesFileMapped</key>
+	<string>yes</string>
+	<key>KLInfo_2SetHangul</key>
+	<dict>
+		<key>ISOCode</key>
+		<string>ko</string>
+		<key>TSMInvisibleKey</key>
+		<true/>
+	</dict>
+	<key>KLInfo_390Hangul</key>
+	<dict>
+		<key>ISOCode</key>
+		<string>ko</string>
+		<key>TSMInvisibleKey</key>
+		<true/>
+	</dict>
+	<key>KLInfo_3SetHangul</key>
+	<dict>
+		<key>ISOCode</key>
+		<string>ko</string>
+		<key>TSMInvisibleKey</key>
+		<true/>
+	</dict>
+	<key>KLInfo_GJCRomaja</key>
+	<dict>
+		<key>ISOCode</key>
+		<string>ko</string>
+		<key>TSMInvisibleKey</key>
+		<true/>
+	</dict>
+	<key>KLInfo_HNCRomaja</key>
+	<dict>
+		<key>ISOCode</key>
+		<string>ko</string>
+		<key>TSMInvisibleKey</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

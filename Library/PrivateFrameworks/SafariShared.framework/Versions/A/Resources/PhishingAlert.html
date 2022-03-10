@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            --font-color: #434343;
+            --compact-font-color: white;
+            --red-color: #fc3d39;
+            --blue-color: rgb(0, 122, 255);
+            --horizontal-padding: 32px;
+            --compact-horizontal-padding: 20px;
+            --border-radius: 6px;
+            --ios-border-radius: 10px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body:not(.ios) * {
+            font-family: -apple-system-font;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-size: 13px;
+            background: var(--red-color);
+            cursor: default;
+            -webkit-user-select: none;
+        }
+
+        #title {
+            overflow: hidden;
+            padding-top: 3px;
+        }
+
+        .alert {
+            background-color: white;
+            min-width: 320px;
+            max-width: 672px;
+            position: relative;
+            margin: 0 auto;
+            padding-top: 28px;
+            border-radius: var(--border-radius);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .alert-body .phishing,
+        .alert-body .malware,
+        .alert-body .unwantedSoftware,
+        .alert-body .userinfo {
+            display: none;
+        }
+
+        .alert-body {
+            margin: 21px 0 0 0;
+            padding-left: var(--horizontal-padding);
+            padding-right: var(--horizontal-padding);
+            padding-bottom: 24px;
+            color: var(--font-color);
+        }
+
+        .alert-body p:first-of-type {
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+
+        .alert-body p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .bottom-bar {
+            margin-top: 1.3em;
+            height: 22px;
+        }
+
+        .bottom-bar button {
+            float: right;
+            font-size: 13px;
+            line-height: 21px;
+            min-width: 90px;
+            margin: 0 4px;
+            vertical-align: bottom;
+            padding: 0 12px;
+        }
+
+        .bottom-bar .details {
+            float: left;
+        }
+
+        .bottom-bar .details a {
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 2px;
+        }
+
+        #details {
+            display: none;
+            padding: 22px var(--horizontal-padding) 10px var(--horizontal-padding);
+            border-top: 1px solid rgb(217, 217, 217);
+            color: var(--font-color);
+            background-color: rgb(243, 243, 243);
+            border-bottom-left-radius: var(--border-radius);
+            border-bottom-right-radius: var(--border-radius);
+        }
+
+        .bottom-bar.goBack .closePage, .bottom-bar.closePage .goBack, #ignoreWarning {
+            display: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #exclamation {
+            float: left;
+            width: 30px;
+            top: 4px;
+            margin-right: 15px;
+            position: relative;
+        }
+
+        .exclamation-element {
+            fill: var(--red-color);
+        }
+
+        h1 {
+            color: var(--red-color);
+            font-size: 2em;
+            font-weight: 700;
+            line-height: 30px;
+            padding: 0 var(--horizontal-padding);
+            margin-bottom: -6px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 1em;
+            word-wrap: break-word;
+        }
+
+        body.ios .alert {
+            box-shadow: none;
+            border-radius: var(--ios-border-radius);
+            max-width: 640px;
+        }
+
+        body.ios .alert-body {
+            font: -apple-system-body;
+        }
+
+        body.ios #details {
+            font: -apple-system-body;
+            border-bottom-left-radius: var(--ios-border-radius);
+            border-bottom-right-radius: var(--ios-border-radius);
+        }
+
+        body.ios h1 {
+            font-size: 26px;
+            font-family: -webkit-system-font;
+        }
+
+        body.ios p {
+            font-size: 1.1em;
+            line-height: unset;
+        }
+
+        body.ios button {
+            background: none;
+            border: none;
+            color: var(--blue-color);
+            font: -apple-system-short-body;
+        }
+
+        body.ios #detailsButton {
+            color: var(--font-color);
+        }
+
+        @media screen and (max-width: 666px) {
+            /* iPhone 6 in landscape (667px) and smaller, including all iPhones in portrait */
+            body {
+                color: var(--compact-font-color);
+            }
+
+            .alert {
+                box-shadow: none;
+                background-color: var(--red-color);
+            }
+
+            .alert-body {
+                color: var(--compact-font-color);
+                padding-left: var(--compact-horizontal-padding);
+                padding-right: var(--compact-horizontal-padding);
+                padding-bottom: 30px;
+            }
+
+            h1 {
+                color: var(--compact-font-color);
+                padding: 0 var(--compact-horizontal-padding);
+            }
+
+            body.ios button,
+            body.ios #detailsButton {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #details {
+                color: rgba(255, 255, 255, .85);
+                background-color: var(--red-color);
+                padding: 22px var(--compact-horizontal-padding) 22px var(--compact-horizontal-padding);
+                border-top-width: 1px;
+                border-top-color: rgba(255, 255, 255, .35);
+            }
+
+            .exclamation-element {
+                fill: var(--compact-font-color);
+            }
+        }
+
+        /* RTL support */
+
+        html[dir="rtl"] .bottom-bar button {
+            float: left;
+        }
+
+        html[dir="rtl"] #exclamation {
+            float: right;
+            margin-left: 15px;
+            margin-right: 0;
+        }
+    </style>
+    <link rel=stylesheet type="text/css" href="safari-resource:/PhishingAlertExtras.css">
+    <script type="text/javascript" src="safari-resource:/Utilities.js" charset="utf-8"></script>
+    <script type="text/javascript" src="safari-resource:/WBSHTMLViewController.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        var PhishingAlert = {
+            _host: undefined,
+            _source: undefined,
+            _type: undefined,
+            _currentURL: undefined,
+            _extensionDisplayName: undefined,
+
+            get host()
+            {
+                return this._host
+            },
+
+            set host(value)
+            {
+                if (this._host === value)
+                    return;
+                this._host = value;
+
+                this.updateDetailsStrings();
+            },
+
+            get currentURL()
+            {
+                return this._currentURL;
+            },
+
+            set currentURL(value)
+            {
+                if (this._currentURL === value)
+                    return;
+                this._currentURL = value;
+
+                var reportAnErrorURL = PhishingAlertController.reportAnErrorURL(this.source);
+                document.getElementById("report-an-error").href = "%@&url=%@&hl=%@".format(reportAnErrorURL, escape(this.currentURL), navigator.language);
+            },
+
+            get source()
+            {
+                return this._source;
+            },
+
+            set source(value)
+            {
+                this._source = value;
+            },
+
+            get type()
+            {
+                return this._type;
+            },
+
+            set type(value)
+            {
+                this._type = value;
+            },
+
+            get extensionDisplayName()
+            {
+                return this._extensionDisplayName;
+            },
+
+            set extensionDisplayName(value)
+            {
+                if (this._extensionDisplayName === value)
+                    return;
+
+                this._extensionDisplayName = value;
+                this.updateDetailsStrings();
+            },
+
+            pageLoaded: function()
+            {
+                if (/Macintosh/g.test(navigator.userAgent))
+                    document.body.classList.add("mac");
+                else
+                    document.body.classList.add("ios");
+
+                HTMLViewController.pageLoaded();
+                PhishingAlertController.loaded();
+                window.addEventListener("resize", layOut, false);
+                layOut();
+            },
+
+            setTextDirection: function(textDirection)
+            {
+                document.documentElement.setAttribute("dir", textDirection);
+            },
+
+            updateUI: function(source, type, host, canGoBack, currentURL, extensionDisplayName)
+            {
+                if (this.source != source || this.type != type) {
+                    document.querySelector(".alert ." + type).style.display = "block";
+                    this.source = source;
+                    this.type = type;
+                }
+
+                var title;
+                if (type === "malware")
+                    title = HTMLViewController.UIString("Malware Website Warning");
+                else if (type === "phishing")
+                    title = HTMLViewController.UIString("Deceptive Website Warning");
+                else if (type === "unwantedSoftware")
+                    title = HTMLViewController.UIString("Website With Harmful Software Warning");
+                else if (type === "userinfo")
+                    title = HTMLViewController.UIString("Possible Phishing Website");
+                else
+                    console.error("Unknown type (%s) passed to updateUI.", type);
+
+                document.title = title;
+                document.getElementById("title").innerText = title;
+
+                if (canGoBack) {
+                    HTMLViewController.addClass("bottom-bar", "goBack");
+                    HTMLViewController.removeClass("bottom-bar", "closePage");
+                } else {
+                    HTMLViewController.addClass("bottom-bar", "closePage");
+                    HTMLViewController.removeClass("bottom-bar", "goBack");
+                }
+
+                this.extensionDisplayName = extensionDisplayName;
+                this.host = host;
+                this.currentURL = currentURL;
+            },
+
+            updateDetailsStrings: function()
+            {
+                var source = this.source;
+                var safeBrowsingProvider = PhishingAlertController.safeBrowsingProviderString(source);
+                var malwareDetailsURL = PhishingAlertController.malwareDetailsURL(source);
+                var learnMoreAboutPhishingURL = PhishingAlertController.learnMoreAboutPhishingURL(source);
+                var extensionDisplayName = this.extensionDisplayName;
+
+                var bypassWarningParagraph = HTMLViewController.UIString("If you understand the risks involved, you can %visit-this-unsafe-site-link%.");
+                var visitThisUnsafeSiteAnchorHTML = "<a role='button' onClick=\"PhishingAlertController.ignoreWarningSelected();\">%@</a>".format(HTMLViewController.UIString("visit this unsafe website"));
+                bypassWarningParagraph = bypassWarningParagraph.replace("%visit-this-unsafe-site-link%", visitThisUnsafeSiteAnchorHTML);
+
+                switch (this.type) {
+                case "malware":
+                    var details = document.getElementById("malware-details");
+
+                    var firstParagraph;
+
+                    if (extensionDisplayName)
+                        firstParagraph = HTMLViewController.UIString("Warnings are shown for websites where malicious software has been detected.");
+                    else {
+                        firstParagraph = HTMLViewController.UIString("Warnings are shown for websites where malicious software has been detected. You can check the %status-link% on the %safeBrowsingProvider% diagnostic page.").replace("%safeBrowsingProvider%", safeBrowsingProvider);
+                        var statusLinkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(malwareDetailsURL, escape(this.host), navigator.language, HTMLViewController.UIString("malware status of “%site%”").replace("%site%", this.host));
+                        firstParagraph = firstParagraph.replace("%status-link%", statusLinkHTML);
+                    }
+
+                    details.innerHTML = "<p>" + firstParagraph + "</p><p>" + bypassWarningParagraph + "</p>";
+                    break;
+
+                case "phishing":
+                    var details = document.getElementById("phishing-details");
+
+                    var firstParagraph;
+                    if (extensionDisplayName)
+                        firstParagraph = HTMLViewController.UIString("Warnings are shown for websites that have been reported as deceptive. Deceptive websites try to trick you into believing they are legitimate websites you trust.");
+                    else {
+                        firstParagraph = HTMLViewController.UIString("Warnings are shown for websites that have been reported as deceptive. Deceptive websites try to trick you into believing they are legitimate websites you trust. %phishing-learn-more%");
+
+                        var learnMoreAnchor = document.createElement("a");
+                        learnMoreAnchor.innerText = HTMLViewController.UIString("Learn more…");
+                        learnMoreAnchor.href = "%@&hl=%@".format(learnMoreAboutPhishingURL, navigator.language);
+                        firstParagraph = firstParagraph.replace("%phishing-learn-more%", learnMoreAnchor.outerHTML)
+                    }
+
+                    var secondParagraph;
+                    if (extensionDisplayName)
+                        secondParagraph = bypassWarningParagraph;
+                    else {
+                        var secondParagraph = HTMLViewController.UIString("If you believe this website is safe, you can %report-an-error%. Or, if you understand the risks involved, you can %bypass-link%.");
+                        secondParagraph = secondParagraph.replace("%bypass-link%", visitThisUnsafeSiteAnchorHTML);
+
+                        var reportAnErrorAnchor = document.createElement("a");
+                        reportAnErrorAnchor.id = "report-an-error";
+                        reportAnErrorAnchor.innerText = HTMLViewController.UIString("report an error");
+                        secondParagraph = secondParagraph.replace("%report-an-error%", reportAnErrorAnchor.outerHTML)
+                    }
+
+                    details.innerHTML = "<p>" + firstParagraph + "</p><p>" + secondParagraph + "</p>";
+                    break;
+
+                case "unwantedSoftware":
+                    var details = document.getElementById("unwantedSoftware-details");
+
+                    var firstParagraph;
+                    if (extensionDisplayName)
+                        firstParagraph = HTMLViewController.UIString("Warnings are shown for websites where harmful software has been detected.");
+                    else {
+                        firstParagraph = HTMLViewController.UIString("Warnings are shown for websites where harmful software has been detected. You can check %the-status-of-site% on the %safeBrowsingProvider% diagnostic page.").replace("%safeBrowsingProvider%", safeBrowsingProvider);
+                        var statusLinkHTML = "<a href=\"%@&site=%@&hl=%@\">%@</a>".format(malwareDetailsURL, escape(this.host), navigator.language, HTMLViewController.UIString("the status of “%site%”").replace("%site%", this.host));
+                        firstParagraph = firstParagraph.replace("%the-status-of-site%", statusLinkHTML);
+                    }
+
+                    details.innerHTML = "<p>" + firstParagraph + "</p><p>" + bypassWarningParagraph + "</p>";
+                    break;
+
+                case "userinfo":
+                    document.getElementById("ignoreWarning").style.display = "block";
+                    break;
+                }
+
+                if (extensionDisplayName) {
+                    document.getElementById("malwareExtensionDetails").innerText = HTMLViewController.UIString("This website was detected as containing malicious software by “%@”.").format(extensionDisplayName);
+                    document.getElementById("phishingExtensionDetails").innerText = HTMLViewController.UIString("This website was reported as a deceptive website by “%@”.").format(extensionDisplayName);
+                    document.getElementById("unwantedSoftwareExtensionDetails").innerText = HTMLViewController.UIString("This website was detected as containing harmful software by “%@”.").format(extensionDisplayName);
+                } else {
+                    document.getElementById("malwareExtensionDetails").innerText = "";
+                    document.getElementById("phishingExtensionDetails").innerText = "";
+                    document.getElementById("unwantedSoftwareExtensionDetails").innerText = "";
+                }
+
+                setDetailsVisibility(false);
+                if (this.type === "userinfo")
+                    document.getElementById("detailsButton").style.display = "none";
+            },
+        };
+
+        function setDetailsVisibility(show)
+        {
+            var detailsDiv = document.getElementById("details");
+            if (show) {
+                detailsDiv.style.display = "block";
+                document.getElementById("detailsButton").style.display = "none";
+                detailsDiv.scrollIntoViewIfNeeded();
+            } else {
+                detailsDiv.style.display = "none";
+                document.getElementById("detailsButton").style.display = "block";
+            }
+
+            layOut();
+        }
+
+        function layOut()
+        {
+            const minimumMarginTop = 22;
+            const maximumMarginTop = 156;
+            var alertBox = document.getElementById("alert");
+            var alertHeight = alertBox.getBoundingClientRect().height;
+            var viewportHeight = window.innerHeight;
+            if (viewportHeight > alertHeight + 2 * maximumMarginTop)
+                alertBox.style.top = maximumMarginTop + "px";
+            else
+                alertBox.style.top = Math.max(minimumMarginTop, (viewportHeight - alertHeight) / 2) + "px";
+        }
+
+        HTMLViewController.loadLocalizedStrings(PhishingAlertController);
+        window.addEventListener("load", function() { PhishingAlert.pageLoaded(); }, false);
+    </script>
+</head>
+
+<body>
+    <div id="alert" class="alert phishing google">
+        <h1>
+            <svg id="exclamation" x="0px" y="0px" viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
+                <path class="exclamation-element" d="M75,0C33.6,0,0,33.6,0,75c0,41.4,33.6,75,75,75s75-33.6,75-75C150,33.6,116.4,0,75,0z M66,34c0-5,4-9,9-9
+                s9,4,9,9v51c0,5-4,9-9,9s-9-4-9-9V34z M75,128c-6.1,0-11-4.9-11-11s4.9-11,11-11s11,4.9,11,11S81.1,128,75,128z"/>
+            </svg>
+
+            <div id="title"></div>
+        </h1>
+        <div class="alert-body">
+            <div class="malware">
+                <p class="l12n">This website may attempt to install dangerous software, which could harm your computer or steal your personal or financial information, like passwords, photos, or credit cards.</p>
+                <p class="google" id="google-malware-details"></p>
+                <p id="malwareExtensionDetails"></p>
+            </div>
+
+            <div class="phishing">
+                <p class="l12n">This website may try to trick you into doing something dangerous, like installing software or disclosing personal or financial information, like passwords, phone numbers, or credit cards.</p>
+                <p id="phishingExtensionDetails"></p>
+            </div>
+
+            <div class="unwantedSoftware">
+                <p class="l12n">This website may try to trick you into installing software that harms your browsing experience, like changing your settings without your permission or showing you unwanted ads. Once installed, it may be difficult to remove.</p>
+                <p id="unwantedSoftwareExtensionDetails"></p>
+            </div>
+
+            <div class="userinfo">
+                <p class="l12n">The address for the website you’re visiting contains a username or password. This may be a “phishing” website.</p>
+                <p class="l12n">Phishing websites are designed to trick you into disclosing personal or financial information, usually by creating a copy of a legitimate website, such as a bank’s.</p>
+            </div>
+
+            <div class="bottom-bar goBack closePage" id="bottom-bar">
+                <button type="button" class="l12n goBack" onClick="PhishingAlertController.goBackSelected();">Go Back</button>
+                <button type="button" class="l12n closePage" onClick="PhishingAlertController.closePageSelected();">Close Page</button>
+                <button type="button" id="ignoreWarning" class="l12n" onClick="PhishingAlertController.ignoreWarningSelected();">Ignore Warning</button>
+                <button type="button" id="detailsButton" class="l12n" onClick="setDetailsVisibility(true);">Show Details</button>
+            </div>
+        </div>
+        <div id="details">
+            <div id="malware-details"></div>
+            <div id="phishing-details"></div>
+            <div id="unwantedSoftware-details"></div>
+        </div>
+    </div>
+</body>
+
+</html>

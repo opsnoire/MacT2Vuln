@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>General</key>
+	<dict>
+		<key>Enable-Oversize-Messages</key>
+		<true/>
+	</dict>
+	<key>DEFAULT_OPTIONS</key>
+	<dict>
+		<key>Enable-Oversize-Messages</key>
+		<true/>
+		<key>Level</key>
+		<dict>
+			<key>Enable</key>
+			<string>Inherit</string>
+			<key>Persist</key>
+			<string>Inherit</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

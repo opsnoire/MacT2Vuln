@@ -1,0 +1,184 @@
+(version 1)
+(deny default)
+
+(import "system.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+ (define (home-subpath home-relative-subpath)
+        (subpath (string-append (param "_HOME") home-relative-subpath)))
+ (define (home-literal home-relative-literal)
+        (literal (string-append (param "_HOME") home-relative-literal)))
+ (define (home-regex home-relative-regex)
+        (regex (string-append "^" (regex-quote (param "_HOME")) home-relative-regex)))
+
+(allow mach-register
+    (global-name "com.apple.aps.appstoreagent")
+    (global-name "com.apple.appstoreagent.legacy")
+    (global-name "com.apple.appstoreagent.xpc")
+    (global-name "com.apple.appstored.xpc.in-game-analytics")
+    (global-name "com.apple.storekitservice"))
+
+(allow mach-lookup
+    (global-name "com.apple.accountsd.accountmanager")
+    (global-name "com.apple.adid")
+    (global-name "com.apple.ak.anisette.xpc")
+    (global-name "com.apple.ak.auth.xpc")
+    (global-name "com.apple.analyticsd")
+    (global-name "com.apple.AppSSO.service-xpc")
+    (global-name "com.apple.appstored.xpc")
+    (global-name "com.apple.apsd")
+    (global-name "com.apple.askpermissiond")
+    (global-name "com.apple.assertiond.processassertionconnection")
+    (global-name "com.apple.AssetCacheLocatorService")
+    (global-name "com.apple.bird")
+    (global-name "com.apple.cache_delete")
+    (global-name "com.apple.cfnetwork.cfnetworkagent")
+    (global-name "com.apple.commerce")
+    (global-name "com.apple.cookied")
+    (global-name "com.apple.CoreAuthentication.agent")
+    (global-name "com.apple.CoreAuthentication.agent.libxpc")
+    (global-name "com.apple.ctkd.token-client")
+    (global-name "com.apple.cvmsServ")
+    (global-name "com.apple.duetknowledged")
+    (global-name "com.apple.commcenter.coretelephony.xpc")
+    (global-name "com.apple.coreduetd.knowledge")
+    (global-name "com.apple.coreservices.appleevents")
+    (global-name "com.apple.coreservices.launchservicesd")
+    (global-name "com.apple.coreservices.quarantine-resolver")
+    (global-name "com.apple.dock.appstore")
+    (global-name "com.apple.fpsd")
+    (global-name "com.apple.installd")
+    (global-name "com.apple.lsd.mapdb")
+    (global-name "com.apple.lsd.modifydb")
+    (global-name "com.apple.metadata.mds")
+    (global-name "com.apple.nehelper")
+    (global-name "com.apple.nsurlsessiond")
+    (global-name "com.apple.nsurlstorage-cache")
+    (global-name "com.apple.ocspd")
+    (global-name "com.apple.pasteboard.1")
+    (global-name "com.apple.PowerManagement.control")
+    (global-name "com.apple.pluginkit.pkd")
+    (global-name "com.apple.ProgressReporting")
+    (global-name "com.apple.runningboard")
+    (global-name "com.apple.securityd.xpc")
+    (global-name "com.apple.SecurityServer")
+    (global-name "com.apple.storagekitd")
+    (global-name "com.apple.storeassetd")
+    (global-name "com.apple.storedownloadd")
+    (global-name "com.apple.storeuid")
+    (global-name "com.apple.system.opendirectoryd.api")
+    (global-name "com.apple.SystemConfiguration.configd")
+    (global-name "com.apple.SystemConfiguration.DNSConfiguration")
+    (global-name "com.apple.system_installd")
+    (global-name "com.apple.uninstalld")
+    (global-name "com.apple.usernoted.daemon_client")
+    (global-name "com.apple.usymptomsd")
+    (global-name "com.apple.windowserver.active")
+    (global-name "com.apple.xpc.amsaccountsd"))
+
+(allow file-read-metadata)
+
+(allow user-preference-read
+    (preference-domain "com.apple.AppleMediaServices")
+    (preference-domain "com.apple.appstored")
+    (preference-domain "com.apple.commerce"))
+
+(allow user-preference-write
+    (preference-domain "com.apple.AppleMediaServices")
+    (preference-domain "com.apple.appstored"))
+
+(allow file-read*
+    (literal "/Applications")
+    (literal "/Library/Application Support/CrashReporter/SubmitDiagInfo.domains")
+    (literal "/private/etc/services")
+    (literal "/private/var/db/nsurlstoraged/dafsaData.bin")
+    (literal "/Library/Application Support/CrashReporter/DiagnosticMessagesHistory.plist")
+    (subpath "/System/Applications/App Store.app")
+    (subpath "/Users/Shared")
+    (regex #"\.app(/|$)")
+    (regex #"/Library/Caches/com\.apple\.AppleMediaServices")
+    (regex #"/Library/Preferences/.GlobalPreferences.plist$")
+    (regex #"/Library/Preferences/ByHost/\.GlobalPreferences\..*\.plist$")
+    (regex #"/Library/Preferences/com\.apple\.LaunchServices/com\.apple\.launchservices\.secure\.plist$")
+    (regex #"/Library/Preferences/com\.apple\.security\.plist"))
+
+(allow file-read* file-write*
+    (subpath "/private/var/folders")
+    (subpath "/Users/Shared/adi")
+    (subpath "/Users/Shared/SC Info")
+    (regex #"/Library/Caches/com\.apple\.AppleMediaServices")
+    (regex #"/Library/Caches/com\.apple\.appstoreagent")
+    (regex #"/Library/Logs/com\.apple\.StoreServices")
+    (regex #"/Library/Keychains/"))
+
+(allow file-read-xattr
+    (regex #"\.app(/|$)"))
+ 
+(allow file-issue-extension
+    (regex #"/Library/Caches/com\.apple\.AppleMediaServices")
+    (regex #"/Library/Caches/com\.apple\.appstoreagent"))
+
+(allow ipc-posix-shm-read-data
+    (ipc-posix-name "/com.apple.AppSSO.version")
+    (ipc-posix-name "FNetwork.defaultStorageSession")
+    (ipc-posix-name-prefix "/tmp/com.apple.csseed."))
+
+(allow ipc-posix-shm-read* ipc-posix-shm-write*
+    (ipc-posix-name "com.apple.AppleDatabaseChanged"))
+
+(allow authorization-right-obtain
+    (right-name "com.apple.uninstalld.uninstall")
+    (right-name "system.install.apple-config-data")
+    (right-name "system.install.apple-software")
+    (right-name "system.install.apple-software.standard-user")
+    (right-name "system.install.app-store-software")
+    (right-name "system.install.app-store-software.standard-user")
+    (right-name "system.install.software")
+    (right-name "system.install.software.iap")
+    (right-name "system.install.software.mdm-provided"))
+
+(allow iokit-open)
+
+(allow sysctl-read sysctl-write
+    (sysctl-name "kern.tcsm_enable"))
+ 
+(allow distributed-notification-post)
+(allow lsopen)
+(allow network-outbound)
+(allow system-socket)
+
+;; mds: mds.lock, mdsDirectory.db, mdsObject.db
+;; 1. extension "appstoreagent:mds"
+;;    uid == 0: r+w /private/var/db/mds/system
+;;    uid  > 0: r+w <_DARWIN_USER_CACHE_DIR>/mds
+;; 2. /private/var/db/mds/system/{mdsDirectory.db,mdsObject.db}
+;;    uid == 0: r+w (already covered by (extension "appstoreagent:mds"))
+;;    uid  > 0: r
+(allow file-read* file-write* (extension "appstoreagent:mds"))
+(allow file-read*
+    (literal "/private/var/db/mds/system/mdsDirectory.db")
+    (literal "/private/var/db/mds/system/mdsObject.db"))
+;; 3. se_SecurityMessages:
+;;    uid  < 500: /private/var/db/mds/messages/se_SecurityMessages
+;;    uid >= 500: /private/var/db/mds/messages/<uid>/se_SecurityMessages
+(allow file-read* (extension "appstoreagent:mdsmessages"))
+
+;;
+;; FairPlay DLL Support. See rdar://problem/54211948
+;; Please do not append to this section unless it is specifically for FairPlay
+(allow file-read*
+    (subpath "/bin")
+    (subpath "/etc")
+    (subpath "/private/etc")
+    (subpath "/private/tmp")
+    (subpath "/private/var/log")
+    (subpath "/private/var/run")
+    (subpath "/Library/Updates")
+    (subpath "/sbin")
+    (subpath "/System/Library/Caches")
+    (subpath "/tmp")
+    (subpath "/usr/lib")
+    (subpath "/var/log")
+    (subpath "/var/run")
+    (subpath (param "_HOME")))

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SubSuperscript</key>
+	<array>
+		<string>cơ số</string>
+		<string>chỉ số dưới</string>
+		<string>chỉ số trên</string>
+	</array>
+	<key>RangeAndExpressionAfterRange</key>
+	<array>
+		<string>vùng</string>
+		<string>biểu thức sau vùng</string>
+	</array>
+	<key>RangeSubSuperscript</key>
+	<array>
+		<string>cơ số</string>
+		<string>chỉ số dưới</string>
+		<string>chỉ số trên</string>
+	</array>
+	<key>BaseSubSuperscript</key>
+	<array>
+		<string>cơ số</string>
+		<string>chỉ số dưới</string>
+		<string>chỉ số trên</string>
+	</array>
+	<key>Radical</key>
+	<array>
+		<string>chỉ số gốc</string>
+		<string>số dưới căn</string>
+	</array>
+	<key>Fraction</key>
+	<array>
+		<string>tử số</string>
+		<string>mẫu số</string>
+	</array>
+	<key>UnderOver</key>
+	<array>
+		<string>trên</string>
+		<string>cơ số</string>
+		<string>dưới</string>
+	</array>
+</dict>
+</plist>

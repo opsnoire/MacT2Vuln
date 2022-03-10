@@ -1,0 +1,99 @@
+;;; Copyright (c) 2019 Apple Inc.  All Rights reserved.
+
+(version 1)
+
+(deny default)
+(deny file-map-executable iokit-get-properties process-info* nvram*)
+(deny dynamic-code-generation)
+
+(import "system.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+(define (home-regex home-relative-regex)
+    (regex (string-append "^" (regex-quote (param "HOME")) home-relative-regex)))
+
+(define (home-subpath home-relative-subpath)
+    (subpath (string-append (param "HOME") home-relative-subpath)))
+
+(define (home-prefix home-relative-prefix)
+    (prefix (string-append (param "HOME") home-relative-prefix)))
+
+(define (home-literal home-relative-literal)
+    (literal (string-append (param "HOME") home-relative-literal)))
+
+(allow process-info* (target self))
+
+(allow process-info-pidinfo)
+
+(allow file-read*)
+
+(allow file-write*)
+
+(allow lsopen)
+
+(allow process-info-codesignature)
+
+(allow network-outbound)
+
+(allow network-bind)
+
+(deny mach-priv-host-port)
+
+(allow iokit-get-properties)
+
+(allow system-socket)
+
+(allow ipc-posix-shm)
+
+(allow mach-lookup (global-name
+    "com.apple.AppSSO.service-xpc"
+    "com.apple.coreservices.quarantine-resolver"
+    "com.apple.pluginkit.pkd"
+    "com.apple.SecurityServer"
+    "com.apple.ak.authorizationservices.xpc"
+    "com.apple.SharedWebCredentials"
+    "com.apple.CoreDisplay.master"
+    "com.apple.coreservices.appleevents"
+    "com.apple.dock.server"
+    "com.apple.lsd.modifydb"
+    "com.apple.lsd.mapdb"
+    "com.apple.coreservices.launchservicesd"
+    "com.apple.windowserver.active"
+    "com.apple.pasteboard.1"
+    "com.apple.window_proxies"
+    "com.apple.fonts"
+    "com.apple.CARenderServer"
+    "com.apple.dock.fullscreen"
+    "com.apple.quicklook.ui.helper.active"
+    "com.apple.SystemConfiguration.DNSConfiguration"
+    "org.h5l.kcm"
+    "com.apple.SystemConfiguration.configd"
+    "com.apple.system.opendirectoryd.api"
+    "com.apple.usernoted.client"
+    "com.apple.inputmethodkit.launchagent"
+    "com.apple.inputmethodkit.launcher"
+    "com.apple.inputmethodkit.getxpcendpoint"
+    "com.apple.ocspd"
+    "com.apple.audio.SystemSoundServer-OSX"
+    "com.apple.tccd.system"
+    "com.apple.iohideventsystem"
+    "com.apple.touchbarserver.mig"
+    "com.apple.DiskArbitration.diskarbitrationd"
+    "com.apple.tsm.uiserver"))
+
+(allow user-preference* (preference-domain
+    "com.apple.AppSSO"
+    "com.apple.AppSSOAgent"))
+
+(allow user-preference-read (preference-domain
+    "kCFPreferencesAnyApplication"
+    "com.apple.universalaccess"
+    "com.apple.HIToolbox"
+    "com.apple.MultitouchSupport" ))
+
+(allow file-map-executable (subpath
+    "/System/Library/KerberosPlugins/KerberosFrameworkPlugins"
+    "/Library/Frameworks/"
+    "/Library/KerberosPlugins" ))
+

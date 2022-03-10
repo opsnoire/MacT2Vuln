@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0000 - ServiceRecordHandle*</key>
+	<integer>35545</integer>
+	<key>0001 - ServiceClassIDList</key>
+	<array>
+		<data>ERY=</data>
+	</array>
+	<key>0004 - ProtocolDescriptorList</key>
+	<array>
+		<array>
+			<data>AQA=</data>
+			<dict>
+				<key>DataElementSize</key>
+				<integer>1</integer>
+				<key>DataElementType</key>
+				<integer>1</integer>
+				<key>DataElementValue</key>
+				<data>AA8=</data>
+			</dict>
+		</array>
+		<array>
+			<data>AA8=</data>
+			<dict>
+				<key>DataElementSize</key>
+				<integer>2</integer>
+				<key>DataElementType</key>
+				<integer>1</integer>
+				<key>DataElementValue</key>
+				<data>AQA=</data>
+			</dict>
+			<array>
+				<dict>
+					<key>DataElementSize</key>
+					<integer>2</integer>
+					<key>DataElementType</key>
+					<integer>1</integer>
+					<key>DataElementValue</key>
+					<integer>2048</integer>
+				</dict>
+				<dict>
+					<key>DataElementSize</key>
+					<integer>2</integer>
+					<key>DataElementType</key>
+					<integer>1</integer>
+					<key>DataElementValue</key>
+					<integer>2054</integer>
+				</dict>
+				<dict>
+					<key>DataElementSize</key>
+					<integer>2</integer>
+					<key>DataElementType</key>
+					<integer>1</integer>
+					<key>DataElementValue</key>
+					<integer>34525</integer>
+				</dict>
+				<dict>
+					<key>DataElementSize</key>
+					<integer>2</integer>
+					<key>DataElementType</key>
+					<integer>1</integer>
+					<key>DataElementValue</key>
+					<integer>34827</integer>
+				</dict>
+			</array>
+		</array>
+	</array>
+	<key>0005 - BrowseGroupList*</key>
+	<array>
+		<data>EAI=</data>
+	</array>
+	<key>0006 - LanguageBaseAttributeIDList*</key>
+	<array>
+		<dict>
+			<key>DataElementSize</key>
+			<integer>2</integer>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<integer>25966</integer>
+		</dict>
+		<dict>
+			<key>DataElementSize</key>
+			<integer>2</integer>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<integer>106</integer>
+		</dict>
+		<dict>
+			<key>DataElementSize</key>
+			<integer>2</integer>
+			<key>DataElementType</key>
+			<integer>1</integer>
+			<key>DataElementValue</key>
+			<integer>256</integer>
+		</dict>
+	</array>
+	<key>0009 - BluetoothProfileDescriptorList</key>
+	<array>
+		<array>
+			<data>ERY=</data>
+			<dict>
+				<key>DataElementSize</key>
+				<integer>2</integer>
+				<key>DataElementType</key>
+				<integer>1</integer>
+				<key>DataElementValue</key>
+				<data>AQA=</data>
+			</dict>
+		</array>
+	</array>
+	<key>0100 - ServiceName*</key>
+	<string>Network Access Point Service</string>
+	<key>0101 - Service Description</key>
+	<string>PAN Network Access Point</string>
+	<key>030A - Security Description</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AAE=</data>
+	</dict>
+	<key>030B - Net Access Type</key>
+	<dict>
+		<key>DataElementSize</key>
+		<integer>1</integer>
+		<key>DataElementType</key>
+		<integer>1</integer>
+		<key>DataElementValue</key>
+		<data>AAU=</data>
+	</dict>
+	<key>030C - MaxNetAccessRate</key>
+	<integer>2000000</integer>
+</dict>
+</plist>

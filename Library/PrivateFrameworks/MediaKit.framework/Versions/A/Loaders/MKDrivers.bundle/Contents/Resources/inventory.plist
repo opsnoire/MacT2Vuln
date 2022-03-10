@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Loaders</key>
+	<dict>
+		<key>bootroot</key>
+		<dict>
+			<key>Checksum</key>
+			<integer>1131887160</integer>
+			<key>Foreign Payloads</key>
+			<true/>
+			<key>Loader Name</key>
+			<string>bootroot</string>
+			<key>Loader Present</key>
+			<true/>
+			<key>Major Vers</key>
+			<integer>1</integer>
+			<key>Minimum Host Size</key>
+			<integer>2097152</integer>
+			<key>Minor Vers</key>
+			<integer>0</integer>
+			<key>Partition Name</key>
+			<string>Booter</string>
+			<key>Partition Size</key>
+			<integer>262144</integer>
+			<key>Partition Type</key>
+			<string>Apple_Boot</string>
+			<key>Post Action Code</key>
+			<integer>0</integer>
+		</dict>
+		<key>bootspace</key>
+		<dict>
+			<key>Loader Present</key>
+			<false/>
+			<key>Minimum Host Size</key>
+			<integer>2097152</integer>
+			<key>Partition Name</key>
+			<string>Reserved Bootspace</string>
+			<key>Partition Signature</key>
+			<string>BOOT</string>
+			<key>Partition Size</key>
+			<integer>262144</integer>
+			<key>Partition Type</key>
+			<string>Apple_Free</string>
+		</dict>
+		<key>efi</key>
+		<dict>
+			<key>Checksum</key>
+			<integer>-933073506</integer>
+			<key>Minimum Host Size</key>
+			<integer>4194304</integer>
+			<key>Minimum Partition Size</key>
+			<integer>409600</integer>
+			<key>Partition Name</key>
+			<string>EFI System Partition</string>
+			<key>Partition Size</key>
+			<integer>409600</integer>
+			<key>Partition Type</key>
+			<string>EFI</string>
+		</dict>
+		<key>efi-1024</key>
+		<dict>
+			<key>Checksum</key>
+			<integer>1202738971</integer>
+			<key>Loader Name</key>
+			<string>efi-1024</string>
+			<key>Minimum Host Size</key>
+			<integer>4194304</integer>
+			<key>Minimum Partition Size</key>
+			<integer>409600</integer>
+			<key>Partition Name</key>
+			<string>EFI System Partition</string>
+			<key>Partition Size</key>
+			<integer>614400</integer>
+			<key>Partition Type</key>
+			<string>EFI</string>
+		</dict>
+		<key>efi-2048</key>
+		<dict>
+			<key>Checksum</key>
+			<integer>-1515905308</integer>
+			<key>Loader Name</key>
+			<string>efi-2048</string>
+			<key>Minimum Host Size</key>
+			<integer>4194304</integer>
+			<key>Minimum Partition Size</key>
+			<integer>409600</integer>
+			<key>Partition Name</key>
+			<string>EFI System Partition</string>
+			<key>Partition Size</key>
+			<integer>614400</integer>
+			<key>Partition Type</key>
+			<string>EFI</string>
+		</dict>
+		<key>efi-4096</key>
+		<dict>
+			<key>Checksum</key>
+			<integer>-404798659</integer>
+			<key>Loader Name</key>
+			<string>efi-4096</string>
+			<key>Minimum Host Size</key>
+			<integer>4194304</integer>
+			<key>Minimum Partition Size</key>
+			<integer>409600</integer>
+			<key>Partition Name</key>
+			<string>EFI System Partition</string>
+			<key>Partition Size</key>
+			<integer>614400</integer>
+			<key>Partition Type</key>
+			<string>EFI</string>
+		</dict>
+		<key>recovery</key>
+		<dict>
+			<key>Foreign Payloads</key>
+			<true/>
+			<key>Loader Present</key>
+			<false/>
+			<key>Minimum Host Size</key>
+			<integer>2097152</integer>
+			<key>Partition Name</key>
+			<string>Recovery Partition</string>
+			<key>Partition Size</key>
+			<integer>262144</integer>
+			<key>Partition Type</key>
+			<string>Apple_Boot</string>
+			<key>Reserve Space</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>

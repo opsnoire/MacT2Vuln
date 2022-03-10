@@ -1,0 +1,4 @@
+<Directory "%@/Sites/">
+	Options Indexes MultiViews
+	Require all granted
+</Directory>

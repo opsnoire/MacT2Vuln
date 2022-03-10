@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# DeferredInstallFixup
+# Copyright 2012-2016 Apple Inc.
+
+
+plist="/Library/LaunchDaemons/com.apple.PackageKit.DeferredInstallFixup.plist"
+filelist="/private/var/db/.PKDeferredInstallFixup.file_list"
+injectfse="/System/Library/PrivateFrameworks/PackageKit.framework/Versions/A/Resources/injectfse"
+
+sleep 10
+if [ -e $filelist ]; then
+    $injectfse $filelist
+else
+    /usr/bin/logger -p install.err "PackageKit: Missing deferred install file list."
+fi
+
+rm -f $plist
+rm -f $filelist
+
+exit 0

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+plistbuddy="/usr/libexec/PlistBuddy";
+afp_prefs_path="/Library/Preferences/com.apple.AppleFileServer.plist";
+old_value="262144";
+new_value="1048576";
+
+if [[ -f "${DSTROOT}/${afp_prefs_path}" ]]; then
+	quantum="`${plistbuddy} -c 'print :TCPQuantum' \"${DSTROOT}/${afp_prefs_path}\" 2>/dev/null`";
+	if [[ ($? == 0) && ${quantum} == ${old_value} ]]; then
+		${plistbuddy} -c 'delete :TCPQuantum' "${DSTROOT}/${afp_prefs_path}" 2>/dev/null;
+		${plistbuddy} -c "add :TCPQuantum integer ${new_value}" "${DSTROOT}/${afp_prefs_path}";
+	fi
+fi

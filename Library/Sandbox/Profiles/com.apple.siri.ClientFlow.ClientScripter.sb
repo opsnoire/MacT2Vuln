@@ -1,0 +1,34 @@
+
+(version 1)
+(deny default)
+(deny file-map-executable iokit-get-properties process-info* process-info-codesignature nvram*)
+(when (defined? 'dynamic-code-generation)
+    (deny dynamic-code-generation))
+
+(import "system.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+(allow process-info* (target self))
+
+;; ClientScripter's own preference domain.
+(allow user-preference-read user-preference-write (preference-domain "com.apple.siri.ClientFlow.ClientScripter"))
+
+;; Allow reading shared preferences.
+(allow user-preference-read
+       (preference-domain "com.apple.assistant")
+       (preference-domain "com.apple.assistant.logging"))
+
+;; For resolving symlinks, realpath(3), and equivalents.
+(allow file-read-metadata)
+
+;; For validating the entitlements of clients.
+(allow process-info-codesignature)
+
+;; For mapping process path to CFScripter instance
+(allow process-info-pidinfo)
+
+(allow mach-lookup (global-name "com.apple.webinspector"))
+(allow mach-lookup (global-name "com.apple.assistant.analytics"))
+
+(trace "/tmp/ClientScripter.trace")

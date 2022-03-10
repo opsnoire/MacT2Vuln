@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RoleBasedGlobalOverrides</key>
+	<dict>
+		<key>AXCloseBox</key>
+		<dict>
+			<key></key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Close window</string>
+				<key>SynthesisString</key>
+				<string>[[inpt phon]]  kl1OWz [[inpt text]]</string>
+			</dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Close window</string>
+				<key>SynthesisString</key>
+				<string>[[inpt phon]]  kl1OWz [[inpt text]]</string>
+			</dict>
+		</dict>
+		<key>AXRadioButton</key>
+		<dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+		</dict>
+		<key>AXZoomBox</key>
+		<dict>
+			<key></key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Zoom window</string>
+				<key>SynthesisString</key>
+				<string>Zoom</string>
+			</dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Zoom window</string>
+				<key>SynthesisString</key>
+				<string>Zoom</string>
+			</dict>
+		</dict>
+		<key>AXCheckBox</key>
+		<dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+		</dict>
+		<key>AXToolbarBox</key>
+		<dict>
+			<key></key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Toolbar</string>
+				<key>SynthesisString</key>
+				<string>Toolbar</string>
+			</dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Toolbar</string>
+				<key>SynthesisString</key>
+				<string>Toolbar</string>
+			</dict>
+		</dict>
+		<key>AXMiniaturizeBox</key>
+		<dict>
+			<key></key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Minimize window</string>
+				<key>SynthesisString</key>
+				<string>Minimize</string>
+			</dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string>Minimize window</string>
+				<key>SynthesisString</key>
+				<string>Minimize</string>
+			</dict>
+		</dict>
+		<key>AXPushButton</key>
+		<dict>
+			<key>Button</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>page left</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>down arrow</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>right arrow</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>up arrow</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>page right</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>page up</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>left arrow</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+			<key>page down</key>
+			<dict>
+				<key>RecognitionString</key>
+				<string></string>
+				<key>SynthesisString</key>
+				<string></string>
+			</dict>
+		</dict>
+		<key>AXMenuItem</key>
+		<dict>
+			<key>Close</key>
+			<dict>
+				<key>SynthesisString</key>
+				<string>[[inpt phon]]  kl1OWz [[inpt text]]</string>
+			</dict>
+			<key>Show Status Bar</key>
+			<dict>
+				<key>SynthesisString</key>
+				<string>Show [[inpt phon]]  st1AEtIXsbAAr [[inpt text]]</string>
+			</dict>
+			<key>Hide Status Bar</key>
+			<dict>
+				<key>SynthesisString</key>
+				<string>Hide [[inpt phon]]  st1AEtIXsbAAr [[inpt text]]</string>
+			</dict>
+			<key>Status Bar</key>
+			<dict>
+				<key>SynthesisString</key>
+				<string>[[inpt phon]]  st1AEtIXsbAAr [[inpt text]]</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>RoleBasedAppOverrides</key>
+	<dict>
+		<key>com.apple.dock</key>
+		<dict>
+			<key>AXPushButton</key>
+			<dict>
+				<key>Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+				<key>Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] 1AEdr2EHs [[inpt text]] [[emph -]]Book</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>com.apple.Console</key>
+		<dict>
+			<key>AXMenuBar</key>
+			<dict>
+				<key>Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+			</dict>
+			<key>AXMenuItem</key>
+			<dict>
+				<key>Quit Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Quit [[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+				<key>Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+				<key>Console Help</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] k1AAnsOWl [[inpt text]] Help</string>
+				</dict>
+				<key>About Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>About [[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+				<key>Hide Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Hide [[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+				<key>Open Console</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Open [[inpt phon]] k1AAnsOWl [[inpt text]]</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>com.apple.finder</key>
+		<dict>
+			<key>AXMenuItem</key>
+			<dict>
+				<key>Clean Up</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Clean [[emph +]]up</string>
+				</dict>
+				<key>Duplicate</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]]  d1UWp=lIX=k2EYt  [[inpt text]]</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>com.apple.AddressBook</key>
+		<dict>
+			<key>AXMenuBar</key>
+			<dict>
+				<key>Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] 1AEdr2EHs [[inpt text]] [[emph -]]Book</string>
+				</dict>
+			</dict>
+			<key>AXMenuItem</key>
+			<dict>
+				<key>About Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>About Address [[emph -]]Book</string>
+				</dict>
+				<key>Hide Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Hide Address [[emph -]]Book</string>
+				</dict>
+				<key>Quit Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Quit Address [[emph -]]Book</string>
+				</dict>
+				<key>Address Book Help</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] 1AEdr2EHs [[inpt text]] [[emph -]]Book Help</string>
+				</dict>
+				<key>Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] 1AEdr2EHs [[inpt text]] [[emph -]]Book</string>
+				</dict>
+			</dict>
+			<key>AXTextField</key>
+			<dict>
+				<key>Address Book</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] 1AEdr2EHs [[inpt text]] [[emph -]]Book</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>com.apple.calculator</key>
+		<dict>
+			<key>AXPushButton</key>
+			<dict>
+				<key>square root</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Square Root</string>
+				</dict>
+				<key>tan</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Tangent</string>
+					<key>SynthesisString</key>
+					<string>tangent</string>
+				</dict>
+				<key>M+</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Memory Plus</string>
+					<key>SynthesisString</key>
+					<string>memory plus</string>
+				</dict>
+				<key>x cubed</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>x Cubed</string>
+				</dict>
+				<key>-</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Minus</string>
+					<key>SynthesisString</key>
+					<string>Minus</string>
+				</dict>
+				<key>π</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Pie</string>
+					<key>SynthesisString</key>
+					<string>pie</string>
+				</dict>
+				<key>Deg</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Degrees</string>
+					<key>SynthesisString</key>
+					<string>degrees</string>
+				</dict>
+				<key>.</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Point</string>
+					<key>SynthesisString</key>
+					<string>Point</string>
+				</dict>
+				<key>arc cosine</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Inverse Cosine</string>
+					<key>SynthesisString</key>
+					<string>Inverse Cosine</string>
+				</dict>
+				<key>=</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Equals</string>
+					<key>SynthesisString</key>
+					<string>Equals</string>
+				</dict>
+				<key>M-</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Memory Minus</string>
+					<key>SynthesisString</key>
+					<string>memory minus</string>
+				</dict>
+				<key>arc tangent</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Inverse Tangent</string>
+					<key>SynthesisString</key>
+					<string>Inverse Tangent</string>
+				</dict>
+				<key>cos</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Cosine</string>
+					<key>SynthesisString</key>
+					<string>cosine</string>
+				</dict>
+				<key>y to the x</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>To the Power of</string>
+					<key>SynthesisString</key>
+					<string>to the power of</string>
+				</dict>
+				<key>x squared</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>x Squared</string>
+				</dict>
+				<key>EE</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Times Ten to the Power of</string>
+					<key>SynthesisString</key>
+					<string>Times ten to the Power of</string>
+				</dict>
+				<key>%</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Percent</string>
+					<key>SynthesisString</key>
+					<string>Percent</string>
+				</dict>
+				<key>x!</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>x Factorial</string>
+					<key>SynthesisString</key>
+					<string>x factorial</string>
+				</dict>
+				<key>arc sine</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Inverse Sine</string>
+					<key>SynthesisString</key>
+					<string>Inverse Sine</string>
+				</dict>
+				<key>x</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Times</string>
+					<key>SynthesisString</key>
+					<string>times</string>
+				</dict>
+				<key>Rad</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Radians</string>
+					<key>SynthesisString</key>
+					<string>radians</string>
+				</dict>
+				<key>C</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Clear</string>
+					<key>SynthesisString</key>
+					<string>Clear</string>
+				</dict>
+				<key>log</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Logarithm</string>
+					<key>SynthesisString</key>
+					<string>logarithm</string>
+				</dict>
+				<key>sin</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Sine</string>
+					<key>SynthesisString</key>
+					<string>sine</string>
+				</dict>
+				<key>±</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Negate</string>
+					<key>SynthesisString</key>
+					<string>negate</string>
+				</dict>
+				<key>CE</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Clear Entry</string>
+					<key>SynthesisString</key>
+					<string>clear entry</string>
+				</dict>
+				<key>1/x</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>One Over x</string>
+					<key>SynthesisString</key>
+					<string>[[emph -]] one over x</string>
+				</dict>
+				<key>MR</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Memory Recall</string>
+					<key>SynthesisString</key>
+					<string>memory recall</string>
+				</dict>
+				<key>ln</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Natural Log</string>
+					<key>SynthesisString</key>
+					<string>natural log</string>
+				</dict>
+				<key>÷</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Divided By</string>
+					<key>SynthesisString</key>
+					<string>divided by</string>
+				</dict>
+				<key>+</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Plus</string>
+					<key>SynthesisString</key>
+					<string>Plus</string>
+				</dict>
+				<key>MC</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Memory Clear</string>
+					<key>SynthesisString</key>
+					<string>memory clear</string>
+				</dict>
+			</dict>
+			<key>AXTextField</key>
+			<dict>
+				<key>asin
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Inverse sine</string>
+				</dict>
+				<key>sin
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>sine</string>
+				</dict>
+				<key>y^x
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>to the power of</string>
+				</dict>
+				<key>-
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>minus</string>
+				</dict>
+				<key>÷
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>divided by</string>
+				</dict>
+				<key>Deg</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>degrees</string>
+				</dict>
+				<key>atan
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Inverse Tangent</string>
+				</dict>
+				<key>+
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>plus</string>
+				</dict>
+				<key>x^3
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>x cubed</string>
+				</dict>
+				<key>M</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>memory</string>
+				</dict>
+				<key>%</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>percent</string>
+				</dict>
+				<key>tan
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>tangent</string>
+				</dict>
+				<key>Rad</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>radians</string>
+				</dict>
+				<key>x!
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>x factorial</string>
+				</dict>
+				<key>x
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>times</string>
+				</dict>
+				<key>1/x
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] one over x</string>
+				</dict>
+				<key>cos
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>cosine</string>
+				</dict>
+				<key>√x
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>square root</string>
+				</dict>
+				<key>x^2
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>x squared</string>
+				</dict>
+				<key>ln
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>natural log</string>
+				</dict>
+				<key>acos
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Inverse cosine</string>
+				</dict>
+				<key>log
+</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>logarithm</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>com.apple.iTunes</key>
+		<dict>
+			<key>AXMenuItem</key>
+			<dict>
+				<key>Play                space</key>
+				<dict>
+					<key>RecognitionString</key>
+					<string>Play</string>
+					<key>SynthesisString</key>
+					<string>Play</string>
+				</dict>
+				<key>Convert to MP3…</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]]  kAXn=v1UXrt [[inpt text]] to MP3‚Ä¶</string>
+				</dict>
+				<key>Convert ID3 Tags…</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]]  kAXn=v1UXrt [[inpt text]] ID3 tags‚Ä¶</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>com.apple.systempreferences</key>
+		<dict>
+			<key>AXCheckBox</key>
+			<dict>
+				<key>Flash the screen whenever an alert sound occurs</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Flash the screen [[emph -]] whenever an alert [[emph -]] sound [[emph -]] occurs</string>
+				</dict>
+				<key>Beep when a modifier key is set</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>beep when a modifier [[emph -]] key is set</string>
+				</dict>
+				<key>Show pressed keys on screen.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>show pressed [[emph -]] keys on screen</string>
+				</dict>
+				<key>Show preview rectangle when zoomed out</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string> [[emph -]] Show preview [[emph -]] rectangle,  [[emph -]] when zoomed out.  </string>
+				</dict>
+			</dict>
+			<key>AXPushButton</key>
+			<dict>
+				<key>Switch to White on Black</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Switch to white on black</string>
+				</dict>
+				<key>Turn Off Zoom</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] t1UXrn 1AOf z1UWm [[inpt text]]</string>
+				</dict>
+				<key>Switch to Black on White</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Switch to black on white</string>
+				</dict>
+				<key>Turn On Zoom</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[inpt phon]] t1UXrn 1AAn z1UWm [[inpt text]]</string>
+				</dict>
+			</dict>
+			<key>AXTextField</key>
+			<dict>
+				<key>For difficulties pressing more than one key at a time</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>for difficulties [[emph -]] pressing [[inpt phon]] mAOr DAEn [[inpt text]] one [[emph -]] key at a time</string>
+				</dict>
+				<key>When you connect a camera:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you connect a camera:</string>
+				</dict>
+				<key>When you insert a picture CD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a picture CD:</string>
+				</dict>
+				<key>When you connect a scanner:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you connect a scanner:</string>
+				</dict>
+				<key>Maximum Zoom:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph +]] Maximum zoom: </string>
+				</dict>
+				<key>Switch to white-on-black: ⌘⌥⌃8</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Switch to white on black:  command option control 8.</string>
+				</dict>
+				<key>Zoom in: ⌘⌥=</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Zoom in: command option equal.</string>
+				</dict>
+				<key>When you insert a blank DVD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a blank DVD:</string>
+				</dict>
+				<key>When you connect a blank disk:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] when you connect a blank disk:</string>
+				</dict>
+				<key>Choose what happens when you insert a data CD or DVD or connect a blank disk.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Choose [[emph -]] what happens [[emph -]] when [[emph -]] you insert a [[emph +]] data CD or DVD, or connect a blank disk</string>
+				</dict>
+				<key>Other spoken items</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Other spoken items.  </string>
+				</dict>
+				<key>Choose what happens when you connect a specific digital video camera.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Choose [[emph -]] what happens [[emph -]] when [[emph -]] you connect a [[emph +]] specific digital video camera.</string>
+				</dict>
+				<key>Sticky Keys:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Sticky [[emph -]] keys</string>
+				</dict>
+				<key>Choose what happens when you insert a blank disc.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Choose [[emph -]] what happens [[emph -]] when [[emph -]] you insert a blank disc.</string>
+				</dict>
+				<key>Magnification (x):</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Magnification by:</string>
+				</dict>
+				<key>When you insert a data DVD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a data DVD:</string>
+				</dict>
+				<key>Choose what happens when you connect an iPod or insert an audio CD or MP3 CD.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Choose [[emph -]] what happens [[emph -]] when [[emph -]] you connect an iPod, or insert an audio CD or MP3 CD.</string>
+				</dict>
+				<key>For difficulties using the mouse</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>For difficulties [[emph -]] using the mouse</string>
+				</dict>
+				<key>Puts a delay between when a key is pressed and when it is accepted.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] puts a delay between when a key is pressed and when it is accepted</string>
+				</dict>
+				<key>Turn zoom on or off: ⌘⌥8</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Turn zoom on or off:  command option 8.</string>
+				</dict>
+				<key>When you insert an MP3 CD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert an MP3 CD:</string>
+				</dict>
+				<key>When using the computer, I have difficulties with: </key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] when using the [[emph -]] computer, I have difficulties with,</string>
+				</dict>
+				<key>Minimum Zoom:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph +]] Minimum zoom: </string>
+				</dict>
+				<key>⌥⌘ * turns on Zoom</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Option command star: [[inpt phon]] t1UXrns 1AAn [[inpt text]] zoom.  </string>
+				</dict>
+				<key>⌥⌘- zooms out</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Option command minus: zooms [[emph +]] out.  </string>
+				</dict>
+				<key>Keyboard shortcuts can be used any time while zoom is on.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Keyboard shortcuts: can be [[emph -]] used [[inpt phon]] 1EHnIY [[inpt text]] time while zoom is [[emph +]] on.  </string>
+				</dict>
+				<key>When you insert a video CD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a video CD:</string>
+				</dict>
+				<key>Zoom out: ⌘⌥-</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Zoom out: command option minus</string>
+				</dict>
+				<key>Show preview rectangle when zoomed out</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string> [[emph -]] Show preview [[emph -]] rectangle,  [[emph -]] when zoomed out.  </string>
+				</dict>
+				<key>Choose what happens when you connect a digital camera or scanner to your computer or insert a picture CD.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Choose [[emph -]] what happens [[emph -]] when [[emph -]] you connect a digital camera or scanner to your [[emph -]] computer, or insert a picture CD.</string>
+				</dict>
+				<key>Choose what happens when you connect a specific iPod.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Choose [[emph -]] what happens [[emph -]] when [[emph -]] you connect a [[emph +]] specific iPod.</string>
+				</dict>
+				<key>When you press the scanner&apos;s button:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you [[emph -]] press the scanner&apos;s button:</string>
+				</dict>
+				<key>Increase contrast: ⌘⌥⌃.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Increase contrast: command option control period.</string>
+				</dict>
+				<key>When you connect a digital video camera:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you connect a digital video [[emph -]] camera:</string>
+				</dict>
+				<key>When you insert an audio CD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert an audio CD:</string>
+				</dict>
+				<key>⌥⌘+ zooms in</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Option command plus: zooms [[emph +]] in</string>
+				</dict>
+				<key>When you insert a data CD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a data CD:</string>
+				</dict>
+				<key>Reduce contrast: ⌘⌥⌃,</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>Reduce contrast:  command option control comma.</string>
+				</dict>
+				<key>When you insert a video DVD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a video DVD:</string>
+				</dict>
+				<key>Choose what happens when you insert a specific disk.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Choose [[emph -]] what happens [[emph -]] when [[emph -]] you insert a [[emph +]] specific disk.</string>
+				</dict>
+				<key>When you insert a blank CD:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you insert a blank CD:</string>
+				</dict>
+				<key>When you connect an iPod:</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] When you connect an iPod:</string>
+				</dict>
+				<key>Choose what happens when you connect a digital video camera to your computer or insert a video CD or DVD.</key>
+				<dict>
+					<key>SynthesisString</key>
+					<string>[[emph -]] Choose [[emph -]] what happens [[emph -]] when [[emph -]] you connect a digital video [[emph -]] camera to your [[emph -]] computer, or insert a video [[emph +]] CD or [[emph +]] DVD.</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+	<key>SpecialCasedApps</key>
+	<dict>
+		<key>com.apple.ExampleApp1</key>
+		<dict>
+			<key>SpecialInstruction</key>
+			<string>IgnoreApp</string>
+		</dict>
+	</dict>
+	<key>RoleBasedAppFiltered</key>
+	<dict>
+		<key>com.apple.ExampleApp2</key>
+		<dict>
+			<key>AXPushButton</key>
+			<dict>
+				<key>Button</key>
+				<dict>
+					<key>IgnoreElement</key>
+					<string>YES</string>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

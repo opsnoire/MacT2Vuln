@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/System/Library/PrivateFrameworks/SystemMigration.framework/Resources/safecp "$SRCROOT"/private/var/cron/tabs/* "$DSTROOT"/private/var/at/tabs/

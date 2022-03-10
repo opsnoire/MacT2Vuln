@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebBookmarkType</key>
+	<string>WebBookmarkTypeList</string>
+	<key>Title</key>
+	<string>Bookmarks Bar</string>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://bobo.kidnesia.com</string>
+				<key>title</key>
+				<string>Bobo Kidnesia</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://bobo.kidnesia.com</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.museumnasional.or.id</string>
+				<key>title</key>
+				<string>Museum Nasional</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.museumnasional.or.id</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.bi.go.id/en/tentang-bi/museum/info/berita-khusus/Pages/MBI_Goestoschool_Eng.aspx</string>
+				<key>title</key>
+				<string>Museum Bank</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.bi.go.id/en/tentang-bi/museum/info/berita-khusus/Pages/MBI_Goestoschool_Eng.aspx</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.museumwayang.com</string>
+				<key>title</key>
+				<string>Museum wayang</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.museumwayang.com</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://ullensentalu.com</string>
+				<key>title</key>
+				<string>Museum Ullen Sentalu di Yogyakarta</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://ullensentalu.com</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://museumtekstiljakarta.com</string>
+				<key>title</key>
+				<string>Museum Tekstil</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://museumtekstiljakarta.com</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.museumlayanglayang.co.id</string>
+				<key>title</key>
+				<string>Museum Layang-Layang</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.museumlayanglayang.co.id</string>
+		</dict>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.museumsenirupa.com</string>
+				<key>title</key>
+				<string>Museum Seni Rupa</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.museumsenirupa.com</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,150 @@
+;;; Copyright (c) 2017 Apple Inc.  All Rights reserved.
+;;;
+;;; WARNING: The sandbox rules in this file currently constitute
+;;; Apple System Private Interface and are subject to change at any time and
+;;; without notice.
+;;;
+(version 1)
+
+;;;
+;;; Imports
+;;;
+
+(import "system.sb")
+(import "com.apple.corefoundation.sb")
+(corefoundation)
+
+;;;
+;;; Variables
+;;;
+
+;;; these params are passed in from [IMSharedUtilities enterSandboxWithBundleIdentifier]
+(define home-directory (param "HOME_DIR"))
+(define temp-directory (param "TEMP_DIR"))
+(define cache-directory (param "DARWIN_CACHE_DIR"))
+(define darwin-user-root-directory (param "DARWIN_USER_ROOT_DIR"))
+
+;;; Homedir-relative path filters
+(define (home-regex home-relative-regex)
+    (regex (string-append "^" (regex-quote home-directory) home-relative-regex))
+    )
+
+(define (home-subpath home-relative-subpath)
+    (subpath (string-append home-directory home-relative-subpath))
+    )
+
+(define (home-prefix home-relative-prefix)
+    (prefix (string-append home-directory home-relative-prefix))
+    )
+
+(define (home-literal home-relative-literal)
+    (literal (string-append home-directory home-relative-literal))
+    )
+    
+;;; User root dir-relative path filters
+(define (darwin-user-root-regex darwin-user-root-relative-regex)
+    (regex (string-append "^" (regex-quote darwin-user-root-directory) darwin-user-root-relative-regex))
+    )
+
+(define (darwin-user-root-subpath darwin-user-root-relative-subpath)
+    (subpath (string-append darwin-user-root-directory darwin-user-root-relative-subpath))
+    )
+
+(define (darwin-user-root-prefix darwin-user-root-relative-prefix)
+    (prefix (string-append darwin-user-root-directory darwin-user-root-relative-prefix))
+    )
+
+(define (darwin-user-root-literal darwin-user-root-relative-literal)
+    (literal (string-append darwin-user-root-directory darwin-user-root-relative-literal))
+    )
+
+;;;
+;;; Shared Rules
+;;;
+
+(allow process-info* (target self))
+
+(allow file*
+    (home-subpath "/Library/Messages")
+    (subpath temp-directory)
+    (subpath cache-directory)
+    )
+
+(allow file-read*
+    (subpath "/Library/Preferences/com.apple.security.plist")
+    (subpath "/Library/Preferences/com.apple.security.xpc.plist")
+    (home-subpath "/Library/Preferences/com.apple.security.plist")
+
+    ;; not sure what mds is
+    (subpath "/private/var/db/mds/system/")
+    (subpath "/private/var/db/mds/messages/")
+
+    ;; not sure why we need read this
+    (home-subpath "/Library/Application Support/CrashReporter/")
+    (subpath "/Library/Application Support/CrashReporter")
+    
+    ;; TODO: For sharing from other apps via Messages, ensure they send us sandbox extensions instead of their suffixed darwin-user directories.
+    ;; Until then, allow read access for the current darwin user directory. See: rdar://problem/55724745
+    (darwin-user-root-subpath "")
+    )
+
+;; For resolving symlinks, realpath(3), and equivalents.
+(allow file-read-metadata)
+
+;; For validating the entitlements of clients.
+(allow process-info-codesignature)
+
+(allow user-preference-read
+    (preference-domain "com.apple.facetime.bag" )
+    (preference-domain "com.apple.iChat" )
+    (preference-domain "com.apple.ids")
+    (preference-domain "com.apple.ids.debug")
+    (preference-domain "com.apple.imessage")
+    (preference-domain "com.apple.imessage.bag")
+    (preference-domain "com.apple.imservice.ids.iMessage")
+    (preference-domain "com.apple.imservice.ids.FaceTime")
+    (preference-domain "com.apple.imservice.SMS")
+    (preference-domain "com.apple.lookup.shared")
+    (preference-domain "com.apple.logging")
+    (preference-domain "com.apple.madrid")
+    (preference-domain "com.apple.Messages")
+    (preference-domain "com.apple.messages.IMCoreAutomation")
+    (preference-domain "com.apple.MobileSMS" )
+    (preference-domain "com.apple.monaco")
+    (preference-domain "com.apple.security")
+    (preference-domain "com.apple.sms")
+    (preference-domain "kCFPreferencesAnyApplication")
+    (preference-domain "com.apple.universalaccess")
+    )
+
+;;; put the specific user-preference-write values in the process's profile
+
+(allow mach-lookup
+    (global-name "com.apple.bird.token")
+    (global-name "com.apple.SecurityServer")
+    )
+
+(allow mach-priv-host-port
+    )
+
+(allow mach-priv-host-port
+    (subpath temp-directory)
+    )
+
+(allow iokit-open
+    (iokit-user-client-class "RootDomainUserClient")
+    )
+
+(allow iokit-get-properties)
+
+(allow lsopen)
+
+(allow process-info-pidinfo)
+
+(allow ipc-posix-shm-read* ipc-posix-shm-write-create ipc-posix-shm-write-data
+       (ipc-posix-name "com.apple.AppleDatabaseChanged"))
+
+(allow ipc-posix-shm-read* ipc-posix-shm-write-data
+       (ipc-posix-name "com.apple.featureflags.shm"))
+
+(allow distributed-notification-post)

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Watchdog</key>
+	<dict>
+		<key>Signpost-Persisted</key>
+		<true/>
+	</dict>
+	<key>AppLaunch</key>
+	<dict>
+		<key>Signpost-Persisted</key>
+		<true/>
+		<key>Signpost-Scope</key>
+		<string>System</string>
+	</dict>
+	<key>ScenePresentation</key>
+	<dict>
+		<key>Level</key>
+		<dict>
+			<key>Enable</key>
+			<string>Off</string>
+			<key>Persist</key>
+			<string>Off</string>
+		</dict>
+	</dict>
+	<key>ScenePresentationBinder</key>
+	<dict>
+		<key>Level</key>
+		<dict>
+			<key>Enable</key>
+			<string>Off</string>
+			<key>Persist</key>
+			<string>Off</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

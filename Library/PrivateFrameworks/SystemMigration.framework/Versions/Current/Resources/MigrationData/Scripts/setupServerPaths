@@ -1,0 +1,57 @@
+#!/bin/sh
+
+# Server Team is responsible for maintenance of this script and its contents.
+# Migration requires that it lay down all of the paths which need to exist in order for a server migration to be succesful
+# 
+
+initialServerDirectoryPath="${DSTROOT}/Library/Server"
+if [ -d "$initialServerDirectoryPath" ]; then
+	i="1"
+	updatedServerDirectoryPath="${initialServerDirectoryPath}-${i}"
+
+	while [ -d "$updatedServerDirectoryPath" ]; do
+		i=$[$i+1]
+		updatedServerDirectoryPath="${initialServerDirectoryPath}-${i}"
+	done
+
+	mv $initialServerDirectoryPath $updatedServerDirectoryPath
+fi
+
+
+pathsToCreate=(
+	"/Library/Server"
+	"/Library/Server/Previous"
+	"/Library/Server/Previous/Shared Items"
+	"/Library/Server/Previous/Library"
+	"/Library/Server/Previous/Library/Logs"
+	"/Library/Server/Previous/Library/Logs/PrintService"
+	"/Library/Server/Previous/Library/FTPServer"
+	"/Library/Server/Previous/Library/Preferences"
+	"/Library/Server/Previous/Library/Server"
+	"/Library/Server/Previous/Library/Collaboration"
+	"/Library/Server/Previous/System"
+	"/Library/Server/Previous/System/Library"
+	"/Library/Server/Previous/System/Library/CoreServices"
+	"/Library/Server/Previous/System/Library/LaunchDaemons"
+	"/Library/Server/Previous/private"
+	"/Library/Server/Previous/private/var"
+	"/Library/Server/Previous/private/var/db"
+	"/Library/Server/Previous/private/var/db/launchd.db"
+	"/Library/Server/Previous/private/var/db/launchd.db/com.apple.launchd"
+	"/Library/Server/Previous/private/var/spool"
+	"/Library/Server/Previous/private/var/log"
+	"/Library/Server/Previous/private/etc"
+	"/Library/Server/Previous/private/etc/diskspacemonitor"
+	"/Library/Server/Previous/squirrelmail"
+	"/Library/Server/Previous/usr"
+	"/Library/Server/Previous/usr/bin"
+	"/Library/Server/Previous/usr/share"
+	"/Library/Server/Previous/usr/share/squirrelmail"
+);
+					
+for pathToCreate in "${pathsToCreate[@]}"; do
+	/bin/echo Creating path ${pathToCreate};
+	mkdir "${DSTROOT}${pathToCreate}"
+	chmod 0755 "${DSTROOT}${pathToCreate}"
+	chown root:wheel "${DSTROOT}${pathToCreate}"
+done

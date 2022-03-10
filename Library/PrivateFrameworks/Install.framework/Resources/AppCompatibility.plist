@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Description</key>
+		<string>LiveUpdate mechanism relies on receipt data existing before postinstall scripts run [6833901]</string>
+		<key>Predicate</key>
+		<string>( SUBQUERY( packages, $p, $p.identifier == &quot;com.symantec.nav.install&quot; &amp;&amp; $p.normalizedVersion &lt;= &quot;011.000.000.011.000&quot; ).@count != 0 )</string>
+	</dict>
+	<dict>
+		<key>Description</key>
+		<string>Package scripts depend on interleaving of extraction and postinstall scripts to adjust permissions; payload has incorrect permissions [6620211]</string>
+		<key>Predicate</key>
+		<string>packages[FIRST].location.path CONTAINS &quot;Install Pro Tools LE&quot;</string>
+	</dict>
+	<dict>
+		<key>Predicate</key>
+		<string>(packages[FIRST].location.path CONTAINS &quot;LabVIEW 8.5&quot;) AND (ANY packages.identifier BEGINSWITH &quot;com.ni&quot;)</string>
+		<key>Description</key>
+		<string>Package scripts depend on interleaving of extraction and postinstall scripts to complete successfully [6401285].</string>
+	</dict>
+	<dict>
+		<key>Predicate</key>
+		<string>ANY packages.identifier BEGINSWITH &quot;com.quark.quarkxpress.installer.quarkxpress8&quot;</string>
+		<key>Description</key>
+		<string>Package scripts rely on logname(1) [6467375].</string>
+	</dict>
+	<dict>
+		<key>Predicate</key>
+		<string>(packages[FIRST].identifier == &quot;com.nikon.capturenx2&quot;) AND (packages[FIRST].version BEGINSWITH &quot;2.&quot;)</string>
+		<key>Description</key>
+		<string>Package relies on deprecated IFPkgPathMappings mechanism [6516527, 6815746]</string>
+	</dict>
+	<dict>
+		<key>Predicate</key>
+		<string>ANY packages.identifier BEGINSWITH &quot;com.aspyr.pkg.&quot;</string>
+		<key>Description</key>
+		<string>Package relies on LaunchServices search but has incomplete component data in TokenDefinitions.plist [6692734,6931346]</string>
+	</dict>
+	<dict>
+		<key>Predicate</key>
+		<string>hasPathMapperUserLocation == YES</string>
+		<key>Description</key>
+		<string>Package uses special UserLocation path mapper token [6388588]</string>
+	</dict>
+</array>
+</plist>

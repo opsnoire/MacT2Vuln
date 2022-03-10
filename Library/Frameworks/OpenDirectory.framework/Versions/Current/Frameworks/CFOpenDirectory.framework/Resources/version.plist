@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>OpenDirectory</string>
+	<key>BuildVersion</key>
+	<string>658</string>
+	<key>CFBundleShortVersionString</key>
+	<string>10.15</string>
+	<key>CFBundleVersion</key>
+	<string>220.40.1</string>
+	<key>ProjectName</key>
+	<string>CFOpenDirectory</string>
+	<key>SourceVersion</key>
+	<string>220040001000000</string>
+</dict>
+</plist>

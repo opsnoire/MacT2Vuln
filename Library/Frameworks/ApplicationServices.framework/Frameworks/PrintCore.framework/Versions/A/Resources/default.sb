@@ -1,0 +1,43 @@
+;;
+;; printing plugins and tools - sandbox profile
+;; Copyright (c) 2008-2010 Apple Inc.  All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute 
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice. The contents of this file are also auto-generated and not
+;; user editable; it may be overwritten at any time.
+;;
+(version 1)
+(debug deny)
+
+(allow default)
+
+(deny file-write* file-read-data file-read-metadata
+  (regex #"^/private/var/spool/cups/"))
+
+(deny file-write*
+  (regex #"^/private/etc"
+         #"^/private/etc/cups"
+         #"^/usr/local/etc"
+         #"^/Applications"
+         #"^/Developer"
+         #"^/Library"
+         #"^/System"
+         #"^/Users"))
+
+(allow file-read-metadata
+  (regex #"^/private/var/spool/cups$"))
+
+(allow file-write* file-read-data file-read-metadata
+  (regex #"^/private/var/spool/cups/tmp$"
+         #"^/private/var/spool/cups/tmp/"
+         #"^/private/var/spool/cups/cache$"
+         #"^/private/var/spool/cups/cache/"
+         #"^/Library/Application Support/"
+         #"^/Library/Caches/"
+         #"^/Library/Preferences/"
+	 #"^/Library/Printers/"))
+
+(deny file-write*
+  (regex #"^/Library/Printers/PPDs/"
+	 #"^/Library/Printers/PPD Plugins/"))

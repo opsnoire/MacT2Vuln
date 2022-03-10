@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>UIElement</key>
+    <dict>
+    
+<!-- AXStaticText -->
+        <key>AXStaticText</key>
+        <dict>
+            <key>*</key>
+            <dict>
+                <key>ExactMatch</key>
+                <dict>
+                    <key>When using the computer, I have difficulties with: </key>
+                    <dict>
+                        <key>MTText</key>
+                        <string>[[emph -]] when using the [[emph -]] computer, I have difficulties with: </string>
+                    </dict>
+                </dict>
+            </dict>
+        </dict>
+
+<!-- AXMenuItem -->
+        <key>AXMenuItem</key>
+        <dict>
+            <key>*</key>
+            <dict>
+
+                <key>ExactMatch</key>
+                <dict>
+                
+                    <key>⇪ Caps Lock</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Caps Lock</string>
+                    </dict>
+                    <key>⌃ Control</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Control</string>
+                    </dict>
+                    <key>⌥ Option</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Option</string>
+                    </dict>
+                    <key>⌘ Command</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Command</string>
+                    </dict>
+
+                </dict>
+                
+            </dict>
+        </dict>
+
+<!-- AXPopUpButton -->
+        <key>AXPopUpButton</key>
+        <dict>
+            <key>*</key>
+            <dict>
+
+                <key>ExactMatch</key>
+                <dict>
+                
+                    <key>⇪ Caps Lock</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Caps Lock</string>
+                    </dict>
+                    <key>⌃ Control</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Control</string>
+                    </dict>
+                    <key>⌥ Option</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Option</string>
+                    </dict>
+                    <key>⌘ Command</key>
+                    <dict>
+                        <key>TTSText</key>
+                        <string>Command</string>
+                    </dict>
+
+                </dict>
+                
+            </dict>
+        </dict>
+
+
+    </dict>
+</dict>
+</plist>

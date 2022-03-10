@@ -1,0 +1,6 @@
+﻿{
+    // an English keyboard to British keyboard map
+    KeyboardMapping = {
+        "#" = "£";
+    };
+}

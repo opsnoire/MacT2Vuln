@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebBookmarkType</key>
+	<string>WebBookmarkTypeList</string>
+	<key>Title</key>
+	<string>Bookmarks Bar</string>
+	<key>Children</key>
+	<array>
+		<dict>
+			<key>URIDictionary</key>
+			<dict>
+				<key></key>
+				<string>http://www.dek-d.com/</string>
+				<key>title</key>
+				<string>Dek-D.com : มหานครวัยรุ่นออนไลน์</string>
+			</dict>
+			<key>WebBookmarkType</key>
+			<string>WebBookmarkTypeLeaf</string>
+			<key>Generation</key>
+			<string>1</string>
+			<key>URLString</key>
+			<string>http://www.dek-d.com/</string>
+		</dict>
+	</array>
+</dict>
+</plist>

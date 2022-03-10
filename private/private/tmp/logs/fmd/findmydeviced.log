@@ -1,0 +1,7 @@
+668571888.821986 - [findmydeviced(222)] Found bridge device. Entering dispatch_group.
+668571888.82244 - [findmydeviced(222)] - [FMDBridgeRemoteMessenger sendSyncCommandToBridge:withArguments:error:]
+668571888.935226 - [findmydeviced(222)] - [FMDBridgeRemoteMessenger bridgeDeviceDidConnect:]
+668571892.171379 - [findmydeviced(222)] Checking for wipe pending
+668571892.172617 - [findmydeviced(222)] - [FMDBridgeRemoteMessenger sendSyncCommandToBridge:withArguments:error:]
+668571892.180578 - [findmydeviced(222)] We don't have account. Checked bridge. wipe pending status 0
+668571892.180747 - [findmydeviced(222)] Final wipe pending status after checks 0

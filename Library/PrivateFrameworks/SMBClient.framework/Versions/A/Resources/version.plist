@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>SMBClient</string>
+	<key>BuildVersion</key>
+	<string>7</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.4.1</string>
+	<key>CFBundleVersion</key>
+	<string>3.4.1</string>
+	<key>ProjectName</key>
+	<string>SMBClient</string>
+	<key>SourceVersion</key>
+	<string>201140001000000</string>
+</dict>
+</plist>

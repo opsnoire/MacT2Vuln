@@ -1,0 +1,396 @@
+#!/usr/bin/perl
+#
+# Migrate the CUPS configuration, including print queues, on DSTROOT.  Does
+# *not* migrate AppleTalk (pap) queues since AppleTalk is gone.
+#
+
+#### Common stuff ####
+my $SRCROOT = $ENV{SRCROOT};
+my $DSTROOT = $ENV{DSTROOT};
+
+#### cupsd.conf migration ####
+# Collect configuration options from the old cupsd.conf file...
+my $browsing = 1;
+my $defaultauth = "Basic";
+my $loglevel = "warn";
+my $protocols = "dnssd";
+my $sharing = 0;
+my $remoteAdmin = 0;
+my $webinterface = 0;
+my $inAdmin = 0;
+my @extralines;
+
+open(CUPSDCONF, $DSTROOT . "/private/etc/cups/cupsd.conf.pre-update");
+
+while (<CUPSDCONF>)
+{
+	if ( m/^Port 631/ )
+	{
+		$sharing = 1;
+	}
+	elsif ( m/^DefaultAuthType\s*/ )
+	{
+		s/^DefaultAuthType\s*//;
+		s/\s*$//;
+		$defaultauth = $_;
+	}
+	elsif ( m/^LogLevel\s*debug/ )
+	{
+		s/^LogLevel\s*//;
+		s/\s*$//;
+		$loglevel = $_;
+	}
+	elsif ( m/^Browsing\s*Off/ )
+	{
+		$browsing = 0;
+	}
+	elsif ( m/^BrowseLocalProtocols\s/ )
+	{
+		s/^BrowseLocalProtocols\s*//;
+		s/^CUPS\s*//;
+		s/\s*$//;
+		s/@CUPS_DEFAULT_BROWSE_LOCAL_PROTOCOLS@//;
+		if ( $_ )
+		{
+			$protocols = $_;
+		}
+	}
+	elsif ( m/^<Location \/admin>/ )
+	{
+		$inAdmin = 1;
+	}
+	elsif ( m/^<\/Location>/ )
+	{
+		$inAdmin = 0;
+	}
+	elsif ( ( m/Allow @LOCAL/ || m/Allow From @LOCAL/ || m/Allow all/ || m/Allow From all/ ) && $inAdmin != 0)
+	{
+		$remoteAdmin = 1;
+	}
+	elsif ( m/^WebInterface (On|Yes)/ )
+	{
+		$webinterface = 1;
+	}
+	elsif ( m/^(AccessLogLevel|AutoPurgeJobs|BrowseWebIF|Classification)/ ||
+	        m/^(ClassifyOverride|DefaultEncryption)/ ||
+	        m/^(DirtyCleanInterval|Filter|GSSServiceName|HostNameLookups)/ ||
+	        m/^(JobKillDelay|JobRetry|KeepAlive|LimitRequestBody)/ ||
+	        m/^(LogDebugHistory|LogTimeFormat|MaxClients|MaxHoldTime)/ ||
+	        m/^(MaxJobs|MaxJobTime|MaxLogSize|MaxRequestSize)/ ||
+	        m/^(MultipleOperationTimeout|PageLogFormat|PreserveJob)/ ||
+	        m/^(ReloadTimeout|Server|SetEnv|StrictConformance|Timeout)\s/ )
+	{
+		push(@extralines, $_);
+	}
+}
+
+close(CUPSDCONF);
+
+# Read the new cupsd.conf file and rewrite it with the correct options...
+my @lines;
+open(CUPSDCONF, "$DSTROOT/private/etc/cups/cupsd.conf.default");
+while(<CUPSDCONF>)
+{
+	if ( $browsing != 1)
+	{
+		s/^Browsing On/Browsing Off/;
+	}
+
+	if ( $webinterface != 0)
+	{
+		s/^WebInterface No/WebInterface Yes/;
+	}
+
+	if ( $sharing == 1)
+	{
+		s/^# Only listen for connections from the local machine./# Allow remote access/;
+		s/^Listen localhost:631/Port 631/;
+		s/^# Show shared printers on the local network./# Enable printer sharing and shared printers./;
+	}
+
+	if ( m/^DefaultAuthType\s/ )
+	{
+		push(@lines, "DefaultAuthType $defaultauth\n");
+	}
+	elsif ( m/^LogLevel\s/ )
+	{
+		push(@lines, "LogLevel $loglevel\n");
+	}
+	elsif ( m/^BrowseLocalProtocols\s/ && $protocols != "")
+	{
+		push(@lines, "BrowseLocalProtocols $protocols\n");
+	}
+	elsif ( m/^<Location \/>/ && $sharing != 0 )
+	{
+		push(@lines, $_);
+		push(@lines, "  Allow \@LOCAL\n");
+	}
+	elsif ( m/^<Location \/admin/ && $remoteAdmin != 0 )
+	{
+		push(@lines, $_);
+		push(@lines, "  Allow \@LOCAL\n");
+	}
+	else
+	{
+		push(@lines, $_);
+	}
+}
+close(CUPSDCONF);
+
+open(CUPSDCONF, ">$DSTROOT/private/etc/cups/cupsd.conf");
+print CUPSDCONF "# Migrated cupsd.conf\n";
+foreach ( @lines )
+{
+	print CUPSDCONF $_;
+}
+
+if ( @extralines > 0)
+{
+	print CUPSDCONF "# Migrated configuration settings\n";
+	foreach ( @extralines )
+	{
+		print CUPSDCONF $_;
+	}
+}
+close(CUPSDCONF);
+
+
+#### printers.conf migration ####
+# Copy printers.conf and PPDs, filtering out AppleTalk printers...
+my %printers;
+my $printer;
+my @plines;
+my $legacy;
+my $defaultp;
+my $onnet = 0;
+
+#	Find out whether the source OS is a server install
+system("${DSTROOT}/System/Library/PrivateFrameworks/ServerInformation.framework/Resources/serverinfo", "--software", "${SRCROOT}");
+my $notServerOS = ($? >> 8);
+
+if ( open(OLDPRINTERS, $DSTROOT . "/private/etc/cups/printers.conf.pre-update") )
+{
+	open(NEWPRINTERS, ">" . $DSTROOT . "/private/etc/cups/printers.conf");
+
+	print NEWPRINTERS "# Migrated printers.conf\n";
+
+	$printer  = "";
+	@plines   = ();
+	$legacy   = 0;
+	$defaultp = 0;
+
+	while ( <OLDPRINTERS> )
+	{
+		if ( m/^<Printer\s/ )
+		{
+			# Start of a printer definition
+			s/^<Printer\s*//;
+			s/>\s*$//;
+			$printer  = $_;
+			$defaultp = 0;
+			$onnet    = 0;
+		}
+		elsif ( m/^<DefaultPrinter\s/ )
+		{
+			# Start of a default printer definition
+			s/^<DefaultPrinter\s*//;
+			s/>\s*$//;
+			$printer  = $_;
+			$defaultp = 1;
+			$onnet    = 0;
+		}
+		elsif ( m/^<\/Printer>/ )
+		{
+			# End of a printer definition
+			if ( $printer && !$legacy )
+			{
+				# Copy printer definition to new printers.conf
+				if ( $defaultp )
+				{
+					print NEWPRINTERS "<DefaultPrinter " . $printer . ">\n";
+				}
+				else
+				{
+					print NEWPRINTERS "<Printer " . $printer . ">\n";
+				}
+
+				foreach (@plines)
+				{
+					print NEWPRINTERS $_;
+					if (m/^MakeModel\s*/) {
+						s/^MakeModel\s*//;
+						s/\s*$//;
+						system("/usr/bin/syslog",  "-s", "-l", "Notice", "-k", "com.apple.message.domain", "com.apple.printing.upgrade", "com.apple.message.make_model", "\"" . $_ . "\"")
+					}
+				}
+				print NEWPRINTERS "</Printer>\n";
+
+				# Add the printer to the hash of printers
+				$printers{$printer} = $printer;
+			}
+
+			if ( $printer && $legacy)
+			{
+				# Remove legacy printer PPD
+				unlink($DSTROOT . "/private/etc/cups/ppd/$printer.ppd");
+			}
+
+			$printer = "";
+			@plines  = ();
+			$legacy  = 0;
+			$onnet   = 0;
+		}
+		elsif ( m/^DeviceURI\s+(pap|fax):/ )
+		{
+			# AppleTalk or USB fax Device URI
+			$legacy = 1;
+		}
+		elsif ( m;^DeviceURI\s+(file:(//)?)?/dev/null; )
+		{
+			# Tioga Device URI
+			$legacy = 1;
+		}
+		elsif ( $printer )
+		{
+			#	In the middle of a printer definition block
+			$onnet = 1 if ( m/^DeviceURI\s+(ipp|ipps|dnssd|lpd|socket|riousbprint|http|https|smb):/ );
+			s/^Shared\s+Yes/Shared No/ if ($onnet && $notServerOS);
+			push(@plines, $_);
+		}
+	}
+
+	close(OLDPRINTERS);
+	close(NEWPRINTERS);
+}
+
+
+#### classes.conf migration ####
+# Copy classes.conf, filtering out printers that were not migrated...
+if ( open(OLDCLASSES, $DSTROOT . "/private/etc/cups/classes.conf.pre-update") )
+{
+	open(NEWCLASSES, ">" . $DSTROOT . "/private/etc/cups/classes.conf");
+	print NEWCLASSES "# Migrated classes.conf\n";
+
+	while ( <OLDCLASSES> )
+	{
+		if ( m/^Printer\s/ )
+		{
+			s/^Printer\s*//;
+			s/\s*$//;
+			$printer = $_;
+
+			if ( exists $printers{$printer} )
+			{
+				print NEWCLASSES "Printer " . $printer . "\n";
+			}
+		}
+		else
+		{
+			print NEWCLASSES $_;
+		}
+	}
+
+	close(OLDCLASSES);
+	close(NEWCLASSES);
+}
+
+#### snmp.conf migration ####
+# Copy snmp.conf...
+if ( open(OLDSNMP, $DSTROOT . "/private/etc/cups/snmp.conf.pre-update") )
+{
+	open(NEWSNMP, ">" . $DSTROOT . "/private/etc/cups/snmp.conf");
+	print NEWSNMP "# Migrated snmp.conf\n";
+
+	while ( <OLDSNMP> )
+	{
+		print NEWSNMP $_;
+	}
+
+	close(OLDCLASSES);
+	close(NEWCLASSES);
+}
+
+#### /Library/Printers migration cleanup ####
+# Make sure all files are owned by root and all directories and executables do
+# not have group-write and world-write permissions...
+sub FixPermissions
+{
+	my($directory) = @_;
+
+	chown(0, 0, $directory);
+	chmod(0555, $directory);
+
+	if ( opendir(DIR, $directory) )
+	{
+		my @filenames = readdir(DIR);
+		closedir(DIR);
+
+		foreach $filename (@filenames)
+		{
+			# Skip "." and ".."
+			if ( $filename ne "." && $filename ne ".." )
+			{
+				# Get permissions...
+				$path = $directory . "/" . $filename;
+
+				($dev,$ino,$mode,$nlink,$uid,$gid,$rdev,$size,$atime,$mtime,$ctime,$blksize,$blocks) = lstat($path);
+
+				# Only change files and directories with the execute bit set
+				if ( $mode & 0111 )
+				{
+					# Check for setuid, group-write or world-write...
+					if ( $mode & 04022 )
+					{
+						chmod($mode & 0755, $path);
+					}
+
+					# Check for root ownership...
+					if ( $uid )
+					{
+						chown(0, $gid, $path);
+					}
+
+					# Fix subdirectories...
+					if ( $mode & 040000 )
+					{
+						FixPermissions($path);
+					}
+				}
+			}
+		}
+	}
+}
+
+FixPermissions($DSTROOT . "/Library/Printers");
+FixPermissions($DSTROOT . "/usr/libexec/cups");
+
+#### Icon permissions cleanup ####
+# Make sure legacy AirPrint icon files are owned by root and are readable by all
+my $directory = $DSTROOT . "/Library/Caches";
+if ( opendir(DIR, $directory ) )
+{
+	my @filenames = readdir(DIR);
+	closedir(DIR);
+
+	foreach $filename (@filenames)
+	{
+		if ( $filename =~ m/^com\.apple\.ipp2ppd\..*\.icns/)
+		{
+			# Get permissions...
+			$path = $directory . "/" . $filename;
+
+			($dev,$ino,$mode,$nlink,$uid,$gid,$rdev,$size,$atime,$mtime,$ctime,$blksize,$blocks) = lstat($path);
+
+			if ( ( $mode & 0777 ) != 0644 )
+			{
+				chmod(0644, $path);
+			}
+
+			# Check for root ownership...
+			if ( $uid )
+			{
+				chown(0, $gid, $path);
+			}
+		}
+	}
+}

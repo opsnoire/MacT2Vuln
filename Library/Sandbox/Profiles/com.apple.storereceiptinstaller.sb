@@ -1,0 +1,52 @@
+(version 1)
+(deny default)
+
+(import "system.sb")
+
+(allow file-read-metadata)
+
+(allow file-read*
+       (literal "/private/var/root/Library/Preferences")
+       (literal "/Library/Preferences/com\.apple\.ViewBridge\.plist")
+	   (literal "/Library/Preferences/.GlobalPreferences.plist")
+	   (literal "/private/var/root/Library/Preferences/.GlobalPreferences.plist")
+	   (regex #"^/private/var/root/Library/Preferences/ByHost/\.GlobalPreferences\..*\.plist$")
+       (literal "/Library/Preferences/"))
+
+(allow file-read* file-write*
+   (require-all
+      (vnode-type DIRECTORY)
+      (require-any
+         (literal "/Library/Application Support/App Store")
+         (regex #"\.app(download)?(/Contents)?")
+         (regex #"\.app(download)?/Contents/_MASReceipt(\.sb-[a-zA-Z0-9-]+)?")))
+
+   (require-all
+      (vnode-type REGULAR-FILE)
+      (require-any
+         (literal "/Library/Application Support/App Store/adoption.plist")
+         (literal "/Library/Application Support/App Store/utd.plist") ;TODO: Check if we need this
+         (literal "/Library/Application Support/App Store/utdCheckinDone") ;TODO: Check if we need this
+         (literal "/Library/Preferences/com.apple.commerce.plist")
+         (regex #"\.appdownload/Contents/placeholderinfo")
+         (regex #"\.appdownload/Icon")
+         (regex #"\.app(download)?/Contents/_MASReceipt((\.sb-[a-zA-Z0-9-]+)?/receipt(\.saved)?)"))) ;covers temporary files the receipt may be named
+
+   (subpath "/System/Library/Caches/com.apple.receiptInstaller"))
+
+; In-app purchase content removal
+(allow file-read* file-write-unlink
+	(subpath "/Library/Application Support/AppStore/GroupContent")
+	(subpath "/Library/Application Support/AppStoreContent"))
+
+(allow distributed-notification-post)
+
+(allow mach-lookup
+       (global-name "com.apple.lsd.mapdb")
+       (global-name "com.apple.lsd.modifydb")
+       (global-name "com.apple.coreservices.quarantine-resolver")
+       (global-name "com.apple.CoreServices.coreservicesd")
+       (global-name "com.apple.DiskArbitration.diskarbitrationd")) ;used by [[NSWorkspace sharedWorkspace] setIcon:forFile:options:];
+
+(deny mach-lookup (with no-report)
+      (global-name-regex #"^com\.apple\.distributed_notifications"))

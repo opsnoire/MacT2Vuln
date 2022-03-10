@@ -1,0 +1,14 @@
+
+;; LaunchServices
+(allow mach-lookup (global-name "com.apple.coreservices.launchservicesd")
+					(global-name "com.apple.coreservices.lsuseractivitymanager.xpc")
+                    (global-name "com.apple.lsd.open")
+					(global-name "com.apple.lsd.xpc")
+					(global-name "com.apple.lsd.mapdb")
+					(global-name "com.apple.lsd.modifydb")
+					(global-name "com.apple.lsd.icons")
+					(global-name "com.apple.lsd.openurl")
+					(global-name "com.apple.lsd.advertisingidentifiers"))
+
+;; Required for Universal Links support
+(allow mach-lookup (global-name "com.apple.SharedWebCredentials"))

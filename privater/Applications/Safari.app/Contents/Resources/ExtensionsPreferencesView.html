@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <link rel="stylesheet" href="ExtensionsPreferencesView.css">
+        <link rel="stylesheet" href="ExtensionsPreferencesViewExtras.css">
+        <script type="text/javascript" src="HTMLViewController.js"></script>
+        <script type="text/javascript" src="safari-resource:/Utilities.js"></script>
+        <script type="text/javascript" src="ExtensionIcon.js"></script>
+        <script type="text/javascript" src="ExtensionsPreferencesView.js"></script>
+        <title class="l12n">Extensions</title>
+        <script type="text/javascript">
+            HTMLViewController.loadLocalizedStrings(ExtensionsPreferencesViewController);
+        </script>
+    </head>
+    <body onload="pageLoaded()" onunload="ExtensionsPreferencesView.pageUnloaded()">
+        <div id="mainContainer">
+            <div id="sidebar" class="container" tabindex="0" role="listbox">
+                <div id="extensionList"></div>
+            </div>
+            <div id="contentView" class="container" role="group">
+                <div id="contentView-placeholder" class="hidden">
+                    <div class="l12n placeholder-text">No Extensions</div>
+                </div>
+                <div id="extensionInfo" class="hidden">
+                    <div id="extensionHeader" class="header">
+                        <div id="headerSpacer"></div>
+                        <div id="headerContainer">
+                            <img id="low-res-icon" class="low-res">
+                            <img id="high-res-icon" class="high-res">
+                            <div id="title-bar">
+                                <span id="title"></span> <span id="author"></span>
+                            </div>
+                            <div id="description"></div>
+                            <button id="uninstallButton" class="l12n">Uninstall</button>
+                            <button id="optionsButton" class="l12n">Options</button>
+                        </div>
+                        <div id="enableInPrivateBrowsingWindowsCheckbox"><input type="checkbox" id="enableInPrivateBrowsingWindowsCheckboxButton"><label for="enableInPrivateBrowsingWindowsCheckboxButton" id="enableInPrivateBrowsingWindowsCheckboxLabel"></label></div>
+                        <div id="warning">
+                            <div id="warningIcon">
+                                <!-- LOCALIZERS: The alt text for this image should be localized -->
+                                <img src="WarningIcon.png" alt="Warning Icon"></img>
+                            </div>
+                            <div id="warningText"></div>
+                        </div>
+                    </div>
+                    <div class="flex-box">
+                        <div id="websiteAccess">
+                            <div id="websiteAccessTitle"></div>
+                            <div id="webpageContents" class="accessCategory">
+                                <div class="accessTitle l12n">Webpage Contents</div>
+                                <div class="accessSubtitle l12n">Can read sensitive information from webpages, including passwords, phone numbers, and credit cards on:</div>
+                                <ul id="webpageContentsDomainList"></ul>
+                            </div>
+                            <div id="trackingInformation" class="accessCategory">
+                                <div class="accessTitle l12n">Tracking Information</div>
+                                <div class="accessSubtitle l12n">Can send information to webpages you visit, which can be used to track you across:</div>
+                                <ul id="trackingInformationDomainList"></ul>
+                            </div>
+                            <div id="browsingHistory" class="accessCategory">
+                                <div class="accessTitle l12n">Browsing History</div>
+                                <div class="accessSubtitle l12n">Can see when you visit:</div>
+                                <ul id="browsingHistoryDomainList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="extensionsDisabledExplanationContainer">
+                <div id="extensionsDisabledExplanation" class="l12n">Extensions can be enabled in the Develop menu.</div>
+            </div>
+        </div>
+    </body>
+</html>

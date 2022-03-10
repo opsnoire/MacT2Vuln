@@ -1,0 +1,92 @@
+body 
+{
+	margin: 0; 
+	padding: 0;
+}
+
+.bubblecontainer
+{
+	display: table;
+	
+	font-family: system-ui, geneva, arial, verdana, sans-serif;
+	
+	margin-top:26pt;
+	margin-right:auto;
+	margin-left:auto;
+	width: 560px;
+	
+	-moz-border-radius: 12pt;
+	-webkit-border-radius: 12pt;
+	border-radius: 16px;
+	
+	border: 3px solid #CCC;
+	padding: 0 20px 0 0;
+
+}
+
+.bubblerow
+{
+	display: table-row;
+}
+
+.logocontainerleft
+{
+	padding-top:10pt;
+	display: table-cell;
+	vertical-align: top;
+	text-align: center;
+	width:120px;
+}
+
+.textcontainerright
+{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.title
+{
+	font-size: 18px;
+	color: #888;
+	padding: 0 0 0 0;
+	margin: 20px 0 0 0;
+	font-weight: bold;
+}
+
+.text
+{
+	font-size: 12px;
+	color: #000;
+	overflow:hidden;
+	
+	padding: 0 0 15px 0;
+}
+
+.button 
+{ 
+	padding: 0 0 15px 96px; 
+}
+
+
+
+a:link
+{
+	text-decoration: underline;
+	color: #0000CC;
+}
+a:visited
+{
+	text-decoration: underline;
+	color: #0000CC;
+}
+a:hover
+{
+	text-decoration: underline;
+	color: #0000CC;
+}
+
+.allowedlinks 
+{ 
+	font-size: 15px;
+	padding: 0 0 12px 15px;
+}

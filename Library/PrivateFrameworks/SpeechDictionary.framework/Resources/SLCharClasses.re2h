@@ -1,0 +1,233 @@
+/*
+ *	File:		SLCharClasses.re2h
+ *	Contains:	Character classes for Lexical Scanning
+ *	Version:	2.0
+ *
+ *	Copyright:	© 2008-2014 by Apple, Inc., all rights reserved.
+ *
+ *	File Ownership:
+ *
+ *		DRI:				Matthias Neeracher    x43683
+ *		Other Contact:		Jia Pu				  x40763
+ *		Technology:			Kim Silverman         x20545
+ *
+ *	Writers:
+ *
+ *		(MN)	Matthias Neeracher
+ */
+
+/*! @header Character Classes
+ * 
+ * This module classes of characters considered equivalent for some 
+ * purposes by the lexer. This file must be included inside a re2c 
+ * block.
+ */
+
+/*!re2c
+  /* Character classes. Where possible, names are derived from Unicode
+  * category names.
+  */
+  any = [\x00-\XFFFF];								/* Any character    */
+  Lu  = [A-Z\xC0\xC6];								/* Uppercase letter */
+  Ll  = [a-z\xB0\xE0\xE6];						    /* Lowercase letter */
+  L   = (Lu | Ll);									/* Letter           */
+  Lp  = (L | '(' | ')' | '.' | ',');			    /* Letter or punctuation  */
+  Li  = [\X0250\xC0-\X017F];						/* IPA character & OxAm accented */
+  Nd  = [0-9];										/* Digit 			*/
+  Np  = [1-9];										/* Positive Digit 	*/
+  /* First digit in area and exchange codes can never be 0 (technically, it
+	 can't be 1 either, but we'll let that go for now.
+  */
+  Na  = Np Nd{2};									/* US Area Code     */
+  LN  = (L | Nd);									/* Letter or digit  */
+  Nf  = [\xBC-\xBE\X2153-\X215E];                   /* Fractions        */
+  Zl  = "\r" "\n"? | "\n" ;							/* Line separator   */
+  Zp  = "\v";										/* Paragraph 		*/
+  Zst = (' ' | 										/* Space separator (excluding tab) */
+		 '\xA0'   |	/* NO BREAK SPACE 							  */
+		 '\X202F'	/* NARROW NO BREAK SPACE 					  */
+		); 
+  Zs  = (Zst | "\t");									/* Space separator (including tab) */
+  /* Most quote characters are ambiguously used for initial/final
+   * See also:
+   *	http://en.wikipedia.org/wiki/Quotation_marks
+   *    http://en.wikipedia.org/wiki/Quotation_mark%2C_non-English_usage
+   */
+  Qi  = ('\x60'	  | /* GRAVE ACCENT */ 				/* Initial quotes   */
+		 '\X2035' | /* REVERSED PRIME                             */
+		 '\X2036'   /* REVERSED DOUBLE PRIME                      */
+		);
+  Qf  = ( 								/* Final quotes     */
+		 '\xB4'   | /* ACUTE ACCENT                               */
+		 '\X2019' | /* RIGHT SINGLE QUOTATION MARK                */
+		 '\X201D' | /* RIGHT DOUBLE QUOTATION MARK      		  */
+		 '\X2032' | /* PRIME                                      */
+		 '\X2033'   /* DOUBLE PRIME                               */
+		);
+  Qx  = ('"' | "'" | 								/* Ambiguous quotes  */
+		 '\xAB'   | /* LEFT-POINTING DOUBLE ANGLE QUOTATION MARK  */
+		 '\xBB'   | /* RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK */
+		 '\X2018' | /* LEFT SINGLE QUOTATION MARK                 */
+		 '\X201A' | /* SINGLE LOW-9 QUOTATION MARK                */
+		 '\X201B' | /* SINGLE HIGH-REVERSED-9 QUOTATION MARK      */
+		 '\X201C' | /* LEFT DOUBLE QUOTATION MARK                 */
+		 '\X201E' | /* DOUBLE LOW-9 QUOTATION MARK                */
+		 '\X201F' | /* DOUBLE HIGH-REVERSED-9 QUOTATION MARK      */
+		 '\X2039' | /* SINGLE LEFT-POINTING ANGLE QUOTATION MARK  */
+		 '\X203A'   /* SINGLE RIGHT-POINTING ANGLE QUOTATION MARK */
+		 );
+  Qs  = (Qi | Qx);									/* Start quote      */
+  Qe  = (Qf | Qx);									/* End quote        */
+  Q   = (Qi | Qf | Qx);								/* Any quote        */
+  /* Parentheses are not ambiguous */
+  Ps  = ('(' | '[' | '{');							/* Open parenthesis */
+  Pe  = (')' | ']' | '}');							/* Close parenthesis */
+  /* Punctuation, currency symbols, other characters of interest */
+  Pp  = [.,;?!];	   	    	  	      /* Punctuation permitted in phonetic material */
+  Pc  = ([$] |                                      /* Currency symbols */
+		 '\xA3'   | /* POUND SIGN                                 */     
+		 '\xA5'   | /* YEN SIGN                                   */
+		 '\X20AC' | /* EURO SIGN                                  */
+		 '\X20A8'   /* RUPEE SIGN                                 */
+		 );
+  Pl  = ([=@*<>] |	 										/* Characters pronounced literally */
+		 '\xA2'	  | /* CENT SIGN 								  */
+		 '\xA7'   | /* PARAGRAPH SIGN                             */
+		 '\xA9'	  | /* COPYRIGHT SIGN                             */
+		 '\xAE'   | /* REGISTERED MARK SIGN                       */
+		 '\xB0'   | /* DEGREE SIGN                                */
+		 '\xD7'   | /* MULTIPLICATION SIGN                        */
+		 '\xF7'   | /* DIVISION SIGN                              */
+		 '\X2030' | /* PER MILLE SIGN                             */
+		 '\X2031' | /* PER TEN THOUSAND SIGN                      */
+		 '\X2120' | /* SERVICE MARK SIGN                          */
+		 '\X2122' | /* TRADE MARK SIGN                            */
+		 '\X2318' | /* COMMAND KEY                                */
+		 '\X2325'   /* OPTION KEY                                 */
+	    );
+  /* (Potential) Emoji */
+  Ple = ([\X203C\X2049\X2139\X2194-\X2199\X21A9\X21AA\X231A\X231B\X2328\X23E9-\X23EF\X23F0-\X23F3\X23F8-\X23FA\X24C2] |
+		 [\X2500-\X32FF] | [\XD800-\XDDFF][\XDC00-\XDFFF] | [\XE000-\XF8FF] |
+		 [#*0-9] '\XFE0F'? '\X20E3' | '\XD83C' [\XDDE6-\XDDFF] '\XD83C' [\XDDE6-\XDDFF] | '\X203C' '\XFE0F' | '\X2049' '\XFE0F' | '\X2764' '\XFE0F' );
+  /* (Potential) Racially Diverse Emoji */
+  Pled= ('\X261D' '\XD83C' [\XDFFB-\XDFFF] |
+         '\X26F9' '\XD83C' [\XDFFB-\XDFFF] |
+         [\X270A-\X270D] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83C' '\XDF85' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83C' [\XDFC3-\XDFC4] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83C' [\XDFCA-\XDFCB] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDC42-\XDC43] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDC46-\XDC50] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDC66-\XDC69] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDC6E' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDC70-\XDC78] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDC7C' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDC81-\XDC83] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDC85-\XDC87] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDCAA' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDD75' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDD90' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDD95-\XDD96] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDE45-\XDE47] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDE4B-\XDE4F] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDEA3' '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' [\XDEB4-\XDEB6] '\XD83C' [\XDFFB-\XDFFF] |
+         '\XD83D' '\XDEC0' '\XD83C' [\XDFFB-\XDFFF]
+         '\XD83E' '\XDD18' '\XD83C' [\XDFFB-\XDFFF]
+        );
+/* (Potential) Diverse Family Emoji */
+  Plef= ('\XD83D' '\XDC41' '\X200D' '\XD83D' '\XDDE8' |
+         '\XD83D' '\XDC68' '\X200D' '\XD83D' [\XDC68-\XDC69] '\X200D' '\XD83D' '\XDC67' '\X200D' '\XD83D' [\XDC66-\XDC67] |
+         '\XD83D' '\XDC68' '\X200D' '\XD83D' [\XDC68-\XDC69] '\X200D' '\XD83D' '\XDC66' '\X200D' '\XD83D' '\XDC66' |
+         '\XD83D' '\XDC68' '\X200D' '\XD83D' [\XDC68-\XDC69] '\X200D' '\XD83D' [\XDC66-\XDC67] |
+         '\XD83D' [\XDC68-\XDC69] '\X200D' '\X2764' '\XFE0F' '\X200D' '\XD83D' [\XDC68-\XDC69] |
+         '\XD83D' [\XDC68-\XDC69] '\X200D' '\X2764' '\XFE0F' '\X200D' '\XD83D' '\XDC8B' '\X200D' '\XD83D' [\XDC68-\XDC69] |
+         '\XD83D' '\XDC69' '\X200D' '\XD83D' '\XDC69' '\X200D' '\XD83D' '\XDC67' '\X200D' '\XD83D' [\XDC66-\XDC67] |
+         '\XD83D' '\XDC69' '\X200D' '\XD83D' '\XDC69' '\X200D' '\XD83D' '\XDC66' '\X200D' '\XD83D' '\XDC66' |
+         '\XD83D' '\XDC69' '\X200D' '\XD83D' '\XDC69' '\X200D' '\XD83D' [\XDC66-\XDC67]
+        );
+  Po  = ([-+#.,:;?!&%|] |                            /* Other characters */
+		 '\X2014' | /* EM DASH                                    */
+		 '\X2026'   /* HORIZONTAL ELLIPSIS                        */
+		);
+  surp = [\XD800-\XDBFF][\XDC00-\XDFFF]; 			/* Random Surrogate pairs */
+  abul= (											/* Mandatory bullet characters */
+		 '\X2012' | /* FIGURE DASH                                */
+		 '\X2013' | /* EN DASH                                    */
+		 '\X2014' | /* EM DASH                                    */
+		 '\X2022' | /* BULLET                                     */
+		 '\X25C6' | /* BLACK DIAMOND                              */
+		 '\X25CF' | /* BLACK CIRCLE 							  */
+		 '\X261B' | /* BLACK RIGHT POINTING INDEX                 */
+		 '\X261E'   /* WHITE RIGHT POINTING INDEX                 */
+		);
+  pbul= ([-*] |		                            	/* Potential bullet characters*/
+		 '\X2010'   /* HYPHEN                                     */
+		 );
+  bul = abul | pbul;								/* Bullet characters */
+  hyp = ('-' |                                      /* Hyphen characters */
+		 '\X2010' | /* HYPHEN                                     */
+		 '\X2011' | /* NON-BREAKING HYPHEN                        */
+		 '\X2012' | /* FIGURE DASH                                */
+		 '\X2013'   /* EN DASH                                    */
+		 );
+  shy = '\xAD';                                     /* Soft hyphen          */
+  apo = ("'" |										/* Apostrophes 		*/
+		 '\X02BB' | /* MODIFIER LETTER TURNED COMMA	('okina)	  */
+		 '\X02BC' | /* MODIFIER LETTER APOSTROPHE				  */
+		 '\X02BD' | /* MODIFIER LETTER REVERSED COMMA             */
+		 '\X02F4' | /* MODIFIER LETTER GRAVE ACCENT               */
+		 '\X2018' | /* LEFT SINGLE QUOTATION MARK                 */
+		 '\X2019' | /* RIGHT SINGLE QUOTATION MARK                */
+		 '\X201B' | /* SINGLE HIGH-REVERSED-9 QUOTATION MARK      */
+		 '\X2032' | /* PRIME                                      */
+		 '\X2035'   /* REVERSED PRIME                             */
+		);
+  fns = ("#" |										/* Musical modifiers */
+		 '\X266D' | /* MUSIC FLAT SIGN 							  */
+		 '\X266E' | /* MUSIC NATURAL SIGN 						  */
+		 '\X266F'   /* MUSIC SHARP SIGN 						  */
+		 );
+  deg = ('\xB0'   | /* DEGREE SIGN                                				*/
+		 '\xBA'	  | /* MASCULINE ORDINAL INDICATOR (Wrong, but easily confused) */
+		 '\X02BA'   /* RING ABOVE 								  				*/
+		);
+  pha = ([\X02B0-\X0370]);	                        /* Phonetic accents   */
+  Qqs = ("'" |									/* Single quote (minute/foot) */
+		 '\X2032' | /* PRIME                                      */
+		 '\X2019'   /* RIGHT SINGLE QUOTATION MARK                 */
+		);
+  Qqd = ('"' |									/* Double quote (second/inch) */
+		 '\X2033' | /* DOUBLE PRIME                               */
+		 '\X201D' | /* RIGHT DOUBLE QUOTATION MARK                */
+		 "''"     | /* Doubled single quotes                      */
+		 '\X2032\X2032' | '\X2019\X2019'
+		);
+  Pun = ('\xA2'	  /* CENT SIGN 								  */
+		);
+  whl = [-+]? Nd+;	                        /* Whole number                  */
+  exp = [eE] [+-]? Nd+;					   	/* Scientific       	         */
+  unt = hyp? L{1,8};			       		/* Unit / ordinal suffix         */
+  dlm = [^ \t\xA0\X202F;];				   	/* Command delimiters	         */
+  urc = [-#$%&+/\\=@|~_];					/* URL punctuation               */
+  urp = (urc | [!.;?]);						/* Internal URL punctuation [^,:]*/
+  luc = (L | Nd | urc);						/* URL characters everywhere	 */
+  Pu  = [!,.:;?];						   	/* URL characters, except at end */
+  url = (luc | Pu)* luc;		   			/* URL body                      */
+  burl= '<' (luc | Pu)+ '>';				/* Bracketed URL                 */
+  Pm  = [-.@!%+];						   	/* e-mail address punctuation    */
+  phs = ([-.] | Zs);					   	/* phone # group separator       */
+  UN  = (Lu | Nd);						   	/* Phone # alphanumeric          */
+  anc = (LN+ | L "." (L ".")+ | Nd+ "." Nd+); 			/* Alphanumeric constituent      */
+  rmM = "M"{0,3};							/* Roman numerals, thousands     */
+  rmC = "D"? "C"{0,3} | "C" [DM];	        /* Roman numerals, hundreds      */
+  rmX = "L"? "X"{0,3} | "X" [LC];	        /* Roman numerals, tens          */
+  rmI = "V"? "I"{0,3} | "I" [VX];	        /* Roman numerals, ones          */
+  rom = rmM rmC rmX rmI;			        /* Roman numeral (possibly empty)*/
+  ipw = Lp* (Li | pha) (Lp | Li | pha)*;    /* Phonetic word                 */
+  ipa = ipw (Zs+ ipw)*;                     /* Phonetic material             */
+*/	  
+
+// Local Variables:
+// mode:C++
+// End:

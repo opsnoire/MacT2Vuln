@@ -1,0 +1,456 @@
+@import "PreferencesView.css";
+@import "ExtensionIcon.css";
+
+:root {
+    --divider-color: -apple-system-container-border;
+    --direction-start: left;
+    --direction-end: right;
+}
+
+html[dir=rtl]:root {
+    --direction-start: right;
+    --direction-end: left;
+}
+
+#header {
+    --start-offset: 22px;
+    --end-offset: 20px;
+}
+
+#sidebar {
+    --start-offset: 20px;
+}
+
+#contentView {
+    --start-offset: 235px;
+    --end-offset: 20px;
+}
+
+#low-res-icon, #high-res-icon {
+    --start-offset: 14px;
+}
+
+#extensionList .item .icon {
+    --start-offset: 38px;
+}
+
+#extensionList .item .enableCheckboxButton {
+    --start-offset: 10px;
+}
+
+#title-bar {
+    --start-offset: 74px;
+    --end-offset: 14px;
+}
+
+#description {
+    --start-offset: 74px;
+    --end-offset: 14px;
+}
+
+#enableInPrivateBrowsingWindowsCheckbox {
+    --start-offset: 85px;
+    --end-offset: 11px;
+    display: none;
+}
+
+#uninstallButton {
+    --start-offset: 73px;
+}
+
+#optionsButton {
+    /* FIXME: rdar://problem/56200264 This will be the wrong position in any non-English language. */
+    --start-offset: 160px;
+}
+
+body {
+    min-height: 387px; /* This value is 38 pixels smaller than the one in ExtensionsPreferencesViewController.h to account for the help button. */
+    color: captiontext;
+}
+
+body.collapsed {
+    min-height: 67px; /* This value is 38 pixels smaller than the one in ExtensionsPreferencesViewController.h to account for the help button. */
+}
+
+body.collapsed #sidebar, body.collapsed #contentView {
+    display: none;
+}
+
+body.collapsed #extensionsDisabledExplanationContainer {
+    display: block;
+}
+
+#mainContainer {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#header {
+    position: absolute;
+    left: var(--start-offset);
+    top: 12px;
+    right: var(--end-offset);
+    height: 35px;
+}
+
+html[dir=rtl] #header {
+    right: var(--start-offset);
+    left: var(--end-offset);
+}
+
+.container {
+    position: absolute;
+    overflow: hidden;
+    top: 20px;
+    bottom: 0;
+    border: 1px solid var(--divider-color);
+}
+
+.container:focus {
+    outline: none;
+}
+
+#sidebar {
+    background-color: inactiveborder;
+    -webkit-background-size: auto 72px;
+    left: var(--start-offset);
+    width: 205px;
+    position: absolute;
+}
+
+html[dir=rtl] #sidebar {
+    right: var(--start-offset);
+    left: auto;
+}
+
+#extensionInfo {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#headerSpacer {
+    height: 107px;
+}
+
+#extensionsDisabledExplanationContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+
+#extensionsDisabledExplanation {
+    height: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: flex-end;
+    -webkit-justify-content: center;
+}
+
+#extensionList {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#contentView {
+    left: var(--start-offset);
+    right: var(--end-offset);
+    background-color: inactiveborder;
+}
+
+html[dir=rtl] #contentView {
+    right: var(--start-offset);
+    left: var(--end-offset);
+}
+
+#extensionList .item {
+    display: block;
+    position: relative;
+    height: 40px;
+    -webkit-padding-start: 72px;
+    -webkit-padding-end: 8px;
+    font-size: 13px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+#extensionList .item .titleContainer {
+    display: flex;
+    align-items: center;
+}
+
+#extensionList .item .titleContainer .title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    padding-right: 2px;
+}
+
+#extensionList .item .titleContainer .warning {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+}
+
+#sidebar .selected {
+    background-color: -apple-system-unemphasized-selected-content-background;
+}
+
+#sidebar:focus .selected {
+    color: white;
+    background-color: -apple-system-selected-content-background;
+}
+
+#low-res-icon, #high-res-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: var(--start-offset);
+    top: 14px;
+}
+
+html[dir=rtl] #low-res-icon, html[dir=rtl] #high-res-icon {
+    right: var(--start-offset);
+    left: auto;
+}
+
+#extensionList .item .icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: var(--start-offset);
+    top: 6px;
+}
+
+html[dir=rtl] #extensionList .item .icon {
+    right: var(--start-offset);
+    left: auto;
+}
+
+#extensionList .item .enableCheckboxButton {
+    position: absolute;
+    top: 9px;
+    left: var(--start-offset);
+    width: 22px;
+    height: 18px;
+}
+
+html[dir=rtl] #extensionList .item .enableCheckboxButton {
+    right: var(--start-offset);
+    left: auto;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 31px;
+    border-top: 1px solid var(--divider-color);
+    background-color: inactiveborder;
+}
+
+#contentView .header, .simpleHeader {
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    min-height: 107px;
+    border-bottom: 1px solid var(--divider-color);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(247, 247, 247)), to(rgb(252, 252, 252)));
+}
+
+#contentView button {
+    -webkit-padding-start: 14px;
+    -webkit-padding-end: 14px;
+    line-height: 11px;
+    height: 18px;
+    outline-offset: -2px;
+}
+
+#title-bar {
+    position: absolute;
+    left: var(--start-offset);
+    right: var(--end-offset);
+    top: 14px;
+    color: rgb(64, 64, 64);
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+html[dir=rtl] #title-bar {
+    right: var(--start-offset);
+    left: var(--end-offset);
+}
+
+#author {
+    color: rgb(167, 167, 167);
+    font-size: 10px;
+    font-weight: normal;
+}
+
+#author a:link, #author a:visited {
+    color: inherit;
+}
+
+#author a:active {
+    color: rgb(64, 64, 64);
+}
+
+#description {
+    display: -webkit-inline-box;
+    overflow: hidden;
+    position: absolute;
+    left: var(--start-offset);
+    right: var(--end-offset);
+    top: 37px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+html[dir=rtl] #description {
+    right: var(--start-offset);
+    left: var(--end-offset);
+}
+
+#enableInPrivateBrowsingWindowsCheckbox {
+    position: absolute;
+    top: 95px;
+    left: var(--start-offset);
+    right: var(--end-offset);
+    -webkit-padding-start: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+html[dir=rtl] #enableInPrivateBrowsingWindowsCheckbox {
+    right: var(--start-offset);
+    left: var(--end-offset);
+}
+
+#warning {
+    padding-top: 3px;
+    border-top: 1px solid var(--divider-color);
+    width: 100%;
+    display: table;
+}
+
+#warningIcon {
+    vertical-align: middle;
+    -webkit-padding-start: 15px;
+    -webkit-padding-end: 7px;
+    display: table-cell;
+    width: 24px;
+}
+
+#warningIcon img {
+    width: 24px;
+    height: 24px;
+}
+
+#warningText {
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    -webkit-margin-end: 14px;
+}
+
+#uninstallButton {
+    position: absolute;
+    top: 77px;
+    left: var(--start-offset);
+}
+
+html[dir=rtl] #uninstallButton {
+    right: var(--start-offset);
+    left: auto;
+}
+
+#optionsButton {
+    position: absolute;
+    top: 77px;
+    left: var(--start-offset);
+}
+
+html[dir=rtl] #optionsButton {
+    right: var(--start-offset);
+    left: auto;
+}
+
+.flex-box {
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#websiteAccess {
+    display: -webkit-inline-box;
+    position: relative;
+    padding: 14px;
+    -webkit-box-orient: vertical;
+    font-size: 12px;
+}
+
+#websiteAccess ul {
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+#websiteAccess li {
+    margin-top: 2px;
+    margin-left: -11px;
+    text-indent: -3px;
+}
+
+#websiteAccess .accessCategory {
+    margin: 14px 14px 0px 14px;
+}
+
+.accessCategory .accessTitle {
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+.accessCategory .accessSubtitle {
+    color: #858585;
+}
+
+#contentView-placeholder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.placeholder-text {
+    font-size: 15px;
+    color: rgb(192, 192, 192);
+    font-family: -apple-system-font;
+    text-align: center;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0.75ex;
+}

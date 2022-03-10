@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+
+my $SRCROOT = $ENV{"SRCROOT"};
+my $dir_path;
+
+exit if("@ARGV" eq "");
+
+if($SRCROOT) {
+	$dir_path = "$SRCROOT/@ARGV/";
+}else {
+	$dir_path = "@ARGV/";
+}
+
+$opened = opendir(DIR, "$dir_path") || die "can't opendir $dir_path";
+
+if ($opened) {
+	my @chatpaths = readdir(DIR);
+	foreach my $path (@chatpaths) {
+		next if ( $path eq "." || $path eq ".." );
+		my $plist = "$dir_path$path";
+		system("/bin/launchctl", "load", $plist);
+	}
+	closedir(DIR);
+}
+
+exit;

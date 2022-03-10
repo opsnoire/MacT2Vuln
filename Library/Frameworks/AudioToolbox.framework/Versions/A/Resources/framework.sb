@@ -1,0 +1,2 @@
+(allow mach-lookup (global-name "com.apple.audio.SystemSoundServer-OSX"))
+(allow mach-lookup (global-name "com.apple.audio.AudioComponentRegistrar"))

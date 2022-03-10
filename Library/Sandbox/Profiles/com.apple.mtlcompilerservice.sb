@@ -1,0 +1,19 @@
+(version 1)
+
+(deny default)
+(debug deny)
+
+(import "system.sb")
+
+(allow file-read-metadata
+    (subpath "/Library")
+    (subpath "/System")
+    (subpath "/usr/local/include")
+    (subpath "/usr/local")
+    (subpath "/usr"))
+
+(allow file-read*
+    (subpath "/Library/GPUBundles"))
+
+(allow file-write*
+    (subpath "/Library/Logs/DiagnosticReports/MTLCompiler"))

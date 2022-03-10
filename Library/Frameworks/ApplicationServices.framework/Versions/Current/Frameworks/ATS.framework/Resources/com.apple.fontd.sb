@@ -1,0 +1,17 @@
+;;
+;; fontd - sandbox profile
+;; Copyright 2015 Apple, Inc.  All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice.
+;;
+;;
+
+(version 1)
+
+(deny default (with partial-symbolication))
+(import "system.sb")
+(allow file-read* (literal "/Library/Application Support/CrashReporter/SubmitDiagInfo.domains"))
+
+(import "com.apple.fontd.internal.sb")

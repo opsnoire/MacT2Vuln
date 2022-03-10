@@ -1,0 +1,29 @@
+graphName "builtin_microphone_voice_general"
+
+; Uncomment the fs definition below if you want to process the graph offline
+; [def fs 48000]
+[def numChansIn 2]
+[def numChansOut 1]
+
+in in
+out out
+
+box inSplit split 1 [numChansIn]
+box gain dbgn 1 1
+box sum sum 2 1
+box NBandEQ (aufx nbeq) 1 1
+
+wire in inSplit ([fs] 2)
+wire (inSplit 0) (sum 0) ([fs] 1)
+wire (inSplit 1) (sum 1) ([fs] 1)
+wire sum gain ([fs] 1)
+wire gain NBandEQ ([fs] 1)
+wire NBandEQ out ([fs] 1)
+
+param vppg -2
+
+param mvol 0
+wireGraphParam mvol (gain 0)
+param mmut 1
+wireGraphParam mmut (gain 1)
+

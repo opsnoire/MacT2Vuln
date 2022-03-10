@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Unlink</key>
+	<array>
+		<string>${Library}/Caches/com.apple.Safari/RemoteNotifications</string>
+	</array>
+	<key>Move</key>
+	<array>
+		<string>${Library}/Caches/com.apple.Safari</string>
+		<array>
+			<string>${Library}/WebKit/com.apple.Safari</string>
+			<string>${Library}/WebKit</string>
+		</array>
+	</array>
+	<key>Symlink</key>
+	<array>
+		<string>${Library}/Cookies</string>
+	</array>
+</dict>
+</plist>

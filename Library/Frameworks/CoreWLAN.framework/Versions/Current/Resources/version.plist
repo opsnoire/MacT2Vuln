@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>AirPortCoreWLAN</string>
+	<key>BuildVersion</key>
+	<string>142</string>
+	<key>CFBundleShortVersionString</key>
+	<string>13.0</string>
+	<key>ProjectName</key>
+	<string>AirPortCoreWLAN</string>
+	<key>SourceVersion</key>
+	<string>1601002000000000</string>
+</dict>
+</plist>

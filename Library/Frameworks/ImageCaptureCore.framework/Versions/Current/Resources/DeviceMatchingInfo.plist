@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>cameraClasses</key>
+	<array>
+		<dict>
+			<key>class</key>
+			<string>MSCameraDeviceManager</string>
+			<key>volumeInfo</key>
+			<array>
+				<string>DCIM</string>
+				<string>MP_ROOT</string>
+			</array>
+		</dict>
+		<dict>
+			<key>class</key>
+			<string>ExFATCameraDeviceManager</string>
+			<key>volumeInfo</key>
+			<array>
+				<string>DCIM</string>
+				<string>MP_ROOT</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

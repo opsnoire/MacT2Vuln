@@ -1,0 +1,4 @@
+
+;; BackgroundTaskManagement
+(allow mach-lookup
+	(global-name "com.apple.backgroundtaskmanagementagent"))

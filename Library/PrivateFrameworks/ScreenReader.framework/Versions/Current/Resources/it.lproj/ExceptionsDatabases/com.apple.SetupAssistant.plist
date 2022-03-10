@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIElement</key>
+	<dict>
+		<key>AXStaticText</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ContainsText</key>
+				<dict>
+					<key>up-to-the-minute</key>
+					<dict>
+						<key>MTText</key>
+						<string>aggiornato a [[inpt phon]] m1IHnIXt [[inpt text]]</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

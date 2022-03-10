@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.apple.recoverydiagnosed</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/libexec/recoverydiagnosed</string>
+	</array>
+	<key>ProcessType</key>
+	<string>Adaptive</string>
+	<key>EnablePressuredExit</key>
+	<true/>
+	<key>MachServices</key>
+	<dict>
+		<key>com.apple.recoverydiagnosed.kernel</key>
+		<dict>
+			<key>HostSpecialPort</key>
+			<integer>23</integer>
+		</dict>
+		<key>com.apple.recoverydiagnosed</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

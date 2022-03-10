@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>0000 - ServiceRecordHandle*</key>
+	<integer>131072</integer>
+	<key>0005 - BrowseGroupList*</key>
+	<array>
+		<data>EAI=</data>
+	</array>
+	<key>0100 - ServiceName*</key>
+	<string>Apple Macintosh Attributes</string>
+	<key>0780 - Apple Macintosh Identifier</key>
+	<data>8HIuIA+LTpCMwhtG9fLv4g==</data>
+	<key>0781 - Machine Name</key>
+	<string>&lt;unknown&gt;</string>
+	<key>0782 - Machine Model</key>
+	<string>&lt;unknown&gt;</string>
+	<key>0783 - Is Portable</key>
+	<true/>
+	<key>0784 - Bluetooth Stack Version</key>
+	<string>&lt;unknown&gt;</string>
+	<key>0785 - OBEX Version</key>
+	<integer>0</integer>
+	<key>0786 - Machine Icon</key>
+	<data>EjQ=</data>
+</dict>
+</plist>

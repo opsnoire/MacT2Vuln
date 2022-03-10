@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>Microsoft/com.microsoft.AlertsDaemon</string>
+	<string>Microsoft/com.microsoft.Messenger</string>
+	<string>com.adobe.Acrobat.Pro</string>
+	<string>com.adobe.Contribute</string>
+	<string>com.adobe.ESD.AdobeUpdaterApplication</string>
+	<string>com.adobe.ESToolkit</string>
+	<string>com.adobe.GoLive</string>
+	<string>com.adobe.ImageReady</string>
+	<string>com.adobe.InDesign</string>
+	<string>com.adobe.Photoshop</string>
+	<string>com.adobe.adobehelpcenter</string>
+	<string>com.adobe.bridge</string>
+	<string>com.adobe.distiller</string>
+	<string>com.adobe.illustrator</string>
+	<string>com.adobe.versioncueCS2.VCStatusMenu</string>
+	<string>com.adobe.versioncueCS2.VersionCueCS2</string>
+	<string>com.apple.appleworks</string>
+	<string>com.blizzard.Installer</string>
+	<string>com.blizzard.Diablo2</string>
+	<string>com.filemaker.filemakerpro</string>
+	<string>com.filemaker.pro8</string>
+	<string>com.filemaker.registration</string>
+	<string>com.filemaker.wc8</string>
+	<string>com.intuit.HomeInventory</string>
+	<string>com.intuit.ero</string>
+	<string>com.intuit.quicken</string>
+	<string>com.intuit.quicken.dotmac</string>
+	<string>com.macromedia.Dreamweaver</string>
+	<string>com.macromedia.ExtensionManager</string>
+	<string>com.macromedia.fireworks</string>
+	<string>com.macromedia.flash.7</string>
+	<string>com.macromedia.freehand.11</string>
+	<string>com.microsoft.autoupdate</string>
+	<string>com.microsoft.certmgr</string>
+	<string>com.microsoft.entourage.syncservices</string>
+	<string>com.microsoft.error_reporting</string>
+	<string>com.microsoft.explorer</string>
+	<string>com.microsoft.mediaplayer</string>
+	<string>com.operasoftware.Opera</string>
+	<string>com.palm.HotSync</string>
+	<string>com.palm.HotSync.ConduitManager</string>
+	<string>com.palm.HotSync.TransportMonitor</string>
+	<string>com.palm.NotePad</string>
+	<string>com.palm.PalmDesktopSetup</string>
+	<string>com.palm.SendToHandheld</string>
+	<string>com.palm.VoiceMemo</string>
+	<string>com.palm.desktop</string>
+	<string>com.palm.desktop.background</string>
+	<string>com.palm.desktop.support</string>
+	<string>com.qualcomm.eudora</string>
+</array>
+</plist>

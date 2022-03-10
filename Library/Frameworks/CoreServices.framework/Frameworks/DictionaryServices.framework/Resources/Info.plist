@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>18A391024</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>DictionaryServices</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.DictionaryServices</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>DictionaryServices</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>323.6</string>
+	<key>DCSAppleDictionaries</key>
+	<array>
+		<string>/Library/Dictionaries/New Oxford American Dictionary.dictionary</string>
+		<string>/Library/Dictionaries/Oxford American Writer's Thesaurus.dictionary</string>
+		<string>/Library/Dictionaries/Oxford Dictionary of English.dictionary</string>
+		<string>/Library/Dictionaries/Oxford Thesaurus of English.dictionary</string>
+		<string>/Library/Dictionaries/The Standard Dictionary of Contemporary Chinese.dictionary</string>
+		<string>/Library/Dictionaries/Simplified Chinese - English.dictionary</string>
+		<string>/Library/Dictionaries/Diccionario General de la Lengua Española Vox.dictionary</string>
+		<string>/Library/Dictionaries/Spanish - English.dictionary</string>
+		<string>/Library/Dictionaries/Hindi.dictionary</string>
+		<string>/Library/Dictionaries/Portuguese.dictionary</string>
+		<string>/Library/Dictionaries/Russian.dictionary</string>
+		<string>/Library/Dictionaries/Sanseido Super Daijirin.dictionary</string>
+		<string>/Library/Dictionaries/Sanseido The WISDOM English-Japanese Japanese-English Dictionary.dictionary</string>
+		<string>/Library/Dictionaries/Duden Dictionary Data Set I.dictionary</string>
+		<string>/Library/Dictionaries/German - English.dictionary</string>
+		<string>/Library/Dictionaries/Korean.dictionary</string>
+		<string>/Library/Dictionaries/Korean - English.dictionary</string>
+		<string>/Library/Dictionaries/Multidictionnaire de la langue française.dictionary</string>
+		<string>/Library/Dictionaries/French - English.dictionary</string>
+		<string>/Library/Dictionaries/Turkish.dictionary</string>
+		<string>/Library/Dictionaries/Italian.dictionary</string>
+		<string>/Library/Dictionaries/Thai.dictionary</string>
+		<string>/Library/Dictionaries/Dutch.dictionary</string>
+		<string>/Library/Dictionaries/Swedish.dictionary</string>
+		<string>/Library/Dictionaries/Norwegian.dictionary</string>
+		<string>/Library/Dictionaries/Italian - English.dictionary</string>
+		<string>/Library/Dictionaries/Danish.dictionary</string>
+		<string>/Library/Dictionaries/Dutch - English.dictionary</string>
+		<string>/Library/Dictionaries/Apple Dictionary.dictionary</string>
+		<string>/System/Library/Frameworks/CoreServices.framework/Frameworks/DictionaryServices.framework/Resources/Wikipedia.wikipediadictionary</string>
+	</array>
+	<key>DCSNewReleasedDictionaries</key>
+	<dict>
+		<key>6</key>
+		<array>
+			<string>com.apple.dictionary.OxfordRussian</string>
+			<string>com.apple.dictionary.pt-en.oup</string>
+		</array>
+		<key>7</key>
+		<array>
+			<string>com.apple.dictionary.zh_TW-en.DrEye</string>
+		</array>
+		<key>8</key>
+		<array>
+			<string>com.apple.dictionary.he.oup</string>
+			<string>com.apple.dictionary.ar-en.oup</string>
+			<string>com.apple.dictionary.hi-en.oup</string>
+			<string>com.apple.dictionary.th-en.oup</string>
+		</array>
+	</dict>
+	<key>DCSStemGuessData</key>
+	<dict>
+		<key>ar</key>
+		<dict>
+			<key>prefix</key>
+			<array>
+				<string>ال</string>
+				<string>ب</string>
+				<string>ك</string>
+				<string>ل</string>
+				<string>و</string>
+				<string>بال</string>
+				<string>كال</string>
+				<string>لل</string>
+				<string>وب</string>
+				<string>وك</string>
+				<string>ول</string>
+				<string>وبال</string>
+				<string>وكال</string>
+				<string>ولل</string>
+				<string>ف</string>
+				<string>ي</string>
+				<string>وي</string>
+				<string>ت</string>
+				<string>وت</string>
+				<string>سيت</string>
+				<string>ستت</string>
+				<string>است</string>
+			</array>
+			<key>suffix</key>
+			<array>
+				<string>ي</string>
+				<string>نا</string>
+				<string>ه</string>
+				<string>ني</string>
+				<string>ت</string>
+				<string>وا</string>
+				<string>ها</string>
+				<string>ك</string>
+				<string>تم</string>
+				<string>تنّ</string>
+				<string>هم</string>
+				<string>هن</string>
+				<string>كم</string>
+				<string>كن</string>
+				<string>ين</string>
+				<string>ان</string>
+			</array>
+		</dict>
+		<key>he</key>
+		<dict>
+			<key>prefix</key>
+			<array>
+				<string>ב</string>
+				<string>כ</string>
+				<string>מ</string>
+				<string>מה</string>
+				<string>ה</string>
+				<string>ל</string>
+				<string>כש</string>
+				<string>כשב</string>
+				<string>כשכ</string>
+				<string>כשמ</string>
+				<string>כשמה</string>
+				<string>כשה</string>
+				<string>כשל</string>
+				<string>ש</string>
+				<string>שב</string>
+				<string>שכ</string>
+				<string>שמ</string>
+				<string>שמה</string>
+				<string>שה</string>
+				<string>של</string>
+				<string>ו</string>
+				<string>וב</string>
+				<string>וכ</string>
+				<string>ומ</string>
+				<string>ומה</string>
+				<string>וה</string>
+				<string>ול</string>
+				<string>שכש</string>
+				<string>שכשב</string>
+				<string>שכשכ</string>
+				<string>שכשמ</string>
+				<string>שכשמה</string>
+				<string>שכשה</string>
+				<string>שכשל</string>
+				<string>וכש</string>
+				<string>וכשב</string>
+				<string>וכשכ</string>
+				<string>וכשמ</string>
+				<string>וכשמה</string>
+				<string>וכשה</string>
+				<string>וכשל</string>
+				<string>וש</string>
+				<string>ושב</string>
+				<string>ושכ</string>
+				<string>ושמ</string>
+				<string>ושמה</string>
+				<string>ושה</string>
+				<string>ושל</string>
+				<string>ושכש</string>
+				<string>ושכשב</string>
+				<string>ושכשכ</string>
+				<string>ושכשמ</string>
+				<string>ושכשמה</string>
+				<string>ושכשה</string>
+				<string>ושכשל</string>
+			</array>
+			<key>suffix</key>
+			<array>
+				<string>ים</string>
+				<string>ות</string>
+				<string>י</string>
+				<string>יי</string>
+				<string>יו</string>
+				<string>ה</string>
+				<string>ו</string>
+				<string>כם</string>
+				<string>כן</string>
+				<string>ם</string>
+				<string>ן</string>
+				<string>יכם</string>
+				<string>יכן</string>
+				<string>יהם</string>
+				<string>יהן</string>
+				<string>יה</string>
+				<string>נו</string>
+				<string>יך</string>
+				<string>ייך</string>
+				<string>ך</string>
+				<string>ת</string>
+			</array>
+		</dict>
+	</dict>
+	<key>DSCStopLemmatizeWordList</key>
+	<dict>
+		<key>ar</key>
+		<array>
+			<string>السودان</string>
+		</array>
+	</dict>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>11O62d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>10.15.6</string>
+	<key>DTSDKBuild</key>
+	<string>19G49</string>
+	<key>DTSDKName</key>
+	<string>macosx10.15internal</string>
+	<key>DTXcode</key>
+	<string>1140</string>
+	<key>DTXcodeBuild</key>
+	<string>11O62d</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.15</string>
+</dict>
+</plist>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DEFAULT-OPTIONS</key>
+	<dict>
+		<key>Level</key>
+		<dict>
+			<key>Persist</key>
+			<string>Inherit</string>
+			<key>Enable</key>
+			<string>Inherit</string>
+		</dict>
+		<key>Enable-Oversize-Messages</key>
+		<true/>
+		<key>Default-Privacy-Setting</key>
+		<string>Public</string>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>idscloudpairing</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>7</integer>
+			<key>Info</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>magicpairing</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>7</integer>
+			<key>Info</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>CBXPCManager</key>
+	<dict>
+		<key>TTL</key>
+		<dict>
+			<key>Default</key>
+			<integer>7</integer>
+			<key>Info</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

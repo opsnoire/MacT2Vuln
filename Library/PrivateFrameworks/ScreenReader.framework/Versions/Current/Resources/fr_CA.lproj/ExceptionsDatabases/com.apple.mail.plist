@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIElement</key>
+	<dict>
+		<key>AXTextField</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ContainsText</key>
+				<dict>
+					<key>Re: </key>
+					<dict>
+						<key>TTSText</key>
+						<string>Concernant :</string>
+					</dict>
+					<key>Fwd: </key>
+					<dict>
+						<key>TTSText</key>
+						<string>Réexpédier : </string>
+					</dict>
+					<key>RE: </key>
+					<dict>
+						<key>TTSText</key>
+						<string>Concernant :</string>
+					</dict>
+					<key>FWD: </key>
+					<dict>
+						<key>TTSText</key>
+						<string>Réexpédier : </string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<key>AXStaticText</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ExactMatch</key>
+				<dict>
+					<key>To:</key>
+					<dict>
+						<key>MTText</key>
+						<string>[[emph +]] à :</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

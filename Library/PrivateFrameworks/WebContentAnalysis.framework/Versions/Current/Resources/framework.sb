@@ -1,0 +1,12 @@
+;;
+;; WebContentAnalysis framework - sandbox profile
+;; Copyright (c) 2013 Apple Inc. All Rights reserved.
+;;
+;; WARNING: The sandbox rules in this file currently constitute
+;; Apple System Private Interface and are subject to change at any time and
+;; without notice. The contents of this file are also auto-generated and not
+;; user editable; it may be overwritten at any time.
+;;
+
+(allow file-read*
+		(literal "/Library/Preferences/com.apple.familycontrols.webfilter.plist"))

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>browser-name</key>
+		<string>Safari</string>
+		<key>browser-version</key>
+		<string>13.0.1</string>
+		<key>hardware</key>
+		<string>iPhone</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>iOS</string>
+		<key>platform-version</key>
+		<string>13.1.3</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1</string>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Safari</string>
+		<key>browser-version</key>
+		<string>13.0.1</string>
+		<key>hardware</key>
+		<string>iPod touch</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>iOS</string>
+		<key>platform-version</key>
+		<string>13.1.3</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (iPod; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1</string>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Safari</string>
+		<key>browser-version</key>
+		<string>13.0.1</string>
+		<key>hardware</key>
+		<string>iPad Mini</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>iOS</string>
+		<key>platform-version</key>
+		<string>13.1.3</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (iPad; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Mobile/15E148 Safari/604.1</string>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Safari</string>
+		<key>browser-version</key>
+		<string>13.0.1</string>
+		<key>hardware</key>
+		<string>iPad</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>iOS</string>
+		<key>platform-version</key>
+		<string>13.1.3</string>
+		<key>user-agent</key>
+		<string>"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.1 Safari/605.1.15"</string>
+	</dict>
+	<dict>
+		<key>separator</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Microsoft Edge</string>
+		<key>browser-version</key>
+		<string>41</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>hide-platform</key>
+		<true/>
+		<key>platform</key>
+		<string>Windows</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299</string>
+	</dict>
+	<dict>
+		<key>separator</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>separator</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Google Chrome</string>
+		<key>browser-version</key>
+		<string>78</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>macOS</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36</string>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Google Chrome</string>
+		<key>browser-version</key>
+		<string>78</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>Windows</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36</string>
+	</dict>
+	<dict>
+		<key>separator</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Firefox</string>
+		<key>browser-version</key>
+		<string>70</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>macOS</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:70.0) Gecko/20100101 Firefox/70.0</string>
+	</dict>
+	<dict>
+		<key>browser-name</key>
+		<string>Firefox</string>
+		<key>browser-version</key>
+		<string>70</string>
+		<key>hide-browser-version</key>
+		<true/>
+		<key>platform</key>
+		<string>Windows</string>
+		<key>user-agent</key>
+		<string>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</string>
+	</dict>
+</array>
+</plist>

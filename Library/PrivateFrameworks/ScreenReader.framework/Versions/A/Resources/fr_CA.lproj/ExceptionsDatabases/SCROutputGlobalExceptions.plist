@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIElement</key>
+	<dict>
+		<key>AXScrollBar</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ContainsText</key>
+				<dict>
+					<key>scroll bar</key>
+					<dict>
+						<key>MTText</key>
+						<string>[[inpt phon]] skr1OWlbAAr [[inpt text]]</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<key>*</key>
+		<dict>
+			<key>*</key>
+			<dict>
+				<key>ContainsText</key>
+				<dict>
+					<key>AT&amp;T</key>
+					<dict>
+						<key>MTText</key>
+						<string>[[inpt phon]] 1EY tIY IXn t1IY [[inpt text]]</string>
+					</dict>
+					<key>HK$</key>
+					<dict>
+						<key>TTSText</key>
+						<string>Dollar de Hong Kong</string>
+					</dict>
+					<key>Rescan</key>
+					<dict>
+						<key>TTSText</key>
+						<string>Rechercher de nouveau</string>
+					</dict>
+					<key>rescan</key>
+					<dict>
+						<key>TTSText</key>
+						<string>rechercher de nouveau</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

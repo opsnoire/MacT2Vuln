@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildAliasOf</key>
+	<string>AppleUSBIrDA</string>
+	<key>BuildVersion</key>
+	<string>7200</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.4.5</string>
+	<key>CFBundleVersion</key>
+	<string>1.4.5b4</string>
+	<key>ProjectName</key>
+	<string>AppleUSBIrDA</string>
+	<key>SourceVersion</key>
+	<string>147000000000000</string>
+</dict>
+</plist>

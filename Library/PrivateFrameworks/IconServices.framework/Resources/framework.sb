@@ -1,0 +1,6 @@
+;; IconServices
+(version 1)
+(allow mach-lookup 
+	(global-name "com.apple.iconservices")
+	(global-name "com.apple.iconservices.store"))
+	
