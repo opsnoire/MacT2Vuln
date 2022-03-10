@@ -9,7 +9,7 @@
 <p>
 	This intrusion has costed a fortune, a fortune of my time. I just went through cancer surgery for Thynoma, I am completely bankrupt. I survive from donations on a project that I started called Commercium Blockchain Technologies. (www.commercium.net) Every day I am faced with issues pertaining to the computer which hinders my ability to work. It hinders my ability to earn a living. I’m trying to return to a normal life but for some it’s becoming impossible to return to a normal life because of some investigation. For the past week Ive been dealing with an intrusion on my Apple T2 iBridge chip on a Macbook15,4 which is a 2019 MacBook Pro 13Inch, a firmware was uploaded to the T2 CHIP by the DHCP settings from the router provided by Megacable Internet in Mexico. The settings were to have the MacBook Pro boot as netboot. It updated the computer and updated the T2 “Security Chip” which gives serial access via Microphone and Speaker, Via Electrical Socket(USB and Thunderbolt, Via AP0, or Access Point from WIFI, from Bluetooth PAN, via connecting to my home wifi.  Here are the files.
 Some of these files could be secrets, top secret x2 but they shouldnt be sensitive software signing certificates or persistent trojans on my personal PROTECTED computer.
-Security Certificates to sign ANYTHING authentically by apple to avoid all alarms. (Certificates below), Most of all is quite shocking. This was an intrusion by the Mexican Government. Their OSX Overlay is called “ El Torito “ per the saying in files found.
+Security Certificates to sign ANYTHING authentically by apple to avoid all alarms. (Certificates below), Most of all is quite shocking. This was an intrusion by the Mexican Government. Their OSX Overlay is called “ El Torito “ (not to be confused with bootable media like cdrom)  per the saying in files found.
 Which first hand demonstrates how vulnerable OS X is based on the exploits loaded as kernel modules. With permission from Apple of course. It would be difficult to load kernel modules that had an invalid Apple cert signage.
 
 The times on the certificates are invalid, as they are in the past. The time is automatically served from NTP, if disabled, DHCP disabled. Everything is manual. The T2 bridge still has its play. On Recovery by cmd R, net recovery etc it all downloads a Catalina version of OSX. On the Installer logs you can see where I tried to upload a different T2 firmware ipsw, which worked.. for a moment. I’m not here to prove anything, I am sharing. I am sharing because I owe it to my fellow Commercium followers the reason for my delay in work.
@@ -377,7 +377,7 @@ hellomoto@192 ~ %
 
 - 🌱 I’m currently learning **how to deal with stress.**
 
-- 👯 I was currently HACKED by government, MULTIPLE OS trojan **El Torrito**
+- 👯 I was currently HACKED by government, MULTIPLE OS trojan **El Torito**
 
 - 🤝 I’m looking for help with **spreading the word about Apple T2 Vulnerabilities and use for espionage.**
 
